@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 import argparse
 import html
+import json
 import re
 import shutil
 import subprocess
@@ -24,32 +25,23 @@ def strip_front_matter(text: str) -> str:
 
 def markdown_to_spoken_text(markdown: str) -> str:
     text = strip_front_matter(markdown)
-
-    # Remove fenced code blocks and raw HTML tags.
     text = re.sub(r"```.*?```", "", text, flags=re.S)
     text = re.sub(r"<[^>]+>", " ", text)
-
-    # Images are not useful in audio. Keep link labels but drop URLs.
     text = re.sub(r"!\[[^\]]*\]\([^)]*\)", "", text)
     text = re.sub(r"\[([^\]]+)\]\([^)]*\)", r"\1", text)
     text = re.sub(r"https?://\S+", "", text)
-
-    # Markdown syntax -> readable punctuation.
     text = re.sub(r"^#{1,6}\s*", "", text, flags=re.M)
     text = re.sub(r"^>\s?", "", text, flags=re.M)
     text = re.sub(r"^[-*+]\s+", "", text, flags=re.M)
     text = re.sub(r"^\s*\d+\.\s+", "", text, flags=re.M)
     text = text.replace("**", "").replace("__", "").replace("`", "")
     text = html.unescape(text)
-
-    # Make a few recurring financial forms friendlier to Chinese TTS.
     text = re.sub(r"(\d+(?:\.\d+)?)\s*bp\b", r"\1 个基点", text, flags=re.I)
     text = re.sub(r"(\d+(?:\.\d+)?)\s*%", r"\1%", text)
     text = re.sub(r"\b2Y\b", "两年期", text)
     text = re.sub(r"\b10Y\b", "十年期", text)
     text = re.sub(r"\b30Y\b", "三十年期", text)
 
-    # Preserve paragraph pauses but normalize whitespace inside each paragraph.
     paragraphs = []
     for p in re.split(r"\n\s*\n", text):
         p = re.sub(r"\s+", " ", p).strip()
@@ -85,7 +77,6 @@ def split_text(text: str, limit: int = MAX_CHARS):
         paragraph = paragraph.strip()
         if not paragraph:
             continue
-        # Split at sentence boundaries first; long sentences get a punctuation-aware fallback.
         sentences = [s.strip() for s in re.split(r"(?<=[。！？!?])\s*", paragraph) if s.strip()]
         if not sentences:
             sentences = [paragraph]
@@ -148,11 +139,21 @@ def post_date(post_path: Path) -> str:
     return m.group(1)
 
 
-def generate_one(post_path: Path, audio_dir: Path, args):
+def load_manifest(path: Path) -> dict:
+    if not path.exists():
+        return {}
+    return json.loads(path.read_text(encoding="utf-8"))
+
+
+def generate_one(post_path: Path, audio_dir: Path, manifest: dict, args):
     date = post_date(post_path)
+    if date in manifest and not args.force:
+        print(f"SKIP {date}: audio already published at {manifest[date]}")
+        return False
+
     final_path = audio_dir / f"{date}-daily-brief.mp3"
     if final_path.exists() and not args.force:
-        print(f"SKIP {date}: {final_path} already exists")
+        print(f"SKIP {date}: local {final_path} already exists")
         return False
 
     spoken = markdown_to_spoken_text(post_path.read_text(encoding="utf-8"))
@@ -180,9 +181,10 @@ def generate_one(post_path: Path, audio_dir: Path, args):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--posts-dir", default="_posts")
-    ap.add_argument("--audio-dir", default="audio")
+    ap.add_argument("--audio-dir", default=".tts-audio")
+    ap.add_argument("--manifest", default="_data/audio.json")
     ap.add_argument("--post", help="Generate one specific Markdown post")
-    ap.add_argument("--all-missing", action="store_true", help="Generate every post whose MP3 is missing")
+    ap.add_argument("--all-missing", action="store_true")
     ap.add_argument("--force", action="store_true")
     ap.add_argument("--max-chars", type=int, default=MAX_CHARS)
     ap.add_argument("--url", default=DEFAULT_URL)
@@ -194,6 +196,7 @@ def main():
 
     posts_dir = Path(args.posts_dir)
     audio_dir = Path(args.audio_dir)
+    manifest = load_manifest(Path(args.manifest))
     if args.post:
         posts = [Path(args.post)]
     else:
@@ -207,7 +210,7 @@ def main():
 
     generated = 0
     for post in posts:
-        if generate_one(post, audio_dir, args):
+        if generate_one(post, audio_dir, manifest, args):
             generated += 1
     print(f"Generated {generated} audio file(s)")
 
