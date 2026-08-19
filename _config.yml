@@ -1,0 +1,9 @@
+title: Daily Brief
+description: Daily brief covering AI, semiconductors, markets, China, world news and science.
+url: "https://tangkk.github.io"
+baseurl: "/daily_brief"
+timezone: Asia/Shanghai
+markdown: kramdown
+permalink: /:year/:month/:day/
+exclude:
+  - README.md
