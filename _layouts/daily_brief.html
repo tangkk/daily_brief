@@ -17,13 +17,12 @@
       <p class="kicker">tangkk · Daily Brief</p>
       <h1>{{ page.title }}</h1>
       <p class="date">{{ page.date | date: "%Y-%m-%d" }}</p>
-      {% assign audio_filename = page.date | date: "%Y-%m-%d" | append: "-daily-brief.mp3" %}
-      {% assign audio_path = "/audio/" | append: audio_filename %}
-      {% assign audio_file = site.static_files | where: "path", audio_path | first %}
-      {% if audio_file %}
+      {% assign audio_date = page.date | date: "%Y-%m-%d" %}
+      {% assign audio_url = site.data.audio[audio_date] %}
+      {% if audio_url %}
       <div class="audio-box">
-        <p class="audio-label">🎧 音频版 · 科大讯飞 TTS</p>
-        <audio controls preload="none" src="{{ audio_path | relative_url }}">Your browser does not support audio playback.</audio>
+        <p class="audio-label">🎧 音频版 · 科大讯飞 TTS · Cloudflare R2</p>
+        <audio controls preload="none" src="{{ audio_url }}">Your browser does not support audio playback.</audio>
       </div>
       {% endif %}
     </header>
