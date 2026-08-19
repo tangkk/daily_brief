@@ -40,11 +40,11 @@ jobs:
             sudo apt-get install -y ffmpeg
           fi
 
-      - name: Generate missing Daily Brief audio
+      - name: Generate latest Daily Brief audio if missing
         id: tts
         if: env.XFYUN_APPID != '' && env.XFYUN_API_KEY != '' && env.XFYUN_API_SECRET != ''
         continue-on-error: true
-        run: python scripts/generate_audio.py --all-missing
+        run: python scripts/generate_audio.py
 
       - name: Persist generated audio
         if: always()
