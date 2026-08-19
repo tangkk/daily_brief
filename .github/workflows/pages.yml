@@ -46,22 +46,26 @@ jobs:
             sudo apt-get install -y ffmpeg
           fi
 
+      - name: Validate R2 configuration
+        run: |
+          test -n "$R2_ACCESS_KEY_ID" || { echo "Missing R2_ACCESS_KEY_ID"; exit 1; }
+          test -n "$R2_SECRET_ACCESS_KEY" || { echo "Missing R2_SECRET_ACCESS_KEY"; exit 1; }
+          test -n "$R2_ENDPOINT" || { echo "Missing R2_ENDPOINT"; exit 1; }
+          test -n "$R2_BUCKET" || { echo "Missing R2_BUCKET"; exit 1; }
+          test -n "$R2_PUBLIC_BASE_URL" || { echo "Missing R2_PUBLIC_BASE_URL"; exit 1; }
+          echo "R2 configuration present"
+
       - name: Migrate legacy repository audio to R2
         id: migrate
-        if: env.R2_ACCESS_KEY_ID != '' && env.R2_SECRET_ACCESS_KEY != '' && env.R2_ENDPOINT != '' && env.R2_BUCKET != '' && env.R2_PUBLIC_BASE_URL != ''
-        continue-on-error: true
         run: python scripts/r2_storage.py --audio-dir audio --manifest _data/audio.json
 
       - name: Generate latest Daily Brief audio if missing from R2 manifest
         id: tts
-        if: env.XFYUN_APPID != '' && env.XFYUN_API_KEY != '' && env.XFYUN_API_SECRET != '' && env.R2_ACCESS_KEY_ID != '' && env.R2_SECRET_ACCESS_KEY != '' && env.R2_ENDPOINT != '' && env.R2_BUCKET != '' && env.R2_PUBLIC_BASE_URL != ''
-        continue-on-error: true
+        if: env.XFYUN_APPID != '' && env.XFYUN_API_KEY != '' && env.XFYUN_API_SECRET != ''
         run: python scripts/generate_audio.py --audio-dir .tts-audio --manifest _data/audio.json
 
       - name: Upload generated audio to R2
         id: r2_upload
-        if: env.R2_ACCESS_KEY_ID != '' && env.R2_SECRET_ACCESS_KEY != '' && env.R2_ENDPOINT != '' && env.R2_BUCKET != '' && env.R2_PUBLIC_BASE_URL != ''
-        continue-on-error: true
         run: python scripts/r2_storage.py --audio-dir .tts-audio --manifest _data/audio.json
 
       - name: Persist R2 audio manifest
