@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -17,17 +17,58 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      XFYUN_APPID: ${{ secrets.XFYUN_APPID }}
+      XFYUN_API_KEY: ${{ secrets.XFYUN_API_KEY }}
+      XFYUN_API_SECRET: ${{ secrets.XFYUN_API_SECRET }}
     steps:
       - name: Checkout
         uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+          cache: pip
+
+      - name: Install TTS dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          if ! command -v ffmpeg >/dev/null 2>&1; then
+            sudo apt-get update
+            sudo apt-get install -y ffmpeg
+          fi
+
+      - name: Generate missing Daily Brief audio
+        id: tts
+        if: env.XFYUN_APPID != '' && env.XFYUN_API_KEY != '' && env.XFYUN_API_SECRET != ''
+        continue-on-error: true
+        run: python scripts/generate_audio.py --all-missing
+
+      - name: Persist generated audio
+        if: always()
+        run: |
+          if [ -d audio ] && find audio -name '*.mp3' -print -quit | grep -q .; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add audio/*.mp3
+            if ! git diff --cached --quiet; then
+              git commit -m "Generate Daily Brief audio"
+              git push
+            fi
+          fi
+
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
+
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
           source: ./
           destination: ./_site
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
 
