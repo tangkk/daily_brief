@@ -9,6 +9,8 @@ import tempfile
 import time
 from pathlib import Path
 
+import imageio_ffmpeg
+
 from xfyun_tts import DEFAULT_URL, DEFAULT_VOICE, run_once
 
 
@@ -125,8 +127,11 @@ def concat_mp3(parts, out_path):
         for part in parts:
             safe = str(part.resolve()).replace("'", "'\\''")
             f.write(f"file '{safe}'\n")
+
+    ffmpeg_exe = imageio_ffmpeg.get_ffmpeg_exe()
+    print(f"Using ffmpeg: {ffmpeg_exe}")
     subprocess.run(
-        ["ffmpeg", "-hide_banner", "-loglevel", "error", "-y", "-f", "concat", "-safe", "0",
+        [ffmpeg_exe, "-hide_banner", "-loglevel", "error", "-y", "-f", "concat", "-safe", "0",
          "-i", str(list_file), "-c", "copy", str(out_path)],
         check=True,
     )
