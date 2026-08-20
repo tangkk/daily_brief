@@ -117,11 +117,11 @@ def _normalize_units(text: str) -> str:
     text = _normalize_ranges(text); text = _normalize_contextual_changes(text)
     text = re.sub(r"([+＋\-−])\s*(\d[\d,]*(?:\.\d+)?)\s*%", lambda m: f"{_signed_word(m.group(1))}百分之{number_to_cn(m.group(2))}", text)
     text = re.sub(r"([+＋\-−])\s*(\d[\d,]*(?:\.\d+)?)\s*(?:bp|bps)\b", lambda m: f"{_signed_word(m.group(1))}{number_to_cn(m.group(2))}个基点", text, flags=re.I)
-    text = re.sub(r"(?<![\w.])(\d[\d,]*(?:\.\d+)?)\s*%", lambda m: f"百分之{number_to_cn(m.group(1))}", text)
-    text = re.sub(r"(?<![\w.])(\d[\d,]*(?:\.\d+)?)\s*(?:bp|bps)\b", lambda m: f"{number_to_cn(m.group(1))}个基点", text, flags=re.I)
+    text = re.sub(r"(\d[\d,]*(?:\.\d+)?)\s*%", lambda m: f"百分之{number_to_cn(m.group(1))}", text)
+    text = re.sub(r"(\d[\d,]*(?:\.\d+)?)\s*(?:bp|bps)\b", lambda m: f"{number_to_cn(m.group(1))}个基点", text, flags=re.I)
     for unit in ("万亿", "百万", "十亿", "亿", "万", "千"):
-        text = re.sub(rf"(?<!\w)(\d[\d,]*(?:\.\d+)?)\s*{unit}", lambda m, u=unit: f"{number_to_cn(m.group(1))}{u}", text)
-    text = re.sub(r"(?<!\w)(\d[\d,]*(?:\.\d+)?)\s*倍", lambda m: f"{number_to_cn(m.group(1))}倍", text)
+        text = re.sub(rf"(\d[\d,]*(?:\.\d+)?)\s*{unit}", lambda m, u=unit: f"{number_to_cn(m.group(1))}{u}", text)
+    text = re.sub(r"(\d[\d,]*(?:\.\d+)?)\s*倍", lambda m: f"{number_to_cn(m.group(1))}倍", text)
     return text
 
 
