@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
     inputs:
       generate_audio:
-        description: Generate audio for the latest Daily Brief
+        description: Generate audio from the latest spoken-friendly Daily Brief
         required: false
         type: boolean
         default: false
@@ -54,12 +54,14 @@ jobs:
           test -n "$R2_ENDPOINT" || { echo "Missing R2_ENDPOINT"; exit 1; }
           test -n "$R2_BUCKET" || { echo "Missing R2_BUCKET"; exit 1; }
           test -n "$R2_PUBLIC_BASE_URL" || { echo "Missing R2_PUBLIC_BASE_URL"; exit 1; }
-      - name: Migrate legacy repository audio to R2
-        if: github.event_name == 'workflow_dispatch' && inputs.generate_audio
-        run: python scripts/r2_storage.py --audio-dir audio --manifest _data/audio.json
-      - name: Generate latest Daily Brief audio
+      - name: Generate latest spoken Daily Brief audio
         if: github.event_name == 'workflow_dispatch' && inputs.generate_audio && env.XFYUN_APPID != '' && env.XFYUN_API_KEY != '' && env.XFYUN_API_SECRET != ''
-        run: python scripts/generate_audio.py --audio-dir .tts-audio --manifest _data/audio.json
+        run: |
+          latest=$(find spoken -maxdepth 1 -type f -name '????-??-??.md' | sort | tail -1)
+          test -n "$latest" || { echo "No spoken brief found"; exit 1; }
+          date=$(basename "$latest" .md)
+          cp "$latest" "/tmp/${date}-daily-brief.md"
+          python scripts/generate_audio.py --post "/tmp/${date}-daily-brief.md" --audio-dir .tts-audio --manifest _data/audio.json --force
       - name: Upload generated audio to R2
         if: github.event_name == 'workflow_dispatch' && inputs.generate_audio
         run: python scripts/r2_storage.py --audio-dir .tts-audio --manifest _data/audio.json
