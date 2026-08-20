@@ -19,7 +19,7 @@ layout: null
     <nav class="nav"><a href="https://tangkk.github.io/">← Home</a><a href="{{ '/feed.xml' | relative_url }}">RSS feed</a></nav>
     <section><ul class="posts">
       {% for post in site.posts %}
-      <li class="post"><span class="post-date">{{ post.date | date: "%Y-%m-%d" }}</span><span class="post-title">{{ post.title }}</span><div class="post-links"><a href="{{ post.url | relative_url }}">文字原版</a>{% assign spoken_date = post.date | date: "%Y-%m-%d" %}{% if spoken_date >= "2026-08-15" and spoken_date <= "2026-08-20" %}<a class="spoken" href="{{ '/spoken/' | append: spoken_date | append: '/' | relative_url }}">🎙 口播版</a>{% endif %}</div></li>
+      <li class="post"><span class="post-date">{{ post.date | date: "%Y-%m-%d" }}</span><span class="post-title">{{ post.title }}</span><div class="post-links"><a href="{{ post.url | relative_url }}">文字原版</a>{% assign spoken_date = post.date | date: "%Y-%m-%d" %}{% if spoken_date >= "2026-08-15" %}<a class="spoken" href="{{ '/spoken/' | append: spoken_date | append: '/' | relative_url }}">🎙 口播版</a>{% endif %}</div></li>
       {% else %}
       <li class="empty">The first Daily Brief will appear here after the next scheduled run.</li>
       {% endfor %}
