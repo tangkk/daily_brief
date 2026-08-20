@@ -7,6 +7,8 @@ on:
       - 'spoken/*.md'
       - '.github/workflows/spoken-audio.yml'
       - 'scripts/generate_audio.py'
+      - 'scripts/tts_normalize.py'
+      - 'scripts/test_tts_normalize.py'
       - 'scripts/xfyun_tts.py'
       - 'scripts/r2_storage.py'
       - 'requirements.txt'
@@ -66,6 +68,10 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      - name: Test TTS normalization
+        if: steps.brief.outputs.generate == 'true'
+        run: python scripts/test_tts_normalize.py
+
       - name: Validate credentials
         if: steps.brief.outputs.generate == 'true'
         shell: bash
@@ -88,7 +94,8 @@ jobs:
           python scripts/generate_audio.py \
             --post "/tmp/${date}-daily-brief.md" \
             --audio-dir .tts-audio \
-            --manifest _data/audio.json
+            --manifest _data/audio.json \
+            --normalized-text-out ".tts-audio/${date}-normalized.txt"
 
       - name: Upload audio to R2
         if: steps.brief.outputs.generate == 'true'
