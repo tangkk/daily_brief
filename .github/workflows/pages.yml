@@ -4,6 +4,12 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+    inputs:
+      generate_audio:
+        description: Generate audio for the latest Daily Brief
+        required: false
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -26,45 +32,39 @@ jobs:
       R2_ENDPOINT: ${{ secrets.R2_ENDPOINT }}
       R2_BUCKET: ${{ secrets.R2_BUCKET || vars.R2_BUCKET }}
       R2_PUBLIC_BASE_URL: ${{ secrets.R2_PUBLIC_BASE_URL || vars.R2_PUBLIC_BASE_URL }}
-
     steps:
       - name: Checkout
         uses: actions/checkout@v6
-
-      - name: Set up Python
+      - name: Set up Python for audio
+        if: github.event_name == 'workflow_dispatch' && inputs.generate_audio
         uses: actions/setup-python@v6
         with:
           python-version: '3.12'
           cache: pip
-
       - name: Install TTS and R2 dependencies
+        if: github.event_name == 'workflow_dispatch' && inputs.generate_audio
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
-
       - name: Validate R2 configuration
+        if: github.event_name == 'workflow_dispatch' && inputs.generate_audio
         run: |
           test -n "$R2_ACCESS_KEY_ID" || { echo "Missing R2_ACCESS_KEY_ID"; exit 1; }
           test -n "$R2_SECRET_ACCESS_KEY" || { echo "Missing R2_SECRET_ACCESS_KEY"; exit 1; }
           test -n "$R2_ENDPOINT" || { echo "Missing R2_ENDPOINT"; exit 1; }
           test -n "$R2_BUCKET" || { echo "Missing R2_BUCKET"; exit 1; }
           test -n "$R2_PUBLIC_BASE_URL" || { echo "Missing R2_PUBLIC_BASE_URL"; exit 1; }
-          echo "R2 configuration present"
-
       - name: Migrate legacy repository audio to R2
-        id: migrate
+        if: github.event_name == 'workflow_dispatch' && inputs.generate_audio
         run: python scripts/r2_storage.py --audio-dir audio --manifest _data/audio.json
-
-      - name: Generate latest Daily Brief audio if missing from R2 manifest
-        id: tts
-        if: env.XFYUN_APPID != '' && env.XFYUN_API_KEY != '' && env.XFYUN_API_SECRET != ''
+      - name: Generate latest Daily Brief audio
+        if: github.event_name == 'workflow_dispatch' && inputs.generate_audio && env.XFYUN_APPID != '' && env.XFYUN_API_KEY != '' && env.XFYUN_API_SECRET != ''
         run: python scripts/generate_audio.py --audio-dir .tts-audio --manifest _data/audio.json
-
       - name: Upload generated audio to R2
-        id: r2_upload
+        if: github.event_name == 'workflow_dispatch' && inputs.generate_audio
         run: python scripts/r2_storage.py --audio-dir .tts-audio --manifest _data/audio.json
-
       - name: Persist R2 audio manifest
+        if: github.event_name == 'workflow_dispatch' && inputs.generate_audio
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -73,20 +73,16 @@ jobs:
             git commit -m "[skip ci] Update R2 audio manifest"
             git push
           fi
-
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
-
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
           source: ./
           destination: ./_site
-
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
-
   deploy:
     environment:
       name: github-pages
