@@ -11,6 +11,7 @@ from pathlib import Path
 
 import imageio_ffmpeg
 
+from tts_normalize import normalize_for_tts
 from xfyun_tts import DEFAULT_URL, DEFAULT_VOICE, run_once
 
 
@@ -26,6 +27,7 @@ def strip_front_matter(text: str) -> str:
 
 
 def markdown_to_spoken_text(markdown: str) -> str:
+    """Strip Markdown/rendering syntax, then apply deterministic TTS normalization."""
     text = strip_front_matter(markdown)
     text = re.sub(r"```.*?```", "", text, flags=re.S)
     text = re.sub(r"<[^>]+>", " ", text)
@@ -38,18 +40,13 @@ def markdown_to_spoken_text(markdown: str) -> str:
     text = re.sub(r"^\s*\d+\.\s+", "", text, flags=re.M)
     text = text.replace("**", "").replace("__", "").replace("`", "")
     text = html.unescape(text)
-    text = re.sub(r"(\d+(?:\.\d+)?)\s*bp\b", r"\1 个基点", text, flags=re.I)
-    text = re.sub(r"(\d+(?:\.\d+)?)\s*%", r"\1%", text)
-    text = re.sub(r"\b2Y\b", "两年期", text)
-    text = re.sub(r"\b10Y\b", "十年期", text)
-    text = re.sub(r"\b30Y\b", "三十年期", text)
 
     paragraphs = []
     for p in re.split(r"\n\s*\n", text):
         p = re.sub(r"\s+", " ", p).strip()
         if p:
             paragraphs.append(p)
-    return "\n\n".join(paragraphs)
+    return normalize_for_tts("\n\n".join(paragraphs))
 
 
 def split_long_piece(piece: str, limit: int):
@@ -162,11 +159,17 @@ def generate_one(post_path: Path, audio_dir: Path, manifest: dict, args):
         return False
 
     spoken = markdown_to_spoken_text(post_path.read_text(encoding="utf-8"))
+    if args.normalized_text_out:
+        preview = Path(args.normalized_text_out)
+        preview.parent.mkdir(parents=True, exist_ok=True)
+        preview.write_text(spoken + "\n", encoding="utf-8")
+        print(f"Normalized TTS text: {preview}")
+
     chunks = split_text(spoken, args.max_chars)
     if not chunks:
         raise RuntimeError(f"No speakable text found in {post_path}")
 
-    print(f"{date}: {len(spoken)} chars -> {len(chunks)} chunks")
+    print(f"{date}: {len(spoken)} normalized chars -> {len(chunks)} chunks")
     audio_dir.mkdir(parents=True, exist_ok=True)
 
     with tempfile.TemporaryDirectory(prefix=f"tts-{date}-") as td:
@@ -191,6 +194,7 @@ def main():
     ap.add_argument("--post", help="Generate one specific Markdown post")
     ap.add_argument("--all-missing", action="store_true")
     ap.add_argument("--force", action="store_true")
+    ap.add_argument("--normalized-text-out", help="Optional path to save the exact normalized text sent to TTS")
     ap.add_argument("--max-chars", type=int, default=MAX_CHARS)
     ap.add_argument("--url", default=DEFAULT_URL)
     ap.add_argument("--voice", default=DEFAULT_VOICE)
