@@ -11,14 +11,14 @@
 </head>
 <body>
   <main class="page">
-    <nav class="nav"><a href="{{ '/' | relative_url }}">← Archive</a><a href="{{ '/2026/08/20/' | relative_url }}">文字原版</a><a href="https://tangkk.github.io/">tangkk.github.io</a></nav>
+    <nav class="nav"><a href="{{ '/' | relative_url }}">← Archive</a><a href="{{ page.date | date: '/%Y/%m/%d/' | relative_url }}">文字原版</a><a href="https://tangkk.github.io/">tangkk.github.io</a></nav>
     <header>
       <p class="kicker">tangkk · Daily Brief · 口播版</p>
       <h1>{{ page.title }}</h1>
       <p class="date">{{ page.date | date: "%Y-%m-%d" }}</p>
       {% assign audio_date = page.date | date: "%Y-%m-%d" %}
       {% assign audio_url = site.data.audio[audio_date] %}
-      {% if audio_url %}<div class="audio-box"><p class="audio-label">🎧 收听口播版</p><audio controls preload="none" src="{{ audio_url }}">Your browser does not support audio playback.</audio></div>{% endif %}
+      {% if audio_date >= "2026-08-21" and audio_url %}<div class="audio-box"><p class="audio-label">🎧 收听口播版</p><audio controls preload="none" src="{{ audio_url }}">Your browser does not support audio playback.</audio></div>{% endif %}
     </header>
     <article>{{ content }}</article>
     <footer class="footer">Daily Brief · Spoken Edition</footer>
