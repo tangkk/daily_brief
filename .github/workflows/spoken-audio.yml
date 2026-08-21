@@ -5,7 +5,6 @@ on:
     branches: [main]
     paths:
       - 'spoken/*.md'
-      - '.github/workflows/spoken-audio.yml'
       - 'scripts/generate_audio.py'
       - 'scripts/tts_normalize.py'
       - 'scripts/test_tts_normalize.py'
@@ -16,6 +15,7 @@ on:
 
 permissions:
   contents: write
+  actions: write
 
 concurrency:
   group: spoken-audio
@@ -101,6 +101,7 @@ jobs:
         run: python scripts/r2_storage.py --audio-dir .tts-audio --manifest _data/audio.json
 
       - name: Persist audio manifest
+        id: publish
         if: steps.brief.outputs.generate == 'true'
         shell: bash
         run: |
@@ -110,6 +111,14 @@ jobs:
           if ! git diff --cached --quiet; then
             git commit -m "Update spoken audio manifest for ${{ steps.brief.outputs.date }}"
             git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
           else
             echo 'Audio already published; manifest unchanged'
+            echo "changed=false" >> "$GITHUB_OUTPUT"
           fi
+
+      - name: Deploy updated audio manifest to Pages
+        if: steps.publish.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run pages.yml --ref main
