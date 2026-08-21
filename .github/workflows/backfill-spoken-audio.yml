@@ -1,0 +1,156 @@
+name: Backfill Spoken Daily Brief Audio
+
+on:
+  workflow_dispatch:
+    inputs:
+      date:
+        description: 'Historical brief date (YYYY-MM-DD, 2026-08-15 through 2026-08-20)'
+        required: true
+        default: '2026-08-15'
+        type: string
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: spoken-audio-backfill
+  cancel-in-progress: false
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    env:
+      XFYUN_APPID: ${{ secrets.XFYUN_APPID }}
+      XFYUN_API_KEY: ${{ secrets.XFYUN_API_KEY }}
+      XFYUN_API_SECRET: ${{ secrets.XFYUN_API_SECRET }}
+      R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+      R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+      R2_ENDPOINT: ${{ secrets.R2_ENDPOINT }}
+      R2_BUCKET: ${{ secrets.R2_BUCKET || vars.R2_BUCKET }}
+      R2_PUBLIC_BASE_URL: ${{ secrets.R2_PUBLIC_BASE_URL || vars.R2_PUBLIC_BASE_URL }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Validate requested date and spoken script
+        id: brief
+        shell: bash
+        run: |
+          date='${{ inputs.date }}'
+          if [[ ! "$date" =~ ^2026-08-(15|16|17|18|19|20)$ ]]; then
+            echo "Backfill date must be one of 2026-08-15 through 2026-08-20" >&2
+            exit 1
+          fi
+          path="spoken/${date}.md"
+          test -f "$path" || { echo "Missing spoken script: $path" >&2; exit 1; }
+          echo "date=$date" >> "$GITHUB_OUTPUT"
+          echo "path=$path" >> "$GITHUB_OUTPUT"
+
+      - name: Test TTS normalization
+        run: python3 scripts/test_tts_normalize.py
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+          cache: pip
+
+      - name: Install TTS and R2 dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Validate credentials
+        shell: bash
+        run: |
+          test -n "$XFYUN_APPID" || { echo 'Missing XFYUN_APPID'; exit 1; }
+          test -n "$XFYUN_API_KEY" || { echo 'Missing XFYUN_API_KEY'; exit 1; }
+          test -n "$XFYUN_API_SECRET" || { echo 'Missing XFYUN_API_SECRET'; exit 1; }
+          test -n "$R2_ACCESS_KEY_ID" || { echo 'Missing R2_ACCESS_KEY_ID'; exit 1; }
+          test -n "$R2_SECRET_ACCESS_KEY" || { echo 'Missing R2_SECRET_ACCESS_KEY'; exit 1; }
+          test -n "$R2_ENDPOINT" || { echo 'Missing R2_ENDPOINT'; exit 1; }
+          test -n "$R2_BUCKET" || { echo 'Missing R2_BUCKET'; exit 1; }
+          test -n "$R2_PUBLIC_BASE_URL" || { echo 'Missing R2_PUBLIC_BASE_URL'; exit 1; }
+
+      - name: Generate historical audio
+        shell: bash
+        run: |
+          date='${{ steps.brief.outputs.date }}'
+          cp '${{ steps.brief.outputs.path }}' "/tmp/${date}-daily-brief.md"
+          python scripts/generate_audio.py \
+            --post "/tmp/${date}-daily-brief.md" \
+            --audio-dir .tts-backfill \
+            --manifest _data/audio.json \
+            --normalized-text-out ".tts-backfill/${date}-normalized.txt"
+          test -s ".tts-backfill/${date}-daily-brief.mp3"
+
+      - name: Upload versioned audio to R2 and update manifest
+        shell: bash
+        env:
+          BACKFILL_DATE: ${{ steps.brief.outputs.date }}
+          BACKFILL_VERSION: ${{ github.run_id }}-${{ github.run_attempt }}
+        run: |
+          python - <<'PY'
+          import json
+          import os
+          from pathlib import Path
+          import boto3
+
+          date = os.environ['BACKFILL_DATE']
+          version = os.environ['BACKFILL_VERSION']
+          year, month, _ = date.split('-')
+          local = Path(f'.tts-backfill/{date}-daily-brief.mp3')
+          key = f'audio/{year}/{month}/{date}-daily-brief-backfill-{version}.mp3'
+
+          client = boto3.client(
+              's3',
+              endpoint_url=os.environ['R2_ENDPOINT'].rstrip('/'),
+              aws_access_key_id=os.environ['R2_ACCESS_KEY_ID'],
+              aws_secret_access_key=os.environ['R2_SECRET_ACCESS_KEY'],
+              region_name='auto',
+          )
+          client.upload_file(
+              str(local),
+              os.environ['R2_BUCKET'],
+              key,
+              ExtraArgs={
+                  'ContentType': 'audio/mpeg',
+                  'CacheControl': 'public, max-age=31536000, immutable',
+              },
+          )
+          head = client.head_object(Bucket=os.environ['R2_BUCKET'], Key=key)
+          size = int(head.get('ContentLength', 0))
+          if size <= 0:
+              raise RuntimeError(f'Uploaded object has invalid size: {key}')
+
+          url = f"{os.environ['R2_PUBLIC_BASE_URL'].rstrip('/')}/{key}"
+          manifest_path = Path('_data/audio.json')
+          manifest = json.loads(manifest_path.read_text(encoding='utf-8'))
+          manifest[date] = url
+          manifest_path.write_text(
+              json.dumps(dict(sorted(manifest.items())), ensure_ascii=False, indent=2) + '\n',
+              encoding='utf-8',
+          )
+          print(f'Published {date}: {url} ({size} bytes)')
+          PY
+
+      - name: Persist historical audio manifest
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add _data/audio.json
+          if git diff --cached --quiet; then
+            echo 'No manifest change; refusing silent backfill'
+            exit 1
+          fi
+          git commit -m "Backfill spoken audio for ${{ steps.brief.outputs.date }}"
+          git push
+
+      - name: Deploy updated podcast and spoken page to Pages
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run pages.yml --ref main
