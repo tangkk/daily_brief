@@ -44,18 +44,18 @@ permalink: /podcast.xml
       <link>{{ site.url }}{{ site.baseurl }}{{ episode.url }}</link>
       <guid isPermaLink="false">lobster-daily-{{ episode_date }}</guid>
       <pubDate>{{ episode.date | date_to_rfc822 }}</pubDate>
-      <description><![CDATA[{{ episode.content | markdownify | strip_html | strip_newlines | truncate: 360 }}
+      <description><![CDATA[{{ episode.content | markdownify | strip_html | strip_newlines | truncate: 180 }}
 
 文字版阅读：
 {{ site.url }}{{ site.baseurl }}{{ episode.url }}
 
-内容由 AI 搜索、整理并生成，仅供信息参考；重要事实与投资决策请以原始来源及官方信息为准。]]></description>
-      <content:encoded><![CDATA[{{ episode.content | markdownify | strip_html | strip_newlines | truncate: 360 }}<p>文字版阅读：<a href="{{ site.url }}{{ site.baseurl }}{{ episode.url }}">{{ site.url }}{{ site.baseurl }}{{ episode.url }}</a></p><p>内容由 AI 搜索、整理并生成，仅供信息参考；重要事实与投资决策请以原始来源及官方信息为准。</p>]]></content:encoded>
+内容由 AI 搜索、整理并生成，仅供信息参考。]]></description>
+      <content:encoded><![CDATA[{{ episode.content | markdownify | strip_html | strip_newlines | truncate: 180 }}<p>文字版阅读：<a href="{{ site.url }}{{ site.baseurl }}{{ episode.url }}">{{ site.url }}{{ site.baseurl }}{{ episode.url }}</a></p><p>内容由 AI 搜索、整理并生成，仅供信息参考。</p>]]></content:encoded>
       <enclosure url="{{ audio_url | xml_escape }}" length="{{ audio_meta.length | default: 0 }}" type="audio/mpeg" />
       {% if audio_meta.duration %}<itunes:duration>{{ audio_meta.duration }}</itunes:duration>{% endif %}
       <itunes:episodeType>full</itunes:episodeType>
       <itunes:explicit>false</itunes:explicit>
-      <itunes:summary>{{ episode.content | markdownify | strip_html | strip_newlines | truncate: 360 | xml_escape }}</itunes:summary>
+      <itunes:summary>{{ episode.content | markdownify | strip_html | strip_newlines | truncate: 180 | xml_escape }}</itunes:summary>
     </item>
       {% endif %}
     {% endfor %}
