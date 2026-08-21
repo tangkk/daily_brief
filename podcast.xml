@@ -23,6 +23,7 @@ permalink: /podcast.xml
     {% for episode in spoken_pages %}
       {% assign episode_date = episode.date | date: "%Y-%m-%d" %}
       {% assign audio_url = site.data.audio[episode_date] %}
+      {% assign audio_meta = site.data.audio_meta[episode_date] %}
       {% if audio_url %}
     <item>
       <title>龙虾日报｜{{ episode.date | date: "%Y年%m月%d日" }}</title>
@@ -36,7 +37,7 @@ permalink: /podcast.xml
 
 内容由 AI 搜索、整理并生成，仅供信息参考；重要事实与投资决策请以原始来源及官方信息为准。]]></description>
       <content:encoded><![CDATA[{{ episode.content | markdownify }}<p>文字版阅读：<a href="{{ site.url }}{{ site.baseurl }}{{ episode.url }}">{{ site.url }}{{ site.baseurl }}{{ episode.url }}</a></p><p>内容由 AI 搜索、整理并生成，仅供信息参考；重要事实与投资决策请以原始来源及官方信息为准。</p>]]></content:encoded>
-      <enclosure url="{{ audio_url | xml_escape }}" length="0" type="audio/mpeg" />
+      <enclosure url="{{ audio_url | xml_escape }}" length="{{ audio_meta.length | default: 0 }}" type="audio/mpeg" />
       <itunes:episodeType>full</itunes:episodeType>
       <itunes:explicit>false</itunes:explicit>
       <itunes:summary>{{ episode.content | markdownify | strip_html | strip_newlines | truncate: 1000 | xml_escape }}</itunes:summary>
