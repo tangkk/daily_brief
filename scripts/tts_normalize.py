@@ -112,8 +112,8 @@ def _normalize_money(text: str) -> str:
 
 
 def _normalize_units(text: str) -> str:
-    text = re.sub(r"\b10Y\s*[–—-]\s*2Y\b", "十年期与两年期美债利差", text, flags=re.I)
-    text = re.sub(r"\b(2|5|10|20|30)Y\b", lambda m: f"{number_to_cn(m.group(1))}年期", text, flags=re.I)
+    text = re.sub(r"(?<![A-Za-z0-9])10Y\s*[–—-]\s*2Y(?![A-Za-z0-9])", "十年期与两年期美债利差", text, flags=re.I)
+    text = re.sub(r"(?<![A-Za-z0-9])(2|5|10|20|30)Y(?![A-Za-z0-9])", lambda m: f"{number_to_cn(m.group(1))}年期", text, flags=re.I)
     text = _normalize_ranges(text); text = _normalize_contextual_changes(text)
     text = re.sub(r"([+＋\-−])\s*(\d[\d,]*(?:\.\d+)?)\s*%", lambda m: f"{_signed_word(m.group(1))}百分之{number_to_cn(m.group(2))}", text)
     text = re.sub(r"([+＋\-−])\s*(\d[\d,]*(?:\.\d+)?)\s*(?:bp|bps)\b", lambda m: f"{_signed_word(m.group(1))}{number_to_cn(m.group(2))}个基点", text, flags=re.I)
