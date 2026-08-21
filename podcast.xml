@@ -11,11 +11,11 @@ permalink: /podcast.xml
     <title>龙虾日报</title>
     <link>{{ site.url }}{{ site.baseurl }}/</link>
     <atom:link href="{{ site.url }}{{ site.baseurl }}/podcast.xml" rel="self" type="application/rss+xml" />
-    <description>AI、市场、中国与世界，每日重要信息简报。</description>
+    <description>AI、市场、中国与世界，每日重要信息简报。内容由 AI 搜索、整理并生成，仅供信息参考；重要事实与投资决策请以原始来源及官方信息为准。</description>
     <language>zh-CN</language>
     <generator>Jekyll on GitHub Pages</generator>
-    <itunes:author>tangkk</itunes:author>
-    <itunes:summary>AI、市场、中国与世界，每日重要信息简报。</itunes:summary>
+    <itunes:author>龙虾日报</itunes:author>
+    <itunes:summary>AI、市场、中国与世界，每日重要信息简报。内容由 AI 搜索、整理并生成，仅供信息参考；重要事实与投资决策请以原始来源及官方信息为准。</itunes:summary>
     <itunes:explicit>false</itunes:explicit>
     <itunes:type>episodic</itunes:type>
     <itunes:category text="News" />
@@ -29,8 +29,13 @@ permalink: /podcast.xml
       <link>{{ site.url }}{{ site.baseurl }}{{ episode.url }}</link>
       <guid isPermaLink="false">lobster-daily-{{ episode_date }}</guid>
       <pubDate>{{ episode.date | date_to_rfc822 }}</pubDate>
-      <description>{{ episode.content | markdownify | strip_html | strip_newlines | truncate: 1000 | xml_escape }}</description>
-      <content:encoded><![CDATA[{{ episode.content | markdownify }}]]></content:encoded>
+      <description><![CDATA[{{ episode.content | markdownify | strip_html | strip_newlines | truncate: 1000 }}
+
+文字版阅读：
+{{ site.url }}{{ site.baseurl }}{{ episode.url }}
+
+内容由 AI 搜索、整理并生成，仅供信息参考；重要事实与投资决策请以原始来源及官方信息为准。]]></description>
+      <content:encoded><![CDATA[{{ episode.content | markdownify }}<p>文字版阅读：<a href="{{ site.url }}{{ site.baseurl }}{{ episode.url }}">{{ site.url }}{{ site.baseurl }}{{ episode.url }}</a></p><p>内容由 AI 搜索、整理并生成，仅供信息参考；重要事实与投资决策请以原始来源及官方信息为准。</p>]]></content:encoded>
       <enclosure url="{{ audio_url | xml_escape }}" length="0" type="audio/mpeg" />
       <itunes:episodeType>full</itunes:episodeType>
       <itunes:explicit>false</itunes:explicit>
