@@ -75,6 +75,24 @@ jobs:
           test -n "$R2_BUCKET" || { echo 'Missing R2_BUCKET'; exit 1; }
           test -n "$R2_PUBLIC_BASE_URL" || { echo 'Missing R2_PUBLIC_BASE_URL'; exit 1; }
 
+      - name: Prepare temporary manifest for forced regeneration
+        shell: bash
+        run: |
+          date='${{ steps.brief.outputs.date }}'
+          cp _data/audio.json /tmp/audio-backfill.json
+          python - <<'PY'
+          import json
+          import os
+          from pathlib import Path
+
+          date = '${{ steps.brief.outputs.date }}'
+          path = Path('/tmp/audio-backfill.json')
+          data = json.loads(path.read_text(encoding='utf-8'))
+          data.pop(date, None)
+          path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+          print(f'Forced regeneration enabled for {date}')
+          PY
+
       - name: Generate historical audio
         shell: bash
         run: |
@@ -83,7 +101,7 @@ jobs:
           python scripts/generate_audio.py \
             --post "/tmp/${date}-daily-brief.md" \
             --audio-dir .tts-backfill \
-            --manifest _data/audio.json \
+            --manifest /tmp/audio-backfill.json \
             --normalized-text-out ".tts-backfill/${date}-normalized.txt"
           test -s ".tts-backfill/${date}-daily-brief.mp3"
 
