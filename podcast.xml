@@ -18,6 +18,12 @@ permalink: /podcast.xml
     <itunes:summary>AI、市场、中国与世界，每日重要信息简报。内容由 AI 搜索、整理并生成，仅供信息参考；重要事实与投资决策请以原始来源及官方信息为准。</itunes:summary>
     <itunes:explicit>false</itunes:explicit>
     <itunes:type>episodic</itunes:type>
+    <itunes:image href="{{ site.url }}{{ site.baseurl }}/podcast-cover.jpg" />
+    <image>
+      <url>{{ site.url }}{{ site.baseurl }}/podcast-cover.jpg</url>
+      <title>龙虾日报</title>
+      <link>{{ site.url }}{{ site.baseurl }}/</link>
+    </image>
     <itunes:category text="News" />
     {% assign spoken_pages = site.pages | where: "layout", "spoken_brief" | sort: "date" | reverse %}
     {% for episode in spoken_pages %}
