@@ -14,10 +14,18 @@ permalink: /podcast.xml
     <description>AI、市场、中国与世界，每日重要信息简报。内容由 AI 搜索、整理并生成，仅供信息参考；重要事实与投资决策请以原始来源及官方信息为准。</description>
     <language>zh-CN</language>
     <generator>Jekyll on GitHub Pages</generator>
+    <managingEditor>dengjunqi06323011@gmail.com (龙虾日报)</managingEditor>
+    <webMaster>dengjunqi06323011@gmail.com (龙虾日报)</webMaster>
+    <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
+    <ttl>60</ttl>
     <itunes:author>龙虾日报</itunes:author>
     <itunes:summary>AI、市场、中国与世界，每日重要信息简报。内容由 AI 搜索、整理并生成，仅供信息参考；重要事实与投资决策请以原始来源及官方信息为准。</itunes:summary>
     <itunes:explicit>false</itunes:explicit>
     <itunes:type>episodic</itunes:type>
+    <itunes:owner>
+      <itunes:name>龙虾日报</itunes:name>
+      <itunes:email>dengjunqi06323011@gmail.com</itunes:email>
+    </itunes:owner>
     <itunes:image href="{{ site.url }}{{ site.baseurl }}/podcast-cover.jpg" />
     <image>
       <url>{{ site.url }}{{ site.baseurl }}/podcast-cover.jpg</url>
@@ -36,17 +44,18 @@ permalink: /podcast.xml
       <link>{{ site.url }}{{ site.baseurl }}{{ episode.url }}</link>
       <guid isPermaLink="false">lobster-daily-{{ episode_date }}</guid>
       <pubDate>{{ episode.date | date_to_rfc822 }}</pubDate>
-      <description><![CDATA[{{ episode.content | markdownify | strip_html | strip_newlines | truncate: 1000 }}
+      <description><![CDATA[{{ episode.content | markdownify | strip_html | strip_newlines | truncate: 360 }}
 
 文字版阅读：
 {{ site.url }}{{ site.baseurl }}{{ episode.url }}
 
 内容由 AI 搜索、整理并生成，仅供信息参考；重要事实与投资决策请以原始来源及官方信息为准。]]></description>
-      <content:encoded><![CDATA[{{ episode.content | markdownify }}<p>文字版阅读：<a href="{{ site.url }}{{ site.baseurl }}{{ episode.url }}">{{ site.url }}{{ site.baseurl }}{{ episode.url }}</a></p><p>内容由 AI 搜索、整理并生成，仅供信息参考；重要事实与投资决策请以原始来源及官方信息为准。</p>]]></content:encoded>
+      <content:encoded><![CDATA[{{ episode.content | markdownify | strip_html | strip_newlines | truncate: 360 }}<p>文字版阅读：<a href="{{ site.url }}{{ site.baseurl }}{{ episode.url }}">{{ site.url }}{{ site.baseurl }}{{ episode.url }}</a></p><p>内容由 AI 搜索、整理并生成，仅供信息参考；重要事实与投资决策请以原始来源及官方信息为准。</p>]]></content:encoded>
       <enclosure url="{{ audio_url | xml_escape }}" length="{{ audio_meta.length | default: 0 }}" type="audio/mpeg" />
+      {% if audio_meta.duration %}<itunes:duration>{{ audio_meta.duration }}</itunes:duration>{% endif %}
       <itunes:episodeType>full</itunes:episodeType>
       <itunes:explicit>false</itunes:explicit>
-      <itunes:summary>{{ episode.content | markdownify | strip_html | strip_newlines | truncate: 1000 | xml_escape }}</itunes:summary>
+      <itunes:summary>{{ episode.content | markdownify | strip_html | strip_newlines | truncate: 360 | xml_escape }}</itunes:summary>
     </item>
       {% endif %}
     {% endfor %}
