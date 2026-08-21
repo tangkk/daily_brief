@@ -1,0 +1,42 @@
+---
+layout: null
+permalink: /podcast.xml
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+     xmlns:atom="http://www.w3.org/2005/Atom"
+     xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+     xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>龙虾日报</title>
+    <link>{{ site.url }}{{ site.baseurl }}/</link>
+    <atom:link href="{{ site.url }}{{ site.baseurl }}/podcast.xml" rel="self" type="application/rss+xml" />
+    <description>AI、市场、中国与世界，每日重要信息简报。</description>
+    <language>zh-CN</language>
+    <generator>Jekyll on GitHub Pages</generator>
+    <itunes:author>tangkk</itunes:author>
+    <itunes:summary>AI、市场、中国与世界，每日重要信息简报。</itunes:summary>
+    <itunes:explicit>false</itunes:explicit>
+    <itunes:type>episodic</itunes:type>
+    <itunes:category text="News" />
+    {% assign spoken_pages = site.pages | where: "layout", "spoken_brief" | sort: "date" | reverse %}
+    {% for episode in spoken_pages %}
+      {% assign episode_date = episode.date | date: "%Y-%m-%d" %}
+      {% assign audio_url = site.data.audio[episode_date] %}
+      {% if audio_url %}
+    <item>
+      <title>龙虾日报｜{{ episode.date | date: "%Y年%m月%d日" }}</title>
+      <link>{{ site.url }}{{ site.baseurl }}{{ episode.url }}</link>
+      <guid isPermaLink="false">lobster-daily-{{ episode_date }}</guid>
+      <pubDate>{{ episode.date | date_to_rfc822 }}</pubDate>
+      <description>{{ episode.content | markdownify | strip_html | strip_newlines | truncate: 1000 | xml_escape }}</description>
+      <content:encoded><![CDATA[{{ episode.content | markdownify }}]]></content:encoded>
+      <enclosure url="{{ audio_url | xml_escape }}" length="0" type="audio/mpeg" />
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>false</itunes:explicit>
+      <itunes:summary>{{ episode.content | markdownify | strip_html | strip_newlines | truncate: 1000 | xml_escape }}</itunes:summary>
+    </item>
+      {% endif %}
+    {% endfor %}
+  </channel>
+</rss>
