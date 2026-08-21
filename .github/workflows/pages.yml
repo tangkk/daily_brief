@@ -21,6 +21,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v6
 
+      - name: Build podcast audio metadata
+        run: python3 scripts/build_audio_meta.py
+
       - name: Generate podcast cover
         shell: bash
         run: |
