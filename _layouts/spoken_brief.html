@@ -18,7 +18,7 @@
       <p class="date">{{ page.date | date: "%Y-%m-%d" }}</p>
       {% assign audio_date = page.date | date: "%Y-%m-%d" %}
       {% assign audio_url = site.data.audio[audio_date] %}
-      {% if audio_date >= "2026-08-21" and audio_url %}<div class="audio-box"><p class="audio-label">🎧 收听口播版</p><audio controls preload="none" src="{{ audio_url }}">Your browser does not support audio playback.</audio></div>{% endif %}
+      {% if audio_url %}<div class="audio-box"><p class="audio-label">🎧 收听口播版</p><audio controls preload="none" src="{{ audio_url }}">Your browser does not support audio playback.</audio></div>{% endif %}
     </header>
     <article>{{ content }}</article>
     <footer class="footer">Daily Brief · Spoken Edition</footer>
