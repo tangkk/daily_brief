@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - 'spoken/*.md'
+      - '.github/workflows/spoken-audio.yml'
       - 'scripts/generate_audio.py'
       - 'scripts/tts_normalize.py'
       - 'scripts/test_tts_normalize.py'
