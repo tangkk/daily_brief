@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 import argparse
+import hashlib
 import html
 import json
 import re
@@ -47,6 +48,10 @@ def markdown_to_spoken_text(markdown: str) -> str:
         if p:
             paragraphs.append(p)
     return normalize_for_tts("\n\n".join(paragraphs))
+
+
+def source_sha256(spoken: str) -> str:
+    return hashlib.sha256(spoken.encode("utf-8")).hexdigest()
 
 
 def split_long_piece(piece: str, limit: int):
@@ -147,18 +152,26 @@ def load_manifest(path: Path) -> dict:
     return json.loads(path.read_text(encoding="utf-8"))
 
 
-def generate_one(post_path: Path, audio_dir: Path, manifest: dict, args):
+def generate_one(post_path: Path, audio_dir: Path, manifest: dict, metadata: dict, args):
     date = post_date(post_path)
-    if date in manifest and not args.force:
-        print(f"SKIP {date}: audio already published at {manifest[date]}")
+    spoken = markdown_to_spoken_text(post_path.read_text(encoding="utf-8"))
+    digest = source_sha256(spoken)
+    published_digest = metadata.get(date, {}).get("source_sha256")
+
+    if date in manifest and published_digest == digest and not args.force:
+        print(f"SKIP {date}: published audio already matches spoken script ({digest[:12]})")
         return False
+    if date in manifest and not args.force:
+        if published_digest:
+            print(f"REGENERATE {date}: spoken script changed ({published_digest[:12]} -> {digest[:12]})")
+        else:
+            print(f"REGENERATE {date}: published audio has no source hash; refreshing once")
 
     final_path = audio_dir / f"{date}-daily-brief.mp3"
     if final_path.exists() and not args.force:
         print(f"SKIP {date}: local {final_path} already exists")
         return False
 
-    spoken = markdown_to_spoken_text(post_path.read_text(encoding="utf-8"))
     if args.normalized_text_out:
         preview = Path(args.normalized_text_out)
         preview.parent.mkdir(parents=True, exist_ok=True)
@@ -182,7 +195,9 @@ def generate_one(post_path: Path, audio_dir: Path, manifest: dict, args):
             parts.append(part)
         concat_mp3(parts, final_path)
 
-    print(f"OK: {final_path} ({final_path.stat().st_size} bytes)")
+    hash_path = final_path.with_suffix(".sha256")
+    hash_path.write_text(digest + "\n", encoding="utf-8")
+    print(f"OK: {final_path} ({final_path.stat().st_size} bytes, source {digest[:12]})")
     return True
 
 
@@ -191,6 +206,7 @@ def main():
     ap.add_argument("--posts-dir", default="_posts")
     ap.add_argument("--audio-dir", default=".tts-audio")
     ap.add_argument("--manifest", default="_data/audio.json")
+    ap.add_argument("--metadata", default="_data/audio_meta.json")
     ap.add_argument("--post", help="Generate one specific Markdown post")
     ap.add_argument("--all-missing", action="store_true")
     ap.add_argument("--force", action="store_true")
@@ -206,6 +222,7 @@ def main():
     posts_dir = Path(args.posts_dir)
     audio_dir = Path(args.audio_dir)
     manifest = load_manifest(Path(args.manifest))
+    metadata = load_manifest(Path(args.metadata))
     if args.post:
         posts = [Path(args.post)]
     else:
@@ -219,7 +236,7 @@ def main():
 
     generated = 0
     for post in posts:
-        if generate_one(post, audio_dir, manifest, args):
+        if generate_one(post, audio_dir, manifest, metadata, args):
             generated += 1
     print(f"Generated {generated} audio file(s)")
 
