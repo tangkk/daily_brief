@@ -65,7 +65,6 @@ def upload_file(client, bucket: str, path: Path, date: str):
             "CacheControl": "public, max-age=31536000, immutable",
         },
     )
-    # Verify the object exists before recording it in the manifests.
     head = client.head_object(Bucket=bucket, Key=key)
     size = int(head.get("ContentLength", 0))
     if size <= 0:
@@ -91,7 +90,14 @@ def sync_local(audio_dir: Path, manifest_path: Path, metadata_path: Path):
         if manifest.get(date) != url:
             manifest[date] = url
             changed = True
+
         meta = {"length": size, "type": "audio/mpeg"}
+        hash_path = path.with_suffix(".sha256")
+        if hash_path.exists():
+            source_sha256 = hash_path.read_text(encoding="utf-8").strip()
+            if source_sha256:
+                meta["source_sha256"] = source_sha256
+
         if metadata.get(date) != meta:
             metadata[date] = meta
             changed = True
