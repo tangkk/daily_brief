@@ -111,7 +111,8 @@ jobs:
           git add _data/audio.json _data/audio_meta.json
           if ! git diff --cached --quiet; then
             git commit -m "Update spoken audio manifest for ${{ steps.brief.outputs.date }}"
-            git push
+            git pull --rebase origin main
+            git push origin main
             echo "changed=true" >> "$GITHUB_OUTPUT"
           else
             echo 'Audio already matches spoken script; manifest unchanged'
