@@ -15,5 +15,10 @@
     "length": 3156284,
     "type": "audio/mpeg",
     "source_sha256": "ada06abd77bb6238fb82d972c200a5f9f2f3dc55da3e6ffc1e13553cb0dfabd3"
+  },
+  "2026-08-26": {
+    "length": 3099548,
+    "type": "audio/mpeg",
+    "source_sha256": "f8d8de0b2a68fbdae1e5978fa68a552445d8dd63408980d78d007bdf6c34be08"
   }
 }
