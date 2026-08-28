@@ -3,9 +3,7 @@ name: Notify Workflow Completion
 on:
   workflow_run:
     workflows:
-      - Backfill Spoken Daily Brief Audio
       - Deploy Daily Brief to Pages
-      - Generate Spoken Daily Brief Audio
     types: [completed]
 
 permissions:
