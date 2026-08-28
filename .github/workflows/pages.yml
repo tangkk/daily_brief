@@ -21,27 +21,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v6
 
-      - name: Install podcast build dependencies
-        shell: bash
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y ffmpeg fonts-noto-cjk
-          python3 -m pip install --quiet pillow
-
-      - name: Build podcast audio metadata
-        run: python3 scripts/build_audio_meta.py
-
-      - name: Generate podcast cover
-        shell: bash
-        run: |
-          python3 scripts/generate_podcast_cover.py
-          python3 - <<'PY'
-          from PIL import Image
-          im = Image.open('podcast-cover.jpg')
-          assert im.size == (3000, 3000), im.size
-          print('podcast cover:', im.size)
-          PY
-
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
