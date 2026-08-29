@@ -24,20 +24,23 @@ layout: null
   <main class="container">
     <section>
       <h2>最新文章</h2>
-      <ul class="post-list">
+      <ul class="post-list post-list--daily">
         {% assign daily_posts = site.posts | where: "layout", "daily_brief" %}
+        {% assign credit_posts = site.posts | where: "layout", "ai_credit_cycle" %}
         {% for post in daily_posts %}
           {% assign post_date = post.date | date: "%Y-%m-%d" %}
+          {% assign credit_for_date = nil %}
+          {% for credit in credit_posts %}
+            {% assign credit_date = credit.date | date: "%Y-%m-%d" %}
+            {% if credit_date == post_date %}
+              {% assign credit_for_date = credit %}
+              {% break %}
+            {% endif %}
+          {% endfor %}
           <li>
             <span class="date">{{ post_date }}</span>
-            <a href="{{ post.url | relative_url }}">Daily Brief</a>
-            {% assign credit_posts = site.posts | where: "layout", "ai_credit_cycle" %}
-            {% for credit in credit_posts %}
-              {% assign credit_date = credit.date | date: "%Y-%m-%d" %}
-              {% if credit_date == post_date %}
-                <span aria-hidden="true"> · </span><a href="{{ credit.url | relative_url }}">AI 信用周期</a>
-              {% endif %}
-            {% endfor %}
+            <span class="post-col post-col--daily"><a href="{{ post.url | relative_url }}">Daily Brief</a></span>
+            <span class="post-col post-col--credit">{% if credit_for_date %}<a href="{{ credit_for_date.url | relative_url }}">AI 信用周期</a>{% endif %}</span>
           </li>
         {% else %}
           <li>还没有文章，先发布第一篇吧。</li>
