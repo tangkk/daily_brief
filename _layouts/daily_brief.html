@@ -25,10 +25,6 @@
 
       {% assign audio_date = page.date | date: "%Y-%m-%d" %}
       {% assign audio_url = site.data.audio[audio_date] %}
-      {% if audio_url == nil and audio_date >= "2026-08-21" %}
-        {% assign ym = page.date | date: "%Y/%m" %}
-        {% capture audio_url %}https://pub-bce89faf93be49c0b8db7550b53ffbbc.r2.dev/audio/{{ ym }}/{{ audio_date }}-daily-brief.mp3{% endcapture %}
-      {% endif %}
       {% if audio_url %}
       <div class="audio">
         <p class="audio-label">🎧 龙虾日报音频</p>
