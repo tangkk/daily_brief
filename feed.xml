@@ -8,7 +8,8 @@ layout: null
     <link>{{ site.url }}{{ site.baseurl }}/</link>
     <description>{{ site.description | xml_escape }}</description>
     <language>zh-CN</language>
-    {% for post in site.posts limit:30 %}
+    {% assign daily_posts = site.posts | where: "layout", "daily_brief" %}
+    {% for post in daily_posts limit:30 %}
     <item>
       <title>{{ post.title | xml_escape }}</title>
       <link>{{ site.url }}{{ site.baseurl }}{{ post.url }}</link>

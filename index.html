@@ -25,10 +25,19 @@ layout: null
     <section>
       <h2>最新文章</h2>
       <ul class="post-list">
-        {% for post in site.posts %}
+        {% assign daily_posts = site.posts | where: "layout", "daily_brief" %}
+        {% for post in daily_posts %}
+          {% assign post_date = post.date | date: "%Y-%m-%d" %}
           <li>
-            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-            <span class="date">{{ post.date | date: "%Y-%m-%d" }}</span>
+            <span class="date">{{ post_date }}</span>
+            <a href="{{ post.url | relative_url }}">Daily Brief</a>
+            {% assign credit_posts = site.posts | where: "layout", "ai_credit_cycle" %}
+            {% for credit in credit_posts %}
+              {% assign credit_date = credit.date | date: "%Y-%m-%d" %}
+              {% if credit_date == post_date %}
+                <span aria-hidden="true"> · </span><a href="{{ credit.url | relative_url }}">AI 信用周期</a>
+              {% endif %}
+            {% endfor %}
           </li>
         {% else %}
           <li>还没有文章，先发布第一篇吧。</li>

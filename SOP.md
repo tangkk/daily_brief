@@ -1,38 +1,41 @@
 # Daily Brief SOP
 
-Daily Brief is split into two independent publishing layers.
+The site contains two written content streams with different publishing rules.
 
-## 1. Written edition — `tangkk/daily_brief`
-
-This repository owns the canonical written Daily Brief, written RSS/site, and a lightweight playback link to the already-published podcast audio in R2.
+## 1. Daily Brief written edition — `tangkk/daily_brief`
 
 - Canonical posts: `_posts/YYYY-MM-DD-daily-brief.md`
+- Layout: `daily_brief`
 - Public site: https://tangkk.github.io/daily_brief/
 - Written RSS: https://tangkk.github.io/daily_brief/feed.xml
-- Written pages may contain an HTML audio player, but they do not generate, upload, replace, or own audio.
-- Historical R2 URLs may be kept in `_data/audio.json` only as written-site playback references; dates from 2026-08-21 onward use the shared deterministic R2 path when no explicit historical mapping is needed.
-- No spoken scripts, TTS generation, podcast RSS, podcast artwork, R2 upload code, audio replacement logic, or podcast workflows belong in this repository.
+- The written site may play the already-published podcast MP3 only from an explicit `_data/audio.json` mapping.
+- It never generates TTS, uploads audio, owns podcast metadata, or guesses an R2 URL.
 
-The user-visible Daily Brief and the GitHub post must contain the same substantive prose. Only citation/rendering syntax may differ.
+Daily Brief publishing order is mandatory:
+1. Research and compose the canonical written Daily Brief.
+2. Create the spoken derivative in `tangkk/lobster-daily-podcast`.
+3. Generate TTS and publish the final MP3 to R2.
+4. Update and verify the Podcast RSS with the real enclosure URL, byte length, and duration.
+5. Only after Podcast publication succeeds, publish the same canonical written Brief here and update `_data/audio.json` to the exact final enclosure URL.
+6. Verify GitHub Pages and the written player.
 
-## 2. Podcast edition — `tangkk/lobster-daily-podcast`
+If Podcast publication fails, do not publish that day's Daily Brief written post. Re-runs must be idempotent.
 
-All podcast-specific assets, audio ownership, metadata and workflow live in the dedicated podcast repository.
+## 2. AI 信用周期 — written-only stream
 
-- Podcast RSS: https://tangkk.github.io/lobster-daily-podcast/feed.xml
-- Podcast cover: `cover.jpg`
-- Spoken canonical scripts: `episodes/*.txt`
-- TTS preview / publish / audio replacement / notification workflows live there.
-- The podcast audio in R2 is the single audio source of truth; the written site points to that same R2 object rather than creating a second copy.
+AI 信用周期 is an independent written-only research stream hosted in this same repository.
 
-The spoken script is a derivative of the written Daily Brief and may condense, reorder, and simplify for listening while preserving the day's important facts and analytical conclusions.
+- Canonical posts: `_posts/YYYY-MM-DD-ai-credit-cycle.md`
+- Layout: `ai_credit_cycle`
+- No spoken script, TTS, MP3, R2 upload, Podcast RSS item, or audio player.
+- It does not depend on Daily Brief Podcast publication and may be published independently.
+- Research runs daily, but publish a dated article only when there is a meaningful new development, important case, risk signal, or structural change. Do not manufacture a post merely to fill every date.
+- If no AI 信用周期 article exists for a date, the home page shows only Daily Brief for that date.
+- If one exists, the home page shows `Daily Brief · AI 信用周期` beside the same date.
+- The existing Daily Brief RSS remains Daily-Brief-only and excludes AI 信用周期 posts.
 
-## Publishing order
+The AI 信用周期 scope covers Nvidia as a major but non-exclusive node, together with OpenAI, Anthropic, hyperscalers, neoclouds, data-center/project finance, private credit, GPU leasing/residual values, real end demand, AI CapEx economics, and hard-cash enterprise ROI.
 
-1. Research and produce the canonical written Daily Brief.
-2. Publish the exact substantive written version to `tangkk/daily_brief`.
-3. Create the spoken derivative.
-4. Put all spoken/podcast artifacts and audio operations in `tangkk/lobster-daily-podcast` only.
-5. Once the podcast audio exists in R2, the written page plays that exact same R2 file; never upload a duplicate audio copy for the written site.
+## Repository boundary
 
-Keep the publishing layers separate while sharing the final R2 audio object for playback.
+`tangkk/daily_brief` remains a written-site repository. Podcast-specific assets and workflows belong only in `tangkk/lobster-daily-podcast`.
