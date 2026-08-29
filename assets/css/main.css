@@ -7,6 +7,10 @@ a { text-decoration: none; }
 a:hover { text-decoration: underline; }
 .post-list { list-style: none; padding: 0; }
 .post-list li { display: flex; justify-content: space-between; gap: 12px; padding: 10px 0; border-bottom: 1px dashed #ccc; }
+.post-list--daily li { display: grid; grid-template-columns: 110px minmax(0, 1fr) minmax(0, 1fr); align-items: center; column-gap: 18px; }
+.post-list--daily .post-col { min-width: 0; }
+.post-list--daily .post-col--daily { grid-column: 2; }
+.post-list--daily .post-col--credit { grid-column: 3; }
 .date, .meta { color: #888; font-size: 0.9rem; }
 .post h1 { margin-bottom: 8px; }
 .content h2, .content h3 { margin-top: 28px; }
@@ -14,3 +18,7 @@ a:hover { text-decoration: underline; }
 .audio { margin: 18px 0 24px; padding: 14px 16px; border: 1px solid #ddd; border-radius: 12px; }
 .audio-label { margin: 0 0 8px; color: #888; font-size: 0.9rem; }
 .audio audio { display: block; width: 100%; }
+@media (max-width: 560px) {
+  .post-list--daily li { grid-template-columns: 94px minmax(0, 1fr) minmax(0, 1fr); column-gap: 10px; }
+  .post-list--daily { font-size: 0.95rem; }
+}
