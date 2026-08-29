@@ -1,0 +1,22 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>AI 信用周期</title>
+    <link>{{ site.url }}{{ site.baseurl }}/</link>
+    <description>AI 信用周期：追踪 AI 基础设施融资、真实需求、Hard Cash ROI、CapEx 与现金流。</description>
+    <language>zh-CN</language>
+    {% assign credit_posts = site.posts | where: "layout", "ai_credit_cycle" %}
+    {% for post in credit_posts limit:30 %}
+    <item>
+      <title>{{ post.title | xml_escape }}</title>
+      <link>{{ site.url }}{{ site.baseurl }}{{ post.url }}</link>
+      <guid isPermaLink="true">{{ site.url }}{{ site.baseurl }}{{ post.url }}</guid>
+      <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
+      <description>{{ post.content | markdownify | xml_escape }}</description>
+    </item>
+    {% endfor %}
+  </channel>
+</rss>
