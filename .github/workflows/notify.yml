@@ -3,6 +3,7 @@ name: Notify Workflow Completion
 on:
   workflow_run:
     workflows:
+      - Publish Daily After Podcast
       - Deploy Daily Brief to Pages
     types: [completed]
 
