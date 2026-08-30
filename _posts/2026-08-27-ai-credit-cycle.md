@@ -2,6 +2,7 @@
 layout: ai_credit_cycle
 title: "AI 信用周期 · 2026-08-27"
 date: 2026-08-27 09:00:00 +0800
+permalink: /ai-credit-cycle/2026/08/27/
 ---
 
 ## Cycle Signal
