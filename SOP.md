@@ -14,13 +14,15 @@ The site contains two written content streams with different publishing rules.
 
 Daily Brief publishing order is mandatory:
 1. Research and compose the canonical written Daily Brief.
-2. Save that exact edition to `_drafts/YYYY-MM-DD-daily-brief.md`. Jekyll does not publish `_drafts/` in the normal Pages build.
+2. Save that exact edition to `_drafts/YYYY-MM-DD-daily-brief.md`. This is the release staging input, not the public post path.
 3. Create and commit the spoken derivative to `tangkk/lobster-daily-podcast/episodes/`.
-4. The Podcast repository's `Auto Publish Daily` workflow generates TTS, publishes the final MP3 to R2, and upserts/verifies Podcast RSS.
-5. Only after Podcast success, that same workflow checks out this repository using its cross-repo token, moves the staged draft to `_posts/`, and writes the exact final Podcast enclosure URL into `_data/audio.json`.
-6. This repository's normal Pages workflow deploys the change. The Podcast workflow then verifies the public Daily Brief page and exact audio URL before declaring success.
+4. The Podcast repository's `Auto Publish Daily` workflow generates TTS, publishes/replaces the final MP3 in R2, and upserts/verifies Podcast RSS.
+5. This repository's `Publish Daily After Podcast` workflow starts from the staged draft and waits for the matching dated Podcast item to appear in the committed Podcast `feed.xml` with a real enclosure URL, byte length, and duration.
+6. Only then does it move the staged draft to `_posts/`, write the exact Podcast enclosure URL into `_data/audio.json`, build/deploy GitHub Pages itself, and verify that the live Daily Brief page contains both the correct Daily Brief title and exact final audio URL.
 
-If Podcast publication fails, the dated written Brief must remain only in `_drafts/`. If Podcast succeeds but this repository write/deploy fails, keep the Podcast episode and retry the written step by rerunning the same Daily episode. Re-runs must remain idempotent.
+The two repositories do not require a cross-repository write token. They synchronize through the committed Podcast RSS. If Podcast publication fails, the dated written Brief remains staged and unpublished. If Podcast succeeds but the written workflow fails, keep the Podcast episode and rerun `Publish Daily After Podcast` for that date. Re-runs must remain idempotent.
+
+`future: true` is intentionally enabled in `_config.yml` so a same-day Daily Brief whose canonical front matter still says `08:00:00 +0800` can be deployed immediately after an earlier scheduled run; `_drafts/` remains unpublished unless explicitly moved to `_posts/`.
 
 ## 2. AI 信用周期 — written-only stream
 
