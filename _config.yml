@@ -5,5 +5,6 @@ baseurl: "/daily_brief"
 timezone: Asia/Shanghai
 markdown: kramdown
 permalink: /:year/:month/:day/
+future: true
 exclude:
   - README.md
