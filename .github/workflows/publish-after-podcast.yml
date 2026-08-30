@@ -1,0 +1,134 @@
+name: Publish Daily After Podcast
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '_drafts/*-daily-brief.md'
+  workflow_dispatch:
+    inputs:
+      date:
+        description: Asia/Shanghai date, YYYY-MM-DD
+        required: true
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    outputs:
+      date: ${{ steps.resolve.outputs.date }}
+      enclosure_url: ${{ steps.release.outputs.enclosure_url }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 2
+
+      - name: Resolve staged date
+        id: resolve
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            DATE="${{ inputs.date }}"
+          else
+            mapfile -t FILES < <(git diff-tree --no-commit-id --name-only -r "$GITHUB_SHA" | grep -E '^_drafts/[0-9]{4}-[0-9]{2}-[0-9]{2}-daily-brief\.md$' || true)
+            test "${#FILES[@]}" -eq 1 || { echo "Expected exactly one staged Daily Brief, found ${#FILES[@]}"; exit 1; }
+            BASE=$(basename "${FILES[0]}")
+            DATE="${BASE:0:10}"
+          fi
+          [[ "$DATE" =~ ^[0-9]{4}-[0-9]{2}-[0-9]{2}$ ]] || { echo "Bad date: $DATE"; exit 1; }
+          test -f "_drafts/${DATE}-daily-brief.md" || test -f "_posts/${DATE}-daily-brief.md"
+          echo "date=$DATE" >> "$GITHUB_OUTPUT"
+
+      - name: Wait for verified Podcast RSS item
+        id: release
+        env:
+          DATE: ${{ steps.resolve.outputs.date }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          RAW_FEED="https://raw.githubusercontent.com/tangkk/lobster-daily-podcast/main/feed.xml"
+          META=""
+          for n in $(seq 1 100); do
+            if curl -fsSL --max-time 20 "${RAW_FEED}?run=${GITHUB_RUN_ID}&n=${n}" -o /tmp/podcast-feed.xml; then
+              if META=$(python scripts/publish_staged_daily.py --date "$DATE" --feed /tmp/podcast-feed.xml --check-only 2>/dev/null); then
+                break
+              fi
+            fi
+            sleep 12
+          done
+          test -n "$META" || { echo "Podcast RSS item for $DATE did not appear in time"; exit 1; }
+          URL=$(printf '%s' "$META" | jq -r '.url')
+          test -n "$URL" && test "$URL" != "null"
+          curl -fsSL --range 0-0 --max-time 20 "$URL" -o /dev/null
+          echo "enclosure_url=$URL" >> "$GITHUB_OUTPUT"
+          echo "$META"
+
+      - name: Move staged Brief to public post and map exact audio
+        env:
+          DATE: ${{ steps.resolve.outputs.date }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          python scripts/publish_staged_daily.py --date "$DATE" --feed /tmp/podcast-feed.xml
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add -A
+          if ! git diff --cached --quiet; then
+            git commit -m "Publish Daily Brief for ${DATE} after podcast [skip ci]"
+            git pull --rebase origin main
+            git push origin main
+          fi
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Build with Jekyll
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: ./
+          destination: ./_site
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v4
+
+  deploy:
+    needs: publish
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+      - name: Verify live Daily Brief and exact Podcast audio
+        env:
+          DATE: ${{ needs.publish.outputs.date }}
+          ENCLOSURE_URL: ${{ needs.publish.outputs.enclosure_url }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          Y=${DATE:0:4}; M=${DATE:5:2}; D=${DATE:8:2}
+          URL="https://tangkk.github.io/daily_brief/${Y}/${M}/${D}/"
+          for n in $(seq 1 30); do
+            HTML=$(curl -fsSL --max-time 15 "${URL}?run=${GITHUB_RUN_ID}&n=${n}" || true)
+            if printf '%s' "$HTML" | grep -Fq "Daily Brief — ${DATE}" && printf '%s' "$HTML" | grep -Fq "$ENCLOSURE_URL"; then
+              echo "Verified $URL"
+              exit 0
+            fi
+            sleep 10
+          done
+          echo "Live Daily Brief verification failed: $URL"
+          exit 1
