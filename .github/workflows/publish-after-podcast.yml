@@ -85,7 +85,7 @@ jobs:
           git config user.email 41898282+github-actions[bot]@users.noreply.github.com
           git add -A
           if ! git diff --cached --quiet; then
-            git commit -m "Publish Daily Brief for ${DATE} after podcast [skip ci]"
+            git commit -m "Publish Daily Brief for ${DATE} after podcast"
             git pull --rebase origin main
             git push origin main
           fi
