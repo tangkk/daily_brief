@@ -1,0 +1,22 @@
+{
+  "mode": "MOCK_6AM_ONLY",
+  "target_date": "2026-09-06",
+  "research_as_of": "2026-09-05 Asia/Shanghai",
+  "production_side_effects": "NONE",
+  "sources": [
+    {"category":"Financial Markets","title":"Strong August jobs report sends yields higher","publisher":"Reuters","url":"https://www.reuters.com/business/view-strong-august-jobs-report-sends-yields-higher-2026-09-04/","signal":"US August payrolls +162k, unemployment 4.1%; rates repriced higher."},
+    {"category":"World / Energy","title":"Israel releases more prisoners; shipping slowdown and Mideast news","publisher":"AP","url":"https://apnews.com/article/49d0cb10d83827e52b56b5280e7d048d","signal":"Hormuz traffic remains depressed and energy/logistics risk remains material."},
+    {"category":"Semiconductors","title":"RAMageddon hits consumer electronics as AI drains chip supply","publisher":"Financial Times","url":"https://www.ft.com/content/ea9a9dcc-b1df-49b0-b80c-f320161b9efa","signal":"AI memory demand is tightening DRAM supply and raising consumer-electronics costs."},
+    {"category":"AI / Science","title":"Formalizing Fermat's Last Theorem","publisher":"Anthropic","url":"https://www.anthropic.com/research/formalizing-fermats-last-theorem","signal":"Anthropic reports a complete computer-checked FLT formalization produced largely autonomously by Claude over 11 days."},
+    {"category":"Semiconductors","title":"TSMC 2026 Monthly Revenue / Calendar","publisher":"TSMC","url":"https://investor.tsmc.com/english/monthly-revenue/2026","signal":"July revenue was NT$467.58bn (+44.7% YoY); August sales are scheduled for Sep 10, so no unsupported August figure should be invented."},
+    {"category":"AI","title":"Daybreak for Frontline Defenders","publisher":"OpenAI","url":"https://openai.com/index/daybreak-for-frontline-defenders/","signal":"OpenAI committed $1bn in subsidized cyber-AI access, training and support."},
+    {"category":"China","title":"China source policy gate","publisher":"Policy","url":"","signal":"No China-related item is promoted into the mock brief unless adequately supported by China-based domestic media or Chinese official/primary sources. Overseas-only China claims are omitted from the mock."},
+    {"category":"World","title":"Ukraine war briefing / air-truce diplomacy","publisher":"Guardian","url":"https://www.theguardian.com/world/2026/sep/05/ukraine-war-briefing-zelenskyy-calls-air-truce-as-kushner-and-witkoff-head-for-kyiv-via-moscow","signal":"Diplomatic activity continues while strikes persist; useful as world-state update rather than standalone market signal."}
+  ],
+  "selection_notes": {
+    "dedup": "Collapsed multiple US payroll/market-reaction reports into one macro item.",
+    "persistent_world_state": ["Fed remains constrained by inflation and resilient labor demand", "Hormuz disruption keeps energy/logistics risk elevated", "AI capex continues to pull memory/semiconductor capacity toward high-value AI demand"],
+    "information_gain": ["August payroll surprise materially changes near-term Fed probabilities", "Anthropic FLT formalization is a new demonstrated scientific-capability datapoint", "AI-driven DRAM scarcity is spilling into non-AI consumer hardware pricing"],
+    "china_policy_result": "No China item selected because the mock source set did not contain a sufficiently strong new China-based/official primary item that cleared the significance threshold."
+  }
+}
