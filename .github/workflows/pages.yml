@@ -3,6 +3,9 @@ name: Deploy Daily Brief to Pages
 on:
   push:
     branches: [main]
+    paths-ignore:
+      - '_drafts/**'
+      - 'ops/daily-brief-runs/**'
   workflow_dispatch:
 
 permissions:
