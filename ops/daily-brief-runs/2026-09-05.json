@@ -1,0 +1,22 @@
+{
+  "date": "2026-09-05",
+  "status": "handoff_complete",
+  "started_at": "2026-09-05T11:33:00+08:00",
+  "updated_at": "2026-09-05T11:39:56+08:00",
+  "research_complete": true,
+  "written": {
+    "repo": "tangkk/daily_brief",
+    "path": "_drafts/2026-09-05-daily-brief.md",
+    "commit_sha": "47574c6bbb90f637233698051c40ace4b12b305d",
+    "readback_verified": true
+  },
+  "spoken": {
+    "repo": "tangkk/lobster-daily-podcast",
+    "path": "episodes/ep016-daily-2026-09-05.txt",
+    "commit_sha": "1e5a2be33cd485bdd72816f9294baa95baf10807",
+    "readback_verified": true
+  },
+  "failure_stage": null,
+  "failure_detail": null,
+  "note": "Manual backfill after the scheduled 2026-09-05 run completed without producing canonical GitHub artifacts. Downstream Podcast/TTS/Pages workflows remain authoritative for final publication status."
+}
