@@ -23,6 +23,10 @@
       <h1>{{ page.title }}</h1>
       <p class="meta">{{ page.date | date: "%Y-%m-%d %H:%M" }}</p>
 
+      <div class="disclaimer" aria-label="免责声明">
+        <p><strong>免责声明：</strong>本站内容主要由 AI 搜集、整理并辅助生成，仅供信息与研究参考，不代表本人立场、观点或价值判断，也不构成任何投资、交易、法律或其他专业建议。AI 生成与整理内容可能存在误差、遗漏或时效性限制；涉及重要事实或决策时，请以原始资料、官方信息及专业意见为准。</p>
+      </div>
+
       {% assign audio_date = page.date | date: "%Y-%m-%d" %}
       {% assign audio_url = site.data.audio[audio_date] %}
       {% if audio_url %}
