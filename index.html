@@ -18,6 +18,9 @@ layout: null
     <div class="container">
       <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
       <p>{{ site.description }}</p>
+      <div class="disclaimer" aria-label="免责声明">
+        <p><strong>免责声明：</strong>本站内容主要由 AI 搜集、整理并辅助生成，仅供信息与研究参考，不代表本人立场、观点或价值判断，也不构成任何投资、交易、法律或其他专业建议。AI 生成与整理内容可能存在误差、遗漏或时效性限制；涉及重要事实或决策时，请以原始资料、官方信息及专业意见为准。</p>
+      </div>
     </div>
   </header>
 
@@ -46,10 +49,6 @@ layout: null
           <li>还没有文章，先发布第一篇吧。</li>
         {% endfor %}
       </ul>
-    </section>
-
-    <section class="disclaimer" aria-label="免责声明">
-      <p><strong>免责声明：</strong>本站内容主要由 AI 搜集、整理并辅助生成，仅供信息与研究参考，不代表本人立场、观点或价值判断，也不构成任何投资、交易、法律或其他专业建议。AI 生成与整理内容可能存在误差、遗漏或时效性限制；涉及重要事实或决策时，请以原始资料、官方信息及专业意见为准。</p>
     </section>
   </main>
 
