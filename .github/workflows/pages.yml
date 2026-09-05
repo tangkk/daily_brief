@@ -20,24 +20,44 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    outputs:
+      current: ${{ steps.freshness.outputs.current }}
     steps:
       - name: Checkout
         uses: actions/checkout@v6
 
+      - name: Refuse stale queued deployment
+        id: freshness
+        shell: bash
+        run: |
+          set -euo pipefail
+          CURRENT=$(git ls-remote origin refs/heads/main | awk '{print $1}')
+          if [ "$CURRENT" = "$GITHUB_SHA" ]; then
+            echo "current=true" >> "$GITHUB_OUTPUT"
+            echo "Current main is $CURRENT; deployment may proceed."
+          else
+            echo "current=false" >> "$GITHUB_OUTPUT"
+            echo "Skipping stale Pages run: run SHA=$GITHUB_SHA current main=$CURRENT"
+          fi
+
       - name: Setup Pages
+        if: steps.freshness.outputs.current == 'true'
         id: pages
         uses: actions/configure-pages@v5
 
       - name: Build with Jekyll
+        if: steps.freshness.outputs.current == 'true'
         uses: actions/jekyll-build-pages@v1
         with:
           source: ./
           destination: ./_site
 
       - name: Upload artifact
+        if: steps.freshness.outputs.current == 'true'
         uses: actions/upload-pages-artifact@v4
 
   deploy:
+    if: needs.build.outputs.current == 'true'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
