@@ -1,0 +1,11 @@
+{
+  "date": "2026-09-07",
+  "status": "started",
+  "started_at": "2026-09-07T06:00:00+08:00",
+  "updated_at": "2026-09-07T06:00:00+08:00",
+  "research_complete": false,
+  "written": {"repo":"tangkk/daily_brief","path":"_drafts/2026-09-07-daily-brief.md","commit_sha":null,"readback_verified":false},
+  "spoken": {"repo":"tangkk/lobster-daily-podcast","path":null,"commit_sha":null,"readback_verified":false},
+  "failure_stage": null,
+  "failure_detail": null
+}
