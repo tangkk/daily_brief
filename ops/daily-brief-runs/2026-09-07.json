@@ -1,11 +1,11 @@
 {
   "date": "2026-09-07",
-  "status": "research_complete",
+  "status": "handoff_complete",
   "started_at": "2026-09-07T06:00:00+08:00",
-  "updated_at": "2026-09-07T06:12:00+08:00",
+  "updated_at": "2026-09-07T06:18:00+08:00",
   "research_complete": true,
-  "written": {"repo":"tangkk/daily_brief","path":"_drafts/2026-09-07-daily-brief.md","commit_sha":null,"readback_verified":false},
-  "spoken": {"repo":"tangkk/lobster-daily-podcast","path":"episodes/ep018-daily-2026-09-07.txt","commit_sha":null,"readback_verified":false},
+  "written": {"repo":"tangkk/daily_brief","path":"_drafts/2026-09-07-daily-brief.md","commit_sha":"fd417f1a12955c223f6dc468a6423bbc952a0aa1","readback_verified":true},
+  "spoken": {"repo":"tangkk/lobster-daily-podcast","path":"episodes/ep018-daily-2026-09-07.txt","commit_sha":"e20ea3ab478c70e1b38cacaae79579082249b8dc","readback_verified":true},
   "failure_stage": null,
   "failure_detail": null
 }
