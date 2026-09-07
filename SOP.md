@@ -7,6 +7,7 @@ The site contains two written content streams with different publishing rules.
 - Staged canonical posts: `_drafts/YYYY-MM-DD-daily-brief.md`
 - Public canonical posts: `_posts/YYYY-MM-DD-daily-brief.md`
 - Layout: `daily_brief`
+- Public article title: date only, formatted `YYYY-MM-DD`; do not prefix with `Daily Brief` or `Weekly Review`.
 - Public site: https://tangkk.github.io/daily_brief/
 - Written RSS: https://tangkk.github.io/daily_brief/feed.xml
 - The written site may play the already-published podcast MP3 only from an explicit `_data/audio.json` mapping.
@@ -46,7 +47,7 @@ Daily Brief publishing order is mandatory:
 3. Create and commit the spoken derivative to `tangkk/lobster-daily-podcast/episodes/`.
 4. The Podcast repository's `Auto Publish Daily` workflow generates TTS, publishes/replaces the final MP3 in R2, and upserts/verifies Podcast RSS.
 5. This repository's `Publish Daily After Podcast` workflow starts from the staged draft and waits for the matching dated Podcast item to appear in the committed Podcast `feed.xml` with a real enclosure URL, byte length, and duration.
-6. Only then does it move the staged draft to `_posts/`, write the exact Podcast enclosure URL into `_data/audio.json`, build/deploy GitHub Pages itself, and verify that the live Daily Brief page contains both the correct Daily Brief title and exact final audio URL.
+6. Only then does it move the staged draft to `_posts/`, write the exact Podcast enclosure URL into `_data/audio.json`, build/deploy GitHub Pages itself, and verify that the live Daily Brief page contains the correct date title and exact final audio URL.
 
 ### Spoken opening convention
 
