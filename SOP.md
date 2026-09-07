@@ -48,6 +48,16 @@ Daily Brief publishing order is mandatory:
 5. This repository's `Publish Daily After Podcast` workflow starts from the staged draft and waits for the matching dated Podcast item to appear in the committed Podcast `feed.xml` with a real enclosure URL, byte length, and duration.
 6. Only then does it move the staged draft to `_posts/`, write the exact Podcast enclosure URL into `_data/audio.json`, build/deploy GitHub Pages itself, and verify that the live Daily Brief page contains both the correct Daily Brief title and exact final audio URL.
 
+### Spoken opening convention
+
+Every canonical Daily Brief spoken script must begin with the fixed spoken identifier and date:
+
+`龙虾日报，YYYY年M月D日。`
+
+- Keep this opening in every normal generation and every same-date rework.
+- Use natural spoken Chinese month/day formatting without zero-padding (for example, `龙虾日报，2026年9月7日。`).
+- This opening is reader-facing program identity, not internal editorial metadata, and must not be removed by deduplication, safety filtering, TTS normalization, or rework cleanup unless a separate explicit policy requires it.
+
 ### Same-date rework contract
 
 A Daily Brief that is rejected, corrected, or materially regenerated after its first publication must use the same-date rework path end-to-end. Editing canonical text alone is not a completed rework.
