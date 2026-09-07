@@ -77,21 +77,23 @@ The two repositories do not require a cross-repository write token. They synchro
 
 `future: true` is intentionally enabled in `_config.yml` so a same-day Daily Brief whose canonical front matter still says `08:00:00 +0800` can be deployed immediately after an earlier scheduled run; `_drafts/` remains unpublished unless explicitly moved to `_posts/`.
 
-## 2. AI 信用周期 — written-only stream
+## 2. AI 信用周期 — historical standalone archive
 
-AI 信用周期 is an independent written-only research stream hosted in this same repository.
+The former standalone AI 信用周期 stream is now historical-only.
 
-- Canonical posts: `_posts/YYYY-MM-DD-ai-credit-cycle.md`
-- Layout: `ai_credit_cycle`
-- Canonical permalink: `/ai-credit-cycle/YYYY/MM/DD/`; it must never share the Daily Brief `/:year/:month/:day/` URL.
-- No spoken script, TTS, MP3, R2 upload, Podcast RSS item, or audio player.
-- It does not depend on Daily Brief Podcast publication and may be published independently.
-- Research runs daily, but publish a dated article only when there is a meaningful new development, important case, risk signal, or structural change. Do not manufacture a post merely to fill every date.
-- If no AI 信用周期 article exists for a date, the home page shows only Daily Brief for that date.
-- If one exists, the home page shows `Daily Brief · AI 信用周期` beside the same date.
-- The existing Daily Brief RSS remains Daily-Brief-only and excludes AI 信用周期 posts.
+- Existing canonical posts remain at `_posts/YYYY-MM-DD-ai-credit-cycle.md`.
+- Existing layout/permalinks and `ai-credit-cycle.xml` remain available as a historical archive.
+- No active schedule creates or updates standalone AI 信用周期 posts or its RSS.
+- New AI 信用周期 research is integrated into the Sunday Weekly Review canonical written edition and its spoken/podcast derivative.
+- The integrated Sunday section preserves the same scope: Nvidia as a major but non-exclusive node, OpenAI/Anthropic, hyperscalers, neoclouds, data-center/project finance, private credit, GPU leasing/residual values, real outside-AI demand, AI CapEx economics, and hard-cash enterprise ROI.
+- The Sunday section must distinguish outside-AI cash flow from VC/cloud-credit/vendor-financing/circular demand and maintain the Hard Cash ROI evidence framework.
+- If there is no material weekly change, keep the section brief rather than manufacturing content.
 
-The AI 信用周期 scope covers Nvidia as a major but non-exclusive node, together with OpenAI, Anthropic, hyperscalers, neoclouds, data-center/project finance, private credit, GPU leasing/residual values, real end demand, AI CapEx economics, and hard-cash enterprise ROI.
+## Schedule architecture
+
+- Monday–Saturday: normal Daily Brief at 10:00 Asia/Shanghai, after Asian markets have opened.
+- Sunday: Weekly Review at 10:00 Asia/Shanghai, including the integrated AI 信用周期 section in both written and spoken/podcast editions.
+- Both paths use the same mandatory Podcast-first release chain described above.
 
 ## Repository boundary
 
