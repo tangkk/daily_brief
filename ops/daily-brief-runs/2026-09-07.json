@@ -1,13 +1,32 @@
 {
   "date": "2026-09-07",
-  "status": "handoff_complete",
+  "status": "rework_handoff_complete",
   "started_at": "2026-09-07T06:00:00+08:00",
   "updated_at": "2026-09-07T10:07:00+08:00",
   "research_complete": true,
   "revision_reason": "previous-edition-first semantic deduplication tightened after excessive overlap with 2026-09-06",
-  "written": {"repo":"tangkk/daily_brief","path":"_posts/2026-09-07-daily-brief.md","commit_sha":"4e001050964bd1644983818dcccecffe17dd0a3e","readback_verified":true},
-  "spoken": {"repo":"tangkk/lobster-daily-podcast","path":"episodes/ep018-daily-2026-09-07.txt","commit_sha":"e8481824a3e106d2cbc55d83de21831efe595cf0","readback_verified":true},
-  "dedup_policy_commit":"c3c5ead2c934d4a34034fdc71cdfdb5963a9211b",
+  "written": {
+    "repo": "tangkk/daily_brief",
+    "path": "_posts/2026-09-07-daily-brief.md",
+    "commit_sha": "cfcce1be3446176ad628eaace470ee62496681fb",
+    "readback_verified": true
+  },
+  "spoken": {
+    "repo": "tangkk/lobster-daily-podcast",
+    "path": "episodes/ep018-daily-2026-09-07.txt",
+    "commit_sha": "c2c110c32e9ef75f8d38317dbe75c055a6cae776",
+    "readback_verified": true
+  },
+  "dedup_policy_commit": "c3c5ead2c934d4a34034fdc71cdfdb5963a9211b",
   "failure_stage": null,
-  "failure_detail": null
+  "failure_detail": null,
+  "rework": {
+    "reason": "semantic_dedup_gate_too_soft",
+    "history_window_days_strong": 7,
+    "recurrence_window_days": 30,
+    "dedup_gate": "event_and_thesis_level_information_gain",
+    "sop_commit": "070baf27302e389a6f3286bc8e6e356f4a8c9167",
+    "spoken_publish_trigger": "push_to_canonical_spoken_script",
+    "notes": "Reworked same-date canonical artifacts after rolling semantic dedup audit; recurring Astra, NVIDIA-Hugging Face, jobs and diplomacy themes excluded from headline selection absent sufficient new information."
+  }
 }
