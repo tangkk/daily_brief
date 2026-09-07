@@ -12,6 +12,18 @@ The site contains two written content streams with different publishing rules.
 - The written site may play the already-published podcast MP3 only from an explicit `_data/audio.json` mapping.
 - It never generates TTS, uploads audio, owns podcast metadata, or guesses an R2 URL.
 
+### Previous-edition-first semantic deduplication
+
+Before selecting Top Headlines for a new Daily Brief, read the previous day's canonical written edition first and treat it as the primary semantic-deduplication baseline.
+
+- Any event/story already present in the previous edition is default-exclude from the new Top Headlines, even if it appears under a new headline, outlet, URL, or wording.
+- A repeated story may re-enter Top Headlines only when there is material new information that changes the reader's state of knowledge or the editorial Bayesian assessment. Qualifying updates include a new quantitative fact, a new binding decision, implementation or enforcement, a material market reaction, a verified change in real-world conditions, or evidence that meaningfully changes prior expectations.
+- Non-updates such as continuation, unchanged policy, repeated statements, "talks continue", "markets await", or commentary that merely rephrases an existing thesis have effectively zero Information Gain and must remain in Persistent World State / dashboards rather than consume a Top Headlines slot.
+- Semantic identity is determined at the underlying event/thesis level, not by title, URL, publisher, entity ordering, or surface wording.
+- Bayesian Update must answer: "What does today's evidence make us believe differently from yesterday?" If the answer is "nothing material", the story stays out of Top Headlines.
+- Prefer a somewhat less globally important but genuinely new event over a more important story that is merely repeated from the prior edition.
+- Persistent World State may continue carrying the background state of an ongoing story without causing it to re-enter Top Headlines.
+
 Daily Brief publishing order is mandatory:
 1. Research and compose the canonical written Daily Brief.
 2. Save that exact edition to `_drafts/YYYY-MM-DD-daily-brief.md`. This is the release staging input, not the public post path.
