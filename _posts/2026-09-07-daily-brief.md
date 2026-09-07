@@ -18,9 +18,9 @@ date: 2026-09-07 08:00:00 +0800
 
 **4）Samsung 在 IFA 期间宣布为部分冰箱与洗衣设备推送 AI 导向的软件升级。** 这不是 frontier model 级别的大新闻，但它提供了一个不同维度的商业化信号：生成式与智能体功能正在从云端和企业软件继续向耐用消费品渗透，AI 的“installed base monetization”开始更多依赖软件更新而非纯硬件换代。[Samsung](https://news.samsung.com/global/samsung-enhances-long-term-value-of-refrigerators-and-laundry-appliances-with-ai-focused-software-updates)
 
-**5）中国方面，今天没有发现比昨天服务贸易和制造业 PMI 更具信息增量、且能被国内官方或权威大陆来源充分支持的新宏观事件，因此不重复旧数据占用 Top Headlines。** 现有中国增长判断继续保留在 Persistent World State 和 China Dashboard：制造业仍处边际改善但未全面扩张，服务贸易维持较高增速。
+**5）OPEC+ 会议后的第一轮市场反馈显示，油价偏强但全球风险资产没有同步崩跌。** 这意味着短期市场仍把能源问题视为通胀与利润率压力，而不是已经升级为全球增长断裂。这个价格反馈说明能源冲击目前仍主要通过通胀和利润率渠道定价；若后续欧美时段出现明显去风险，则构成新的状态变化。[Reuters](https://www.globalbankingandfinance.com/asia-shares-bounce-others-cautious-oil-rises/)
 
-**6）OPEC+ 维持10月政策本身不再作为独立新增头条，真正保留的更新是市场行为：油价偏强但全球风险资产没有同步崩跌。** 这意味着短期市场仍把能源问题视为通胀与利润率压力，而不是已经升级为全球增长断裂。这个判断若在后续欧美交易时段被打破，再作为新的事件进入下一期。[Reuters](https://www.globalbankingandfinance.com/asia-shares-bounce-others-cautious-oil-rises/)
+**6）本期不为凑满名额重复旧主线。** 在完成滚动历史去重后，没有达到同等全球重要性且具有足够信息增量的第六个候选，因此保留一个空缺比用延续性新闻填充更符合 Daily Brief 的信息密度目标。
 
 ## 3. Why it Matters
 
