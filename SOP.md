@@ -30,6 +30,16 @@ Semantic deduplication is a hard selection gate, not a writing-time suggestion. 
 
 This gate supplements, and does not replace, the existing Global Significance Lens, Persistent World State, Bayesian Update / Information Gain, China source policy, written/spoken editorial rules, safety rules, source requirements, dashboards, or publication contract.
 
+### Editorial invisibility for internal selection logic
+
+All research, selection, deduplication, ranking, Bayesian-update, Information-Gain, safety, source-policy, and workflow mechanics are internal editorial logic and must remain invisible in published written and spoken editions.
+
+- Never publish explanations such as "this item was excluded as duplicate", "there was no sixth qualifying candidate", "we are not repeating yesterday's story", "this was retained only in Persistent World State", "this source was chosen because of source policy", or similar process commentary.
+- Do not turn an empty Top Headlines slot into a meta-editorial item. If fewer than the target number of genuinely qualifying headlines exist, simply publish fewer headlines, unless another existing content rule explicitly requires a fixed count; in that case continue research for a qualifying item rather than exposing the selection process.
+- Published prose should contain only the resulting factual/editorial product: the selected developments, evidence, implications, dashboards, and reader-facing analysis. It must not narrate how candidates were accepted, rejected, deduplicated, filtered, ranked, sourced, or safety-checked.
+- Internal reasoning may be recorded only in the internal run log or other explicitly internal operational artifacts, never in canonical/public written copy, spoken scripts, RSS descriptions, show notes, or public pages.
+
+
 Daily Brief publishing order is mandatory:
 1. Research and compose the canonical written Daily Brief.
 2. Save that exact edition to `_drafts/YYYY-MM-DD-daily-brief.md`. This is the release staging input, not the public post path.
