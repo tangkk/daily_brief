@@ -124,7 +124,7 @@ jobs:
           URL="https://tangkk.github.io/daily_brief/${Y}/${M}/${D}/"
           for n in $(seq 1 30); do
             HTML=$(curl -fsSL --max-time 15 "${URL}?run=${GITHUB_RUN_ID}&n=${n}" || true)
-            if printf '%s' "$HTML" | grep -Fq "Daily Brief — ${DATE}" && printf '%s' "$HTML" | grep -Fq "$ENCLOSURE_URL"; then
+            if printf '%s' "$HTML" | grep -Fq "<h1>${DATE}</h1>" && printf '%s' "$HTML" | grep -Fq "$ENCLOSURE_URL"; then
               echo "Verified $URL"
               exit 0
             fi
