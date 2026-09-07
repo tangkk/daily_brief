@@ -1,0 +1,67 @@
+{
+  "date": "2026-09-08",
+  "edition": "daily_brief",
+  "status": "published_verified",
+  "publication_time": "07:00 Asia/Shanghai",
+  "history_dedup": {
+    "strong_window_days": 7,
+    "recurrence_window_days": 30,
+    "event_and_thesis_level": true,
+    "recent_canonical_editions_checked": [
+      "2026-09-01",
+      "2026-09-02",
+      "2026-09-03",
+      "2026-09-04",
+      "2026-09-05",
+      "2026-09-06",
+      "2026-09-07"
+    ],
+    "material_recurring_candidates_rejected_or_demoted": [
+      "GPT-6 Astra release",
+      "NVIDIA-Hugging Face acquisition",
+      "US August payroll surprise",
+      "Russia-Ukraine diplomatic contact without binding new outcome",
+      "generic OPEC+ unchanged-policy retelling",
+      "SK hynix price-strength continuation"
+    ],
+    "recurring_candidates_admitted": [
+      {
+        "theme": "Hormuz / Gulf energy disruption",
+        "information_gain": "Brent settled at a six-week high; Iran said a new restricted Gulf zone/shipping corridor would be announced; UAE disclosed active expansion of alternative export and trade infrastructure."
+      }
+    ]
+  },
+  "canonical_written": {
+    "repo": "tangkk/daily_brief",
+    "staged_path": "_drafts/2026-09-08-daily-brief.md",
+    "public_path": "_posts/2026-09-08-daily-brief.md",
+    "source_commit": "4a04e7251be3ce78e776a1bb7afe7269e9972dff",
+    "main_readback_verified": true,
+    "public_title": "2026-09-08"
+  },
+  "canonical_spoken": {
+    "repo": "tangkk/lobster-daily-podcast",
+    "path": "episodes/ep019-daily-2026-09-08.txt",
+    "source_commit": "e640d1887dabcaac7213983f35aa615fa25c43d0",
+    "main_readback_verified": true,
+    "opening_verified": "龙虾日报，2026年9月8日。"
+  },
+  "podcast_release": {
+    "workflow_run": 34168798294,
+    "status": "success",
+    "guid": "ep019-daily-2026-09-08",
+    "enclosure_url": "https://pub-e2d65fa7f70240878f2e556592826485.r2.dev/daily/ep019-daily-2026-09-08.mp3",
+    "length_bytes": 981933,
+    "duration": "00:04:05",
+    "rss_verified": true,
+    "public_media_verified_by_workflow": true
+  },
+  "written_release": {
+    "workflow_run": 34168789606,
+    "status": "success",
+    "audio_mapping_exact_match": true,
+    "pages_deploy": "success",
+    "live_page_exact_audio_verification": "success"
+  },
+  "final_verification": "passed"
+}
