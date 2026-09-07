@@ -40,7 +40,6 @@ All research, selection, deduplication, ranking, Bayesian-update, Information-Ga
 - Published prose should contain only the resulting factual/editorial product: the selected developments, evidence, implications, dashboards, and reader-facing analysis. It must not narrate how candidates were accepted, rejected, deduplicated, filtered, ranked, sourced, or safety-checked.
 - Internal reasoning may be recorded only in the internal run log or other explicitly internal operational artifacts, never in canonical/public written copy, spoken scripts, RSS descriptions, show notes, or public pages.
 
-
 Daily Brief publishing order is mandatory:
 1. Research and compose the canonical written Daily Brief.
 2. Save that exact edition to `_drafts/YYYY-MM-DD-daily-brief.md`. This is the release staging input, not the public post path.
@@ -76,7 +75,7 @@ A Daily Brief that is rejected, corrected, or materially regenerated after its f
 
 The two repositories do not require a cross-repository write token. They synchronize through the committed Podcast RSS. If Podcast publication fails, the dated written Brief remains staged and unpublished. If Podcast succeeds but the written workflow fails, keep the Podcast episode and rerun `Publish Daily After Podcast` for that date. Re-runs must remain idempotent.
 
-`future: true` is intentionally enabled in `_config.yml` so a same-day Daily Brief whose canonical front matter still says `08:00:00 +0800` can be deployed immediately after an earlier scheduled run; `_drafts/` remains unpublished unless explicitly moved to `_posts/`.
+`future: true` remains enabled in `_config.yml` so a same-day staged post can be published safely even when its canonical front-matter timestamp is later than the actual scheduler time; `_drafts/` remains unpublished unless explicitly moved to `_posts/`.
 
 ## 2. AI 信用周期 — historical standalone archive
 
@@ -92,9 +91,10 @@ The former standalone AI 信用周期 stream is now historical-only.
 
 ## Schedule architecture
 
-- Monday–Saturday: normal Daily Brief at 10:00 Asia/Shanghai, after Asian markets have opened.
-- Sunday: Weekly Review at 10:00 Asia/Shanghai, including the integrated AI 信用周期 section in both written and spoken/podcast editions.
-- Both paths use the same mandatory Podcast-first release chain described above.
+- Tuesday–Saturday: normal Daily Brief at **07:00 Asia/Shanghai**, optimized for breakfast/commute listening before the main China/Hong Kong cash-equity open. It covers the completed U.S./European session, overnight global developments, and early Asia information available by publication time.
+- Monday: normal Daily Brief at **09:00 Asia/Shanghai**. Monday is intentionally separate so weekend developments can be synthesized with more time while still publishing before the 09:30 China/Hong Kong open. It must add fresh incremental information and must not merely repeat the Sunday Weekly Review.
+- Sunday: **Weekly Review at 10:00 Asia/Shanghai**, including the integrated AI 信用周期 section in both written and spoken/podcast editions.
+- All three paths use the same mandatory Podcast-first release chain described above.
 
 ## Repository boundary
 
