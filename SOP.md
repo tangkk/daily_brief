@@ -38,6 +38,21 @@ Daily Brief publishing order is mandatory:
 5. This repository's `Publish Daily After Podcast` workflow starts from the staged draft and waits for the matching dated Podcast item to appear in the committed Podcast `feed.xml` with a real enclosure URL, byte length, and duration.
 6. Only then does it move the staged draft to `_posts/`, write the exact Podcast enclosure URL into `_data/audio.json`, build/deploy GitHub Pages itself, and verify that the live Daily Brief page contains both the correct Daily Brief title and exact final audio URL.
 
+### Same-date rework contract
+
+A Daily Brief that is rejected, corrected, or materially regenerated after its first publication must use the same-date rework path end-to-end. Editing canonical text alone is not a completed rework.
+
+1. Regenerate/update the same dated canonical written artifact and the same dated canonical spoken script; never create a duplicate date or episode.
+2. Commit both canonical artifacts to their owning repositories and perform GitHub-main read-back verification before downstream publication.
+3. The spoken-script update must run the Podcast same-date publish path, including spoken safety validation, TTS normalization, TTS regeneration, R2 replacement/versioning, Podcast RSS upsert, and verification of the final enclosure URL, byte length, and duration.
+4. After Podcast RSS reflects the replacement audio, the written repository must re-read the committed Podcast `feed.xml` for that date and update `_data/audio.json` to the **exact current enclosure URL**. Never assume that a same-date retry keeps the previous MP3 URL; versioned objects such as `-v2`, `-v3`, etc. are expected.
+5. Updating the spoken script or Podcast RSS is not sufficient. The written page must be redeployed after the audio mapping changes.
+6. Final rework verification is end-to-end and mandatory: Podcast RSS date/guid → final enclosure URL/length/duration → `daily_brief/_data/audio.json` exact URL equality → deployed written page contains that exact enclosure URL and the corrected written content. A mismatch at any point means the rework is incomplete.
+7. Same-date retries remain idempotent: update the existing dated written post, existing spoken script, existing Podcast item/guid, existing audio mapping key, and existing run-log file. Do not append duplicate episodes or duplicate dated artifacts.
+8. The internal run log at `ops/daily-brief-runs/YYYY-MM-DD.json` must record rework reason, canonical commit SHAs, Podcast replacement result, final RSS enclosure URL/length/duration, audio-mapping refresh, written redeploy result, and final end-to-end verification status.
+9. Failure handling preserves repository boundaries: if TTS/R2/RSS replacement fails, do not point the written page at an unverified audio object; if Podcast replacement succeeds but written mapping/deploy fails, preserve the valid Podcast item and retry only the written synchronization/deploy stage.
+10. A rework is complete only when the corrected written edition and corrected spoken audio are both the versions reachable from the public written Daily Brief page. Canonical handoff alone must never be reported as a completed rework.
+
 The two repositories do not require a cross-repository write token. They synchronize through the committed Podcast RSS. If Podcast publication fails, the dated written Brief remains staged and unpublished. If Podcast succeeds but the written workflow fails, keep the Podcast episode and rerun `Publish Daily After Podcast` for that date. Re-runs must remain idempotent.
 
 `future: true` is intentionally enabled in `_config.yml` so a same-day Daily Brief whose canonical front matter still says `08:00:00 +0800` can be deployed immediately after an earlier scheduled run; `_drafts/` remains unpublished unless explicitly moved to `_posts/`.
