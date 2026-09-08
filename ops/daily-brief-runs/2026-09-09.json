@@ -25,6 +25,14 @@
   "canonical_spoken_commit": "f5a2e06c89a43dde14eee3dabe0d0deb1c2a0933",
   "github_main_readback": "passed",
   "podcast_workflow_run": 34288953018,
-  "podcast_status": "in_progress_at_log_creation",
-  "written_publish_status": "waiting_for_verified_podcast_rss"
+  "podcast_status": "success",
+  "podcast_guid": "ep020-daily-2026-09-09",
+  "final_rss_enclosure_url": "https://pub-e2d65fa7f70240878f2e556592826485.r2.dev/daily/ep020-daily-2026-09-09.mp3",
+  "final_rss_length": 1149741,
+  "final_rss_duration": "00:04:47",
+  "shownotes_written_url": "https://tangkk.github.io/daily_brief/2026/09/09/",
+  "written_publish_workflow_run": 34288937303,
+  "written_publish_status": "success",
+  "audio_mapping_exact_match": true,
+  "live_pages_verification": "success"
 }
