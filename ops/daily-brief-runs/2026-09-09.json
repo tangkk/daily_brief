@@ -1,0 +1,30 @@
+{
+  "date": "2026-09-09",
+  "edition": "daily",
+  "history_window_checked": "2026-09-02 through 2026-09-08, with 30-day thesis history consulted",
+  "deduplication_audit": {
+    "rejected_or_backgrounded": [
+      "GPT-6 Astra launch itself (already covered; only new U.S. software-market price reaction admitted)",
+      "Brent near $100 by itself (already covered; only actual Saudi facility disruption plus U.S. risk-asset reaction admitted)",
+      "generic AI data-center CapEx expansion (already persistent; Malaysia power-load data and signed multi-year capacity contract supplied new hard evidence)",
+      "Wistron financing and Liquid Network incident from 2026-09-08"
+    ],
+    "recurring_candidates_admitted": [
+      {
+        "thesis": "energy shock",
+        "information_gain": "actual operational interruptions at Saudi energy facilities plus simultaneous U.S. equity decline"
+      },
+      {
+        "thesis": "Astra/software disruption",
+        "information_gain": "first post-holiday U.S. cash-market price feedback, including 4-5% declines in several software names"
+      }
+    ]
+  },
+  "written_sensitive_term_generation_check": "passed before canonical handoff",
+  "canonical_written_commit": "8a8bb820a7429789c0c4aa2733990b2e2547a5f1",
+  "canonical_spoken_commit": "f5a2e06c89a43dde14eee3dabe0d0deb1c2a0933",
+  "github_main_readback": "passed",
+  "podcast_workflow_run": 34288953018,
+  "podcast_status": "in_progress_at_log_creation",
+  "written_publish_status": "waiting_for_verified_podcast_rss"
+}
