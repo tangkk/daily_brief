@@ -33,15 +33,19 @@ This gate supplements, and does not replace, the existing Global Significance Le
 
 ### Written-edition sensitive-term safety gate
 
-The public written Daily Brief must pass a sensitive-term safety check before publication. This is a publication-safety constraint and does not reduce the written edition's requirement for factual completeness under the existing editorial standards.
+The public written Daily Brief must satisfy this constraint **during generation first**, then pass deterministic validation before publication. This safety constraint must preserve as much substantive information as possible under the existing written-edition standards.
 
-- Do not publish politically sensitive blocked terms in the canonical/public written edition.
-- Prefer selection and factual phrasing that avoids blocked terms while preserving the substantive information needed by the reader.
-- Apply neutral institutional wording where necessary; do not introduce political interpretation merely to work around terminology.
-- Validate the staged written artifact against the maintained sensitive-term list before Podcast-first release can complete and again before the staged written post is promoted to the public post.
-- If a blocked term is detected, keep the written edition staged/unpublished and revise the relevant sentence; do not rely on downstream deletion as the normal mechanism.
-- The check applies to public article prose, headings, captions, summaries, and other reader-facing written content. Internal run logs and operational artifacts remain internal and are not reader-facing.
-- Never mention the blocked-term check, sensitive terms, platform review, filtering, censorship, or this safety gate in published written or spoken content.
+1. **Generation-time constraint is primary.** During research synthesis and drafting, proactively choose factual, neutral wording that does not contain politically sensitive blocked terms. Do not first write disallowed wording and plan to delete it later.
+2. Preserve information density. When a relevant development is editorially important, prefer a semantically equivalent neutral institutional description, paraphrase, or higher-level factual formulation that retains the material facts, causal relevance, market implications, and reader value.
+3. Do not omit an otherwise qualifying written-edition item merely because one obvious phrasing contains a blocked term if the same facts can be conveyed accurately with safe wording.
+4. Do not distort facts, invent euphemistic claims, or add political interpretation merely to avoid terminology. If accurate safe wording cannot preserve the essential claim, downgrade or omit the item rather than publish blocked wording.
+5. Before writing the canonical artifact to `_drafts/YYYY-MM-DD-daily-brief.md`, perform an internal full-text sensitive-term check and revise any matching sentence before commit.
+6. After canonical handoff, validate the staged written artifact against the maintained sensitive-term list before Podcast-first release can complete and again before promotion to the public post.
+7. If deterministic validation still detects a blocked term, keep the written edition staged/unpublished and revise the relevant sentence. Downstream deletion is last-resort fail-safe only, not the normal editorial mechanism.
+8. The check applies to public article prose, headings, captions, summaries, and other reader-facing written content. Internal run logs and operational artifacts remain internal and are not reader-facing.
+9. Never mention the blocked-term check, sensitive terms, platform review, filtering, censorship, or this safety gate in published written or spoken content.
+
+Operational priority: **safe generation → preserve information via neutral rephrasing → pre-handoff self-check → deterministic publication validation → last-resort blocking.**
 
 ### Editorial invisibility for internal selection logic
 
