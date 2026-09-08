@@ -31,6 +31,18 @@ Semantic deduplication is a hard selection gate, not a writing-time suggestion. 
 
 This gate supplements, and does not replace, the existing Global Significance Lens, Persistent World State, Bayesian Update / Information Gain, China source policy, written/spoken editorial rules, safety rules, source requirements, dashboards, or publication contract.
 
+### Written-edition sensitive-term safety gate
+
+The public written Daily Brief must pass a sensitive-term safety check before publication. This is a publication-safety constraint and does not reduce the written edition's requirement for factual completeness under the existing editorial standards.
+
+- Do not publish politically sensitive blocked terms in the canonical/public written edition.
+- Prefer selection and factual phrasing that avoids blocked terms while preserving the substantive information needed by the reader.
+- Apply neutral institutional wording where necessary; do not introduce political interpretation merely to work around terminology.
+- Validate the staged written artifact against the maintained sensitive-term list before Podcast-first release can complete and again before the staged written post is promoted to the public post.
+- If a blocked term is detected, keep the written edition staged/unpublished and revise the relevant sentence; do not rely on downstream deletion as the normal mechanism.
+- The check applies to public article prose, headings, captions, summaries, and other reader-facing written content. Internal run logs and operational artifacts remain internal and are not reader-facing.
+- Never mention the blocked-term check, sensitive terms, platform review, filtering, censorship, or this safety gate in published written or spoken content.
+
 ### Editorial invisibility for internal selection logic
 
 All research, selection, deduplication, ranking, Bayesian-update, Information-Gain, safety, source-policy, and workflow mechanics are internal editorial logic and must remain invisible in published written and spoken editions.
