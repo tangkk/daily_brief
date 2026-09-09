@@ -105,6 +105,18 @@ The former standalone AI 信用周期 stream is now historical-only.
 - The Sunday section must distinguish outside-AI cash flow from VC/cloud-credit/vendor-financing/circular demand and maintain the Hard Cash ROI evidence framework.
 - If there is no material weekly change, keep the section brief rather than manufacturing content.
 
+## Daily AI Credit Cycle Pulse
+
+The normal Monday–Saturday Daily Brief includes a dedicated **AI Credit Cycle Pulse / AI 信用周期脉冲** section in the canonical written edition.
+
+- The section monitors only fresh incremental evidence relevant to the AI credit cycle: frontier-model company financing and cash burn; hyperscaler/neocloud CapEx and long-term compute obligations; GPU/server leasing, utilization and residual values; data-center/project finance, private credit and bond-market conditions; supplier financing/guarantees/buybacks; power and infrastructure funding; enterprise/consumer paid demand; AI revenue/ARR, gross margin, inference costs and FCF; and measurable hard-cash ROI such as incremental revenue, Opex/labor-cost reduction, headcount avoidance, margin or cash-flow improvement.
+- Distinguish genuine outside-AI cash demand from VC funding, cloud credits, vendor financing, circular capital flows, subsidies, or accounting-only demand.
+- Apply the same rolling event/thesis semantic deduplication and Information-Gain gate as the rest of Daily Brief. Do not restate “AI CapEx remains strong” or similar standing theses without new evidence that changes scale, financing, demand quality, economics, or risk.
+- The written section is structurally present each normal Daily Brief but may be very short when there is little new evidence. A concise “no material change in cycle assessment” is acceptable internally as a state update, but published wording must remain reader-facing and must not expose dedup/editorial mechanics.
+- The spoken derivative includes this section only when there is material new information worth the listener’s time; otherwise it may be omitted from the spoken script.
+- Sunday Weekly Review remains the full weekly synthesis of the AI credit cycle and should integrate the week's Daily Pulse evidence into a higher-level cycle assessment rather than replay each daily item.
+- The historical standalone AI 信用周期 archive remains unchanged and is not reactivated as a separate daily publication stream.
+
 ## Schedule architecture
 
 - Tuesday–Saturday: normal Daily Brief at **07:00 Asia/Shanghai**, optimized for breakfast/commute listening before the main China/Hong Kong cash-equity open. It covers the completed U.S./European session, overnight global developments, and early Asia information available by publication time.
