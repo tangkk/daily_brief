@@ -1,0 +1,49 @@
+{
+  "date": "2026-09-10",
+  "status": "research_complete",
+  "started_at": "2026-09-10T10:16:00+08:00",
+  "updated_at": "2026-09-10T10:24:00+08:00",
+  "research_complete": true,
+  "manual_recovery": true,
+  "reason": "scheduled_run_missing; user requested publication",
+  "dedup_audit": {
+    "strong_window_days": 7,
+    "recurrence_window_days": 30,
+    "checked_dates": [
+      "2026-09-09",
+      "2026-09-08",
+      "2026-09-07",
+      "2026-09-06",
+      "2026-09-05",
+      "2026-09-04",
+      "2026-09-03"
+    ],
+    "rejected_recurring_themes": [
+      "Astra release itself",
+      "Nvidia-Hugging Face acquisition",
+      "generic AI CapEx expansion",
+      "routine ECB hike expectation",
+      "Russia-Ukraine negotiation window"
+    ],
+    "admitted_recurring_updates": [
+      {
+        "theme": "energy shock",
+        "information_gain": "Brent closed above $100 and equities/bonds repriced together"
+      },
+      {
+        "theme": "AI infrastructure",
+        "information_gain": "Australia projects add up to ~2GW capacity by 2027"
+      },
+      {
+        "theme": "AI demand",
+        "information_gain": "OpenAI disclosed enterprise revenue growth, Luna usage elasticity and Codex user count"
+      }
+    ]
+  },
+  "written": null,
+  "spoken": null,
+  "podcast": null,
+  "written_publish": null,
+  "failure_stage": null,
+  "failure_detail": null
+}
