@@ -1,28 +1,24 @@
 {
   "date": "2026-09-11",
   "run_type": "daily_brief",
-  "status": "research_complete",
+  "status": "spoken_committed",
   "started_at": "2026-09-11T07:01:15+08:00",
-  "updated_at": "2026-09-11T07:09:00+08:00",
+  "updated_at": "2026-09-11T07:14:00+08:00",
   "artifact_state": {
-    "written_staged": false,
-    "spoken_committed": false,
+    "written_staged": true,
+    "spoken_committed": true,
     "podcast_verified": false,
     "written_published": false,
     "published_verified": false
   },
+  "canonical_commits": {
+    "written_staged": "4f8b73a563d27154e25e244bca67556a42cdaf35",
+    "spoken": "e3362f4415b6d8214621b608fbbad1583cbae3e9"
+  },
   "dedup_audit": {
     "strong_window": "2026-09-04..2026-09-10",
     "recurrence_window": "previous 30 days consulted through canonical history",
-    "rejected_recurring": [
-      "Australia 2GW Nvidia buildout (covered 2026-09-10)",
-      "OpenAI June-July enterprise revenue growth and Luna usage elasticity (covered 2026-09-10)",
-      "Nvidia-Groq investigation (covered 2026-09-10)"
-    ],
-    "admitted_recurring": [
-      "Energy shock: Brent advanced from 101.21 to 107.63 and WTI crossed 100; shipping disruption broadened, a material scale/phase change",
-      "US inflation/rates: August PPI was newly released, shifting next-week Fed hike odds to about 70%"
-    ]
-  },
-  "research_note": "Fresh material selected from completed US/European session and official/primary China baseline. Main new state changes: ECB hike to 2.5% with higher inflation path; US August PPI +0.4% m/m and 5.4% y/y; Brent 107.63 and WTI 102.48; US diesel above $6/gal; OpenAI financial-services vertical launch; d-Matrix adoption of NVLink Fusion for inference systems."
+    "rejected_recurring": ["Australia 2GW Nvidia buildout (covered 2026-09-10)", "OpenAI June-July enterprise revenue growth and Luna usage elasticity (covered 2026-09-10)", "Nvidia-Groq investigation (covered 2026-09-10)"],
+    "admitted_recurring": ["Energy shock: Brent advanced from 101.21 to 107.63 and WTI crossed 100; shipping disruption broadened, a material scale/phase change", "US inflation/rates: August PPI was newly released, shifting next-week Fed hike odds to about 70%"]
+  }
 }
