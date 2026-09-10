@@ -1,19 +1,35 @@
 {
   "date": "2026-09-11",
   "run_type": "daily_brief",
-  "status": "spoken_committed",
+  "status": "published_verified",
   "started_at": "2026-09-11T07:01:15+08:00",
-  "updated_at": "2026-09-11T07:14:00+08:00",
+  "updated_at": "2026-09-11T07:20:00+08:00",
   "artifact_state": {
     "written_staged": true,
     "spoken_committed": true,
-    "podcast_verified": false,
-    "written_published": false,
-    "published_verified": false
+    "podcast_verified": true,
+    "written_published": true,
+    "published_verified": true
   },
   "canonical_commits": {
     "written_staged": "4f8b73a563d27154e25e244bca67556a42cdaf35",
-    "spoken": "e3362f4415b6d8214621b608fbbad1583cbae3e9"
+    "spoken": "e3362f4415b6d8214621b608fbbad1583cbae3e9",
+    "podcast_rss": "151a42e9c0fe992e8c076b18a2e1d619b211fe56"
+  },
+  "podcast": {
+    "guid": "ep022-daily-2026-09-11",
+    "enclosure_url": "https://pub-e2d65fa7f70240878f2e556592826485.r2.dev/daily/ep022-daily-2026-09-11.mp3",
+    "length": 1220973,
+    "duration": "00:05:05",
+    "workflow_run": 34540360564,
+    "verified": true
+  },
+  "written": {
+    "public_path": "_posts/2026-09-11-daily-brief.md",
+    "public_url": "https://tangkk.github.io/daily_brief/2026/09/11/",
+    "audio_mapping_exact_match": true,
+    "workflow_run": 34540340060,
+    "live_page_verified": true
   },
   "dedup_audit": {
     "strong_window": "2026-09-04..2026-09-10",
