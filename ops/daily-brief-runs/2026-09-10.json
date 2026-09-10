@@ -1,8 +1,8 @@
 {
   "date": "2026-09-10",
-  "status": "research_complete",
+  "status": "published_verified",
   "started_at": "2026-09-10T10:16:00+08:00",
-  "updated_at": "2026-09-10T10:24:00+08:00",
+  "updated_at": "2026-09-10T10:27:00+08:00",
   "research_complete": true,
   "manual_recovery": true,
   "reason": "scheduled_run_missing; user requested publication",
@@ -40,10 +40,32 @@
       }
     ]
   },
-  "written": null,
-  "spoken": null,
-  "podcast": null,
-  "written_publish": null,
+  "written": {
+    "repo": "tangkk/daily_brief",
+    "path": "_posts/2026-09-10-daily-brief.md",
+    "stage_commit_sha": "5c932c7458fa1d3f3e9a487f7000632ca6676bf5",
+    "publish_commit_sha": "dd25e9de18cd039809a3a1cbd29c7ba3aa1127a0",
+    "readback_verified": true
+  },
+  "spoken": {
+    "repo": "tangkk/lobster-daily-podcast",
+    "path": "episodes/ep021-daily-2026-09-10.txt",
+    "commit_sha": "20b2288dce8309ef28c97b0d162892ca107820ba",
+    "readback_verified": true
+  },
+  "podcast": {
+    "guid": "ep021-daily-2026-09-10",
+    "rss_commit_sha": "d1890b43e33602cd9c3602ef94c7e6a3ffde1c47",
+    "enclosure_url": "https://pub-e2d65fa7f70240878f2e556592826485.r2.dev/daily/ep021-daily-2026-09-10.mp3",
+    "length": 964749,
+    "duration": "00:04:01",
+    "verified": true
+  },
+  "written_publish": {
+    "audio_mapping_exact_match": true,
+    "pages_deploy_verified": true,
+    "public_url": "https://tangkk.github.io/daily_brief/2026/09/10/"
+  },
   "failure_stage": null,
   "failure_detail": null
 }
