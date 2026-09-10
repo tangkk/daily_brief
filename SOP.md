@@ -56,13 +56,27 @@ All research, selection, deduplication, ranking, Bayesian-update, Information-Ga
 - Published prose should contain only the resulting factual/editorial product: the selected developments, evidence, implications, dashboards, and reader-facing analysis. It must not narrate how candidates were accepted, rejected, deduplicated, filtered, ranked, sourced, or safety-checked.
 - Internal reasoning may be recorded only in the internal run log or other explicitly internal operational artifacts, never in canonical/public written copy, spoken scripts, RSS descriptions, show notes, or public pages.
 
+### Early checkpoint and resumable-run contract
+
+Every scheduled Daily Brief / Weekly Review run must behave as a resumable state machine.
+
+1. Immediately after reading both authoritative SOPs and resolving the Asia/Shanghai date, before substantial research, create or idempotently update `ops/daily-brief-runs/YYYY-MM-DD.json` with status `started`, run type, start time, and known artifact state.
+2. Update the same run log after each durable milestone: `started -> research_complete -> written_staged -> spoken_committed -> podcast_verified -> written_published -> published_verified`.
+3. Before doing work, inspect the same-date run log plus canonical GitHub-main artifacts. If a partial run already exists, resume from the first incomplete durable milestone rather than restarting completed work.
+4. GitHub-main artifacts and committed Podcast RSS are authoritative over stale run-log state. Reconcile the run log to verified durable state before resuming.
+5. Preserve same-date idempotence and the versioned-enclosure rework contract. Recovery is not a new edition.
+6. On failure, record `failure_stage` and concise internal `failure_detail` when GitHub access is still available. Do not delete valid upstream artifacts.
+7. If Podcast is already verified, retry only written synchronization/deploy. If spoken canonical exists but Podcast is unverified, resume Podcast publication. If only the written draft exists, continue from spoken derivation. If no canonical artifacts exist, resume research/generation.
+8. If the Daily Brief schedule is unexpectedly disabled, re-enable that existing schedule without changing cadence or prompt unless an intentional configuration change is separately requested; then use same-date checkpoint/artifact state to determine whether recovery is needed.
+9. Checkpoint and recovery mechanics are internal only and must never appear in public written text, spoken audio, shownotes, RSS descriptions, or metadata.
+
 Daily Brief publishing order is mandatory:
 1. Research and compose the canonical written Daily Brief.
 2. Save that exact edition to `_drafts/YYYY-MM-DD-daily-brief.md`. This is the release staging input, not the public post path.
 3. Create and commit the spoken derivative to `tangkk/lobster-daily-podcast/episodes/`.
 4. The Podcast repository's `Auto Publish Daily` workflow generates TTS, publishes/replaces the final MP3 in R2, and upserts/verifies Podcast RSS.
-5. This repository's `Publish Daily After Podcast` workflow starts from the staged draft and waits for the matching dated Podcast item to appear in the committed Podcast `feed.xml` with a real enclosure URL, byte length, and duration.
-6. Only then does it move the staged draft to `_posts/`, write the exact Podcast enclosure URL into `_data/audio.json`, build/deploy GitHub Pages itself, and verify that the live Daily Brief page contains the correct date title and exact final audio URL.
+5. This repository's `Publish Daily After Podcast` workflow starts from the staged draft, performs deterministic written sensitive-term validation, and waits for the matching dated Podcast item to appear in the committed Podcast `feed.xml` with a real enclosure URL, byte length, and duration.
+6. Immediately before promotion, the written artifact is validated again. Only then does the workflow move the staged draft to `_posts/`, write the exact Podcast enclosure URL into `_data/audio.json`, build/deploy GitHub Pages itself, and verify that the live Daily Brief page contains the correct date title and exact final audio URL.
 
 ### Spoken opening convention
 
@@ -119,10 +133,10 @@ The normal Monday–Saturday Daily Brief includes a dedicated **AI Credit Cycle 
 
 ## Schedule architecture
 
-- Tuesday–Saturday: normal Daily Brief at **07:00 Asia/Shanghai**, optimized for breakfast/commute listening before the main China/Hong Kong cash-equity open. It covers the completed U.S./European session, overnight global developments, and early Asia information available by publication time.
-- Monday: normal Daily Brief at **09:00 Asia/Shanghai**. Monday is intentionally separate so weekend developments can be synthesized with more time while still publishing before the 09:30 China/Hong Kong open. It must add fresh incremental information and must not merely repeat the Sunday Weekly Review.
-- Sunday: **Weekly Review at 10:00 Asia/Shanghai**, including the integrated AI 信用周期 section in both written and spoken/podcast editions.
-- All three paths use the same mandatory Podcast-first release chain described above.
+- Monday–Saturday: normal **Daily Brief at 07:00 Asia/Shanghai**, optimized for breakfast/commute listening before the main China/Hong Kong cash-equity open. Monday is no longer a separate schedule; it uses the same Daily Brief task and the same research/publishing contract as Tuesday–Saturday, while still applying rolling deduplication against the Sunday Weekly Review and prior history.
+- Monday–Saturday recovery: **Daily Brief Watchdog at 07:30 Asia/Shanghai**. It is recovery-only: if the same-date run is already `published_verified`, it exits without side effects; otherwise it resumes idempotently from the first incomplete durable milestone and may re-enable the existing Daily Brief schedule if that schedule is unexpectedly disabled. It never touches Sunday Weekly Review.
+- Sunday: **Weekly Review at 09:00 Asia/Shanghai**, including the integrated AI 信用周期 section in both written and spoken/podcast editions.
+- Daily Brief, Daily Brief Watchdog, and Weekly Review all respect the same repository boundaries and durable-state contracts; the watchdog is not a separate content edition.
 
 ## Repository boundary
 
