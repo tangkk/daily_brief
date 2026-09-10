@@ -50,6 +50,19 @@ jobs:
           test -f "_drafts/${DATE}-daily-brief.md" || test -f "_posts/${DATE}-daily-brief.md"
           echo "date=$DATE" >> "$GITHUB_OUTPUT"
 
+      - name: Validate written sensitive terms before Podcast wait
+        env:
+          DATE: ${{ steps.resolve.outputs.date }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [ -f "_drafts/${DATE}-daily-brief.md" ]; then
+            TARGET="_drafts/${DATE}-daily-brief.md"
+          else
+            TARGET="_posts/${DATE}-daily-brief.md"
+          fi
+          python scripts/check_sensitive_terms.py "$TARGET"
+
       - name: Wait for verified Podcast RSS item
         id: release
         env:
@@ -73,6 +86,19 @@ jobs:
           curl -fsSL --range 0-0 --max-time 20 "$URL" -o /dev/null
           echo "enclosure_url=$URL" >> "$GITHUB_OUTPUT"
           echo "$META"
+
+      - name: Revalidate written sensitive terms before publication
+        env:
+          DATE: ${{ steps.resolve.outputs.date }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [ -f "_drafts/${DATE}-daily-brief.md" ]; then
+            TARGET="_drafts/${DATE}-daily-brief.md"
+          else
+            TARGET="_posts/${DATE}-daily-brief.md"
+          fi
+          python scripts/check_sensitive_terms.py "$TARGET"
 
       - name: Move staged Brief to public post and map exact audio
         env:
