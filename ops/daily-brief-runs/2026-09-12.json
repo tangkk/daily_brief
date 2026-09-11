@@ -1,14 +1,21 @@
 {
   "date": "2026-09-12",
   "run_type": "daily_brief",
-  "status": "started",
+  "status": "research_complete",
   "started_at": "2026-09-12T07:00:00+08:00",
-  "updated_at": "2026-09-12T07:00:00+08:00",
+  "updated_at": "2026-09-12T07:06:00+08:00",
   "artifact_state": {
     "written_staged": false,
     "spoken_committed": false,
     "podcast_verified": false,
     "written_published": false,
     "published_verified": false
+  },
+  "dedup_audit": {
+    "strong_window_days": 7,
+    "recurrence_window_days": 30,
+    "prior_day_read": true,
+    "material_rejections": ["d-Matrix NVLink Fusion", "OpenAI Financial Services launch", "ECB September rate hike as standalone event", "Brent crossing 100 as standalone event"],
+    "admitted_updates": ["US August CPI and Fed repricing", "Friday oil retracement with weekly supply state", "Oracle backlog/cash-flow financing evidence", "IEA supply-gap revision", "US fiscal interest-cost update", "AI duty-of-care legislative negotiations"]
   }
 }
