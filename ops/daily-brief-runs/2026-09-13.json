@@ -1,11 +1,16 @@
 {
   "date": "2026-09-13",
   "run_type": "weekly_review",
-  "status": "spoken_committed",
+  "status": "published_verified",
   "started_at": "2026-09-13T09:02:49+08:00",
-  "updated_at": "2026-09-13T09:22:00+08:00",
-  "known_artifact_state": {"written_draft":true,"written_post":false,"spoken_canonical":true,"podcast_verified":false,"audio_mapping":false,"live_page_verified":false},
+  "updated_at": "2026-09-13T09:12:00+08:00",
+  "known_artifact_state": {"written_draft":false,"written_post":true,"spoken_canonical":true,"podcast_verified":true,"audio_mapping":true,"live_page_verified":true},
   "canonical_written_commit": "f6cf9f02fd1ebc2853326b3a2c731bd2b94ac875",
-  "canonical_spoken_commit": "0a3590ce7c3840d324da623cec60a91cd7c1d5a2",
-  "research": {"history_window_checked":"2026-09-06 through 2026-09-12; prior-month recurrence context consulted through existing Persistent World State","dedup_note":"Weekly synthesis uses phase changes rather than replaying daily headlines."}
+  "canonical_spoken_commit": "f9e8fbd97b3c845b09dad3651098c2432e3bf8d7",
+  "podcast_rss_commit": "d1b4ceaf56411f0650194f4f3fdf9e78c6b04d5d",
+  "written_publish_commit": "ce837af598cc8f8e628d74f212631aa21078b9c9",
+  "podcast": {"guid":"ep024-daily-2026-09-13","enclosure_url":"https://pub-e2d65fa7f70240878f2e556592826485.r2.dev/daily/ep024-daily-2026-09-13.mp3","length":1447917,"duration":"00:06:02"},
+  "written_url": "https://tangkk.github.io/daily_brief/2026/09/13/",
+  "research": {"history_window_checked":"2026-09-06 through 2026-09-12; prior-month recurrence context consulted through existing Persistent World State","dedup_note":"Weekly synthesis uses phase changes rather than replaying daily headlines."},
+  "recovery_note": "Initial podcast attempt failed TTS preflight on an Arabic calendar year in the spoken script. Canonical spoken text was normalized and republished through the same idempotent path before any RSS item existed; final first-publish GUID and enclosure remained canonical."
 }
