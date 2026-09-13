@@ -1,21 +1,11 @@
 {
   "date": "2026-09-13",
   "run_type": "weekly_review",
-  "status": "written_staged",
+  "status": "spoken_committed",
   "started_at": "2026-09-13T09:02:49+08:00",
-  "updated_at": "2026-09-13T09:20:00+08:00",
-  "known_artifact_state": {
-    "written_draft": true,
-    "written_post": false,
-    "spoken_canonical": false,
-    "podcast_verified": false,
-    "audio_mapping": false,
-    "live_page_verified": false
-  },
+  "updated_at": "2026-09-13T09:22:00+08:00",
+  "known_artifact_state": {"written_draft":true,"written_post":false,"spoken_canonical":true,"podcast_verified":false,"audio_mapping":false,"live_page_verified":false},
   "canonical_written_commit": "f6cf9f02fd1ebc2853326b3a2c731bd2b94ac875",
-  "research": {
-    "history_window_checked": "2026-09-06 through 2026-09-12; prior-month recurrence context consulted through existing Persistent World State",
-    "weekly_state_changes": ["energy shock entered inflation and central-bank policy","Fed pricing shifted toward a September hike","AI demand evidence strengthened while financing/leverage risks became clearer","China consumer inflation remained moderate while upstream producer-price pressure strengthened"],
-    "dedup_note": "Weekly synthesis uses phase changes rather than replaying daily headlines."
-  }
+  "canonical_spoken_commit": "0a3590ce7c3840d324da623cec60a91cd7c1d5a2",
+  "research": {"history_window_checked":"2026-09-06 through 2026-09-12; prior-month recurrence context consulted through existing Persistent World State","dedup_note":"Weekly synthesis uses phase changes rather than replaying daily headlines."}
 }
