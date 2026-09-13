@@ -1,9 +1,9 @@
 {
   "date": "2026-09-13",
   "run_type": "weekly_review",
-  "status": "started",
+  "status": "research_complete",
   "started_at": "2026-09-13T09:02:49+08:00",
-  "updated_at": "2026-09-13T09:02:49+08:00",
+  "updated_at": "2026-09-13T09:16:00+08:00",
   "known_artifact_state": {
     "written_draft": false,
     "written_post": false,
@@ -11,5 +11,16 @@
     "podcast_verified": false,
     "audio_mapping": false,
     "live_page_verified": false
+  },
+  "research": {
+    "history_window_checked": "2026-09-06 through 2026-09-12; prior-month recurrence context consulted through existing Persistent World State",
+    "weekly_state_changes": [
+      "energy shock moved from shipping risk to triple-digit crude, record diesel, official inflation and central-bank tightening",
+      "Fed pricing shifted from hold baseline to a high probability of a September hike after PPI/CPI",
+      "AI cycle gained stronger contract/revenue evidence but also clearer financing and leverage risk",
+      "frontier AI regulation and safety constraints became more concrete",
+      "China consumer inflation remained moderate while upstream producer-price pressure strengthened"
+    ],
+    "dedup_note": "Weekly synthesis uses phase changes rather than replaying daily headlines; repeated daily events are included only as evidence for a changed weekly state."
   }
 }
