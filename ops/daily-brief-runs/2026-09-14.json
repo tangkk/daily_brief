@@ -1,14 +1,30 @@
 {
   "date": "2026-09-14",
   "run_type": "daily_brief",
-  "status": "started",
+  "status": "research_complete",
   "started_at": "2026-09-14T07:02:25+08:00",
-  "updated_at": "2026-09-14T07:02:25+08:00",
+  "updated_at": "2026-09-14T07:11:00+08:00",
   "known_artifact_state": {
     "written_draft": false,
     "spoken_canonical": false,
     "podcast_verified": false,
     "written_published": false,
     "published_verified": false
+  },
+  "dedup_audit": {
+    "strong_window_days": 7,
+    "recurrence_window_days": 30,
+    "baseline_checked_through": "2026-09-13",
+    "material_new_updates": [
+      "Saudi East-West pipeline outage now threatens up to roughly 4% of global oil supply and Monday Brent opened above $108",
+      "Anthropic reportedly selected Nasdaq for its prospective IPO, advancing the financing story from valuation discussion toward venue selection",
+      "South Korea's expanded technology-protection espionage law took effect"
+    ],
+    "recurring_candidates_rejected_or_kept_as_context": [
+      "Friday US CPI/Fed hike repricing",
+      "Oracle AI backlog and customer-prepayment economics",
+      "Qualcomm-Amazon AI chip framework",
+      "d-Matrix NVLink Fusion announcement"
+    ]
   }
 }
