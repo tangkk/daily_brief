@@ -1,15 +1,21 @@
 {
   "date": "2026-09-14",
   "run_type": "daily_brief",
-  "status": "research_complete",
+  "status": "spoken_committed",
   "started_at": "2026-09-14T07:02:25+08:00",
-  "updated_at": "2026-09-14T07:11:00+08:00",
+  "updated_at": "2026-09-14T07:16:00+08:00",
   "known_artifact_state": {
-    "written_draft": false,
-    "spoken_canonical": false,
+    "written_draft": true,
+    "spoken_canonical": true,
     "podcast_verified": false,
     "written_published": false,
     "published_verified": false
+  },
+  "canonical_artifacts": {
+    "written_draft": "_drafts/2026-09-14-daily-brief.md",
+    "written_commit": "fe073cd85a3af43619b6cf144782773b41645a05",
+    "spoken_file": "episodes/ep025-daily-2026-09-14.txt",
+    "spoken_commit": "2fe0872ddf7f87b0e41318a077d3c2d71e0e672a"
   },
   "dedup_audit": {
     "strong_window_days": 7,
