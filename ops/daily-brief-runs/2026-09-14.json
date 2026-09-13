@@ -1,21 +1,33 @@
 {
   "date": "2026-09-14",
   "run_type": "daily_brief",
-  "status": "spoken_committed",
+  "status": "published_verified",
   "started_at": "2026-09-14T07:02:25+08:00",
-  "updated_at": "2026-09-14T07:16:00+08:00",
+  "updated_at": "2026-09-14T07:20:00+08:00",
   "known_artifact_state": {
-    "written_draft": true,
+    "written_draft": false,
     "spoken_canonical": true,
-    "podcast_verified": false,
-    "written_published": false,
-    "published_verified": false
+    "podcast_verified": true,
+    "written_published": true,
+    "published_verified": true
   },
   "canonical_artifacts": {
-    "written_draft": "_drafts/2026-09-14-daily-brief.md",
-    "written_commit": "fe073cd85a3af43619b6cf144782773b41645a05",
+    "written_post": "_posts/2026-09-14-daily-brief.md",
+    "written_canonical_commit": "fe073cd85a3af43619b6cf144782773b41645a05",
     "spoken_file": "episodes/ep025-daily-2026-09-14.txt",
     "spoken_commit": "2fe0872ddf7f87b0e41318a077d3c2d71e0e672a"
+  },
+  "podcast": {
+    "guid": "ep025-daily-2026-09-14",
+    "enclosure_url": "https://pub-e2d65fa7f70240878f2e556592826485.r2.dev/daily/ep025-daily-2026-09-14.mp3",
+    "length": 1183725,
+    "duration": "00:04:56",
+    "rss_verified": true
+  },
+  "written_release": {
+    "audio_mapping_exact": true,
+    "pages_workflow_run": 34788574869,
+    "live_page_verified": true
   },
   "dedup_audit": {
     "strong_window_days": 7,
