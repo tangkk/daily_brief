@@ -1,0 +1,15 @@
+{
+  "date": "2026-09-13",
+  "run_type": "weekly_review",
+  "status": "started",
+  "started_at": "2026-09-13T09:02:49+08:00",
+  "updated_at": "2026-09-13T09:02:49+08:00",
+  "known_artifact_state": {
+    "written_draft": false,
+    "written_post": false,
+    "spoken_canonical": false,
+    "podcast_verified": false,
+    "audio_mapping": false,
+    "live_page_verified": false
+  }
+}
