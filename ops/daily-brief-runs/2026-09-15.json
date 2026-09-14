@@ -1,21 +1,38 @@
 {
   "date": "2026-09-15",
   "run_type": "daily_brief",
-  "status": "spoken_committed",
+  "status": "published_verified",
   "started_at": "2026-09-15T06:58:56+08:00",
   "research_completed_at": "2026-09-15T07:03:00+08:00",
   "written_staged_at": "2026-09-15T07:05:00+08:00",
   "spoken_committed_at": "2026-09-15T07:07:00+08:00",
+  "podcast_verified_at": "2026-09-15T07:10:00+08:00",
+  "written_published_at": "2026-09-15T07:11:00+08:00",
+  "published_verified_at": "2026-09-15T07:12:00+08:00",
   "canonical_commits": {
     "written_draft": "fd17ef5ef6c39c2ecf1ed960f8a88ad40ed79bd7",
     "spoken_script": "bc85f29d7dd9e66c0f140dbe18662379b02ee858"
   },
+  "podcast": {
+    "workflow_run_id": 34906871243,
+    "guid": "ep026-daily-2026-09-15",
+    "enclosure_url": "https://pub-e2d65fa7f70240878f2e556592826485.r2.dev/daily/ep026-daily-2026-09-15.mp3",
+    "length": 1359693,
+    "duration": "00:05:40",
+    "verified": true
+  },
+  "written_release": {
+    "workflow_run_id": 34906841818,
+    "post": "_posts/2026-09-15-daily-brief.md",
+    "audio_mapping_exact_match": true,
+    "pages_live_verified_by_workflow": true
+  },
   "artifact_state": {
     "written_staged": true,
     "spoken_committed": true,
-    "podcast_verified": false,
-    "written_published": false,
-    "published_verified": false
+    "podcast_verified": true,
+    "written_published": true,
+    "published_verified": true
   },
   "dedup_audit": {
     "history_window_checked": "prior 7 days strong window; prior 30 days thesis context",
