@@ -1,13 +1,26 @@
 {
   "date": "2026-09-15",
   "run_type": "daily_brief",
-  "status": "started",
+  "status": "research_complete",
   "started_at": "2026-09-15T06:58:56+08:00",
+  "research_completed_at": "2026-09-15T07:03:00+08:00",
   "artifact_state": {
     "written_staged": false,
     "spoken_committed": false,
     "podcast_verified": false,
     "written_published": false,
     "published_verified": false
+  },
+  "dedup_audit": {
+    "history_window_checked": "prior 7 days strong window; prior 30 days thesis context",
+    "material_recurring_candidates_rejected": [
+      "Saudi East-West pipeline outage itself: already led 2026-09-14; retained only as market context",
+      "Anthropic potential Nasdaq IPO: already covered 2026-09-14",
+      "ByteDance $29.6B AI loan: financing was reported September 4; later signing did not materially change the thesis"
+    ],
+    "recurring_candidates_admitted": [
+      "Oil/rates transmission: admitted for verified new market state, including US 10-year yield crossing 5% and completed Monday session",
+      "AI slowdown warnings: admitted for verified global equity/semiconductor repricing in the completed Monday session"
+    ]
   }
 }
