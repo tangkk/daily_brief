@@ -13,6 +13,16 @@ The site contains two written content streams with different publishing rules.
 - The written site may play the already-published podcast MP3 only from an explicit `_data/audio.json` mapping.
 - It never generates TTS, uploads audio, owns podcast metadata, or guesses an R2 URL.
 
+### China AI coverage
+
+China-related AI and technology developments are part of the normal AI news universe and must not be down-ranked, excluded, or omitted merely because they concern China. Apply the same Global Significance Lens, Information-Gain threshold, source quality standards, and semantic-deduplication rules used for comparable AI developments elsewhere.
+
+- Actively consider material developments involving Chinese foundation/model companies, open-source models, training/inference advances, AI products and agents, enterprise and consumer adoption, AI cloud/compute infrastructure, semiconductors and accelerators, financing, revenue/paid demand, and other technically or economically meaningful AI developments.
+- China-related AI coverage does not require a dedicated quota and must not be included merely for geographic balance; rank it on substantive importance and information gain.
+- Ordinary non-political AI/technology/business reporting is not subject to exclusion merely because the company, research team, product, infrastructure, or market is Chinese.
+- Existing China-specific spoken/editorial restrictions continue to govern genuinely political, diplomatic, bilateral, trade-policy, regulatory, or similarly sensitive material. Do not extend those restrictions to ordinary AI/technology coverage by association.
+- When a China AI story contains both ordinary technical/business facts and sensitive political/policy material, preserve and evaluate the separable technical/business substance normally where it remains accurate and meaningful on its own.
+
 ### Rolling semantic deduplication and Information-Gain gate
 
 Semantic deduplication is a hard selection gate, not a writing-time suggestion. It runs before Top Headlines are ranked.
