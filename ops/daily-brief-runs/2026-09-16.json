@@ -1,0 +1,12 @@
+{
+  "date": "2026-09-16",
+  "run_type": "daily_brief",
+  "status": "started",
+  "started_at": "2026-09-16T06:59:14+08:00",
+  "artifacts": {
+    "written_draft": false,
+    "spoken_script": false,
+    "podcast_verified": false,
+    "written_published": false
+  }
+}
