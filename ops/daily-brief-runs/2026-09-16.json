@@ -1,7 +1,7 @@
 {
   "date": "2026-09-16",
   "run_type": "daily_brief",
-  "status": "research_complete",
+  "status": "published_verified",
   "started_at": "2026-09-16T06:59:14+08:00",
   "research_completed_at": "2026-09-16T07:03:00+08:00",
   "dedup_audit": {
@@ -10,10 +10,30 @@
     "rejected_recurrences": ["AI slowdown warning itself", "10-year Treasury merely crossing 5%", "Saudi East-West pipeline outage itself"],
     "material_updates": ["physical crude cargoes above $130 and Saudi European cargo cancellations", "10-year Treasury reaches highest since 2007 while Fed hike odds rise to 94.5%", "bitcoin and crypto equities fall after US Senate bill failure", "China August industrial output led by tech while retail and property weaken", "MediaTek launches 2nm mobile AI chip with 51% on-device generative-AI uplift"]
   },
+  "canonical": {
+    "written_commit": "bd9337f0898c9f8afca692ea431037d3286e0744",
+    "spoken_commit": "3c3384728d5b0f6f24170247b7989e808cb93b51",
+    "spoken_path": "episodes/ep027-daily-2026-09-16.txt"
+  },
+  "podcast": {
+    "workflow_run_id": 35033758615,
+    "guid": "ep027-daily-2026-09-16",
+    "enclosure_url": "https://pub-e2d65fa7f70240878f2e556592826485.r2.dev/daily/ep027-daily-2026-09-16.mp3",
+    "length": 1456941,
+    "duration": "00:06:04",
+    "verified": true
+  },
+  "written": {
+    "workflow_run_id": 35033727875,
+    "post_path": "_posts/2026-09-16-daily-brief.md",
+    "audio_mapping_url": "https://pub-e2d65fa7f70240878f2e556592826485.r2.dev/daily/ep027-daily-2026-09-16.mp3",
+    "pages_deploy_verified": true,
+    "public_url": "https://tangkk.github.io/daily_brief/2026/09/16/"
+  },
   "artifacts": {
-    "written_draft": false,
-    "spoken_script": false,
-    "podcast_verified": false,
-    "written_published": false
+    "written_draft": true,
+    "spoken_script": true,
+    "podcast_verified": true,
+    "written_published": true
   }
 }
