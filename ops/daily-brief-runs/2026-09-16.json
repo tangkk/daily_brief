@@ -1,8 +1,15 @@
 {
   "date": "2026-09-16",
   "run_type": "daily_brief",
-  "status": "started",
+  "status": "research_complete",
   "started_at": "2026-09-16T06:59:14+08:00",
+  "research_completed_at": "2026-09-16T07:03:00+08:00",
+  "dedup_audit": {
+    "strong_window": "previous 7 canonical editions",
+    "history_window": "previous 30 days",
+    "rejected_recurrences": ["AI slowdown warning itself", "10-year Treasury merely crossing 5%", "Saudi East-West pipeline outage itself"],
+    "material_updates": ["physical crude cargoes above $130 and Saudi European cargo cancellations", "10-year Treasury reaches highest since 2007 while Fed hike odds rise to 94.5%", "bitcoin and crypto equities fall after US Senate bill failure", "China August industrial output led by tech while retail and property weaken", "MediaTek launches 2nm mobile AI chip with 51% on-device generative-AI uplift"]
+  },
   "artifacts": {
     "written_draft": false,
     "spoken_script": false,
