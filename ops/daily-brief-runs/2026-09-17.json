@@ -1,16 +1,18 @@
 {
   "date": "2026-09-17",
   "run_type": "daily_brief",
-  "status": "written_staged",
+  "status": "spoken_committed",
   "started_at": "2026-09-17T07:00:00+08:00",
-  "updated_at": "2026-09-17T07:04:00+08:00",
+  "updated_at": "2026-09-17T07:05:00+08:00",
   "artifact_state": {
     "research_complete": true,
     "written_staged": true,
-    "spoken_committed": false,
+    "spoken_committed": true,
     "podcast_verified": false,
     "written_published": false,
     "published_verified": false
   },
-  "written_commit_sha": "4bfb8b9f91f69907b119180dd83ddc2491a41955"
+  "written_commit_sha": "4bfb8b9f91f69907b119180dd83ddc2491a41955",
+  "spoken_commit_sha": "6b9d34e116c17ff1a42154fe83931fee6185e4aa",
+  "episode_guid": "ep028-daily-2026-09-17"
 }
