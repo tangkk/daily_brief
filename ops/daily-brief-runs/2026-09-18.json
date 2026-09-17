@@ -1,8 +1,9 @@
 {
   "date": "2026-09-18",
   "run_type": "daily_brief",
-  "status": "spoken_committed",
+  "status": "published_verified",
   "started_at": "2026-09-18T07:02:12+08:00",
+  "updated_at": "2026-09-18T07:30:00+08:00",
   "history_window_checked": "2026-09-11 through 2026-09-17, with 2026-09-17 weighted highest",
   "research_notes": {
     "material_new_candidates": [
@@ -18,18 +19,25 @@
     ]
   },
   "canonical": {
-    "written_path": "_drafts/2026-09-18-daily-brief.md",
+    "written_path": "_posts/2026-09-18-daily-brief.md",
     "written_commit_sha": "186d0d2b6a09c26f24ede408a213f70c4e20d5eb",
     "written_blob_sha": "acec339e69a53d9b04cd962edf8ba2009a1aecff",
     "spoken_path": "episodes/ep029-daily-2026-09-18.txt",
     "spoken_commit_sha": "cf4fbbe0c0891fefd956e6b7aa20e4aa131602a6",
     "spoken_blob_sha": "b8e5c20acaf19ac9905074dacec83c73e4d74f8a"
   },
+  "podcast": {
+    "guid": "ep029-daily-2026-09-18",
+    "enclosure_url": "https://pub-e2d65fa7f70240878f2e556592826485.r2.dev/daily/ep029-daily-2026-09-18.mp3",
+    "length": 1162413,
+    "duration": "00:04:51"
+  },
   "artifacts": {
     "written_staged": true,
     "spoken_committed": true,
-    "podcast_verified": false,
-    "written_published": false,
-    "published_verified": false
-  }
+    "podcast_verified": true,
+    "written_published": true,
+    "published_verified": true
+  },
+  "reconciliation": "Committed Podcast RSS, public written post, and _data/audio.json agree on the same-date release and exact enclosure URL."
 }
