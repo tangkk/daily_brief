@@ -1,8 +1,22 @@
 {
   "date": "2026-09-18",
   "run_type": "daily_brief",
-  "status": "started",
+  "status": "research_complete",
   "started_at": "2026-09-18T07:02:12+08:00",
+  "history_window_checked": "2026-09-11 through 2026-09-17, with 2026-09-17 weighted highest",
+  "research_notes": {
+    "material_new_candidates": [
+      "Post-Fed market rebound as oil and Treasury yields retreated",
+      "Huawei reports domestic AI compute demand exceeding supply and accelerates Ascend roadmap",
+      "Saudi East-West pipeline damage is broader than previously reported despite crude price retreat",
+      "Anthropic signs first Australia data-centre lease for inference capacity",
+      "European gas storage shortfall adds energy/inflation pressure"
+    ],
+    "dedup_rejections": [
+      "Fed rate hike itself was yesterday's lead and is not repeated as a new headline",
+      "generic AI-capex expansion thesis rejected without incremental evidence"
+    ]
+  },
   "artifacts": {
     "written_staged": false,
     "spoken_committed": false,
