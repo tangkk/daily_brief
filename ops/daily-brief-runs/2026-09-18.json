@@ -1,7 +1,7 @@
 {
   "date": "2026-09-18",
   "run_type": "daily_brief",
-  "status": "research_complete",
+  "status": "spoken_committed",
   "started_at": "2026-09-18T07:02:12+08:00",
   "history_window_checked": "2026-09-11 through 2026-09-17, with 2026-09-17 weighted highest",
   "research_notes": {
@@ -17,9 +17,17 @@
       "generic AI-capex expansion thesis rejected without incremental evidence"
     ]
   },
+  "canonical": {
+    "written_path": "_drafts/2026-09-18-daily-brief.md",
+    "written_commit_sha": "186d0d2b6a09c26f24ede408a213f70c4e20d5eb",
+    "written_blob_sha": "acec339e69a53d9b04cd962edf8ba2009a1aecff",
+    "spoken_path": "episodes/ep029-daily-2026-09-18.txt",
+    "spoken_commit_sha": "cf4fbbe0c0891fefd956e6b7aa20e4aa131602a6",
+    "spoken_blob_sha": "b8e5c20acaf19ac9905074dacec83c73e4d74f8a"
+  },
   "artifacts": {
-    "written_staged": false,
-    "spoken_committed": false,
+    "written_staged": true,
+    "spoken_committed": true,
     "podcast_verified": false,
     "written_published": false,
     "published_verified": false
