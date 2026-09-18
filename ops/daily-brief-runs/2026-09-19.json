@@ -1,10 +1,20 @@
 {
   "date": "2026-09-19",
   "run_type": "daily_brief",
-  "status": "started",
+  "status": "written_staged",
   "started_at": "2026-09-19T06:57:44+08:00",
+  "research_complete": true,
+  "dedup_audit": {
+    "strong_window_days": 7,
+    "recurrence_window_days": 30,
+    "previous_edition_checked": "2026-09-18",
+    "material_recurring_candidates_rejected": ["Fed first-hike recap without new state change", "Saudi pipeline damage recap without new material update", "Huawei AI compute demand recap"],
+    "recurring_candidates_admitted": ["global tightening via completed BOJ hike", "AI infrastructure financing economics via CoreWeave/Nscale disclosures"],
+    "information_gain": ["BOJ completed 1.25% hike and yen reaction", "CoreWeave upsized convertible financing", "Nscale public IPO financials", "CXMT NAND expansion plan"]
+  },
   "artifacts": {
-    "written_draft": null,
+    "written_draft": "_drafts/2026-09-19-daily-brief.md",
+    "written_draft_commit": "10de48290d9be3b7b69d2eb8b4d63e1e337eb6e0",
     "spoken_script": null,
     "podcast_rss": null,
     "written_post": null
