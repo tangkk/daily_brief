@@ -141,6 +141,18 @@ The normal Monday–Saturday Daily Brief includes a dedicated **AI Credit Cycle 
 - Sunday Weekly Review remains the full weekly synthesis of the AI credit cycle and should integrate the week's Daily Pulse evidence into a higher-level cycle assessment rather than replay each daily item.
 - The historical standalone AI 信用周期 archive remains unchanged and is not reactivated as a separate daily publication stream.
 
+## AI and employment impact watch
+
+AI's impact on employment is a persistent Daily Brief research theme, covering both positive and negative effects. It does not receive a mandatory daily headline slot; items enter the edition only when they clear the existing Global Significance Lens, rolling semantic-deduplication, Bayesian Update, and Information-Gain gates.
+
+- Track direct evidence of AI-related layoffs, hiring reductions or freezes, lower demand for entry-level roles, role elimination or task substitution, changes in hours, wages, contractor demand, and occupational composition.
+- Track positive employment effects as well: new AI-related roles and occupations, AI-driven business expansion and hiring, productivity-linked growth, AI-skill wage premiums, worker augmentation, and evidence that automation reallocates workers rather than eliminating employment.
+- Prefer observed labor-market outcomes and measurable company behavior over forecasts or executive claims about hypothetical future job losses or gains. Useful evidence includes official labor statistics, payroll/job-posting data, company headcount and hiring disclosures, wage data, longitudinal studies, and credible large-sample research.
+- Distinguish AI causality from ordinary restructuring, macroeconomic weakness, offshoring, post-pandemic normalization, mergers, or unrelated cost cutting. When causality is uncertain, state that uncertainty rather than attributing the employment change to AI.
+- Evaluate both aggregate and distributional effects: total employment may differ from effects on particular occupations, junior versus senior workers, skill groups, industries, regions, wages, hours, and career-entry pathways.
+- Do not force this theme into every edition. Persistent trends belong in Persistent World State; publish a headline or analysis only when new evidence materially changes the current assessment.
+- When material, incorporate the evidence into the normal AI/economy coverage and Sunday Weekly Review rather than creating a separate publication stream.
+
 ## Schedule architecture
 
 - Monday–Saturday: normal **Daily Brief at 07:00 Asia/Shanghai**, optimized for breakfast/commute listening before the main China/Hong Kong cash-equity open. Monday is no longer a separate schedule; it uses the same Daily Brief task and the same research/publishing contract as Tuesday–Saturday, while still applying rolling deduplication against the Sunday Weekly Review and prior history.
