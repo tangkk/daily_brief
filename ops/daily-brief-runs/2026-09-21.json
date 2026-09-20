@@ -1,17 +1,24 @@
 {
   "date": "2026-09-21",
   "run_type": "daily_brief",
-  "status": "spoken_committed",
+  "status": "published_verified",
   "started_at": "2026-09-21T06:57:50+08:00",
   "research_completed_at": "2026-09-21T07:00:00+08:00",
+  "published_verified_at": "2026-09-21T07:05:11+08:00",
   "artifacts": {
     "written_staged": true,
     "written_commit": "1db4e84bd7ab2d3b7a42f53c3e4f215ceb9b68a1",
     "spoken_committed": true,
     "spoken_commit": "ec5cfdcc686dd443638b8a433c7cf84dbd82cc9e",
-    "podcast_verified": false,
-    "written_published": false,
-    "published_verified": false
+    "podcast_verified": true,
+    "podcast_guid": "ep032-daily-2026-09-21",
+    "podcast_enclosure_url": "https://pub-e2d65fa7f70240878f2e556592826485.r2.dev/daily/ep032-daily-2026-09-21.mp3",
+    "podcast_enclosure_bytes": 1555053,
+    "podcast_duration": "00:06:29",
+    "written_published": true,
+    "written_publish_commit": "39e93a77f7d5d055b9f1db14487d37792f29c650",
+    "audio_mapping_verified": true,
+    "published_verified": true
   },
   "dedup_audit": {
     "strong_window_days": 7,
