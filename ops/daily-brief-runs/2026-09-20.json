@@ -1,9 +1,16 @@
 {
   "date": "2026-09-20",
   "run_type": "weekly_review",
-  "status": "started",
+  "status": "research_complete",
   "started_at": "2026-09-20T09:00:00+08:00",
-  "updated_at": "2026-09-20T09:00:00+08:00",
+  "updated_at": "2026-09-20T09:08:00+08:00",
+  "history_window": "2026-09-13 through 2026-09-19; 30-day recurrence context consulted",
+  "persistent_world_state_update": [
+    "Global inflation defense strengthened: Fed and BOJ joined ECB in tightening while oil stayed above $100.",
+    "AI demand remains strong, but project-level credit transmission became a first-order constraint as Oracle-linked data-center debt traded below par.",
+    "China supply-side/high-tech production strengthened while household consumption remained weak.",
+    "China AI compute demand is visibly supply-constrained, with Huawei reporting insufficient domestic capacity."
+  ],
   "artifact_state": {
     "written_staged": false,
     "spoken_committed": false,
