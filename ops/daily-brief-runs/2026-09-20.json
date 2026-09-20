@@ -1,15 +1,19 @@
 {
   "date": "2026-09-20",
   "run_type": "weekly_review",
-  "status": "written_staged",
+  "status": "spoken_committed",
   "started_at": "2026-09-20T09:00:00+08:00",
-  "updated_at": "2026-09-20T09:12:00+08:00",
+  "updated_at": "2026-09-20T09:14:00+08:00",
   "history_window": "2026-09-13 through 2026-09-19; 30-day recurrence context consulted",
   "written_commit_sha": "6c27587db5c320e5595d34b543cc7543d618e0ba",
   "written_readback_verified": true,
+  "spoken_commit_sha": "11d5dcc632ee22455222c8baa3b56e3d0d209041",
+  "spoken_path": "episodes/ep031-daily-2026-09-20.txt",
+  "spoken_readback_verified": true,
+  "podcast_workflow_run_id": 35480320475,
   "artifact_state": {
     "written_staged": true,
-    "spoken_committed": false,
+    "spoken_committed": true,
     "podcast_verified": false,
     "written_published": false,
     "published_verified": false
