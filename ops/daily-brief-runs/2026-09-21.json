@@ -1,12 +1,14 @@
 {
   "date": "2026-09-21",
   "run_type": "daily_brief",
-  "status": "research_complete",
+  "status": "spoken_committed",
   "started_at": "2026-09-21T06:57:50+08:00",
   "research_completed_at": "2026-09-21T07:00:00+08:00",
   "artifacts": {
-    "written_staged": false,
-    "spoken_committed": false,
+    "written_staged": true,
+    "written_commit": "1db4e84bd7ab2d3b7a42f53c3e4f215ceb9b68a1",
+    "spoken_committed": true,
+    "spoken_commit": "ec5cfdcc686dd443638b8a433c7cf84dbd82cc9e",
     "podcast_verified": false,
     "written_published": false,
     "published_verified": false
