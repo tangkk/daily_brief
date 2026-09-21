@@ -1,27 +1,48 @@
 {
   "date": "2026-09-22",
   "run_type": "daily_brief",
-  "status": "spoken_committed",
+  "status": "published_verified",
   "started_at": "2026-09-22T07:00:00+08:00",
   "artifact_state": {
     "written_staged": true,
     "spoken_committed": true,
-    "podcast_verified": false,
-    "written_published": false,
-    "published_verified": false
+    "podcast_verified": true,
+    "written_published": true,
+    "published_verified": true
   },
   "canonical": {
-    "written_path": "_drafts/2026-09-22-daily-brief.md",
-    "written_commit": "ea4c6090150e7083420e9b2ef1f93c021656bc5e",
+    "written_path": "_posts/2026-09-22-daily-brief.md",
+    "written_commit": "410a68f71b17881c716e77a043ef0bc5fd38e651",
     "written_blob": "ac20240883186dc4381fe3cdbc92bf3c21f78d1f",
     "spoken_path": "episodes/ep033-daily-2026-09-22.txt",
     "spoken_commit": "35fcbc7572b71815b4e7c48386a27364d8d47d76",
     "spoken_blob": "bd656836007c31118b3385f14482dfbaba2db66e",
     "main_readback_verified": true
   },
+  "podcast": {
+    "guid": "ep033-daily-2026-09-22",
+    "rss_commit": "ebe775667527cb5e2a607bb83cdb84242bee167c",
+    "enclosure_url": "https://pub-e2d65fa7f70240878f2e556592826485.r2.dev/daily/ep033-daily-2026-09-22.mp3",
+    "bytes": 1369197,
+    "duration": "00:05:42",
+    "verified": true
+  },
+  "written_release": {
+    "audio_mapping_verified": true,
+    "pages_workflow_verified": true,
+    "publish_workflow_run": 35665564377
+  },
   "dedup_audit": {
     "history_window_checked": "7-day strong window plus 30-day thesis context",
-    "rejected_recurring": ["AI employment survey evidence already covered 2026-09-21", "humanoid-robot IPO tightening previously reported in September"],
-    "admitted_updates": ["South Korea Sept 1-20 semiconductor exports set a new record", "Nasdaq record close with AMD reaching $1T market value", "EU data-center energy/water disclosure regime", "ECB Pontes settlement service"]
+    "rejected_recurring": [
+      "AI employment survey evidence already covered 2026-09-21",
+      "humanoid-robot IPO tightening previously reported in September"
+    ],
+    "admitted_updates": [
+      "South Korea Sept 1-20 semiconductor exports set a new record",
+      "Nasdaq record close with AMD reaching $1T market value",
+      "EU data-center energy/water disclosure regime",
+      "ECB Pontes settlement service"
+    ]
   }
 }
