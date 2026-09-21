@@ -59,7 +59,7 @@ Operational priority: **safe generation → preserve information via neutral rep
 
 ### Reader-facing prose style
 
-- In all reader-facing written Daily Brief and Weekly Review prose, avoid the contrastive construction `不是……而是……` and close variants such as `并不是……而是……`, `不是 X，是 Y`, or rhetorical negation followed by a corrective assertion.
+- In all reader-facing written Daily Brief and Weekly Review prose, avoid contrastive/corrective framing that creates a rhetorical foil before stating the point. Prohibited or strongly avoided forms include `不是……而是……`, `并不是……而是……`, `不是 X，是 Y`, `与其说 A，不如说 B`, `真正值得关注的不是 A，而是 B`, `关键不在 A，在 B`, and close variants.
 - State the intended conclusion directly in affirmative, factual language. When a genuine comparison or distinction is necessary, describe the two facts explicitly without using the `不是……而是……` frame.
 - This is a prose-style rule only; it must not alter factual meaning, uncertainty, nuance, source attribution, or information density.
 
