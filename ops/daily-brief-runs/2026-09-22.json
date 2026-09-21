@@ -1,14 +1,23 @@
 {
   "date": "2026-09-22",
   "run_type": "daily_brief",
-  "status": "research_complete",
+  "status": "spoken_committed",
   "started_at": "2026-09-22T07:00:00+08:00",
   "artifact_state": {
-    "written_staged": false,
-    "spoken_committed": false,
+    "written_staged": true,
+    "spoken_committed": true,
     "podcast_verified": false,
     "written_published": false,
     "published_verified": false
+  },
+  "canonical": {
+    "written_path": "_drafts/2026-09-22-daily-brief.md",
+    "written_commit": "ea4c6090150e7083420e9b2ef1f93c021656bc5e",
+    "written_blob": "ac20240883186dc4381fe3cdbc92bf3c21f78d1f",
+    "spoken_path": "episodes/ep033-daily-2026-09-22.txt",
+    "spoken_commit": "35fcbc7572b71815b4e7c48386a27364d8d47d76",
+    "spoken_blob": "bd656836007c31118b3385f14482dfbaba2db66e",
+    "main_readback_verified": true
   },
   "dedup_audit": {
     "history_window_checked": "7-day strong window plus 30-day thesis context",
