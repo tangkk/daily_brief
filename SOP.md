@@ -57,6 +57,12 @@ The public written Daily Brief must satisfy this constraint **during generation 
 
 Operational priority: **safe generation → preserve information via neutral rephrasing → pre-handoff self-check → deterministic publication validation → last-resort blocking.**
 
+### Reader-facing prose style
+
+- In all reader-facing written Daily Brief and Weekly Review prose, avoid the contrastive construction `不是……而是……` and close variants such as `并不是……而是……`, `不是 X，是 Y`, or rhetorical negation followed by a corrective assertion.
+- State the intended conclusion directly in affirmative, factual language. When a genuine comparison or distinction is necessary, describe the two facts explicitly without using the `不是……而是……` frame.
+- This is a prose-style rule only; it must not alter factual meaning, uncertainty, nuance, source attribution, or information density.
+
 ### Editorial invisibility for internal selection logic
 
 All research, selection, deduplication, ranking, Bayesian-update, Information-Gain, safety, source-policy, and workflow mechanics are internal editorial logic and must remain invisible in published written and spoken editions.
