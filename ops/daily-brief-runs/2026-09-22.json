@@ -1,7 +1,7 @@
 {
   "date": "2026-09-22",
   "run_type": "daily_brief",
-  "status": "started",
+  "status": "research_complete",
   "started_at": "2026-09-22T07:00:00+08:00",
   "artifact_state": {
     "written_staged": false,
@@ -9,5 +9,10 @@
     "podcast_verified": false,
     "written_published": false,
     "published_verified": false
+  },
+  "dedup_audit": {
+    "history_window_checked": "7-day strong window plus 30-day thesis context",
+    "rejected_recurring": ["AI employment survey evidence already covered 2026-09-21", "humanoid-robot IPO tightening previously reported in September"],
+    "admitted_updates": ["South Korea Sept 1-20 semiconductor exports set a new record", "Nasdaq record close with AMD reaching $1T market value", "EU data-center energy/water disclosure regime", "ECB Pontes settlement service"]
   }
 }
