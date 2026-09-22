@@ -1,23 +1,40 @@
 {
   "date": "2026-09-23",
   "run_type": "daily_brief",
-  "status": "spoken_committed",
+  "status": "published_verified",
   "started_at": "2026-09-23T06:58:57+08:00",
   "artifact_state": {
     "written_staged": true,
     "spoken_committed": true,
-    "podcast_verified": false,
-    "written_published": false,
-    "published_verified": false
+    "podcast_verified": true,
+    "written_published": true,
+    "published_verified": true
   },
   "canonical_commits": {
     "written_stage": "9df2b874d4fc8a9eeb6ca0cdf938abe2c8918706",
     "spoken": "fa100f05f38dcee659ff8ef98a0bc36c2738a771"
   },
+  "podcast": {
+    "guid": "ep034-daily-2026-09-23",
+    "enclosure_url": "https://pub-e2d65fa7f70240878f2e556592826485.r2.dev/daily/ep034-daily-2026-09-23.mp3",
+    "length": 1221645,
+    "duration": "00:05:05"
+  },
+  "verification": {
+    "podcast_rss": true,
+    "audio_mapping_exact": true,
+    "written_post_on_main": true
+  },
   "dedup_audit": {
     "history_window_checked": "2026-09-16..2026-09-22, with 2026-09-21 and 2026-09-22 highest weight",
-    "material_recurring_candidates_rejected": ["Korea semiconductor export record already led 2026-09-22", "CXMT fifth-generation DRAM mass production already covered 2026-09-21", "generic AI CapEx expansion thesis"],
-    "recurring_candidates_admitted": ["AI credit conditions: new 2026-09-22 bond-market spread and issuance evidence materially changes financing-cost assessment"],
+    "material_recurring_candidates_rejected": [
+      "Korea semiconductor export record already led 2026-09-22",
+      "CXMT fifth-generation DRAM mass production already covered 2026-09-21",
+      "generic AI CapEx expansion thesis"
+    ],
+    "recurring_candidates_admitted": [
+      "AI credit conditions: new 2026-09-22 bond-market spread and issuance evidence materially changes financing-cost assessment"
+    ],
     "information_gain": "AI-linked bond spreads around 115bp versus 78bp broader market and projected hyperscaler issuance of $420B next year add market-pricing evidence beyond prior financing-structure observations."
   },
   "main_readback": {
