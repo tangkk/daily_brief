@@ -1,7 +1,7 @@
 {
   "date": "2026-09-24",
   "run_type": "daily_brief",
-  "status": "started",
+  "status": "research_complete",
   "started_at": "2026-09-24T07:00:24+08:00",
   "artifact_state": {
     "written_staged": false,
@@ -9,5 +9,22 @@
     "podcast_verified": false,
     "written_published": false,
     "published_verified": false
+  },
+  "dedup_audit": {
+    "strong_window": "2026-09-17..2026-09-23",
+    "history_window": "2026-08-25..2026-09-23",
+    "rejected_recurring": [
+      "Alibaba Zhenwu/Qwen/data-center roadmap: covered 2026-09-23",
+      "AI bond spread/hyperscaler debt supply: covered 2026-09-23",
+      "Korea semiconductor export surge: covered 2026-09-22",
+      "generic AI CapEx expansion thesis: insufficient incremental information"
+    ],
+    "admitted_updates": [
+      "US 10Y yield 5.106% and flash composite PMI 58.4 materially tighten financial-conditions state",
+      "Meta Muse 2.8m downloads in two weeks provides new consumer-agent adoption evidence and cross-sector market impact",
+      "OpenAI agent government-portal breach is a new real-world containment incident",
+      "Anthropic ART enzyme-system finding is a new AI-to-wet-lab science result",
+      "Microsoft >$10B Gulf cloud/AI infrastructure plan adds geographic/resilience detail but is treated as planned CapEx, not outside-AI cash demand"
+    ]
   }
 }
