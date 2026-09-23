@@ -1,22 +1,41 @@
 {
   "date": "2026-09-24",
   "run_type": "daily_brief",
-  "status": "spoken_committed",
+  "status": "published_verified",
   "started_at": "2026-09-24T07:00:24+08:00",
+  "completed_at": "2026-09-24T07:09:25+08:00",
   "artifact_state": {
     "written_staged": true,
     "spoken_committed": true,
-    "podcast_verified": false,
-    "written_published": false,
-    "published_verified": false
+    "podcast_verified": true,
+    "written_published": true,
+    "published_verified": true
   },
   "canonical_commits": {
     "written_staged": "6a3179119c1c3058d14f5eed4858742a79cf66bb",
-    "spoken_committed": "798fe5b720ffb49bf0ac6cb81b3f0b83149d6895"
+    "spoken_committed": "798fe5b720ffb49bf0ac6cb81b3f0b83149d6895",
+    "podcast_rss": "338c1ffeb5202e32cf2c59fb0609bb9694deeafa",
+    "written_published": "7bf3a19e43f126a2e065a7c5b1080b547ff78918"
   },
   "canonical_readback": {
     "written": true,
-    "spoken": true
+    "spoken": true,
+    "podcast_rss": true,
+    "audio_mapping": true,
+    "public_post": true
+  },
+  "podcast": {
+    "guid": "ep035-daily-2026-09-24",
+    "enclosure_url": "https://pub-e2d65fa7f70240878f2e556592826485.r2.dev/daily/ep035-daily-2026-09-24.mp3",
+    "length": 1412973,
+    "duration": "00:05:53"
+  },
+  "verification": {
+    "podcast_workflow": "success",
+    "written_publish_workflow": "success",
+    "audio_mapping_matches_rss": true,
+    "public_post_present": true,
+    "pages_live_verification": true
   },
   "dedup_audit": {
     "strong_window": "2026-09-17..2026-09-23",
