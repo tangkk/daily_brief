@@ -1,13 +1,17 @@
 {
   "date": "2026-09-25",
   "run_type": "daily_brief",
-  "status": "started",
+  "status": "written_staged",
   "started_at": "2026-09-25T07:08:31+08:00",
   "artifact_state": {
-    "written_draft": false,
+    "written_draft": true,
     "spoken_canonical": false,
     "podcast_verified": false,
     "written_published": false,
     "published_verified": false
-  }
+  },
+  "written_staged_at": "2026-09-25T07:24:00+08:00",
+  "written_commit_sha": "b0da37ac53d09d99b9c3e03552340a9278ea5a37",
+  "failure_stage": "spoken_commit",
+  "failure_detail": "Canonical spoken content prepared, but repository branch update was blocked by the connector safety gate after blob/tree/commit creation; main was not moved, so downstream publication was not started."
 }
