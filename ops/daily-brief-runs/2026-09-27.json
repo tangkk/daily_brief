@@ -1,0 +1,13 @@
+{
+  "date": "2026-09-27",
+  "run_type": "weekly_review",
+  "status": "written_staged",
+  "artifact_state": {
+    "written_draft": "_drafts/2026-09-27-daily-brief.md",
+    "spoken_script": null,
+    "podcast_verified": false,
+    "written_published": false
+  },
+  "recovery_note": "Reconciled against GitHub main on user-requested publish continuation; canonical written draft exists, public post/run log/spoken episode absent.",
+  "updated_at": "2026-09-27T10:48:00+08:00"
+}
