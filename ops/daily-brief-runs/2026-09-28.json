@@ -1,11 +1,11 @@
 {
   "date": "2026-09-28",
   "run_type": "daily_brief",
-  "status": "written_staged",
+  "status": "spoken_committed",
   "started_at": "2026-09-28T07:00:17+08:00",
   "artifact_state": {
     "written_draft": true,
-    "spoken_canonical": false,
+    "spoken_canonical": true,
     "podcast_verified": false,
     "written_published": false,
     "published_verified": false
@@ -27,5 +27,8 @@
   },
   "written_staged_at": "2026-09-28T07:08:00+08:00",
   "written_commit_sha": "9ba3cb45f4d3a8ec066737880a97fe737ec1b087",
-  "written_blob_sha": "852bbebf176cb012ad98808a037e36c1ac3092d3"
+  "written_blob_sha": "852bbebf176cb012ad98808a037e36c1ac3092d3",
+  "spoken_commit_sha": "4efccc5ce4d6c226f49942aa1bd23a40ae43a770",
+  "spoken_blob_sha": "20730275169ac6d7bb9dbc5e228522f70b3670ef",
+  "podcast_workflow_run_id": 36357313870
 }
