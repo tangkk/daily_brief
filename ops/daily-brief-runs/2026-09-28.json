@@ -1,7 +1,7 @@
 {
   "date": "2026-09-28",
   "run_type": "daily_brief",
-  "status": "started",
+  "status": "research_complete",
   "started_at": "2026-09-28T07:00:17+08:00",
   "artifact_state": {
     "written_draft": false,
@@ -9,5 +9,20 @@
     "podcast_verified": false,
     "written_published": false,
     "published_verified": false
+  },
+  "research_completed_at": "2026-09-28T07:05:00+08:00",
+  "dedup_audit": {
+    "history_window_checked": "2026-08-29 through 2026-09-27, with 2026-09-21 through 2026-09-27 as strong window",
+    "rejected_recurring_candidates": [
+      "Friday US yields/equity close: already synthesized in 2026-09-26 and 2026-09-27",
+      "Anthropic/Akamai cloud contract and data-center financing stratification: already synthesized Sunday",
+      "AI agent workflow adoption: already synthesized Sunday"
+    ],
+    "admitted_recurring_candidates": [],
+    "new_candidates": [
+      "Reported possible approval for limited Nvidia RTX PRO 5500 purchases by ByteDance and Alibaba; unverified by Reuters independently",
+      "Bill Gates call for legislated AI safeguards; new statement but limited direct economic state change",
+      "Weekend Middle East diplomacy keeps Friday oil close as latest verified market benchmark"
+    ]
   }
 }
