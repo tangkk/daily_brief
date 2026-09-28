@@ -1,7 +1,7 @@
 {
   "date": "2026-09-29",
   "run_type": "daily_brief",
-  "status": "started",
+  "status": "research_complete",
   "started_at": "2026-09-29T06:59:09+08:00",
   "artifact_state": {
     "written_draft": false,
@@ -9,5 +9,24 @@
     "podcast_verified": false,
     "written_published": false,
     "published_verified": false
+  },
+  "research_completed_at": "2026-09-29T07:03:00+08:00",
+  "dedup_audit": {
+    "history_window_checked": "2026-09-22 through 2026-09-28, with 2026-09-27 Weekly Review weighted strongly",
+    "material_recurring_candidates_rejected": [
+      "standing AI data-center financing thesis without new project-level terms",
+      "RTX PRO 5500 potential procurement report from 2026-09-28",
+      "existing AI agent safety/governance thesis"
+    ],
+    "recurring_candidates_admitted": [
+      {
+        "candidate": "US long yields and oil",
+        "information_gain": "10-year Treasury reached about 5.25% and 30-year 5.57%, while October hike pricing rose to about 70%; this is a new market-state move beyond prior 5.16% close"
+      },
+      {
+        "candidate": "Nvidia capital allocation",
+        "information_gain": "new record $150B buyback authorization provides a new balance-sheet/capital-return signal"
+      }
+    ]
   }
 }
