@@ -29,5 +29,8 @@
         "information_gain": "new record $150B buyback authorization provides a new balance-sheet/capital-return signal"
       }
     ]
-  }
+  },
+  "failure_stage": "spoken_committed",
+  "failure_detail": "Recovery reached written_staged, but the canonical spoken-script GitHub write was blocked by the tool safety layer; no Podcast/TTS/RSS publication was started.",
+  "failed_at": "2026-09-29T07:32:00+08:00"
 }
