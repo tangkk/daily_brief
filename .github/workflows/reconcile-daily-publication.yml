@@ -1,0 +1,72 @@
+name: Reconcile Daily Publication
+
+on:
+  schedule:
+    # GitHub cron is UTC. These cover Mon-Sat after 07:00 CST and Sunday after 09:00 CST.
+    - cron: '0 0 * * 1-6'
+    - cron: '0 2 * * 0'
+  workflow_dispatch:
+    inputs:
+      date:
+        description: Asia/Shanghai date, YYYY-MM-DD
+        required: false
+
+permissions:
+  actions: write
+  contents: read
+
+concurrency:
+  group: daily-publication-reconcile
+  cancel-in-progress: false
+
+jobs:
+  reconcile:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Resolve Asia/Shanghai date
+        id: date
+        env:
+          INPUT_DATE: ${{ inputs.date }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [ -n "${INPUT_DATE:-}" ]; then
+            DATE="$INPUT_DATE"
+          else
+            DATE=$(TZ=Asia/Shanghai date +%F)
+          fi
+          [[ "$DATE" =~ ^[0-9]{4}-[0-9]{2}-[0-9]{2}$ ]]
+          echo "date=$DATE" >> "$GITHUB_OUTPUT"
+
+      - name: Reconcile Podcast-first written publication
+        env:
+          GH_TOKEN: ${{ github.token }}
+          DATE: ${{ steps.date.outputs.date }}
+          REPO: ${{ github.repository }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          DRAFT="_drafts/${DATE}-daily-brief.md"
+          POST="_posts/${DATE}-daily-brief.md"
+
+          # Nothing to recover if there is no staged edition, or it is already public.
+          if [ ! -f "$DRAFT" ] || [ -f "$POST" ]; then
+            echo "No staged written publication needs recovery for $DATE."
+            exit 0
+          fi
+
+          RAW_FEED="https://raw.githubusercontent.com/tangkk/lobster-daily-podcast/main/feed.xml"
+          curl -fsSL --max-time 20 "${RAW_FEED}?reconcile=${GITHUB_RUN_ID}" -o /tmp/podcast-feed.xml
+
+          # Reuse the canonical validator. If Podcast is not durably ready, do nothing;
+          # a later reconciliation or ChatGPT watchdog can retry.
+          if ! python scripts/publish_staged_daily.py --date "$DATE" --feed /tmp/podcast-feed.xml --check-only >/tmp/meta.json 2>/dev/null; then
+            echo "Podcast is not yet verified for $DATE; leaving staged draft untouched."
+            exit 0
+          fi
+
+          echo "Podcast is verified and written edition is still staged; dispatching canonical publisher."
+          gh workflow run publish-after-podcast.yml --repo "$REPO" --ref main -f date="$DATE"
