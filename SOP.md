@@ -218,6 +218,19 @@ Both Watchdogs are recovery workers, not observers, and use the durable-state re
 - After recovery, independently verify the durable/public contract: dated public post exists, `_data/audio.json` exactly matches the committed Podcast RSS enclosure for that date, and the live page contains the correct date/title and exact final audio URL. Workflow success alone is insufficient.
 - If recovery still fails, preserve valid upstream artifacts, record `failure_stage` and concise `failure_detail` when possible, and leave all recurring automations enabled.
 
+## Isolated release test environment
+
+Production workflow changes should be validated through isolated test paths before relying on them in scheduled production runs.
+
+- `Test Daily Release Harness` (`.github/workflows/test-daily-release-harness.yml`) is the deterministic written-publication/recovery harness.
+- It accepts only synthetic dates in the 2050–2099 range, uses temporary fixture directories, and runs with read-only repository permissions.
+- It must never receive production R2 credentials, write the production Podcast feed, push publication state to `main`, deploy production Pages, or send production notifications.
+- The harness reuses the real deterministic publication scripts against fixtures rather than maintaining a second implementation of publication logic.
+- Required scenarios include: happy path, missing Podcast item, duplicate same-date Podcast GUID lineage, audio mapping mismatch, and already-published/idempotent replay. Additional recovery/state-machine regressions should be added here as they are discovered.
+- `scripts/check_release_state.py` is a non-mutating machine-readable state checker. In tests it reads fixture root/feed/optional saved HTML only and never fetches or writes production resources.
+- Podcast/TTS behavior is tested separately by the Podcast repository's isolated Mock workflows. These layers together form the supported pre-production test environment.
+- A passing test harness does not itself authorize production publication; production still follows the normal SOP, durable-state, and end-to-end verification contracts.
+
 ## Schedule architecture
 
 - Monday–Saturday: normal **Daily Brief at 07:00 Asia/Shanghai**, optimized for breakfast/commute listening before the main China/Hong Kong cash-equity open. Monday is no longer a separate schedule; it uses the same Daily Brief task and the same research/publishing contract as Tuesday–Saturday, while still applying rolling deduplication against the Sunday Weekly Review and prior history.
