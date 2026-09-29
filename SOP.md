@@ -204,6 +204,20 @@ AI's impact on employment is a persistent Daily Brief research theme, covering b
 - Do not force this theme into every edition. Persistent trends belong in Persistent World State; publish a headline or analysis only when new evidence materially changes the current assessment.
 - When material, incorporate the evidence into the normal AI/economy coverage and Sunday Weekly Review rather than creating a separate publication stream.
 
+## Watchdog recovery execution contract
+
+Both Watchdogs are recovery workers, not observers, and use the durable-state recovery model defined above.
+
+- **Paired-schedule lifecycle check:** at the start of recovery, inspect the paired main recurring automation (`Daily Brief` for Mon–Sat, `Weekly Review` for Sunday). If it is unexpectedly disabled, re-enable that exact task without changing its prompt, cadence, timezone, or other configuration. Never disable the paired main task or the Watchdog itself as part of a content run.
+- **Concurrency guard:** do not race a healthy main run. Treat the main run as active and exit without publication side effects when a relevant GitHub Actions run is queued/in_progress or same-date durable artifacts/checkpoints have progressed within roughly the previous 15 minutes. Take over only when state is missing, stale, failed, or durable evidence proves recovery is required.
+- If no same-date run log or canonical artifacts exist because the main schedule failed before checkpointing, execute the normal same-date Daily Brief or Weekly Review flow under the current SOPs.
+- If partial durable state exists, resume from the first incomplete milestone rather than repeating completed upstream work.
+- If durable public state is already equivalent to `published_verified`, exit without publication side effects; reconcile a stale run log only when needed.
+- Downstream recovery must use one authoritative side-effect path at a time. Never hand-edit public post/audio mapping while a canonical publish workflow recovery is active.
+- When deciding whether to rerun a failed `Publish Daily After Podcast` run, compare its `head_sha` with current `main`. Rerun only when they match and rerun is the safe idempotent path. If `main` has advanced, the failed run is stale: dispatch the canonical workflow from current `main` for the exact date instead.
+- After recovery, independently verify the durable/public contract: dated public post exists, `_data/audio.json` exactly matches the committed Podcast RSS enclosure for that date, and the live page contains the correct date/title and exact final audio URL. Workflow success alone is insufficient.
+- If recovery still fails, preserve valid upstream artifacts, record `failure_stage` and concise `failure_detail` when possible, and leave all recurring automations enabled.
+
 ## Schedule architecture
 
 - Monday–Saturday: normal **Daily Brief at 07:00 Asia/Shanghai**, optimized for breakfast/commute listening before the main China/Hong Kong cash-equity open. Monday is no longer a separate schedule; it uses the same Daily Brief task and the same research/publishing contract as Tuesday–Saturday, while still applying rolling deduplication against the Sunday Weekly Review and prior history.
