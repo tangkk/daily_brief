@@ -150,11 +150,7 @@ jobs:
             echo "::group::mapping-mismatch"
             fresh_fixture
             mv "build/release-test/work/_drafts/${DATE}-daily-brief.md" "build/release-test/work/_posts/${DATE}-daily-brief.md"
-            python - <<'PY'
-          import json, os, pathlib
-          p=pathlib.Path('build/release-test/work/_data/audio.json')
-          p.write_text(json.dumps({os.environ['DATE']:'https://mock.invalid/wrong.mp3'}, indent=2)+'\n')
-          PY
+            python -c 'import json,os,pathlib; p=pathlib.Path("build/release-test/work/_data/audio.json"); p.write_text(json.dumps({os.environ["DATE"]:"https://mock.invalid/wrong.mp3"},indent=2)+"\\n")'
             if python scripts/check_release_state.py --date "$DATE" --feed build/release-test/feed-ok.xml --root build/release-test/work > build/release-test/mismatch-state.json; then
               echo "Expected mapping mismatch checker failure"
               exit 1
