@@ -1,5 +1,15 @@
 # Daily Brief SOP
 
+## Task prompt vs SOP boundary
+
+The repository SOPs are the authoritative source for **what the Daily Brief system does and how it does it**. Scheduled-task prompts are intentionally thin orchestration entrypoints.
+
+- **SOP owns durable behavior:** research scope, source policy, editorial standards, selection/deduplication, Daily/Weekly content contracts, AI Credit Cycle coverage, written/spoken derivation, Podcast-first publication, repository boundaries, checkpoints, recovery, idempotence, rework, and end-to-end verification.
+- **Task prompt owns invocation context:** task identity, current-date/timezone interpretation, Mon–Sat vs Sunday scope, requirement to read both current SOPs before work, and recurring-automation lifecycle guards.
+- A task prompt must not duplicate durable business/editorial/publication logic merely as a second copy. If a durable rule changes, update the authoritative SOP rather than maintaining divergent copies in task prompts.
+- Normal execution or recovery must not disable, pause, stop, complete, or change the cadence/timezone of the recurring Daily Brief, Weekly Review, or their Watchdogs. Completion refers to the current dated content run, not the recurring automation itself.
+- A task may re-enable its paired main schedule if the SOP's recovery contract explicitly requires it, but must not alter unrelated schedules or cross the Mon–Sat/Sunday scope boundary.
+
 The site contains two written content streams with different publishing rules.
 
 ## 1. Daily Brief written edition — `tangkk/daily_brief`
@@ -139,6 +149,22 @@ A Daily Brief that is rejected, corrected, or materially regenerated after its f
 The two repositories do not require a cross-repository write token. They synchronize through the committed Podcast RSS. If Podcast publication fails, the dated written Brief remains staged and unpublished. If Podcast succeeds but the written workflow fails, keep the Podcast episode and rerun `Publish Daily After Podcast` for that date. Re-runs must remain idempotent.
 
 `future: true` remains enabled in `_config.yml` so a same-day staged post can be published safely even when its canonical front-matter timestamp is later than the actual scheduler time; `_drafts/` remains unpublished unless explicitly moved to `_posts/`.
+
+## Sunday Weekly Review editorial contract
+
+The Sunday edition is a **Weekly Review**, not a normal 24-hour Top-Headlines digest.
+
+- Review the full prior week and focus on what materially changed the Persistent World State: which beliefs were strengthened, weakened, reversed, or newly established; the week's highest-information developments; important market, AI, semiconductor, world, and China developments under the existing editorial rules; and what matters most for the coming week.
+- Do not merely concatenate or summarize the previous seven Daily Briefs. Apply the same event-level and thesis-level semantic deduplication and Information-Gain discipline to avoid repetitive retelling.
+- The public written title remains the date only in `YYYY-MM-DD` format; do not prefix it with `Weekly Review` or `Daily Brief`.
+- The Sunday spoken script follows the common spoken conventions and Podcast-first release contract, including the fixed `龙虾日报，YYYY年M月D日。` opening. Its first reader-facing sentence after that opening is fixed as `周日这期，我们总结本周的状态。`
+- The former standalone **AI 信用周期** research is integrated as a dedicated section in both the canonical written Weekly Review and its spoken/podcast derivative. Analyze developments since the previous Sunday review, not merely Sunday news.
+- Nvidia is a major but non-exclusive node. Also cover OpenAI, Anthropic, hyperscalers, neoclouds, data centers, power, project finance/private credit, bond markets, and final enterprise/consumer demand when there is material evidence.
+- Monitor, where material: financing and supplier guarantees/residual-value/lease/buyback support; OpenAI/Anthropic/neocloud financing and long-term compute obligations; GPU rental prices/utilization/secondary residual values; project-finance costs and credit spreads; consumer paid users/ARPU/retention/token and inference volumes; Claude Code/Codex and other coding-agent paid usage/workloads; enterprise contracts/API consumption/renewals/pilot-to-production; OpenAI/Anthropic revenue/ARR, gross margin, inference costs, cash burn and FCF; AWS/Azure/GCP AI revenue, GPU utilization and inference mix; and measurable labor substitution, actual cost reduction, incremental revenue and productivity gains.
+- Strictly distinguish genuine outside-AI cash demand from VC funding, cloud credits, vendor financing, circular investment or subsidies. Compare AI revenue/economic value with hyperscaler/AI-company CapEx, depreciation, power and financing costs, and assess whether the AI revenue / AI infrastructure investment gap is narrowing or widening.
+- Maintain the AI Hard Cash ROI evidence framework. Give highest weight to actual incremental revenue, Opex/labor-cost reductions, headcount avoidance, gross-margin/operating-profit/FCF improvement, and prefer filings, annual reports, earnings calls, regulatory disclosures and other primary evidence over vendor-sponsored surveys or hours-saved estimates.
+- If there is no meaningful weekly change, keep the AI Credit Cycle section very short rather than manufacturing content.
+- Do not create or update standalone `_posts/YYYY-MM-DD-ai-credit-cycle.md` posts or `ai-credit-cycle.xml`; they remain historical archive only.
 
 ## 2. AI 信用周期 — historical standalone archive
 
