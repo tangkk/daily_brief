@@ -1,11 +1,11 @@
 {
   "date": "2026-09-29",
   "run_type": "daily_brief",
-  "status": "written_staged",
+  "status": "spoken_committed",
   "started_at": "2026-09-29T06:59:09+08:00",
   "artifact_state": {
     "written_draft": true,
-    "spoken_canonical": false,
+    "spoken_canonical": true,
     "podcast_verified": false,
     "written_published": false,
     "published_verified": false
@@ -30,7 +30,6 @@
       }
     ]
   },
-  "failure_stage": "spoken_committed",
-  "failure_detail": "Recovery reached written_staged, but the canonical spoken-script GitHub write was blocked by the tool safety layer; no Podcast/TTS/RSS publication was started.",
-  "failed_at": "2026-09-29T07:32:00+08:00"
+  "spoken_committed_at": "2026-09-29T08:45:00+08:00",
+  "spoken_commit_sha": "e81ea2ceeaf00e67f30f65e3dbdddd0ce05d2dcc"
 }
