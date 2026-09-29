@@ -13,6 +13,23 @@ The site contains two written content streams with different publishing rules.
 - The written site may play the already-published podcast MP3 only from an explicit `_data/audio.json` mapping.
 - It never generates TTS, uploads audio, owns podcast metadata, or guesses an R2 URL.
 
+### Source diversity and fair discovery
+
+Source diversity is a mandatory **discovery-stage quality control**, not a publication quota and not a reason to lower evidentiary standards. The goal is to prevent any single publisher, wire service, geography, language, platform, or editorial agenda from determining which developments enter the candidate pool.
+
+1. **Quality remains first.** Rank and publish items by Global Significance, Information Gain, factual support, timeliness, and the existing semantic-deduplication rules. Never include a weaker story merely to satisfy source diversity.
+2. **No single-source gatekeeper.** Reuters, Bloomberg, FT, WSJ, AP, BBC, any Chinese outlet, or any other publisher may be an excellent reporting or verification source, but no single outlet may function as the default discovery universe. A development must be able to enter the candidate pool even if that outlet did not cover it.
+3. **Diversify before ranking.** Before Top Headlines are selected, actively discover candidates across multiple independent source classes appropriate to the beat: high-quality global wires/general news; specialist financial/business/technology/science reporting; credible regional and local-language reporting; and primary sources such as filings, earnings materials, official statistics, company/research-lab releases, papers, repositories, and conference materials.
+4. **Primary sources where they add value.** For company results, financing terms, model/research releases, economic data, regulatory actions, and scientific claims, seek the relevant primary source when reasonably available. Use journalism to supply independent verification, context, consequences, and facts not established by the primary source alone.
+5. **Independence matters more than link count.** Syndication, rewrites, and multiple sites carrying the same wire story count as one underlying reporting lineage, not multiple independent confirmations. Prefer genuinely independent reporting or primary evidence when corroboration matters.
+6. **Geographic and language fairness.** Discovery should not systematically disadvantage material developments because they originate outside the dominant English-language/global-wire news cycle. Search credible regional/local-language sources where they can materially improve coverage, while applying the same reliability and significance thresholds.
+7. **Perspective fairness without false balance.** For disputed or consequential claims, seek materially relevant independent perspectives and evidence. Do not manufacture symmetry between well-supported facts and weak or unsupported claims merely for source balance.
+8. **No mechanical outlet quota in the published edition.** It is acceptable for several final items to cite the same outlet when it provides the strongest reporting. Source concentration in the final edition is a diagnostic signal to re-check discovery breadth, not an automatic reason to replace stronger stories with weaker ones.
+9. **Internal diversity audit.** Before finalizing candidate selection, check whether the candidate pool is excessively dependent on one publisher or one reporting lineage. If so, perform an additional discovery pass outside that source before ranking. Record this audit internally when practical; never expose source-selection mechanics in reader-facing text or audio.
+10. **Fair attribution.** Attribute facts to the source that actually established or reported them, preserve uncertainty, and do not silently convert analysis, anonymous-source reporting, company claims, or third-party estimates into established fact.
+
+Operational order: **broad multi-source discovery → source/lineage check → historical event/thesis match → Information-Gain gate → significance ranking → verification/context enrichment → writing.**
+
 ### China AI coverage
 
 China-related AI and technology developments are part of the normal AI news universe and must not be down-ranked, excluded, or omitted merely because they concern China. Apply the same Global Significance Lens, Information-Gain threshold, source quality standards, and semantic-deduplication rules used for comparable AI developments elsewhere.
