@@ -1,6 +1,12 @@
 name: Test Daily Release Harness
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/check_release_state.py'
+      - 'scripts/publish_staged_daily.py'
+      - '.github/workflows/test-daily-release-harness.yml'
   workflow_dispatch:
     inputs:
       scenario:
@@ -31,8 +37,8 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     env:
-      DATE: ${{ inputs.date }}
-      SCENARIO: ${{ inputs.scenario }}
+      DATE: ${{ inputs.date || '2099-01-01' }}
+      SCENARIO: ${{ inputs.scenario || 'all' }}
     steps:
       - name: Checkout written repository
         uses: actions/checkout@v6
