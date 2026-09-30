@@ -245,3 +245,19 @@ Production workflow changes should be validated through isolated test paths befo
 ## Repository boundary
 
 `tangkk/daily_brief` remains a written-site repository. Podcast-specific assets and workflows belong only in `tangkk/lobster-daily-podcast`.
+
+
+## GitHub-native spoken handoff contract
+
+Normal Daily Brief / Weekly Review production must minimize ChatGPT connector writes and must not require a direct ChatGPT write to the Podcast repository.
+
+1. The scheduled ChatGPT run owns research, the canonical written draft, the canonical spoken derivative, and initial durable state in `tangkk/daily_brief`.
+2. The canonical spoken derivative is staged in this repository at `handoffs/YYYY-MM-DD-spoken.txt`. It must already satisfy the Podcast SOP's spoken opening, editorial, safety, language, prose-style, and pronunciation rules before handoff.
+3. The preferred durable handoff is a single `daily_brief` commit containing the same-date written draft, spoken handoff, and checkpoint/run-state changes when practical. Do not perform a second ChatGPT connector write to `tangkk/lobster-daily-podcast` during the normal daily release path.
+4. A push changing `handoffs/*-spoken.txt` triggers `Dispatch Podcast Handoff`, which dispatches the Podcast repository's `Ingest Daily Handoff` workflow. Cross-repository dispatch uses the repository secret `PODCAST_DISPATCH_TOKEN`; keep its permissions minimal and scoped to the Podcast repository.
+5. The Podcast repository ingests the exact handoff, allocates/reuses the canonical same-date episode path idempotently, commits it with GitHub Actions, and thereby triggers the existing `Auto Publish Daily` TTS/R2/RSS chain.
+6. GitHub-native scheduled reconciliation in the Podcast repository independently checks for a same-date handoff. This is the recovery path if the event-driven cross-repository dispatch is missed or temporarily unavailable.
+7. After Podcast verification, the existing written publication/reconciliation path remains authoritative for promotion to `_posts/`, exact audio mapping, Pages deployment, and live verification.
+8. The ChatGPT Daily Brief Watchdog is the final recovery layer. It should inspect durable state and GitHub-native workflow outcomes first; it must not default to recreating the old direct ChatGPT-to-Podcast spoken commit path.
+9. Direct ChatGPT writes to `tangkk/lobster-daily-podcast` remain valid for explicit Podcast maintenance, workflow/SOP/TTS/pronunciation changes, or an explicitly requested exceptional repair. They are not part of normal Daily Brief publication.
+10. Same-date idempotence and rework rules remain unchanged. A differing already-ingested same-date spoken script must fail closed and use the explicit same-date rework contract rather than silently overwrite canonical Podcast source.
