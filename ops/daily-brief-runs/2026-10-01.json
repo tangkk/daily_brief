@@ -1,9 +1,9 @@
 {
   "date": "2026-10-01",
   "run_type": "daily_brief",
-  "status": "podcast_verified",
+  "status": "written_published",
   "started_at": "2026-10-01T06:57:37+08:00",
-  "updated_at": "2026-10-01T07:05:54+08:00",
+  "updated_at": "2026-10-01T07:05:55+08:00",
   "artifacts": {
     "written_staged": true,
     "spoken_committed": true,
@@ -33,8 +33,9 @@
     "written_draft": true,
     "spoken_canonical": true,
     "podcast_verified": true,
-    "written_published": false,
+    "written_published": true,
     "published_verified": false
   },
-  "podcast_verified_at": "2026-10-01T07:05:54+08:00"
+  "podcast_verified_at": "2026-10-01T07:05:54+08:00",
+  "written_published_at": "2026-10-01T07:05:55+08:00"
 }
