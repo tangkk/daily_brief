@@ -44,11 +44,13 @@ jobs:
           fi
           [[ "$DATE" =~ ^[0-9]{4}-[0-9]{2}-[0-9]{2}$ ]]
           echo "date=$DATE" >> "$GITHUB_OUTPUT"
+          if [[ "$DATE" =~ ^20[5-9][0-9]- ]]; then echo "dry_run=true" >> "$GITHUB_OUTPUT"; else echo "dry_run=false" >> "$GITHUB_OUTPUT"; fi
 
       - name: Dispatch Podcast ingestion
         env:
           TOKEN: ${{ secrets.PODCAST_DISPATCH_TOKEN }}
           DATE: ${{ steps.date.outputs.date }}
+          DRY_RUN: ${{ steps.date.outputs.dry_run }}
         shell: bash
         run: |
           set -euo pipefail
@@ -62,4 +64,4 @@ jobs:
             -H "Authorization: Bearer $TOKEN" \
             -H "X-GitHub-Api-Version: 2022-11-28" \
             https://api.github.com/repos/tangkk/lobster-daily-podcast/actions/workflows/ingest-daily-handoff.yml/dispatches \
-            -d "{\"ref\":\"main\",\"inputs\":{\"date\":\"$DATE\"}}"
+            -d "{\"ref\":\"main\",\"inputs\":{\"date\":\"$DATE\",\"dry_run\":\"$DRY_RUN\"}}"
