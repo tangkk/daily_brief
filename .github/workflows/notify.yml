@@ -4,6 +4,8 @@ on:
   workflow_run:
     workflows:
       - Publish Daily After Podcast
+      - Dispatch Podcast Handoff
+      - Reconcile Daily Publication
       - Deploy Daily Brief to Pages
     types: [completed]
 
