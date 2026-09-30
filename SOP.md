@@ -113,13 +113,14 @@ Every scheduled Daily Brief / Weekly Review run must behave as a resumable state
 8. If the Daily Brief schedule is unexpectedly disabled, re-enable that existing schedule without changing cadence or prompt unless an intentional configuration change is separately requested; then use same-date checkpoint/artifact state to determine whether recovery is needed.
 9. Checkpoint and recovery mechanics are internal only and must never appear in public written text, spoken audio, shownotes, RSS descriptions, or metadata.
 
-Daily Brief publishing order is mandatory:
-1. Research and compose the canonical written Daily Brief.
-2. Save that exact edition to `_drafts/YYYY-MM-DD-daily-brief.md`. This is the release staging input, not the public post path.
-3. Create and commit the spoken derivative to `tangkk/lobster-daily-podcast/episodes/`.
-4. The Podcast repository's `Auto Publish Daily` workflow generates TTS, publishes/replaces the final MP3 in R2, and upserts/verifies Podcast RSS.
-5. This repository's `Publish Daily After Podcast` workflow starts from the staged draft, performs deterministic written sensitive-term validation, and waits for the matching dated Podcast item to appear in the committed Podcast `feed.xml` with a real enclosure URL, byte length, and duration.
-6. Immediately before promotion, the written artifact is validated again. Only then does the workflow move the staged draft to `_posts/`, write the exact Podcast enclosure URL into `_data/audio.json`, build/deploy GitHub Pages itself, and verify that the live Daily Brief page contains the correct date title and exact final audio URL.
+Daily Brief / Weekly Review publishing order is mandatory:
+1. Research and compose the canonical written edition and derive the canonical spoken edition under the current Daily/Weekly editorial contract.
+2. Save the written edition to `_drafts/YYYY-MM-DD-daily-brief.md` and the spoken derivative to `handoffs/YYYY-MM-DD-spoken.txt` in this repository. Prefer one durable commit containing both same-date artifacts plus checkpoint/run-state changes when practical.
+3. The handoff push triggers `Dispatch Podcast Handoff`, which dispatches the Podcast repository's `Ingest Daily Handoff`. The normal scheduled ChatGPT run does not directly create or update Podcast `episodes/` files.
+4. `Ingest Daily Handoff` validates the handoff, creates the canonical same-date Podcast `episodes/epNNN-daily-YYYY-MM-DD.txt` when needed, and explicitly dispatches `Auto Publish Daily`. Do not rely on a GitHub-token-authored push recursively triggering another workflow.
+5. The Podcast repository's `Auto Publish Daily` workflow generates TTS, publishes/replaces the final MP3 in R2, and upserts/verifies Podcast RSS.
+6. This repository's `Publish Daily After Podcast` workflow starts from the staged draft, performs deterministic written sensitive-term validation, and waits for the matching dated Podcast item to appear in the committed Podcast `feed.xml` with a real enclosure URL, byte length, and duration.
+7. Immediately before promotion, the written artifact is validated again. Only then does the workflow move the staged draft to `_posts/`, write the exact Podcast enclosure URL into `_data/audio.json`, build/deploy GitHub Pages itself, and verify that the live Daily Brief page contains the correct date title and exact final audio URL.
 
 ### Spoken opening convention
 
@@ -136,7 +137,7 @@ Every canonical Daily Brief spoken script must begin with the fixed spoken ident
 A Daily Brief that is rejected, corrected, or materially regenerated after its first publication must use the same-date rework path end-to-end. Editing canonical text alone is not a completed rework.
 
 1. Regenerate/update the same dated canonical written artifact and the same dated canonical spoken script; never create a duplicate date or episode.
-2. Commit both canonical artifacts to their owning repositories and perform GitHub-main read-back verification before downstream publication.
+2. Commit the corrected written artifact and corrected spoken handoff to their canonical staging locations in `daily_brief`, then let the GitHub-native handoff ingestion update the Podcast canonical episode. Perform GitHub-main read-back verification before downstream publication.
 3. The spoken-script update must run the Podcast same-date publish path, including spoken safety validation, TTS normalization, TTS regeneration, R2 replacement/versioning, Podcast RSS upsert, and verification of the final enclosure URL, byte length, and duration.
 4. After Podcast RSS reflects the replacement audio, the written repository must re-read the committed Podcast `feed.xml` for that date and update `_data/audio.json` to the **exact current enclosure URL**. Never assume that a same-date retry keeps the previous MP3 URL; versioned objects such as `-v2`, `-v3`, etc. are expected.
 5. Updating the spoken script or Podcast RSS is not sufficient. The written page must be redeployed after the audio mapping changes.
