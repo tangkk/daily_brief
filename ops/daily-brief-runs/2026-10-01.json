@@ -1,14 +1,30 @@
 {
   "date": "2026-10-01",
   "run_type": "daily_brief",
-  "status": "started",
+  "status": "research_complete",
   "started_at": "2026-10-01T06:57:37+08:00",
-  "updated_at": "2026-10-01T06:57:37+08:00",
+  "updated_at": "2026-10-01T07:03:00+08:00",
   "artifacts": {
     "written_staged": false,
     "spoken_committed": false,
     "podcast_verified": false,
     "written_published": false,
     "published_verified": false
+  },
+  "milestones": {
+    "research_complete_at": "2026-10-01T07:03:00+08:00"
+  },
+  "dedup_audit": {
+    "history_window": "2026-09-24 through 2026-09-30 plus 30-day thesis history",
+    "rejected_recurring": [
+      "Anthropic 2025 financial/prospectus figures already led 2026-09-30",
+      "long-end Treasury yield pressure already recurring thesis"
+    ],
+    "admitted_updates": [
+      "August PCE softer than expected materially changed October hike pricing",
+      "DeepSeek-Huawei open-source Ascend programming stack is a new implementation-level China AI software event",
+      "GPT-Synopsys is a new domain-specialized agentic EDA commercial partnership",
+      "September ADP payroll rebound is new labor-market evidence"
+    ]
   }
 }
