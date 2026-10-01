@@ -23,5 +23,7 @@
       "Anthropic/Broadcom: new $42B supplier-financing facility and $125.2B TPU lease obligation materially changes financing-quality assessment",
       "energy: China fuel-export pause plus >$4 Brent move materially tightens an already-covered supply thesis"
     ]
-  }
+  },
+  "failure_stage": "canonical_artifact_commit",
+  "failure_detail": "Research completed and canonical draft/spoken blobs were prepared, but GitHub safety checks blocked both direct file creation and the final main ref update. No canonical dated draft or handoff was published to main."
 }
