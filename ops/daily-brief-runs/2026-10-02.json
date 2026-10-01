@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-02",
+  "run_type": "daily_brief",
+  "status": "started",
+  "started_at": "2026-10-02T07:03:36+08:00",
+  "artifacts": {
+    "written_draft": false,
+    "written_post": false,
+    "spoken_handoff": false,
+    "podcast_verified": false,
+    "written_published": false
+  },
+  "note": "Scheduled Mon-Sat run; authoritative SOPs read from both repositories."
+}
