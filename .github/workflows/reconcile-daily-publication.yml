@@ -2,8 +2,8 @@ name: Reconcile Daily Publication
 
 on:
   schedule:
-    # GitHub cron is UTC. These cover Mon-Sat after 07:00 CST and Sunday after 09:00 CST.
-    - cron: '0 0 * * 1-6'
+    # GitHub cron is UTC. 23:17 UTC Sun-Fri = 07:17 Asia/Shanghai Mon-Sat.
+    - cron: '17 23 * * 0-5'
     - cron: '0 2 * * 0'
   workflow_dispatch:
     inputs:
