@@ -93,13 +93,13 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          python scripts/update_run_state.py --date "$DATE" --status podcast_verified
           git config user.name github-actions[bot]
           git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git pull --rebase origin main
+          python scripts/update_run_state.py --date "$DATE" --status podcast_verified
           git add "ops/daily-brief-runs/${DATE}.json"
           if ! git diff --cached --quiet; then
             git commit -m "Checkpoint Daily Brief ${DATE}: podcast verified"
-            git pull --rebase origin main
             git push origin main
           fi
 
@@ -122,14 +122,14 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          python scripts/publish_staged_daily.py --date "$DATE" --feed /tmp/podcast-feed.xml
-          python scripts/update_run_state.py --date "$DATE" --status written_published
           git config user.name github-actions[bot]
           git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git pull --rebase origin main
+          python scripts/publish_staged_daily.py --date "$DATE" --feed /tmp/podcast-feed.xml
+          python scripts/update_run_state.py --date "$DATE" --status written_published
           git add -A
           if ! git diff --cached --quiet; then
             git commit -m "Publish Daily Brief for ${DATE} after podcast"
-            git pull --rebase origin main
             git push origin main
           fi
 
@@ -188,12 +188,12 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          python scripts/update_run_state.py --date "$DATE" --status published_verified
           git config user.name github-actions[bot]
           git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git pull --rebase origin main
+          python scripts/update_run_state.py --date "$DATE" --status published_verified
           git add "ops/daily-brief-runs/${DATE}.json"
           if ! git diff --cached --quiet; then
             git commit -m "Checkpoint Daily Brief ${DATE}: published verified"
-            git pull --rebase origin main
             git push origin main
           fi
