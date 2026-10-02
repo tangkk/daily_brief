@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-03",
+  "run_type": "daily_brief",
+  "status": "started",
+  "started_at": "2026-10-03T07:30:00+08:00",
+  "known_artifact_state": {
+    "written_draft": false,
+    "spoken_handoff": false,
+    "podcast_verified": false,
+    "written_post": false
+  },
+  "recovery_note": "Watchdog takeover: paired main task produced no same-date durable checkpoint/artifact; resumed from started."
+}
