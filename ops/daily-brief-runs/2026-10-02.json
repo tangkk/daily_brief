@@ -1,16 +1,16 @@
 {
   "date": "2026-10-02",
   "run_type": "daily_brief",
-  "status": "research_complete",
+  "status": "spoken_committed",
   "started_at": "2026-10-02T07:03:36+08:00",
   "artifacts": {
-    "written_draft": false,
+    "written_draft": true,
     "written_post": false,
-    "spoken_handoff": false,
+    "spoken_handoff": true,
     "podcast_verified": false,
     "written_published": false
   },
-  "note": "Scheduled Mon-Sat run; authoritative SOPs read from both repositories.",
+  "note": "Recovered from research_complete; canonical written draft and spoken handoff committed to main. Awaiting GitHub-native Podcast-first publication and verification.",
   "research": {
     "history_checked": "2026-09-02 through 2026-10-01; strong window previous 7 days",
     "source_diversity_audit": "Global wire/general, company/primary, financial/technology specialist, and China/regional discovery performed; final evidence uses Reuters plus Constellation primary source and FT-origin reporting where material.",
@@ -23,7 +23,5 @@
       "Anthropic/Broadcom: new $42B supplier-financing facility and $125.2B TPU lease obligation materially changes financing-quality assessment",
       "energy: China fuel-export pause plus >$4 Brent move materially tightens an already-covered supply thesis"
     ]
-  },
-  "failure_stage": "canonical_artifact_commit",
-  "failure_detail": "Research completed and canonical draft/spoken blobs were prepared, but GitHub safety checks blocked both direct file creation and the final main ref update. No canonical dated draft or handoff was published to main."
+  }
 }
