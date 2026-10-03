@@ -1,0 +1,23 @@
+{
+  "date": "2026-10-04",
+  "run_type": "weekly_review",
+  "status": "started",
+  "started_at": "2026-10-04T07:03:39+08:00",
+  "updated_at": "2026-10-04T07:03:39+08:00",
+  "checkpoints": {
+    "started": "2026-10-04T07:03:39+08:00"
+  },
+  "known_artifact_state": {
+    "written_draft": false,
+    "spoken_handoff": false,
+    "podcast_verified": false,
+    "written_post": false
+  },
+  "artifact_state": {
+    "written_draft": false,
+    "spoken_canonical": false,
+    "podcast_verified": false,
+    "written_published": false,
+    "published_verified": false
+  }
+}
