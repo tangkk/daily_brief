@@ -3,7 +3,7 @@
   "run_type": "daily_brief",
   "status": "published_verified",
   "started_at": "2026-10-03T07:30:00+08:00",
-  "updated_at": "2026-10-03T08:02:50+08:00",
+  "updated_at": "2026-10-03T08:40:00+08:00",
   "checkpoints": {
     "started": "2026-10-03T07:30:00+08:00",
     "research_complete": "2026-10-03T07:55:35+08:00",
@@ -36,5 +36,17 @@
   },
   "podcast_verified_at": "2026-10-03T08:01:56+08:00",
   "written_published_at": "2026-10-03T08:01:57+08:00",
-  "published_verified_at": "2026-10-03T08:02:18+08:00"
+  "published_verified_at": "2026-10-03T08:02:18+08:00",
+  "rework": {
+    "reason": "User feedback: restore the missing episode overview and expand the unusually short spoken edition to match recent Daily Brief style and depth.",
+    "podcast_script_commit": "0ea330b6c082dcfe3bf1ece992964fbf57af95ff",
+    "podcast_run_id": 37082319930,
+    "podcast_run_url": "https://github.com/tangkk/lobster-daily-podcast/actions/runs/37082319930",
+    "replacement_audio_url": "https://pub-e2d65fa7f70240878f2e556592826485.r2.dev/daily/ep044-daily-2026-10-03-v2.mp3",
+    "replacement_audio_bytes": 1120269,
+    "replacement_audio_duration": "00:04:40",
+    "old_audio_url": "https://pub-e2d65fa7f70240878f2e556592826485.r2.dev/daily/ep044-daily-2026-10-03.mp3",
+    "written_refresh": "pending",
+    "final_verification": "pending"
+  }
 }
