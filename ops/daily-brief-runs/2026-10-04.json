@@ -1,11 +1,12 @@
 {
   "date": "2026-10-04",
   "run_type": "weekly_review",
-  "status": "started",
+  "status": "research_complete",
   "started_at": "2026-10-04T07:03:39+08:00",
-  "updated_at": "2026-10-04T07:03:39+08:00",
+  "updated_at": "2026-10-04T07:11:14+08:00",
   "checkpoints": {
-    "started": "2026-10-04T07:03:39+08:00"
+    "started": "2026-10-04T07:03:39+08:00",
+    "research_complete": "2026-10-04T07:11:14+08:00"
   },
   "known_artifact_state": {
     "written_draft": false,
@@ -19,5 +20,38 @@
     "podcast_verified": false,
     "written_published": false,
     "published_verified": false
-  }
+  },
+  "research_period": "2026-09-27 through 2026-10-03",
+  "dedup_audit": {
+    "history_window_7d": "Read canonical written editions 2026-09-27 through 2026-10-03, including the prior Sunday Weekly Review and all six intervening daily editions.",
+    "recurrence_window_30d": "Read all 30 canonical daily/weekly editions from 2026-09-04 through 2026-10-03.",
+    "rejected_or_merged": [
+      "Daily market moves, high-yield warnings, Middle East/oil volatility, and broad AI-capex expansion repeated within the window are synthesized as week-level state rather than replayed as separate headlines.",
+      "Earlier announcements on Alibaba Zhenwu/data-center roadmap, Anthropic-Akamai compute contract, AI infrastructure guarantees, and agent adoption are not repeated as stand-alone new events."
+    ],
+    "admitted_with_information_gain": [
+      "September payroll growth of 29,000 and revisions of -60,000 for July/August, combined with the revised 5.28% 10-year yield high range, materially changes the near-term policy/rates mix compared with the prior weekly review.",
+      "Newly reported Anthropic financial disclosures quantify $4.6B 2025 revenue, $8B operating loss, roughly 40% implied gross margin, >$500B multi-year commitments; Broadcom's reported up-to-$42B financing support adds a new supplier-credit detail and changes evidence on cash conversion and financing risk.",
+      "DeepSeek and Huawei's September 30 open-source TileLang/Ascend compute and communication software release is a concrete developer-stack step beyond the previous week's Chinese chip/model roadmap announcements.",
+      "China September official manufacturing PMI returned to 50.1 and non-manufacturing PMI to 50.2; Vietnam's Q3 GDP grew 9.95% y/y, adding new regional activity evidence.",
+      "Nature published a new X-ray liquidography study on September 30 demonstrating molecular structural dynamics measurement in solution without heavy-atom contrast."
+    ],
+    "source_diversity": "Discovery checked government primary data (BLS, BEA, China's NBS and Vietnam NSO), company/official sources (NVIDIA, DeepSeek/Huawei materials), independent global reporting (Reuters, AP, FT, WSJ), specialist technology coverage, and peer-reviewed Nature. No single reporting lineage determined the candidate set."
+  },
+  "sources": [
+    "https://www.bls.gov/news.release/archives/empsit_10022026.htm",
+    "https://bea.gov/index.php/news/2026/personal-income-and-outlays-august-2026",
+    "https://www.bea.gov/index.php/news/2026/gdp-third-estimate-industries-corporate-profits-state-gdp-and-state-personal-income-2nd",
+    "https://www.reuters.com/world/china/global-markets-global-markets-2026-09-28/",
+    "https://apnews.com/article/wall-street-stocks-dow-nasdaq-48e9066481cba91a5d7c6688aa74a5cd",
+    "https://www.reuters.com/commentary/breakingviews/anthropics-2-trln-goal-is-ais-biggest-moonshot-2026-09-29/",
+    "https://www.reuters.com/business/retail-consumer/ais-race-transform-world-before-money-runs-out-2026-10-03/",
+    "https://www.ft.com/content/00f94018-e658-4545-b16e-1bc00e19b754",
+    "https://www.investing.com/news/stock-market-news/deepseek-partners-with-huawei-to-develop-chip-programming-tools-reducing-reliance-on-nvidia-4924051",
+    "https://github.com/deepseek-ai/DeepEP-Ascend",
+    "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Launches-Open-Agent-Safety-Platform-to-Secure-Agents-From-Testing-to-Deployment/default.aspx",
+    "https://www.stats.gov.cn/sj/zxfbhjd/202609/t20260930_1965449.html",
+    "https://www.nso.gov.vn/bai-top/2026/10/bao-cao-tinh-hinh-kinh-te-xa-hoi-quy-iii-va-9-thang-nam-2026/",
+    "https://www.nature.com/articles/s41586-026-11068-4"
+  ]
 }
