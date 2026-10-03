@@ -5,7 +5,7 @@
 The repository SOPs are the authoritative source for **what the Daily Brief system does and how it does it**. Scheduled-task prompts are intentionally thin orchestration entrypoints.
 
 - **SOP owns durable behavior:** research scope, source policy, editorial standards, selection/deduplication, Daily/Weekly content contracts, AI Credit Cycle coverage, written/spoken derivation, Podcast-first publication, repository boundaries, checkpoints, recovery, idempotence, rework, and end-to-end verification.
-- **Task prompt owns invocation context:** task identity, current-date/timezone interpretation, Mon–Sat vs Sunday scope, requirement to read both current SOPs before work, and recurring-automation lifecycle guards.
+- **Task prompt owns invocation context:** task identity, current-date/timezone interpretation, the Monday–Saturday Daily Brief / Sunday Weekly Review branch, requirement to read both current SOPs before work, and recurring-automation lifecycle guards.
 - A task prompt must not duplicate durable business/editorial/publication logic merely as a second copy. If a durable rule changes, update the authoritative SOP rather than maintaining divergent copies in task prompts.
 - Normal execution or recovery must not disable, pause, stop, complete, or change the cadence/timezone of the recurring Daily Brief, Weekly Review, or their Watchdogs. Completion refers to the current dated content run, not the recurring automation itself.
 - A task may re-enable its paired main schedule if the SOP's recovery contract explicitly requires it, but must not alter unrelated schedules or cross the Mon–Sat/Sunday scope boundary.
@@ -22,6 +22,14 @@ The site contains two written content streams with different publishing rules.
 - Written RSS: https://tangkk.github.io/daily_brief/feed.xml
 - The written site may play the already-published podcast MP3 only from an explicit `_data/audio.json` mapping.
 - It never generates TTS, uploads audio, owns podcast metadata, or guesses an R2 URL.
+
+### Daily Brief headline floor
+
+- Every Monday–Saturday written Daily Brief must publish at least **6 distinct, substantive Top Headlines**. Count headline entries, not subparagraphs, dashboards, watchlists, or repeated angles on the same underlying event.
+- This is a minimum, not a target ceiling; include more when additional stories independently clear the existing significance, evidence, Information-Gain, safety, and deduplication standards.
+- Never pad the list with weak, stale, duplicate, speculative, or low-information material. Continue broad research across relevant beats and source classes until at least six genuinely qualifying stories are found.
+- If six qualifying stories cannot be substantiated after a thorough research pass, do not publish an under-six edition or invent filler. Record the shortfall and recovery state internally, keep the written edition staged, and continue/recover research before publication.
+- This floor applies to the Monday–Saturday Daily Brief Top Headlines section. The Sunday Weekly Review follows its separate weekly editorial contract and must not be forced into a Daily Brief-style list.
 
 ### Source diversity and fair discovery
 
@@ -95,7 +103,7 @@ Operational priority: **safe generation → preserve information via neutral rep
 All research, selection, deduplication, ranking, Bayesian-update, Information-Gain, safety, source-policy, and workflow mechanics are internal editorial logic and must remain invisible in published written and spoken editions.
 
 - Never publish explanations such as "this item was excluded as duplicate", "there was no sixth qualifying candidate", "we are not repeating yesterday's story", "this was retained only in Persistent World State", "this source was chosen because of source policy", or similar process commentary.
-- Do not turn an empty Top Headlines slot into a meta-editorial item. If fewer than the target number of genuinely qualifying headlines exist, simply publish fewer headlines, unless another existing content rule explicitly requires a fixed count; in that case continue research for a qualifying item rather than exposing the selection process.
+- Do not turn an empty Top Headlines slot into a meta-editorial item. Follow the applicable edition's headline-count contract: the Monday–Saturday Daily Brief has a hard minimum of six qualifying headlines, so continue research and keep the edition staged if that minimum is not met; never expose the shortfall or selection process in public copy. For other formats, follow their own editorial contract.
 - Published prose should contain only the resulting factual/editorial product: the selected developments, evidence, implications, dashboards, and reader-facing analysis. It must not narrate how candidates were accepted, rejected, deduplicated, filtered, ranked, sourced, or safety-checked.
 - Internal reasoning may be recorded only in the internal run log or other explicitly internal operational artifacts, never in canonical/public written copy, spoken scripts, RSS descriptions, show notes, or public pages.
 
