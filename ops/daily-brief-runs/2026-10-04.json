@@ -3,7 +3,7 @@
   "run_type": "weekly_review",
   "status": "written_staged",
   "started_at": "2026-10-04T07:03:39+08:00",
-  "updated_at": "2026-10-04T07:16:00+08:00",
+  "updated_at": "2026-10-04T07:18:00+08:00",
   "checkpoints": {
     "started": "2026-10-04T07:03:39+08:00",
     "research_complete": "2026-10-04T07:11:14+08:00",
@@ -37,5 +37,13 @@
     "https://www.stats.gov.cn/sj/zxfbhjd/202609/t20260930_1965449.html",
     "https://www.nso.gov.vn/bai-top/2026/10/bao-cao-tinh-hinh-kinh-te-xa-hoi-quy-iii-va-9-thang-nam-2026/",
     "https://www.nature.com/articles/s41586-026-11068-4"
+  ],
+  "rework": [
+    {
+      "at": "2026-10-04T07:18:00+08:00",
+      "stage": "podcast_ingest_validation",
+      "finding": "Initial Podcast ingest rejected spoken handoff: opening and required first sentence were on same line.",
+      "fix": "Put fixed opening on line 1 and required Sunday sentence on line 2; resubmit."
+    }
   ]
 }
