@@ -3,7 +3,7 @@
   "run_type": "daily_brief",
   "status": "published_verified",
   "started_at": "2026-10-03T07:30:00+08:00",
-  "updated_at": "2026-10-03T08:35:05+08:00",
+  "updated_at": "2026-10-03T08:40:00+08:00",
   "checkpoints": {
     "started": "2026-10-03T07:30:00+08:00",
     "research_complete": "2026-10-03T07:55:35+08:00",
@@ -46,7 +46,11 @@
     "replacement_audio_bytes": 1120269,
     "replacement_audio_duration": "00:04:40",
     "old_audio_url": "https://pub-e2d65fa7f70240878f2e556592826485.r2.dev/daily/ep044-daily-2026-10-03.mp3",
-    "written_refresh": "pending",
-    "final_verification": "pending"
+    "written_refresh": "complete",
+    "final_verification": "complete; live page build/deploy and exact Podcast RSS enclosure verified by Publish Daily After Podcast workflow",
+    "daily_brief_commit": "485acc471799eebac3b83bbb105b4bc39461d73f",
+    "publication_run_id": 37082624503,
+    "publication_run_url": "https://github.com/tangkk/daily_brief/actions/runs/37082624503",
+    "verified_at": "2026-10-03T08:40:00+08:00"
   }
 }
