@@ -1,14 +1,54 @@
 {
   "date": "2026-10-05",
   "run_type": "daily_brief",
-  "status": "started",
+  "status": "written_staged",
   "started_at": "2026-10-05T07:05:44+08:00",
   "artifact_state": {
-    "written_draft": false,
+    "written_draft": true,
     "spoken_canonical": false,
     "podcast_verified": false,
     "written_published": false,
     "published_verified": false
   },
-  "updated_at": "2026-10-05T07:05:44+08:00"
+  "updated_at": "2026-10-05T07:10:47+08:00",
+  "research_completed_at": "2026-10-05T07:10:47+08:00",
+  "written_staged_at": "2026-10-05T07:10:47+08:00",
+  "checkpoints": {
+    "started": "2026-10-05T07:05:44+08:00",
+    "research_complete": "2026-10-05T07:10:47+08:00",
+    "written_staged": "2026-10-05T07:10:47+08:00"
+  },
+  "headline_count": 6,
+  "research_note": "Research via web search only; direct page fetches from news domains were denied by the session network policy, so facts were cross-checked across multiple independent search results and primary sources where indexed (Meta research blog, Horizon3 disclosure, McKinsey MGI).",
+  "dedup_audit": {
+    "strong_window": "2026-09-28 through 2026-10-04 canonical editions",
+    "recurrence_window": "2026-09-05 through 2026-10-04",
+    "rejected_recurring": [
+      "US Sept jobs / rate-hike expectations (covered 10-03, 10-04)",
+      "Anthropic IPO prospectus / Broadcom financing (covered 09-30, 10-02, 10-04)",
+      "China refined-fuel export suspension (covered 10-02, 10-03)",
+      "OpenAI GPT-6.1 Astra cancellation (2026-09-28/29; stale, no new information)",
+      "Fed/ECB hike-urgency fading (thesis continuation; kept to What to Watch)",
+      "China National Day travel forecasts (projections only; dashboard)"
+    ],
+    "admitted_with_information_gain": {
+      "OPEC+/Hormuz": "New Oct 4 OPEC+ November decision and Iran statement on US mediator proposals; not covered in prior 30 days of headlines",
+      "Mythos HFS CVE": "Concrete frontier-model-discovered exploit chain exploited within a day; extends 10-03 Microsoft report thesis with a verified real-world case",
+      "Tencent-Oracle lease": "Reported 09-30 but absent from prior editions; adds implied ~$1.60/chip-hour long-term lease benchmark and 30% prepayment (AI Credit Pulse)"
+    }
+  },
+  "sources": [
+    "https://www.riotimesonline.com/brazil-election-first-round-results-lula-flavio-2026/",
+    "https://www.tradingview.com/news/reuters.com,2026:newsml_S0N45F00N:0-flavio-bolsonaro-lula-headed-to-runoff-in-brazil-election-datafolha-projects/",
+    "https://www.thenationalnews.com/business/energy/2026/10/04/opec-keeps-oil-output-targets-unchanged-for-november/",
+    "https://www.aljazeera.com/news/2026/10/4/iran-says-strait-of-hormuz-to-remain-closed-until-us-meets-conditions",
+    "https://www.actionforex.com/action-insight/market-overview/656113-france-risk-premium-surges-as-oat-bund-spread-breaks-140bp-eur-chf-slides/",
+    "https://www.bloomberg.com/news/articles/2026-10-03/fed-ecb-minutes-to-show-inflation-fears-as-hike-bets-fade",
+    "https://research.meta.ai/blog/solving-open-research-problems-together",
+    "https://horizon3.ai/attack-research/disclosures/anthropic-mythos-rejetto-hfs-rce/",
+    "https://www.theregister.com/security/2026/10/03/anthropics-super-bug-hunting-model-mythos-is-hardcore-good-at-math-as-latest-vuln-under-attack-shows/5300933",
+    "https://en.sedaily.com/politics/2026/10/04/seoul-rejects-north-korean-claim-that-hypersonic-missile",
+    "https://www.trendforce.com/news/2026/10/01/news-tencent-reportedly-signs-7b-deal-to-lease-100000-ai-chips-from-oracle-in-southeast-asia/",
+    "https://www.mckinsey.com/mgi/our-research/workforce-in-motion-skills-and-pathways-to-future-jobs-in-the-united-states"
+  ]
 }
