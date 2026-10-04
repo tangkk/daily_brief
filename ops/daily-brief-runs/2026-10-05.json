@@ -1,22 +1,23 @@
 {
   "date": "2026-10-05",
   "run_type": "daily_brief",
-  "status": "written_staged",
+  "status": "spoken_committed",
   "started_at": "2026-10-05T07:05:44+08:00",
   "artifact_state": {
     "written_draft": true,
-    "spoken_canonical": false,
+    "spoken_canonical": true,
     "podcast_verified": false,
     "written_published": false,
     "published_verified": false
   },
-  "updated_at": "2026-10-05T07:10:47+08:00",
+  "updated_at": "2026-10-05T07:11:06+08:00",
   "research_completed_at": "2026-10-05T07:10:47+08:00",
   "written_staged_at": "2026-10-05T07:10:47+08:00",
   "checkpoints": {
     "started": "2026-10-05T07:05:44+08:00",
     "research_complete": "2026-10-05T07:10:47+08:00",
-    "written_staged": "2026-10-05T07:10:47+08:00"
+    "written_staged": "2026-10-05T07:10:47+08:00",
+    "spoken_committed": "2026-10-05T07:11:06+08:00"
   },
   "headline_count": 6,
   "research_note": "Research via web search only; direct page fetches from news domains were denied by the session network policy, so facts were cross-checked across multiple independent search results and primary sources where indexed (Meta research blog, Horizon3 disclosure, McKinsey MGI).",
@@ -50,5 +51,8 @@
     "https://en.sedaily.com/politics/2026/10/04/seoul-rejects-north-korean-claim-that-hypersonic-missile",
     "https://www.trendforce.com/news/2026/10/01/news-tencent-reportedly-signs-7b-deal-to-lease-100000-ai-chips-from-oracle-in-southeast-asia/",
     "https://www.mckinsey.com/mgi/our-research/workforce-in-motion-skills-and-pathways-to-future-jobs-in-the-united-states"
-  ]
+  ],
+  "spoken_committed_at": "2026-10-05T07:11:06+08:00",
+  "canonical_commit": "73b4fad58cbaf107da1bb6764b5798017bd5d8b7",
+  "readback_verified": true
 }
