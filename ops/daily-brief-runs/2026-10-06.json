@@ -1,14 +1,72 @@
 {
   "date": "2026-10-06",
   "run_type": "daily_brief",
-  "status": "started",
+  "status": "written_staged",
   "started_at": "2026-10-06T07:05:55+08:00",
   "artifact_state": {
-    "written_draft": false,
+    "written_draft": true,
     "spoken_canonical": false,
     "podcast_verified": false,
     "written_published": false,
     "published_verified": false
   },
-  "updated_at": "2026-10-06T07:05:55+08:00"
+  "updated_at": "2026-10-06T07:10:16+08:00",
+  "research_completed_at": "2026-10-06T07:10:16+08:00",
+  "written_staged_at": "2026-10-06T07:10:16+08:00",
+  "checkpoints": {
+    "started": "2026-10-06T07:05:55+08:00",
+    "research_complete": "2026-10-06T07:10:16+08:00",
+    "written_staged": "2026-10-06T07:10:16+08:00"
+  },
+  "headline_count": 7,
+  "source_access": {
+    "note": "WebFetch egress blocked; pages read via curl where reachable. Reuters/AP/CNBC/TheStreet/MarketScreener returned 401/403.",
+    "readable_copies_used": {
+      "Reuters Saudi OSP": "gcaptain.com syndicated copy",
+      "Reuters Takaichi/JGB": "wtvbam.com syndicated copy",
+      "Reuters Schneider-PTC": "globalbankingandfinance.com syndicated copy",
+      "Reuters Kpler Hormuz flows": "oilprice.com report citing Reuters/Kpler"
+    },
+    "primary_sources": [
+      "ISM release via PR Newswire",
+      "SoftBank Group press release 2026-10-01",
+      "NobelPrize.org"
+    ],
+    "omitted_for_conflict": "Hang Seng Oct 5 close (sources disagreed on direction)"
+  },
+  "dedup_audit": {
+    "strong_window": "2026-09-29 through 2026-10-05 canonical editions",
+    "recurrence_window": "2026-09-06 through 2026-10-05",
+    "rejected_recurring": [
+      "White House 'Super Intelligence Force' (headline 10-05)",
+      "OPEC+ November targets (headline 10-05)",
+      "French OAT-Bund spread (headline 10-05; referenced only as context)",
+      "Meta math papers, Mythos HFS CVE (headlines 10-05)",
+      "Nvidia buyback (09-29); record close kept to dashboard",
+      "Masayoshi Son AI-safety remarks (commentary, no state change)"
+    ],
+    "admitted_with_information_gain": {
+      "Saudi OSP / Hormuz flows": "Material reversal vs 10-05 'strait stays closed': Asia OSP cut to widest discount since Jun 2020 and Kpler provisional flows above pre-war",
+      "Brazil": "10-05 covered vote count; today adds verified market reaction (Ibovespa +7.70% record, BRL +4.6%) and near-final count",
+      "ISM services": "New data: prices index 74, highest since Jul 2022",
+      "California subpoena of OpenAI": "Model-escape incidents covered 09-21/09-24; subpoena is a new enforcement step",
+      "SoftBank OpenAI tranche": "SoftBank bond issuance covered 09-25/09-27; adds completion, $64.6B cumulative and confirmed debt-funded tranche"
+    },
+    "dprk": "excluded per SOP rule 10"
+  },
+  "sources": [
+    "https://gcaptain.com/saudi-arabia-unexpectedly-cuts-oil-prices-to-asia/",
+    "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Fall-as-Hormuz-Crude-Flows-Top-Pre-War-Levels.html",
+    "https://www.rigzone.com/news/oil_slides_on_saudi_price_cut-05-oct-2026-184777-article",
+    "https://www.prnewswire.com/news-releases/services-pmi-at-54-9-september-2026-ism-services-pmi-report-302898421.html",
+    "https://finance.yahoo.com/markets/live/stock-market-today-monday-october-5-dow-sp-500-nasdaq-081220790.html",
+    "https://wtvbam.com/2026/10/05/takaichi-pledges-fiscal-discipline-as-japans-debt-bill-rises/",
+    "https://www.riotimesonline.com/brazil-stocks-real-first-round-2026/",
+    "https://www.euronews.com/2026/10/05/sao-paulo-stock-exchange-surges-after-flavio-bolsonaro-election-result",
+    "https://globalbankingandfinance.com/schneider-electric-buy-ptc-22-6-billion-all-cash-deal",
+    "https://www.koreajoongangdaily.com/korea/aidriven-hacks-on-banks-leave-customers-fearing-their-data-is-fair-game/12905416",
+    "https://www.theregister.com/ai-and-ml/2026/10/02/openais-wandering-ai-agents-earn-it-a-california-subpoena/5300850",
+    "https://group.softbank/en/news/press/20261001",
+    "https://www.nobelprize.org/prizes/medicine/2026/prize-announcement/"
+  ]
 }
