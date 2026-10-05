@@ -1,63 +1,39 @@
 {
   "date": "2026-10-05",
   "run_type": "daily_brief",
-  "status": "withdrawn",
-  "started_at": "2026-10-05T07:05:44+08:00",
+  "status": "started",
+  "started_at": "2026-10-05T10:55:00+08:00",
   "artifact_state": {
-    "written_draft": true,
-    "spoken_canonical": true,
+    "written_draft": false,
+    "spoken_canonical": false,
     "podcast_verified": false,
     "written_published": false,
     "published_verified": false
   },
-  "updated_at": "2026-10-05T07:16:52+08:00",
-  "research_completed_at": "2026-10-05T07:10:47+08:00",
-  "written_staged_at": "2026-10-05T07:10:47+08:00",
   "checkpoints": {
-    "started": "2026-10-05T07:05:44+08:00",
-    "research_complete": "2026-10-05T07:10:47+08:00",
-    "written_staged": "2026-10-05T07:10:47+08:00",
-    "spoken_committed": "2026-10-05T07:11:06+08:00"
+    "started": "2026-10-05T10:55:00+08:00"
   },
-  "headline_count": 6,
-  "research_note": "Research via web search only; direct page fetches from news domains were denied by the session network policy, so facts were cross-checked across multiple independent search results and primary sources where indexed (Meta research blog, Horizon3 disclosure, McKinsey MGI).",
-  "dedup_audit": {
-    "strong_window": "2026-09-28 through 2026-10-04 canonical editions",
-    "recurrence_window": "2026-09-05 through 2026-10-04",
-    "rejected_recurring": [
-      "US Sept jobs / rate-hike expectations (covered 10-03, 10-04)",
-      "Anthropic IPO prospectus / Broadcom financing (covered 09-30, 10-02, 10-04)",
-      "China refined-fuel export suspension (covered 10-02, 10-03)",
-      "OpenAI GPT-6.1 Astra cancellation (2026-09-28/29; stale, no new information)",
-      "Fed/ECB hike-urgency fading (thesis continuation; kept to What to Watch)",
-      "China National Day travel forecasts (projections only; dashboard)"
-    ],
-    "admitted_with_information_gain": {
-      "OPEC+/Hormuz": "New Oct 4 OPEC+ November decision and Iran statement on US mediator proposals; not covered in prior 30 days of headlines",
-      "Mythos HFS CVE": "Concrete frontier-model-discovered exploit chain exploited within a day; extends 10-03 Microsoft report thesis with a verified real-world case",
-      "Tencent-Oracle lease": "Reported 09-30 but absent from prior editions; adds implied ~$1.60/chip-hour long-term lease benchmark and 30% prepayment (AI Credit Pulse)"
+  "rework": {
+    "reason": "First edition was rejected by podcast platform review (likely trigger: naming the DPRK leader in a missile item). Withdrawn at owner request, then redone at owner request with fresh research under the new DPRK guard and paywalled-source rules.",
+    "prior_canonical_commit": "73b4fad58cbaf107da1bb6764b5798017bd5d8b7",
+    "withdrawal_commits": {
+      "daily_brief": "cd4600d",
+      "lobster-daily-podcast": "1b482ef"
+    },
+    "prior_media": "daily/ep046-daily-2026-10-05.mp3 (retained in R2)",
+    "expected_media": "versioned key, e.g. daily/ep046-daily-2026-10-05-v2.mp3",
+    "prior_run": {
+      "started_at": "2026-10-05T07:05:44+08:00",
+      "checkpoints": {
+        "started": "2026-10-05T07:05:44+08:00",
+        "research_complete": "2026-10-05T07:10:47+08:00",
+        "written_staged": "2026-10-05T07:10:47+08:00",
+        "spoken_committed": "2026-10-05T07:11:06+08:00"
+      },
+      "podcast_verified_at": "2026-10-05T07:16:31+08:00",
+      "published_verified_at": "2026-10-05T07:16:52+08:00",
+      "withdrawn_at": "2026-10-05T08:30:00+08:00"
     }
   },
-  "sources": [
-    "https://www.riotimesonline.com/brazil-election-first-round-results-lula-flavio-2026/",
-    "https://www.tradingview.com/news/reuters.com,2026:newsml_S0N45F00N:0-flavio-bolsonaro-lula-headed-to-runoff-in-brazil-election-datafolha-projects/",
-    "https://www.thenationalnews.com/business/energy/2026/10/04/opec-keeps-oil-output-targets-unchanged-for-november/",
-    "https://www.aljazeera.com/news/2026/10/4/iran-says-strait-of-hormuz-to-remain-closed-until-us-meets-conditions",
-    "https://www.actionforex.com/action-insight/market-overview/656113-france-risk-premium-surges-as-oat-bund-spread-breaks-140bp-eur-chf-slides/",
-    "https://www.bloomberg.com/news/articles/2026-10-03/fed-ecb-minutes-to-show-inflation-fears-as-hike-bets-fade",
-    "https://research.meta.ai/blog/solving-open-research-problems-together",
-    "https://horizon3.ai/attack-research/disclosures/anthropic-mythos-rejetto-hfs-rce/",
-    "https://www.theregister.com/security/2026/10/03/anthropics-super-bug-hunting-model-mythos-is-hardcore-good-at-math-as-latest-vuln-under-attack-shows/5300933",
-    "https://en.sedaily.com/politics/2026/10/04/seoul-rejects-north-korean-claim-that-hypersonic-missile",
-    "https://www.trendforce.com/news/2026/10/01/news-tencent-reportedly-signs-7b-deal-to-lease-100000-ai-chips-from-oracle-in-southeast-asia/",
-    "https://www.mckinsey.com/mgi/our-research/workforce-in-motion-skills-and-pathways-to-future-jobs-in-the-united-states"
-  ],
-  "spoken_committed_at": "2026-10-05T07:11:06+08:00",
-  "canonical_commit": "73b4fad58cbaf107da1bb6764b5798017bd5d8b7",
-  "readback_verified": true,
-  "podcast_verified_at": "2026-10-05T07:16:31+08:00",
-  "written_published_at": "2026-10-05T07:16:32+08:00",
-  "published_verified_at": "2026-10-05T07:16:52+08:00",
-  "withdrawn_at": "2026-10-05T08:30:00+08:00",
-  "withdrawal_detail": "Withdrawn at owner request after publication: written post, audio mapping, spoken handoff, Podcast episode script and RSS item removed; R2 media left in place. Do not recover or republish this date."
+  "updated_at": "2026-10-05T10:55:00+08:00"
 }
