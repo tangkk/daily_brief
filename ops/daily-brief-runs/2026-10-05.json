@@ -1,14 +1,14 @@
 {
   "date": "2026-10-05",
   "run_type": "daily_brief",
-  "status": "published_verified",
+  "status": "withdrawn",
   "started_at": "2026-10-05T07:05:44+08:00",
   "artifact_state": {
     "written_draft": true,
     "spoken_canonical": true,
-    "podcast_verified": true,
-    "written_published": true,
-    "published_verified": true
+    "podcast_verified": false,
+    "written_published": false,
+    "published_verified": false
   },
   "updated_at": "2026-10-05T07:16:52+08:00",
   "research_completed_at": "2026-10-05T07:10:47+08:00",
@@ -57,5 +57,7 @@
   "readback_verified": true,
   "podcast_verified_at": "2026-10-05T07:16:31+08:00",
   "written_published_at": "2026-10-05T07:16:32+08:00",
-  "published_verified_at": "2026-10-05T07:16:52+08:00"
+  "published_verified_at": "2026-10-05T07:16:52+08:00",
+  "withdrawn_at": "2026-10-05T08:30:00+08:00",
+  "withdrawal_detail": "Withdrawn at owner request after publication: written post, audio mapping, spoken handoff, Podcast episode script and RSS item removed; R2 media left in place. Do not recover or republish this date."
 }
