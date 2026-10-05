@@ -95,6 +95,8 @@ The public written Daily Brief must satisfy this constraint **during generation 
 9. Never mention the blocked-term check, sensitive terms, platform review, filtering, censorship, or this safety gate in published written or spoken content.
 10. **North Korea exclusion and foreign-leader guard.** Podcast platform review has rejected an episode that named the North Korean leader in a missile-test item. By owner decision, do not cover North Korea (DPRK) news at all in written or spoken editions, including headlines, dashboards, watch lists, and Persistent World State; do not name North Korean leadership (for example `金正恩`). Apply the same caution to naming foreign heads of state in military or security contexts when an institutional attribution conveys the same facts.
 
+11. **Foreign elections are written-only.** By owner decision, foreign election coverage (results, polls, campaigns, runoffs) may appear in the written edition when it clears the normal significance and Information-Gain gates, but is excluded from the spoken/podcast derivative by default, including its summary paragraph. Reason: the podcast TTS service refused a Brazil-election paragraph and platform review is sensitive to election content. A market consequence may be mentioned in spoken copy only as a market move, without election narrative.
+
 Operational priority: **safe generation → preserve information via neutral rephrasing → pre-handoff self-check → deterministic publication validation → last-resort blocking.**
 
 ### Reader-facing prose style
