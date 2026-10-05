@@ -38,7 +38,7 @@
       "withdrawn_at": "2026-10-05T08:30:00+08:00"
     }
   },
-  "updated_at": "2026-10-05T11:40:00+08:00",
+  "updated_at": "2026-10-05T11:15:00+08:00",
   "research_completed_at": "2026-10-05T11:40:00+08:00",
   "written_staged_at": "2026-10-05T11:40:00+08:00",
   "spoken_committed_at": "2026-10-05T11:40:00+08:00",
@@ -79,5 +79,13 @@
     "https://www.trendforce.com/news/2026/10/01/news-tencent-reportedly-signs-7b-deal-to-lease-100000-ai-chips-from-oracle-in-southeast-asia/",
     "https://m.21jingji.com/article/20261004/herald/b22a998e61a4a985f640d2c3ba951550.html",
     "https://techstrong.ai/articles/ai-will-reshape-11-million-u-s-jobs-by-2035-mckinsey-report/"
+  ],
+  "tts_failures": [
+    {
+      "run": "lobster-daily-podcast Auto Publish Daily 37257327709 attempts 1-2",
+      "error": "xfyun code 26006: No active down data within 14000 ms, task failed",
+      "stage": "TTS synthesis (before R2/RSS writes)",
+      "suspected_cause": "TTS service refusing a segment; AI-policy paragraph rewritten to neutral wording (removed task-force name and intelligence/defense titles)"
+    }
   ]
 }
