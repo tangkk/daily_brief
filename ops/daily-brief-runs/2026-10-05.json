@@ -1,17 +1,20 @@
 {
   "date": "2026-10-05",
   "run_type": "daily_brief",
-  "status": "started",
+  "status": "spoken_committed",
   "started_at": "2026-10-05T10:55:00+08:00",
   "artifact_state": {
-    "written_draft": false,
-    "spoken_canonical": false,
+    "written_draft": true,
+    "spoken_canonical": true,
     "podcast_verified": false,
     "written_published": false,
     "published_verified": false
   },
   "checkpoints": {
-    "started": "2026-10-05T10:55:00+08:00"
+    "started": "2026-10-05T10:55:00+08:00",
+    "research_complete": "2026-10-05T11:40:00+08:00",
+    "written_staged": "2026-10-05T11:40:00+08:00",
+    "spoken_committed": "2026-10-05T11:40:00+08:00"
   },
   "rework": {
     "reason": "First edition was rejected by podcast platform review (likely trigger: naming the DPRK leader in a missile item). Withdrawn at owner request, then redone at owner request with fresh research under the new DPRK guard and paywalled-source rules.",
@@ -35,5 +38,46 @@
       "withdrawn_at": "2026-10-05T08:30:00+08:00"
     }
   },
-  "updated_at": "2026-10-05T10:55:00+08:00"
+  "updated_at": "2026-10-05T11:40:00+08:00",
+  "research_completed_at": "2026-10-05T11:40:00+08:00",
+  "written_staged_at": "2026-10-05T11:40:00+08:00",
+  "spoken_committed_at": "2026-10-05T11:40:00+08:00",
+  "headline_count": 6,
+  "dedup_audit": {
+    "strong_window": "2026-09-28 through 2026-10-04 canonical editions",
+    "recurrence_window": "2026-09-05 through 2026-10-04",
+    "checked_topics_absent_from_window": [
+      "Brazil election",
+      "OPEC+/Hormuz/Iran",
+      "France OAT-Bund spread",
+      "Meta math papers",
+      "Mythos/Rejetto HFS CVE",
+      "Tencent-Oracle lease",
+      "US federal AI task force",
+      "McKinsey MGI workforce report"
+    ],
+    "rejected": [
+      "DPRK missile item (SOP DPRK guard: default-exclude, no material market impact)",
+      "Anthropic Malaysia influence-operation report (lower global significance; deferred)",
+      "US jobs/rate expectations and China fuel-export suspension (covered 10-02 to 10-04)"
+    ]
+  },
+  "source_access": {
+    "network_policy": "Full",
+    "note": "Direct fetch worked for aljazeera, thenationalnews, riotimesonline, actionforex, research.meta.ai, horizon3.ai, theregister, trendforce, abcnews, techstrong.ai, 21jingji, sina. Bloomberg/CNBC/Reuters/FT/WSJ/McKinsey returned site-side blocks; FT Tencent report verified via TrendForce (citing FT and Reuters); McKinsey figures verified via Techstrong.ai."
+  },
+  "sources": [
+    "https://www.riotimesonline.com/brazil-election-first-round-results-lula-flavio-2026/",
+    "https://edition.cnn.com/2026/10/04/americas/brazil-president-elections-2026-latam-intl",
+    "https://www.thenationalnews.com/business/energy/2026/10/04/opec-keeps-oil-output-targets-unchanged-for-november/",
+    "https://www.aljazeera.com/news/2026/10/4/iran-says-strait-of-hormuz-to-remain-closed-until-us-meets-conditions",
+    "https://abcnews.com/Politics/president-donald-trump-announces-creation-super-intelligence-force/story?id=136986122",
+    "https://www.actionforex.com/action-insight/market-overview/656113-france-risk-premium-surges-as-oat-bund-spread-breaks-140bp-eur-chf-slides/",
+    "https://research.meta.ai/blog/solving-open-research-problems-together",
+    "https://horizon3.ai/attack-research/disclosures/anthropic-mythos-rejetto-hfs-rce/",
+    "https://www.theregister.com/security/2026/10/03/anthropics-super-bug-hunting-model-mythos-is-hardcore-good-at-math-as-latest-vuln-under-attack-shows/5300933",
+    "https://www.trendforce.com/news/2026/10/01/news-tencent-reportedly-signs-7b-deal-to-lease-100000-ai-chips-from-oracle-in-southeast-asia/",
+    "https://m.21jingji.com/article/20261004/herald/b22a998e61a4a985f640d2c3ba951550.html",
+    "https://techstrong.ai/articles/ai-will-reshape-11-million-u-s-jobs-by-2035-mckinsey-report/"
+  ]
 }
