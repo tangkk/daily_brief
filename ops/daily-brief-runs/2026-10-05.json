@@ -1,13 +1,13 @@
 {
   "date": "2026-10-05",
   "run_type": "daily_brief",
-  "status": "podcast_verified",
+  "status": "written_published",
   "started_at": "2026-10-05T10:55:00+08:00",
   "artifact_state": {
     "written_draft": true,
     "spoken_canonical": true,
     "podcast_verified": true,
-    "written_published": false,
+    "written_published": true,
     "published_verified": false
   },
   "checkpoints": {
@@ -38,7 +38,7 @@
       "withdrawn_at": "2026-10-05T08:30:00+08:00"
     }
   },
-  "updated_at": "2026-10-05T11:22:07+08:00",
+  "updated_at": "2026-10-05T11:22:08+08:00",
   "research_completed_at": "2026-10-05T11:40:00+08:00",
   "written_staged_at": "2026-10-05T11:40:00+08:00",
   "spoken_committed_at": "2026-10-05T11:40:00+08:00",
@@ -88,5 +88,6 @@
       "suspected_cause": "TTS service refusing a segment; AI-policy paragraph rewritten to neutral wording (removed task-force name and intelligence/defense titles)"
     }
   ],
-  "podcast_verified_at": "2026-10-05T11:22:07+08:00"
+  "podcast_verified_at": "2026-10-05T11:22:07+08:00",
+  "written_published_at": "2026-10-05T11:22:08+08:00"
 }
