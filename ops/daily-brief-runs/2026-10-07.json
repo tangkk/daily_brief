@@ -1,22 +1,23 @@
 {
   "date": "2026-10-07",
   "run_type": "daily_brief",
-  "status": "written_staged",
+  "status": "spoken_committed",
   "started_at": "2026-10-07T07:15:49+08:00",
   "artifact_state": {
     "written_draft": true,
-    "spoken_canonical": false,
+    "spoken_canonical": true,
     "podcast_verified": false,
     "written_published": false,
     "published_verified": false
   },
-  "updated_at": "2026-10-07T07:18:37+08:00",
+  "updated_at": "2026-10-07T07:18:46+08:00",
   "research_completed_at": "2026-10-07T07:18:37+08:00",
   "written_staged_at": "2026-10-07T07:18:37+08:00",
   "checkpoints": {
     "started": "2026-10-07T07:15:49+08:00",
     "research_complete": "2026-10-07T07:18:37+08:00",
-    "written_staged": "2026-10-07T07:18:37+08:00"
+    "written_staged": "2026-10-07T07:18:37+08:00",
+    "spoken_committed": "2026-10-07T07:18:46+08:00"
   },
   "headline_count": 6,
   "source_access": {
@@ -59,5 +60,8 @@
     "https://americanbazaaronline.com/2026/10/06/etched-draws-funding-offers-at-over-40-billion-valuation-489501/",
     "https://finance.biggo.com/news/5400e6d7-e50e-4451-8d89-f142539cbc71",
     "https://www.nobelprize.org/prizes/physics/2026/press-release/"
-  ]
+  ],
+  "spoken_committed_at": "2026-10-07T07:18:46+08:00",
+  "canonical_commit": "cf56017af04a916f701ebcb12de58a67cf58d16a",
+  "readback_verified": true
 }
