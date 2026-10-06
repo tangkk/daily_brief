@@ -1,16 +1,16 @@
 {
   "date": "2026-10-07",
   "run_type": "daily_brief",
-  "status": "written_published",
+  "status": "published_verified",
   "started_at": "2026-10-07T07:15:49+08:00",
   "artifact_state": {
     "written_draft": true,
     "spoken_canonical": true,
     "podcast_verified": true,
     "written_published": true,
-    "published_verified": false
+    "published_verified": true
   },
-  "updated_at": "2026-10-07T07:24:04+08:00",
+  "updated_at": "2026-10-07T07:24:26+08:00",
   "research_completed_at": "2026-10-07T07:18:37+08:00",
   "written_staged_at": "2026-10-07T07:18:37+08:00",
   "checkpoints": {
@@ -65,5 +65,6 @@
   "canonical_commit": "cf56017af04a916f701ebcb12de58a67cf58d16a",
   "readback_verified": true,
   "podcast_verified_at": "2026-10-07T07:24:02+08:00",
-  "written_published_at": "2026-10-07T07:24:04+08:00"
+  "written_published_at": "2026-10-07T07:24:04+08:00",
+  "published_verified_at": "2026-10-07T07:24:26+08:00"
 }
