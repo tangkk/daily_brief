@@ -1,14 +1,63 @@
 {
   "date": "2026-10-07",
   "run_type": "daily_brief",
-  "status": "started",
+  "status": "written_staged",
   "started_at": "2026-10-07T07:15:49+08:00",
   "artifact_state": {
-    "written_draft": false,
+    "written_draft": true,
     "spoken_canonical": false,
     "podcast_verified": false,
     "written_published": false,
     "published_verified": false
   },
-  "updated_at": "2026-10-07T07:15:49+08:00"
+  "updated_at": "2026-10-07T07:18:37+08:00",
+  "research_completed_at": "2026-10-07T07:18:37+08:00",
+  "written_staged_at": "2026-10-07T07:18:37+08:00",
+  "checkpoints": {
+    "started": "2026-10-07T07:15:49+08:00",
+    "research_complete": "2026-10-07T07:18:37+08:00",
+    "written_staged": "2026-10-07T07:18:37+08:00"
+  },
+  "headline_count": 6,
+  "source_access": {
+    "note": "WebFetch egress blocked; pages read via curl. CNBC/TheStreet returned 403.",
+    "readable_copies_used": {
+      "TechCrunch Etched report": "americanbazaaronline.com citing TechCrunch",
+      "Investopedia AMD/Citi": "Yahoo Finance syndicated copy"
+    },
+    "primary_sources": [
+      "NobelPrize.org physics press release"
+    ],
+    "imprecise": "Brent Oct 6 settle not confirmed from a readable source; written copy uses intraday ~$98 per Yahoo Finance live coverage"
+  },
+  "dedup_audit": {
+    "strong_window": "2026-09-30 through 2026-10-06",
+    "recurrence_window": "2026-09-07 through 2026-10-06",
+    "rejected_recurring": [
+      "Saudi OSP / Hormuz flows (headline 10-06)",
+      "Brazil election/markets (10-05, 10-06)",
+      "Japan JGB / US ISM (10-06)",
+      "Nvidia $150B buyback / agent security platform (09-29, 10-03 weekly)",
+      "Gemini 4 Argon (released ~10-01; no new information today)",
+      "Korean bank breaches follow-up comment (10-06)"
+    ],
+    "admitted_with_information_gain": {
+      "S&P 500 record": "first record close since August, first close above 7,800",
+      "Brent < $100 + G7 release": "G7 100mb release not previously covered; price crossed below $100",
+      "Paramount-WBD": "deal closing is a binding state change",
+      "AMD": "CEO capacity statement + Citi $800 target",
+      "OpenAI EU watermark": "new product/regulatory implementation",
+      "Etched": "valuation offers ~2x September round"
+    },
+    "dprk": "excluded per SOP rule 10"
+  },
+  "sources": [
+    "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-october-6-dow-sp-500-nasdaq-080526166.html",
+    "https://finance.yahoo.com/markets/stocks/articles/amd-stock-hit-fresh-high-171713699.html",
+    "https://techcrunch.com/2026/10/05/openai-will-start-watermarking-chatgpts-text-in-the-eu/",
+    "https://www.aljazeera.com/news/2026/10/3/g7-to-release-100-million-barrels-of-oil-and-diesel-will-it-curb-prices",
+    "https://americanbazaaronline.com/2026/10/06/etched-draws-funding-offers-at-over-40-billion-valuation-489501/",
+    "https://finance.biggo.com/news/5400e6d7-e50e-4451-8d89-f142539cbc71",
+    "https://www.nobelprize.org/prizes/physics/2026/press-release/"
+  ]
 }
