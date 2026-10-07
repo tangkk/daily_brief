@@ -236,6 +236,15 @@ Written section order: opening summary paragraph → **Number of the Day / 今�
 - Record internally in the run log which calls were reviewed and their grades.
 - Spoken: include only a call graded `成立` or `不成立` on clear evidence, in two or three sentences; otherwise omit.
 
+### Testable calls / 可验证判断
+
+- Each Monday–Saturday edition's Persistent World State / Bayesian Update ends with one or two **可验证判断**: explicit, falsifiable calls that state a direction or threshold, a named indicator, and a time window, for example `未来两周美国十年期国债收益率维持在 5% 以上` or `十月内高端 GPU 长期租赁价格不低于每芯片小时 1.5 美元`.
+- Use indicators that are publicly observable and sourced (market prices, official statistics, company disclosures, tracked Compute & Supply-Chain Dashboard values). Prefer windows of one week to three months. Avoid political, electoral, military, and other calls excluded by the spoken and editorial rules.
+- A call must follow from the edition's evidence and stated reasoning; do not add calls only to fill the slot. If no well-grounded call exists, write one fewer, and on a day with none, omit the line rather than padding it.
+- Keep an internal ledger at `ops/calls.json` (id, made-on date, edition, exact wording, indicator, threshold/direction, window end, status `open`/`成立`/`部分成立`/`不成立`/`仍待验证`, resolved-on date, evidence source). Add new calls in the same commit as the staged draft, and never edit the wording of a recorded call.
+- Call Review draws first from ledger calls whose window has ended or whose outcome is already clear, then from older implicit judgments in past editions. Resolve every expired call; a call whose indicator cannot be observed at expiry is graded `仍待验证` with the reason recorded internally.
+- Sunday Weekly Review summarizes the week's resolved calls and the running hit rate from the ledger.
+
 ### Sunday Weekly Review
 
 - Number of the Day becomes **本周数字** (one number for the week).
