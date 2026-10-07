@@ -1,14 +1,82 @@
 {
   "date": "2026-10-08",
   "run_type": "daily_brief",
-  "status": "started",
+  "status": "written_staged",
   "started_at": "2026-10-08T07:16:35+08:00",
   "artifact_state": {
-    "written_draft": false,
+    "written_draft": true,
     "spoken_canonical": false,
     "podcast_verified": false,
     "written_published": false,
     "published_verified": false
   },
-  "updated_at": "2026-10-08T07:16:35+08:00"
+  "updated_at": "2026-10-08T07:20:20+08:00",
+  "research_completed_at": "2026-10-08T07:20:20+08:00",
+  "written_staged_at": "2026-10-08T07:20:20+08:00",
+  "checkpoints": {
+    "started": "2026-10-08T07:16:35+08:00",
+    "research_complete": "2026-10-08T07:20:20+08:00",
+    "written_staged": "2026-10-08T07:20:20+08:00"
+  },
+  "headline_count": 6,
+  "new_sections": {
+    "number_of_the_day": "Samsung Q3 OP guidance KRW 107.4T",
+    "compute_dashboard": "ledger ops/compute-dashboard.json created (4 entries)",
+    "call_review": [
+      {
+        "original": "2026-10-03 PWS 利率与融资",
+        "grade": "成立"
+      }
+    ],
+    "testable_calls": [
+      "2026-10-08-01",
+      "2026-10-08-02"
+    ],
+    "ledger": "ops/calls.json created"
+  },
+  "source_access": {
+    "note": "WebFetch egress blocked; pages read via curl. CNBC 403, OpenAI news 403.",
+    "primary_sources": [
+      "Samsung newsroom Q3 guidance",
+      "FOMC minutes Sept 15-16",
+      "Anthropic Haiku page and launch post",
+      "Applied Digital release (Yahoo Finance copy)",
+      "NobelPrize.org chemistry"
+    ],
+    "readable_copies_used": {
+      "Reuters oil/hurricane reports": "oilprice.com articles citing Reuters"
+    }
+  },
+  "dedup_audit": {
+    "strong_window": "2026-10-01 through 2026-10-07",
+    "recurrence_window": "2026-09-08 through 2026-10-07",
+    "rejected_recurring": [
+      "S&P/Nasdaq records (10-07)",
+      "Saudi OSP / Hormuz flows (10-06)",
+      "AMD capacity / Etched (10-07)",
+      "Korean bank breaches follow-up (10-06)",
+      "Fed rate-hike expectation thesis without new data"
+    ],
+    "admitted_with_information_gain": {
+      "10y yield": "new 24-year intraday high 5.36% vs 5.31% covered 10-06",
+      "oil": "reversal back above $100 plus new Gulf of Mexico storm risk",
+      "Fed minutes": "new primary document (previously only What to Watch)",
+      "Samsung": "new guidance",
+      "Haiku 5.5": "new product/pricing",
+      "Applied Digital": "new results; interest expense ~ rental revenue"
+    },
+    "dprk": "excluded per SOP rule 10"
+  },
+  "sources": [
+    "https://news.samsung.com/global/samsung-electronics-announces-earnings-guidance-for-third-quarter-2026",
+    "https://www.federalreserve.gov/monetarypolicy/fomcminutes20260916.htm",
+    "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-october-7-dow-sp-500-nasdaq-080241833.html",
+    "https://oilprice.com/Latest-Energy-News/World-News/Brent-Back-Above-100-as-Houthis-Hit-Saudi-Infrastructure.html",
+    "https://oilprice.com/Latest-Energy-News/World-News/Chevron-Shell-and-BP-Pull-Workers-From-the-Gulf-Ahead-of-Hurricane.html",
+    "https://www.anthropic.com/claude/haiku",
+    "https://www.anthropic.com/claude-haiku-5-5",
+    "https://finance.yahoo.com/markets/stocks/articles/applied-digital-reports-fiscal-first-202700629.html",
+    "https://www.silicondata.com/products/silicon-index/h100",
+    "https://www.nobelprize.org/prizes/chemistry/2026/press-release/"
+  ]
 }

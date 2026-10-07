@@ -1,0 +1,40 @@
+{
+  "indicators": [
+    {
+      "indicator": "Samsung Electronics quarterly operating profit (memory-cycle proxy)",
+      "value": 107.4,
+      "unit": "KRW trillion",
+      "as_of": "2026-Q3 (guidance, published 2026-10-08)",
+      "kind": "company guidance midpoint",
+      "previous": {"value": 89.49, "as_of": "2026-Q2"},
+      "source_url": "https://news.samsung.com/global/samsung-electronics-announces-earnings-guidance-for-third-quarter-2026"
+    },
+    {
+      "indicator": "H100 rental price, neo-cloud standardized index (Silicon Data SDH100RT)",
+      "value": 2.53,
+      "unit": "USD per GPU-hour",
+      "as_of": "2026-10-07 (page reading at retrieval)",
+      "kind": "published index",
+      "previous": null,
+      "source_url": "https://www.silicondata.com/products/silicon-index/h100"
+    },
+    {
+      "indicator": "Long-term lease estimate, Tencent-Oracle reported deal",
+      "value": 1.6,
+      "unit": "USD per chip-hour",
+      "as_of": "2026-09-30 (FT report)",
+      "kind": "estimate from reported deal terms (~USD 7B, ~100k chips, 5 years)",
+      "previous": null,
+      "source_url": "https://www.trendforce.com/news/2026/10/01/news-tencent-reportedly-signs-7b-deal-to-lease-100000-ai-chips-from-oracle-in-southeast-asia/"
+    },
+    {
+      "indicator": "Applied Digital data center rental and other revenue (quarterly)",
+      "value": 79.12,
+      "unit": "USD million",
+      "as_of": "FQ1 2027 (quarter ended 2026-08-31)",
+      "kind": "company results",
+      "previous": {"value": 50.6, "as_of": "FQ4 2026"},
+      "source_url": "https://finance.yahoo.com/markets/stocks/articles/applied-digital-reports-fiscal-first-202700629.html"
+    }
+  ]
+}

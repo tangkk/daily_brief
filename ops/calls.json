@@ -1,0 +1,41 @@
+{
+  "calls": [
+    {
+      "id": "2026-10-08-01",
+      "made_on": "2026-10-08",
+      "edition": "_posts/2026-10-08-daily-brief.md",
+      "wording": "未来两周（至 2026 年 10 月 22 日）美国十年期国债收益率收盘维持在 5% 以上。",
+      "indicator": "US 10-year Treasury yield, daily close",
+      "threshold_direction": "every daily close > 5.00% through window end",
+      "window_end": "2026-10-22",
+      "status": "open",
+      "resolved_on": null,
+      "evidence_source": null
+    },
+    {
+      "id": "2026-10-08-02",
+      "made_on": "2026-10-08",
+      "edition": "_posts/2026-10-08-daily-brief.md",
+      "wording": "三星电子第三季度正式财报（预计十月底公布）的营业利润不低于 107 万亿韩元。",
+      "indicator": "Samsung Electronics Q3 2026 consolidated operating profit (K-IFRS), final results",
+      "threshold_direction": ">= KRW 107 trillion",
+      "window_end": "2026-10-31",
+      "status": "open",
+      "resolved_on": null,
+      "evidence_source": null
+    }
+  ],
+  "reviews": [
+    {
+      "reviewed_in": "2026-10-08",
+      "original_edition": "2026-10-03",
+      "original_wording": "就业数据压低近期加息预期，十年期收益率仍在 5.28% 左右，短期政策预期缓和没有消除高长端融资成本。",
+      "grade": "成立",
+      "evidence": "10y closed ~5.31% on 2026-10-05 and hit 5.36% intraday on 2026-10-07 (highest since Apr 2002); FOMC minutes show unanimous support for Sept hike.",
+      "sources": [
+        "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-october-7-dow-sp-500-nasdaq-080241833.html",
+        "https://www.federalreserve.gov/monetarypolicy/fomcminutes20260916.htm"
+      ]
+    }
+  ]
+}
