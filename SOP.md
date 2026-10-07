@@ -207,6 +207,41 @@ The normal Monday–Saturday Daily Brief includes a dedicated **AI Credit Cycle 
 - Sunday Weekly Review remains the full weekly synthesis of the AI credit cycle and should integrate the week's Daily Pulse evidence into a higher-level cycle assessment rather than replay each daily item.
 - The historical standalone AI 信用周期 archive remains unchanged and is not reactivated as a separate daily publication stream.
 
+## Number of the Day, Compute & Supply-Chain Dashboard, and Call Review
+
+Three standing sections added by owner decision on 2026-10-07. They apply to the Monday–Saturday Daily Brief; Sunday handling is noted below. All of them follow the existing source, Information-Gain, deduplication, safety, and editorial-invisibility rules.
+
+Written section order: opening summary paragraph → **Number of the Day / 今日数字** → Top Headlines → AI Credit Cycle Pulse → **Compute & Supply-Chain Dashboard / 算力与供应链看板** → Markets Dashboard → China Dashboard → AI × Employment Watch → Science Watch → Persistent World State / Bayesian Update → **Call Review / 判断复盘** → What to Watch Today.
+
+### Number of the Day / 今日数字
+
+- One sourced number that best captures the edition's main thread, with one or two sentences on why it matters, for example `5.31%：美国十年期国债收益率，为 2007 年以来最高`.
+- Prefer a number from the day's Top Headlines or dashboards, with a clear unit, date, and source link. Do not invent derived figures; a simple stated calculation from sourced inputs is acceptable when labeled as an estimate.
+- Avoid numbers whose main meaning is political (election shares, casualty counts, sanctions totals); choose an economic, market, technology, or science number instead.
+- Spoken: include it as one short paragraph right after the opening summary paragraph.
+
+### Compute & Supply-Chain Dashboard / 算力与供应链看板
+
+- A fixed set of hard indicators for AI compute economics. Report only indicators with a new data point since the previous edition; if none moved, a single line stating that no tracked indicator changed is enough.
+- Tracked indicators (add others only when durable and regularly published): GPU rental and long-term lease prices (per GPU-hour, by chip class); HBM, DRAM, and NAND contract or spot prices; TSMC monthly revenue and other foundry/packaging capacity signals (for example CoWoS); hyperscaler and neocloud CapEx guidance and actuals; data-center power prices, interconnection, and capacity additions; accelerator shipment or lead-time data.
+- Each entry gives the new value, the previous comparable value with its date, and the source. Keep an internal ledger of last-known values at `ops/compute-dashboard.json` (indicator, value, unit, as-of date, source URL) and update it in the same commit as the staged draft; use it for comparisons instead of re-deriving history.
+- Distinguish list prices, reported deal terms, and estimates. Deal-derived figures (for example the 2026-10-05 Tencent–Oracle lease at roughly USD 1.6 per chip-hour) must be labeled as estimates from reported terms.
+- Spoken: mention only when a tracked indicator moved materially; otherwise omit.
+
+### Call Review / 判断复盘
+
+- Revisit one or two specific earlier judgments from prior editions' Persistent World State, Bayesian Update, or analysis when new evidence now tests them. Cite the edition date of the original call, quote or closely paraphrase it, present the new evidence with sources, and grade it as `成立`, `部分成立`, `不成立`, or `仍待验证`.
+- Grade honestly, including misses; never reword the original call after the fact to make it look right. Do not manufacture reviews: if no earlier call was materially tested by new evidence, omit the section from the written edition rather than padding it.
+- Prefer calls about markets, rates, energy, AI economics, technology, and China business; avoid political forecasts.
+- Record internally in the run log which calls were reviewed and their grades.
+- Spoken: include only a call graded `成立` or `不成立` on clear evidence, in two or three sentences; otherwise omit.
+
+### Sunday Weekly Review
+
+- Number of the Day becomes **本周数字** (one number for the week).
+- Call Review becomes a fuller weekly section covering the week's tested calls, graded the same way.
+- The Compute & Supply-Chain Dashboard is folded into the Weekly Review's AI 信用周期 section as a week-over-week indicator summary.
+
 ## AI and employment impact watch
 
 AI's impact on employment is a persistent Daily Brief research theme, covering both positive and negative effects. It does not receive a mandatory daily headline slot; items enter the edition only when they clear the existing Global Significance Lens, rolling semantic-deduplication, Bayesian Update, and Information-Gain gates.
