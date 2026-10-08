@@ -23,6 +23,18 @@
       "status": "open",
       "resolved_on": null,
       "evidence_source": null
+    },
+    {
+      "id": "2026-10-09-01",
+      "made_on": "2026-10-09",
+      "edition": "_posts/2026-10-09-daily-brief.md",
+      "wording": "台积电 2026 年 10 月合并营收（预计 11 月 10 日前公布）同比增长不低于 40%。",
+      "indicator": "TSMC October 2026 consolidated monthly revenue, YoY growth",
+      "threshold_direction": ">= +40% YoY",
+      "window_end": "2026-11-10",
+      "status": "open",
+      "resolved_on": null,
+      "evidence_source": null
     }
   ],
   "reviews": [
@@ -35,6 +47,16 @@
       "sources": [
         "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-october-7-dow-sp-500-nasdaq-080241833.html",
         "https://www.federalreserve.gov/monetarypolicy/fomcminutes20260916.htm"
+      ]
+    },
+    {
+      "reviewed_in": "2026-10-09",
+      "original_edition": "2026-09-30",
+      "original_wording": "Reuters 引述知情人士称，OpenAI 年化经常性收入已接近 700 亿美元",
+      "grade": "不成立",
+      "evidence": "FT (via CNN, 2026-10-08): OpenAI told investors annualized revenue nearing $50B; $70B figure did not come from OpenAI and likely reflected a gross-revenue comparable basis.",
+      "sources": [
+        "https://www.cnn.com/2026/10/08/investing/openai-nasdaq-stocks"
       ]
     }
   ]

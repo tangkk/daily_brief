@@ -6,7 +6,10 @@
       "unit": "KRW trillion",
       "as_of": "2026-Q3 (guidance, published 2026-10-08)",
       "kind": "company guidance midpoint",
-      "previous": {"value": 89.49, "as_of": "2026-Q2"},
+      "previous": {
+        "value": 89.49,
+        "as_of": "2026-Q2"
+      },
       "source_url": "https://news.samsung.com/global/samsung-electronics-announces-earnings-guidance-for-third-quarter-2026"
     },
     {
@@ -33,8 +36,23 @@
       "unit": "USD million",
       "as_of": "FQ1 2027 (quarter ended 2026-08-31)",
       "kind": "company results",
-      "previous": {"value": 50.6, "as_of": "FQ4 2026"},
+      "previous": {
+        "value": 50.6,
+        "as_of": "FQ4 2026"
+      },
       "source_url": "https://finance.yahoo.com/markets/stocks/articles/applied-digital-reports-fiscal-first-202700629.html"
+    },
+    {
+      "indicator": "TSMC monthly consolidated revenue",
+      "value": 511.86,
+      "unit": "NTD billion",
+      "as_of": "2026-09 (published 2026-10-08)",
+      "kind": "company monthly report",
+      "previous": {
+        "value": 514.81,
+        "as_of": "2026-08"
+      },
+      "source_url": "https://www.digitimes.com/news/a20261008VL218/tsmc-revenue-2026-2025-digitimes.html"
     }
   ]
 }

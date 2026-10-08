@@ -1,14 +1,80 @@
 {
   "date": "2026-10-09",
   "run_type": "daily_brief",
-  "status": "started",
+  "status": "written_staged",
   "started_at": "2026-10-09T07:15:58+08:00",
   "artifact_state": {
-    "written_draft": false,
+    "written_draft": true,
     "spoken_canonical": false,
     "podcast_verified": false,
     "written_published": false,
     "published_verified": false
   },
-  "updated_at": "2026-10-09T07:15:58+08:00"
+  "updated_at": "2026-10-09T07:19:02+08:00",
+  "research_completed_at": "2026-10-09T07:19:02+08:00",
+  "written_staged_at": "2026-10-09T07:19:02+08:00",
+  "checkpoints": {
+    "started": "2026-10-09T07:15:58+08:00",
+    "research_complete": "2026-10-09T07:19:02+08:00",
+    "written_staged": "2026-10-09T07:19:02+08:00"
+  },
+  "headline_count": 6,
+  "new_sections": {
+    "number_of_the_day": "OpenAI annualized revenue ~USD 50B (FT)",
+    "compute_dashboard": "TSMC Sept revenue added",
+    "call_review": [
+      {
+        "original": "2026-09-30 headline 2 (OpenAI ARR ~$70B)",
+        "grade": "不成立"
+      }
+    ],
+    "testable_calls": [
+      "2026-10-09-01"
+    ],
+    "open_calls_checked": {
+      "2026-10-08-01": "10y 5.23% on 10-08, still above 5%",
+      "2026-10-08-02": "pending final results"
+    }
+  },
+  "source_access": {
+    "note": "WebFetch blocked; curl used. TSMC IR/PR 403; 21jingji/163 unreachable.",
+    "readable_copies_used": {
+      "FT OpenAI revenue": "CNN report citing FT",
+      "Reuters Gulf shut-ins": "BOE Report syndicated copy",
+      "TSMC Sept revenue": "DIGITIMES (headline/lede readable)",
+      "A-share close": "Sohu column"
+    },
+    "omitted_unverified": [
+      "TSMC vs LSEG estimate / record claim",
+      "OpenAI August run-rate"
+    ]
+  },
+  "dedup_audit": {
+    "strong_window": "2026-10-02 through 2026-10-08",
+    "recurrence_window": "2026-09-09 through 2026-10-08",
+    "rejected_recurring": [
+      "Fed minutes (10-08)",
+      "Samsung guidance (10-08)",
+      "Haiku 5.5 (10-08)",
+      "Brent above $100 thesis without new driver"
+    ],
+    "admitted_with_information_gain": {
+      "OpenAI revenue": "material correction vs 09-30 headline",
+      "Isaias": "new storm with quantified shut-ins",
+      "A-shares": "first session after holiday",
+      "TSMC": "new monthly data",
+      "GPT-6": "new product rollout",
+      "Jobless claims": "new weekly data"
+    },
+    "dprk": "excluded per SOP rule 10"
+  },
+  "sources": [
+    "https://www.cnn.com/2026/10/08/investing/openai-nasdaq-stocks",
+    "https://finance.yahoo.com/markets/live/stock-market-today-thursday-october-8-dow-sp-500-nasdaq-080537884.html",
+    "https://boereport.com/2026/10/08/about-63-of-us-gulf-oil-production-shut-in-ahead-of-isaias-us-agency-says/",
+    "https://oilprice.com/Latest-Energy-News/World-News/Oil-Jumps-2-as-Iran-Steps-Up-Attacks-on-Hormuz-Tankers.html",
+    "https://www.sohu.com/a/1085231892_120684569",
+    "https://www.digitimes.com/news/a20261008VL218/tsmc-revenue-2026-2025-digitimes.html",
+    "https://www.engadget.com/2280879/gpt-6-coming-all-tiers-chatgpt/"
+  ]
 }
