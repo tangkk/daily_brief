@@ -218,7 +218,7 @@ Written section order: opening summary paragraph → **Number of the Day / 今�
 - One sourced number that best captures the edition's main thread, with one or two sentences on why it matters, for example `5.31%：美国十年期国债收益率，为 2007 年以来最高`.
 - Prefer a number from the day's Top Headlines or dashboards, with a clear unit, date, and source link. Do not invent derived figures; a simple stated calculation from sourced inputs is acceptable when labeled as an estimate.
 - Avoid numbers whose main meaning is political (election shares, casualty counts, sanctions totals); choose an economic, market, technology, or science number instead.
-- Spoken: include it as one short paragraph right after the opening summary paragraph, beginning with the words `今日数字` (Sunday: `本周数字`). Podcast shownotes run through the end of this paragraph, so keep it self-contained.
+- Spoken: include it as one short paragraph right after the opening summary paragraph, beginning with `今日数字：` (Sunday: `本周数字：`) followed by the number, for example `今日数字：约五百亿美元，……`; the TTS layer turns the label into a short pause. Podcast shownotes run through the end of this paragraph, so keep it self-contained.
 
 ### Compute & Supply-Chain Dashboard / 算力与供应链看板
 
