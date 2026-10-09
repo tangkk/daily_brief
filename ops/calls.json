@@ -35,6 +35,18 @@
       "status": "open",
       "resolved_on": null,
       "evidence_source": null
+    },
+    {
+      "id": "2026-10-10-01",
+      "made_on": "2026-10-10",
+      "edition": "_posts/2026-10-10-daily-brief.md",
+      "wording": "密歇根大学十月消费者信心指数终值（10 月 23 日公布）不高于九月的 48.1。",
+      "indicator": "University of Michigan Index of Consumer Sentiment, October 2026 final",
+      "threshold_direction": "<= 48.1",
+      "window_end": "2026-10-23",
+      "status": "open",
+      "resolved_on": null,
+      "evidence_source": null
     }
   ],
   "reviews": [

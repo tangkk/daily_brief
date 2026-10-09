@@ -1,14 +1,76 @@
 {
   "date": "2026-10-10",
   "run_type": "daily_brief",
-  "status": "started",
+  "status": "written_staged",
   "started_at": "2026-10-10T07:16:01+08:00",
   "artifact_state": {
-    "written_draft": false,
+    "written_draft": true,
     "spoken_canonical": false,
     "podcast_verified": false,
     "written_published": false,
     "published_verified": false
   },
-  "updated_at": "2026-10-10T07:16:01+08:00"
+  "updated_at": "2026-10-10T07:19:03+08:00",
+  "research_completed_at": "2026-10-10T07:19:03+08:00",
+  "written_staged_at": "2026-10-10T07:19:03+08:00",
+  "checkpoints": {
+    "started": "2026-10-10T07:16:01+08:00",
+    "research_complete": "2026-10-10T07:19:03+08:00",
+    "written_staged": "2026-10-10T07:19:03+08:00"
+  },
+  "headline_count": 6,
+  "new_sections": {
+    "number_of_the_day": "UMich sentiment 46.3",
+    "compute_dashboard": "no tracked indicator moved",
+    "call_review": "omitted: no earlier call materially tested (10y call open at 5.24%; Samsung call pending)",
+    "testable_calls": [
+      "2026-10-10-01"
+    ]
+  },
+  "source_access": {
+    "note": "WebFetch blocked; curl used.",
+    "readable_copies_used": {
+      "Bloomberg OpenAI": "Yahoo Finance syndicated copy",
+      "FT SoftBank": "Reuters via The Star",
+      "CrowdStrike report": "Korea JoongAng Daily (Yonhap)"
+    },
+    "primary_sources": [
+      "UMich Surveys of Consumers",
+      "EIA Today in Energy"
+    ],
+    "omitted_unverified": [
+      "SpaceX deal value ($8B per WSJ snippet only)",
+      "Louisiana hub track claim",
+      "record-low current-conditions claim"
+    ]
+  },
+  "dedup_audit": {
+    "strong_window": "2026-10-03 through 2026-10-09",
+    "recurrence_window": "2026-09-10 through 2026-10-09",
+    "rejected_recurring": [
+      "Isaias shut-ins without new data (admitted only with EIA/72%/refinery-specific risk)",
+      "Korean bank breaches generic (admitted with CrowdStrike tool-chain attribution)"
+    ],
+    "admitted_with_information_gain": {
+      "OpenAI": "company projection + valuation terms after 10-09 FT report",
+      "SpaceX spectrum": "new deal, record telecom drop",
+      "UMich": "new data",
+      "Isaias": "Cat 3, 72% shut-in, named refineries at risk",
+      "CrowdStrike": "first detailed technical attribution",
+      "SoftBank": "new $100B fundraising report"
+    },
+    "dprk": "excluded per SOP rule 10"
+  },
+  "sources": [
+    "https://finance.yahoo.com/technology/ai/articles/openai-expects-70-billion-annualized-014338719.html",
+    "https://finance.yahoo.com/markets/live/stock-market-today-friday-october-9-dow-sp-500-nasdaq-080148117.html",
+    "https://finance.yahoo.com/markets/stocks/article/telecom-stocks-sink-after-spacexs-starlink-picks-up-spectrum-assets-224253321.html",
+    "https://www.cbsnews.com/news/spacex-starlink-mobile-carrier-radio-airwaves/",
+    "https://www.sca.isr.umich.edu/",
+    "https://www.eia.gov/todayinenergy/detail.php?id=68284",
+    "https://finance.yahoo.com/energy/articles/zero-tolerance-disruptions-hurricane-isaias-170601774.html",
+    "https://www.koreajoongangdaily.com/business/chinesespeaking-hacker-possibly-behind-attack-on-korean-banks-crowdstrike-says/12910498",
+    "https://www.thestar.com.my/tech/tech-news/2026/10/09/softbank-seeks-up-to-100-billion-from-gulf-investors-for-ai-push-ft-reports",
+    "https://news.jkn.co.kr/editions/chinese/post/1014361"
+  ]
 }
