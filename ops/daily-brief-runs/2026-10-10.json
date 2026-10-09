@@ -1,22 +1,23 @@
 {
   "date": "2026-10-10",
   "run_type": "daily_brief",
-  "status": "written_staged",
+  "status": "spoken_committed",
   "started_at": "2026-10-10T07:16:01+08:00",
   "artifact_state": {
     "written_draft": true,
-    "spoken_canonical": false,
+    "spoken_canonical": true,
     "podcast_verified": false,
     "written_published": false,
     "published_verified": false
   },
-  "updated_at": "2026-10-10T07:19:03+08:00",
+  "updated_at": "2026-10-10T07:19:12+08:00",
   "research_completed_at": "2026-10-10T07:19:03+08:00",
   "written_staged_at": "2026-10-10T07:19:03+08:00",
   "checkpoints": {
     "started": "2026-10-10T07:16:01+08:00",
     "research_complete": "2026-10-10T07:19:03+08:00",
-    "written_staged": "2026-10-10T07:19:03+08:00"
+    "written_staged": "2026-10-10T07:19:03+08:00",
+    "spoken_committed": "2026-10-10T07:19:12+08:00"
   },
   "headline_count": 6,
   "new_sections": {
@@ -72,5 +73,8 @@
     "https://www.koreajoongangdaily.com/business/chinesespeaking-hacker-possibly-behind-attack-on-korean-banks-crowdstrike-says/12910498",
     "https://www.thestar.com.my/tech/tech-news/2026/10/09/softbank-seeks-up-to-100-billion-from-gulf-investors-for-ai-push-ft-reports",
     "https://news.jkn.co.kr/editions/chinese/post/1014361"
-  ]
+  ],
+  "spoken_committed_at": "2026-10-10T07:19:12+08:00",
+  "canonical_commit": "25fb754561795322294e2cda25f569b2584952e9",
+  "readback_verified": true
 }
