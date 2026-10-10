@@ -1,15 +1,43 @@
 {
   "date": "2026-10-11",
   "run_type": "weekly_review",
-  "status": "started",
+  "status": "written_staged",
   "started_at": "2026-10-11T07:15:27+08:00",
   "artifact_state": {
-    "written_draft": false,
+    "written_draft": true,
     "spoken_canonical": false,
     "podcast_verified": false,
     "written_published": false,
     "published_verified": false
   },
-  "updated_at": "2026-10-11T07:15:27+08:00",
-  "research_period": "2026-10-04 through 2026-10-10"
+  "updated_at": "2026-10-11T07:17:48+08:00",
+  "research_period": "2026-10-04 through 2026-10-10",
+  "research_completed_at": "2026-10-11T07:17:48+08:00",
+  "written_staged_at": "2026-10-11T07:17:48+08:00",
+  "checkpoints": {
+    "started": "2026-10-11T07:15:27+08:00",
+    "research_complete": "2026-10-11T07:17:48+08:00",
+    "written_staged": "2026-10-11T07:17:48+08:00"
+  },
+  "weekly_sections": {
+    "week_number": "10y 5.36% intraday high",
+    "ai_credit_cycle": "integrated with compute dashboard week-over-week summary",
+    "call_review": "4 graded (2 成立 incl. new 10-04 rates call, 1 部分成立 new 10-04 AI call, 1 不成立); no ledger calls expired"
+  },
+  "source_access": {
+    "note": "Weekly synthesis from verified daily editions 10-05..10-10 plus new Saturday checks.",
+    "new_sources": [
+      "https://wtop.com/national/2026/10/how-major-us-stock-indexes-fared-friday-10-9-2026/",
+      "https://www.zerohedge.com/weather/hurricane-isaias-slams-gulf-coast-knocks-out-power-830000-major-refineries-are-spared"
+    ],
+    "single_source_attributed": "Pascagoula refinery spared (ZeroHedge only)",
+    "omitted_unverified": [
+      "Nasdaq 4-week streak",
+      "China Sept CPI/trade dates"
+    ]
+  },
+  "dedup_audit": {
+    "approach": "weekly synthesis; no Daily-style headline list; avoided replaying each daily item, grouped by persistent-state change",
+    "dprk": "excluded per SOP rule 10"
+  }
 }

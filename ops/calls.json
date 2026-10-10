@@ -70,6 +70,44 @@
       "sources": [
         "https://www.cnn.com/2026/10/08/investing/openai-nasdaq-stocks"
       ]
+    },
+    {
+      "reviewed_in": "2026-10-11",
+      "original_edition": "2026-10-04",
+      "original_wording": "降息预期回升，也没有消除长端融资成本的压力。",
+      "grade": "成立",
+      "evidence": "10y hit 5.36% intraday on 2026-10-07, highest since Apr 2002; FOMC minutes unanimous for Sept hike.",
+      "sources": [
+        "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-october-7-dow-sp-500-nasdaq-080241833.html",
+        "https://www.federalreserve.gov/monetarypolicy/fomcminutes20260916.htm"
+      ]
+    },
+    {
+      "reviewed_in": "2026-10-11",
+      "original_edition": "2026-10-04",
+      "original_wording": "AI投资仍有强劲需求基础，信用扩张和回款周期则需要更细地检验。",
+      "grade": "部分成立",
+      "evidence": "Samsung Q3 OP guidance KRW 107.4T and TSMC Sept revenue +54.6% YoY support demand; OpenAI annualized revenue ~$50B (net) vs ~$70B assumed weakens demand-strength inference.",
+      "sources": [
+        "https://news.samsung.com/global/samsung-electronics-announces-earnings-guidance-for-third-quarter-2026",
+        "https://www.cnn.com/2026/10/08/investing/openai-nasdaq-stocks"
+      ]
     }
-  ]
+  ],
+  "weekly_summary": {
+    "2026-10-11": {
+      "graded_reviews_to_date": {
+        "成立": 2,
+        "部分成立": 1,
+        "不成立": 1
+      },
+      "ledger_calls_resolved": 0,
+      "open_calls": [
+        "2026-10-08-01",
+        "2026-10-08-02",
+        "2026-10-09-01",
+        "2026-10-10-01"
+      ]
+    }
+  }
 }
