@@ -1,22 +1,23 @@
 {
   "date": "2026-10-12",
   "run_type": "daily_brief",
-  "status": "written_staged",
+  "status": "spoken_committed",
   "started_at": "2026-10-12T07:16:42+08:00",
   "artifact_state": {
     "written_draft": true,
-    "spoken_canonical": false,
+    "spoken_canonical": true,
     "podcast_verified": false,
     "written_published": false,
     "published_verified": false
   },
-  "updated_at": "2026-10-12T07:20:25+08:00",
+  "updated_at": "2026-10-12T07:20:34+08:00",
   "research_completed_at": "2026-10-12T07:20:25+08:00",
   "written_staged_at": "2026-10-12T07:20:25+08:00",
   "checkpoints": {
     "started": "2026-10-12T07:16:42+08:00",
     "research_complete": "2026-10-12T07:20:25+08:00",
-    "written_staged": "2026-10-12T07:20:25+08:00"
+    "written_staged": "2026-10-12T07:20:25+08:00",
+    "spoken_committed": "2026-10-12T07:20:34+08:00"
   },
   "headline_count": 6,
   "new_sections": {
@@ -73,5 +74,8 @@
     "https://finance.sina.com.cn/stock/zqgd/2026-10-11/doc-iniuvxsc5728214.shtml",
     "https://winbuzzer.com/2026/10/08/google-opens-synthid-ai-watermark-checker-to-everyone-xcxwbn/",
     "https://www.taipeitimes.com/News/biz/archives/2026/10/03/2003865297"
-  ]
+  ],
+  "spoken_committed_at": "2026-10-12T07:20:34+08:00",
+  "canonical_commit": "88cb2d804110e258aa7dc1a1b259635b36a35d6c",
+  "readback_verified": true
 }
