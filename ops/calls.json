@@ -47,6 +47,18 @@
       "status": "open",
       "resolved_on": null,
       "evidence_source": null
+    },
+    {
+      "id": "2026-10-12-01",
+      "made_on": "2026-10-12",
+      "edition": "_posts/2026-10-12-daily-brief.md",
+      "wording": "美国九月 CPI（预计 10 月 14 日公布）同比涨幅不低于 3.5%。",
+      "indicator": "US CPI-U, September 2026, year-over-year",
+      "threshold_direction": ">= 3.5%",
+      "window_end": "2026-10-14",
+      "status": "open",
+      "resolved_on": null,
+      "evidence_source": null
     }
   ],
   "reviews": [

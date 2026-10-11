@@ -1,14 +1,77 @@
 {
   "date": "2026-10-12",
   "run_type": "daily_brief",
-  "status": "started",
+  "status": "written_staged",
   "started_at": "2026-10-12T07:16:42+08:00",
   "artifact_state": {
-    "written_draft": false,
+    "written_draft": true,
     "spoken_canonical": false,
     "podcast_verified": false,
     "written_published": false,
     "published_verified": false
   },
-  "updated_at": "2026-10-12T07:16:42+08:00"
+  "updated_at": "2026-10-12T07:20:25+08:00",
+  "research_completed_at": "2026-10-12T07:20:25+08:00",
+  "written_staged_at": "2026-10-12T07:20:25+08:00",
+  "checkpoints": {
+    "started": "2026-10-12T07:16:42+08:00",
+    "research_complete": "2026-10-12T07:20:25+08:00",
+    "written_staged": "2026-10-12T07:20:25+08:00"
+  },
+  "headline_count": 6,
+  "new_sections": {
+    "number_of_the_day": "Apple iPhone 18 Pro component order cut >=15% (Nikkei via Reuters)",
+    "compute_dashboard": "no tracked indicator moved",
+    "call_review": "omitted: no call expired or materially tested",
+    "testable_calls": [
+      "2026-10-12-01"
+    ]
+  },
+  "source_access": {
+    "readable_copies_used": {
+      "Nikkei Apple": "Reuters via KSL",
+      "FT Amazon SPV": "Bloomberg via Taipei Times",
+      "CN policy items": "Sina (券商中国)"
+    },
+    "primary_sources": [
+      "DOE SPR release"
+    ],
+    "snippet_only_attributed": {
+      "Bloomberg oil Oct 11": "Riyadh airport attack, tanker drone hit off Oman, Brent ~105/WTI ~92 (stated as Bloomberg report)",
+      "USNI Hormuz near-daily strikes": "headline/snippet"
+    },
+    "omitted_unverified": [
+      "Gulf restart crew-return details"
+    ]
+  },
+  "dedup_audit": {
+    "strong_window": "2026-10-05 through 2026-10-11",
+    "admitted_with_information_gain": {
+      "Anthropic eval incidents": "new disclosure (Oct 9) not previously covered",
+      "Apple order cut": "new Nikkei report (Oct 9) not previously covered",
+      "SPR exchange": "new DOE action Oct 10",
+      "China policy": "new documents/meetings Oct 9-10",
+      "China auto rules": "new draft regulation Oct 10",
+      "SynthID": "new cross-vendor detector (Oct 7) not previously covered",
+      "Amazon SPV (pulse)": "FT Oct 2 report not previously covered"
+    },
+    "rejected_recurring": [
+      "OpenAI revenue (10-09,10-10)",
+      "Isaias shut-in totals without new data",
+      "CoreWeave $40M/MW (Sept 17, stale)",
+      "Apollo-SoftBank loan (Sept 17, stale)",
+      "Huawei roadmap (Sept 17, stale)"
+    ],
+    "dprk": "excluded per SOP rule 10"
+  },
+  "sources": [
+    "https://techcrunch.com/2026/10/09/anthropic-cant-reliably-control-its-ai-agents-its-cutting-off-its-internal-evals-from-the-live-internet-instead",
+    "https://www.ksl.com/article/51634306/apple-cuts-iphone-18-pro-orders-due-to-soft-demand-nikkei-asia-reports",
+    "https://www.energy.gov/articles/energy-department-authorizes-strategic-petroleum-reserve-exchange-address-supply",
+    "https://www.bloomberg.com/news/articles/2026-10-11/latest-oil-market-news-and-analysis-for-oct-12",
+    "https://news.usni.org/2026/10/09/october-sees-near-daily-strikes-on-ships-in-hormuz",
+    "https://finance.sina.com.cn/stock/zqgd/2026-10-11/doc-iniuvxsc5728214.shtml",
+    "https://winbuzzer.com/2026/10/08/google-opens-synthid-ai-watermark-checker-to-everyone-xcxwbn/",
+    "https://www.taipeitimes.com/News/biz/archives/2026/10/03/2003865297"
+  ]
 }
