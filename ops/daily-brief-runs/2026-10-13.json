@@ -1,14 +1,75 @@
 {
   "date": "2026-10-13",
   "run_type": "daily_brief",
-  "status": "started",
+  "status": "written_staged",
   "started_at": "2026-10-13T07:16:03+08:00",
   "artifact_state": {
-    "written_draft": false,
+    "written_draft": true,
     "spoken_canonical": false,
     "podcast_verified": false,
     "written_published": false,
     "published_verified": false
   },
-  "updated_at": "2026-10-13T07:16:03+08:00"
+  "updated_at": "2026-10-13T07:18:59+08:00",
+  "research_completed_at": "2026-10-13T07:18:59+08:00",
+  "written_staged_at": "2026-10-13T07:18:59+08:00",
+  "checkpoints": {
+    "started": "2026-10-13T07:16:03+08:00",
+    "research_complete": "2026-10-13T07:18:59+08:00",
+    "written_staged": "2026-10-13T07:18:59+08:00"
+  },
+  "headline_count": 6,
+  "new_sections": {
+    "number_of_the_day": "CXMT 4F2 cell one-third smaller",
+    "compute_dashboard": "no tracked indicator moved",
+    "call_review": "omitted: no call expired or materially tested",
+    "testable_calls": [
+      "2026-10-13-01"
+    ]
+  },
+  "source_access": {
+    "readable_copies_used": {
+      "CXMT/Micron": "cnyes (Barron's compiled)",
+      "Maia 300": "StorageReview, Notebookcheck",
+      "Meta Muse Wonder (FT interview)": "Engadget",
+      "Amazon-Decart (WSJ)": "Tech Startups roundup citing WSJ",
+      "Harvard study": "Forkast",
+      "AlphaProof Nexus (Science)": "The Decoder"
+    },
+    "omitted_unverified": [
+      "vertical gate-all-around transistor detail",
+      "value/defensive rotation characterization",
+      "Broadcom/Intel CEO capital-bottleneck remarks"
+    ]
+  },
+  "dedup_audit": {
+    "strong_window": "2026-10-06 through 2026-10-12",
+    "admitted_with_information_gain": {
+      "CXMT": "new technical claim with market reaction",
+      "Maia 300": "new product (Oct 12)",
+      "Muse Wonder": "new model launch",
+      "markets": "new session; Brent two-week high",
+      "A-shares": "new session below 3800",
+      "Decart": "new WSJ report",
+      "Harvard study": "new large-sample productivity evidence",
+      "AlphaProof Nexus": "new peer-reviewed publication"
+    },
+    "rejected_recurring": [
+      "Anthropic eval incidents (10-12)",
+      "Apple order cuts (10-12)",
+      "White House science summit $2.4B credits (Oct 8; deferred, low information gain)"
+    ],
+    "dprk": "excluded per SOP rule 10"
+  },
+  "sources": [
+    "https://news.cnyes.com/news/id/6628979",
+    "https://www.storagereview.com/news/microsoft-maia-300-hbm4-n2p-chiplet-96-accelerator-rack",
+    "https://www.notebookcheck.net/Microsoft-Maia-300-AI-chip-arrives-with-monstrous-288-GB-HBM4-memory-and-18-TB-s-bandwidth.1422220.0.html",
+    "https://www.engadget.com/2284478/meta-says-its-caught-up-to-the-frontier-with-its-latest-wonder-ai-models/",
+    "https://finance.yahoo.com/markets/live/stock-market-today-monday-october-12-dow-sp-500-nasdaq-080321571.html",
+    "https://www.cs.com.cn/gppd/gsyj/2026/10/12/detail_2026101210044149.html",
+    "https://techstartups.com/2026/10/12/top-tech-news-today-october-12-2026-amazon-anthropic-amd-google-ionq-microsoft-tencent-more/",
+    "https://forkast.news/ai-coding-agents-write-30-more-code-and-resolve-zero-additional-issues-harvard-study-finds/",
+    "https://the-decoder.com/google-deepminds-alphaproof-nexus-solved-dozens-of-open-math-problems-and-actually-got-peer-reviewed/"
+  ]
 }

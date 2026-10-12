@@ -59,6 +59,18 @@
       "status": "open",
       "resolved_on": null,
       "evidence_source": null
+    },
+    {
+      "id": "2026-10-13-01",
+      "made_on": "2026-10-13",
+      "edition": "_posts/2026-10-13-daily-brief.md",
+      "wording": "长鑫存储在 2026 年 12 月 31 日前正式发布基于 4F² 结构的服务器内存产品。",
+      "indicator": "CXMT official launch/announcement of 4F2-based server memory (RDIMM) product",
+      "threshold_direction": "launched on or before window end",
+      "window_end": "2026-12-31",
+      "status": "open",
+      "resolved_on": null,
+      "evidence_source": null
     }
   ],
   "reviews": [
