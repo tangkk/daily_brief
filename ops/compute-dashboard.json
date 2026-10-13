@@ -53,6 +53,23 @@
         "as_of": "2026-08"
       },
       "source_url": "https://www.digitimes.com/news/a20261008VL218/tsmc-revenue-2026-2025-digitimes.html"
+    },
+    {
+      "indicator": "China AI accelerator shipments (IDC, half-year)",
+      "value": 2.008,
+      "unit": "million units",
+      "as_of": "2026-H1",
+      "kind": "third-party market data (IDC via Reuters)",
+      "detail": {
+        "nvidia_units_k": 678,
+        "nvidia_share_pct": 34,
+        "huawei_units_k": 572,
+        "huawei_share_pct": 28,
+        "gpu_units_k": 991,
+        "non_gpu_units_k": 1016
+      },
+      "previous": null,
+      "source_url": "https://www.thestandard.com.hk/innovation/article/345296/Nvidias-China-AI-chip-share-falls-as-Huawei-closes-gap-report-finds"
     }
   ]
 }

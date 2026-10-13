@@ -71,6 +71,18 @@
       "status": "open",
       "resolved_on": null,
       "evidence_source": null
+    },
+    {
+      "id": "2026-10-14-01",
+      "made_on": "2026-10-14",
+      "edition": "_posts/2026-10-14-daily-brief.md",
+      "wording": "2026 年 10 月 31 日前，AAA 美国全国汽油均价始终维持在每加仑 4 美元或以上。",
+      "indicator": "AAA US national average regular gasoline price",
+      "threshold_direction": ">= USD 4.00/gal every day through window end",
+      "window_end": "2026-10-31",
+      "status": "open",
+      "resolved_on": null,
+      "evidence_source": null
     }
   ],
   "reviews": [
