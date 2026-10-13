@@ -274,6 +274,12 @@ Added by owner decision on 2026-10-13. Tracks where AI is actually being deploye
 - Number of the Day becomes **本周数字** (one number for the week).
 - Call Review becomes a fuller weekly section covering the week's tested calls, graded the same way.
 - The Compute & Supply-Chain Dashboard is folded into the Weekly Review's AI 信用周期 section as a week-over-week indicator summary.
+- **概念小课堂 / Concept Corner** (Sunday only, added by owner decision on 2026-10-13): explain one concept that recurred during the week and that a general listener may not fully understand, for example 期限溢价, why HBM is expensive, residual-value risk in GPU leasing, or the difference between ARR and recognized revenue.
+  - One or two short paragraphs in plain language: what it is, why it mattered this week (tie it to a specific item from the week), and what to watch. Use at most one simple sourced example figure; no formulas unless essential.
+  - Choose concepts from markets, rates, AI economics, compute, technology, or business; avoid political concepts.
+  - Do not repeat a concept already explained. Keep an internal list at `ops/concepts.json` (concept, date, edition) and add to it in the same commit as the staged draft.
+  - If no recurring concept clearly needs explaining, omit the section that week.
+  - Place it near the end of the Weekly Review, before the next-week outlook.
 
 ## AI and employment impact watch
 
