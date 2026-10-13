@@ -1,16 +1,16 @@
 {
   "date": "2026-10-14",
   "run_type": "daily_brief",
-  "status": "written_staged",
+  "status": "spoken_committed",
   "started_at": "2026-10-14T07:17:00+08:00",
   "artifact_state": {
     "written_draft": true,
-    "spoken_canonical": false,
+    "spoken_canonical": true,
     "podcast_verified": false,
     "written_published": false,
     "published_verified": false
   },
-  "updated_at": "2026-10-14T07:21:23+08:00",
+  "updated_at": "2026-10-14T07:21:34+08:00",
   "research_completed_at": "2026-10-14T07:21:23+08:00",
   "written_staged_at": "2026-10-14T07:21:23+08:00",
   "checkpoints": {
@@ -71,5 +71,8 @@
     "https://blogs.nvidia.com/blog/ocp-global-summit-vera-rubin-scale-ai-factories/",
     "https://aiweekly.co/alerts/suki-raises-90m-series-e-led-by-healthier-capital-at-450-customer-scale",
     "https://k.sina.com.cn/article_7857201856_1d45362c001908qvim.html"
-  ]
+  ],
+  "spoken_committed_at": "2026-10-14T07:21:34+08:00",
+  "canonical_commit": "70663b116007e6ed5dc33e4fbc3e174b9c5a3401",
+  "readback_verified": true
 }
