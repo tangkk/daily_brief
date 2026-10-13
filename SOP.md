@@ -211,7 +211,7 @@ The normal Monday–Saturday Daily Brief includes a dedicated **AI Credit Cycle 
 
 Three standing sections added by owner decision on 2026-10-07. They apply to the Monday–Saturday Daily Brief; Sunday handling is noted below. All of them follow the existing source, Information-Gain, deduplication, safety, and editorial-invisibility rules.
 
-Written section order: opening summary paragraph → **Number of the Day / 今日数字** → Top Headlines → AI Credit Cycle Pulse → **Compute & Supply-Chain Dashboard / 算力与供应链看板** → Markets Dashboard → China Dashboard → AI × Employment Watch → Science Watch → Persistent World State / Bayesian Update → **Call Review / 判断复盘** → What to Watch Today.
+Written section order: opening summary paragraph → **Number of the Day / 今日数字** → Top Headlines → AI Credit Cycle Pulse → **Compute & Supply-Chain Dashboard / 算力与供应链看板** → **AI Applications Watch / AI 应用落地看板** → Markets Dashboard → China Dashboard → AI × Employment Watch → Science Watch → Persistent World State / Bayesian Update → **Call Review / 判断复盘** → What to Watch Today.
 
 ### Number of the Day / 今日数字
 
@@ -227,6 +227,25 @@ Written section order: opening summary paragraph → **Number of the Day / 今�
 - Each entry gives the new value, the previous comparable value with its date, and the source. Keep an internal ledger of last-known values at `ops/compute-dashboard.json` (indicator, value, unit, as-of date, source URL) and update it in the same commit as the staged draft; use it for comparisons instead of re-deriving history.
 - Distinguish list prices, reported deal terms, and estimates. Deal-derived figures (for example the 2026-10-05 Tencent–Oracle lease at roughly USD 1.6 per chip-hour) must be labeled as estimates from reported terms.
 - Spoken: mention only when a tracked indicator moved materially; otherwise omit.
+
+### AI Applications Watch / AI 应用落地看板
+
+Added by owner decision on 2026-10-13. Tracks where AI is actually being deployed and paid for, and the financial health of the companies doing it. It complements the AI Credit Cycle Pulse: the Pulse asks whether cash flows back through the whole cycle; this section asks which application areas are earning that cash.
+
+- **Core sectors (priority order):**
+  - **Healthcare / 医疗**: regulatory clearances, hospital and health-system deployments, payer reimbursement, AI drug-discovery clinical milestones.
+  - **Coding and enterprise agents / 编程与企业 agent**: paid seats, usage and workload volume, renewals, pricing changes (for example Claude Code, Codex, Cursor).
+  - **Legal / 法律**: legal-AI company revenue (for example Harvey), law-firm adoption scale, pressure on hourly billing.
+  - **Robotics and embodied AI / 机器人与具身智能**: humanoid and industrial robot orders, shipments, unit cost, factory deployments.
+  - **Autonomous driving / 自动驾驶**: robotaxi fleet size, paid rides, cost per mile or kilometre, new cities.
+  - **Finance, insurance, and customer service / 金融、保险与客服**: measured cost savings, automation rates, contract wins.
+  - **Defense / 国防**: contract awards and procurement programs, written edition only (spoken rules exclude military topics).
+- **Consumer-facing content (cover when material):** AI short dramas and video (AI 短剧与视频), AI music (AI 音乐), AI podcasts and audio (AI 播客与音频), and other consumer AI apps. Track paying users, revenue, platform distribution and takedown policies, licensing and copyright deals or disputes, and creator economics.
+- **Financial health, for every sector:** ARR or revenue and growth, gross margin, burn rate, funding rounds and valuations (including flat or down rounds), layoffs, shutdowns, IPO filings, and AI revenue disclosed by public companies.
+- **Format:** two to five bullets, one per sector or company with new evidence since the previous edition, each with the figure, its comparison point, and a source. Skip sectors with nothing new; never pad to cover every sector. If nothing material happened, one line is enough. Apply the normal deduplication and Information-Gain gates; a funding announcement without new revenue, usage, or deployment evidence is low priority.
+- **Evidence standard:** prefer observed adoption and money (revenue, paid users, contracts, reimbursements, shipments) over pilots, partnerships, surveys, and executive claims. Label projections and company-reported figures as such.
+- **Spoken:** include at most one or two items with material new evidence, never defense; otherwise omit.
+- **Sunday Weekly Review:** summarize the week's application-side changes by sector inside or next to the AI 信用周期 section.
 
 ### Call Review / 判断复盘
 
