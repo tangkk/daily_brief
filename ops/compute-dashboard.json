@@ -70,6 +70,43 @@
       },
       "previous": null,
       "source_url": "https://www.thestandard.com.hk/innovation/article/345296/Nvidias-China-AI-chip-share-falls-as-Huawei-closes-gap-report-finds"
+    },
+    {
+      "indicator": "Alphabet 2026 AI capacity spending (executive statement)",
+      "value": 200,
+      "unit": "USD billion",
+      "as_of": "2026-10-12 (Porat at Fortune MPW)",
+      "kind": "executive statement vs official capex guidance",
+      "previous": {
+        "value": "180-190",
+        "as_of": "official 2026 capex guidance"
+      },
+      "source_url": "https://aiweekly.co/alerts/alphabets-porat-pegs-2026-ai-capex-near-200b-at-fortune-mpw-summit-signals"
+    },
+    {
+      "indicator": "ASML quarterly total net sales",
+      "value": 11.662,
+      "unit": "EUR billion",
+      "as_of": "2026-Q3",
+      "kind": "company results",
+      "previous": {
+        "value": 9.326,
+        "as_of": "2026-Q2"
+      },
+      "guidance": "Q4 14.2-15.2; FY2026 44-45",
+      "source_url": "https://finance.yahoo.com/markets/stocks/articles/asml-reports-11-7-billion-050000954.html"
+    },
+    {
+      "indicator": "CoreWeave 2032 bond yield (USD 1.25B, 9.625% coupon)",
+      "value": 14.5,
+      "unit": "percent",
+      "as_of": "2026-10-13 close",
+      "kind": "secondary-market yield",
+      "previous": {
+        "value": 9,
+        "as_of": "summer 2026 (approx.)"
+      },
+      "source_url": "https://www.fool.com/investing/2026/10/14/why-coreweave-stock-tumbled-today/"
     }
   ]
 }

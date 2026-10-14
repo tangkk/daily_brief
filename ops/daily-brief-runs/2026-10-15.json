@@ -1,14 +1,95 @@
 {
   "date": "2026-10-15",
   "run_type": "daily_brief",
-  "status": "started",
+  "status": "written_staged",
   "started_at": "2026-10-15T07:15:58+08:00",
   "artifact_state": {
-    "written_draft": false,
+    "written_draft": true,
     "spoken_canonical": false,
     "podcast_verified": false,
     "written_published": false,
     "published_verified": false
   },
-  "updated_at": "2026-10-15T07:15:58+08:00"
+  "updated_at": "2026-10-15T07:21:00+08:00",
+  "research_completed_at": "2026-10-15T07:21:00+08:00",
+  "written_staged_at": "2026-10-15T07:21:00+08:00",
+  "checkpoints": {
+    "started": "2026-10-15T07:15:58+08:00",
+    "research_complete": "2026-10-15T07:21:00+08:00",
+    "written_staged": "2026-10-15T07:21:00+08:00"
+  },
+  "headline_count": 6,
+  "new_sections": {
+    "number_of_the_day": "CoreWeave 2032 bond yield 14.5%",
+    "compute_dashboard": "Alphabet capex ~200B vs 180-190B guidance; ASML Q3 sales EUR 11.66B vs 9.33B; CoreWeave bond yield 14.5% vs ~9%",
+    "ai_applications_watch": [
+      "AI music: YouTube Music disclosure-only AI labels (written only; spoken omitted, no money evidence)"
+    ],
+    "call_review": [
+      {
+        "call_id": "2026-10-12-01",
+        "grade": "成立"
+      }
+    ],
+    "testable_calls": [
+      "2026-10-15-01"
+    ]
+  },
+  "source_access": {
+    "readable_copies_used": {
+      "CPI": "CBS News, Yahoo/TheStreet",
+      "markets": "Yahoo Finance live and close",
+      "CoreWeave": "Yahoo Finance, Motley Fool (CNBC not readable)",
+      "SOX": "Nasdaq Global Indexes",
+      "KOSPI": "KED Global",
+      "ASML": "ASML release via Yahoo Finance",
+      "BofA/BlackRock": "Yahoo Finance live",
+      "China trade (Reuters/AP)": "ABC News (AP)",
+      "China CPI/PPI": "NBS, CLS",
+      "Alphabet capex (Fortune)": "AI Weekly",
+      "YouTube Music (TechCrunch)": "AI Weekly",
+      "A-shares": "Eastmoney (Xinjingbao), 21jingji"
+    },
+    "omitted_unverified": [
+      "Goolsbee overheating remark dated Oct 14 (only September interviews verified)",
+      "Oracle/Dell/Marvell 8-11% drops (conflicting figures)",
+      "10-year closing level (only intraday 5.27% verified)",
+      "Morgan Stanley results detail",
+      "Apple Intelligence China rollout (single-source report)"
+    ]
+  },
+  "dedup_audit": {
+    "strong_window": "2026-10-08 through 2026-10-14",
+    "admitted_with_information_gain": {
+      "CPI": "new release resolving call 2026-10-12-01",
+      "CoreWeave": "new credit-market event",
+      "chip selloff": "new session, SOX -4.3%, KOSPI 5-day",
+      "ASML": "new Q3 results",
+      "BofA/BlackRock": "new results and compute-securitization remarks",
+      "China trade/prices": "new September data"
+    },
+    "rejected_recurring": [
+      "IDC China chips (10-14)",
+      "bank results JPM/GS/C/WFC (10-14)",
+      "gas price record (10-14)",
+      "CXMT 4F2 detail (10-13)"
+    ],
+    "dprk": "excluded per SOP rule 10"
+  },
+  "sources": [
+    "https://www.cbsnews.com/news/september-cpi-report-inflation-energy-costs/",
+    "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-october-14-dow-sp-500-nasdaq-081136597.html",
+    "https://finance.yahoo.com/markets/stocks/articles/coreweave-falls-10-bond-yield-133340821.html",
+    "https://www.fool.com/investing/2026/10/14/why-coreweave-stock-tumbled-today/",
+    "https://indexes.nasdaqomx.com/Index/Overview/SOX",
+    "https://www.kedglobal.com/korean-stock-market/newsView/ked202610130001",
+    "https://finance.yahoo.com/markets/stocks/articles/asml-reports-11-7-billion-050000954.html",
+    "https://abcnews.com/Business/wireStory/chinas-exports-surge-363-september-pressure-ramps-rebalance-137246052",
+    "https://www.stats.gov.cn/sj/zxfb/202610/t20261014_1965477.html",
+    "https://www.cls.cn/detail/2503984",
+    "https://aiweekly.co/alerts/alphabets-porat-pegs-2026-ai-capex-near-200b-at-fortune-mpw-summit-signals",
+    "https://aiweekly.co/alerts/youtube-music-rolls-out-ai-labels-keeps-them-monetized",
+    "https://finance.eastmoney.com/a/202610143895447650.html",
+    "https://21jingji.com/article/20261014/herald/74260453104e096c7b68c5fac30cc9f3.html"
+  ]
 }
