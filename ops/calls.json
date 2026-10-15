@@ -95,6 +95,18 @@
       "status": "open",
       "resolved_on": null,
       "evidence_source": null
+    },
+    {
+      "id": "2026-10-16-01",
+      "made_on": "2026-10-16",
+      "edition": "_posts/2026-10-16-daily-brief.md",
+      "wording": "美国十月 PPI（预计 11 月中旬公布）同比涨幅不低于 6%。",
+      "indicator": "US PPI final demand, October 2026, year-over-year (BLS)",
+      "threshold_direction": ">= 6.0%",
+      "window_end": "2026-11-30",
+      "status": "open",
+      "resolved_on": null,
+      "evidence_source": null
     }
   ],
   "reviews": [

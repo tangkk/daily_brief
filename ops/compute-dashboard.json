@@ -107,6 +107,32 @@
         "as_of": "summer 2026 (approx.)"
       },
       "source_url": "https://www.fool.com/investing/2026/10/14/why-coreweave-stock-tumbled-today/"
+    },
+    {
+      "indicator": "TSMC quarterly revenue (USD)",
+      "value": 46.72,
+      "unit": "USD billion",
+      "as_of": "2026-Q3",
+      "kind": "company results",
+      "previous": {
+        "value": "44.6-45.8 (guidance)",
+        "as_of": "2026-Q3 guidance"
+      },
+      "guidance": "Q4 52.3-54.3; FY2026 growth ~44% USD",
+      "source_url": "https://cryptobriefing.com/tsmc-q3-2026-earnings-revenue-up-41/"
+    },
+    {
+      "indicator": "TSMC 2026 capital budget",
+      "value": "60-64",
+      "unit": "USD billion",
+      "as_of": "2026-10-15 (reiterated)",
+      "kind": "company guidance",
+      "previous": {
+        "value": "60-64",
+        "as_of": "2026-07 (raised from 52-56)"
+      },
+      "q3_actual": 13.8,
+      "source_url": "https://www.fool.com/earnings/call-transcripts/2026/10/15/tsmc-tsm-q3-2026-earnings-call-transcript/"
     }
   ]
 }
