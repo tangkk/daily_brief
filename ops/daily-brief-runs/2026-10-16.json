@@ -1,16 +1,16 @@
 {
   "date": "2026-10-16",
   "run_type": "daily_brief",
-  "status": "written_staged",
+  "status": "spoken_committed",
   "started_at": "2026-10-16T07:15:25+08:00",
   "artifact_state": {
     "written_draft": true,
-    "spoken_canonical": false,
+    "spoken_canonical": true,
     "podcast_verified": false,
     "written_published": false,
     "published_verified": false
   },
-  "updated_at": "2026-10-16T07:19:16+08:00",
+  "updated_at": "2026-10-16T07:19:24+08:00",
   "research_completed_at": "2026-10-16T07:19:16+08:00",
   "written_staged_at": "2026-10-16T07:19:16+08:00",
   "checkpoints": {
@@ -81,5 +81,8 @@
     "https://aiweekly.co/alerts/accenture-caps-monthly-claude-funding-at-29-per-employee",
     "https://aiweekly.co/alerts/bank-of-america-hired-1000-q2-contractors-to-patch-software-flaws-anthropics",
     "https://m.21jingji.com/article/20261015/herald/29fc07bd5dabb395e8b32e85af74d70c.html"
-  ]
+  ],
+  "spoken_committed_at": "2026-10-16T07:19:24+08:00",
+  "canonical_commit": "b724035b7ff4206916acd04f86559d5ee424f150",
+  "readback_verified": true
 }
