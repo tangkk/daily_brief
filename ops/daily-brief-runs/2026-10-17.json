@@ -1,16 +1,16 @@
 {
   "date": "2026-10-17",
   "run_type": "daily_brief",
-  "status": "written_staged",
+  "status": "spoken_committed",
   "started_at": "2026-10-17T07:15:37+08:00",
   "artifact_state": {
     "written_draft": true,
-    "spoken_canonical": false,
+    "spoken_canonical": true,
     "podcast_verified": false,
     "written_published": false,
     "published_verified": false
   },
-  "updated_at": "2026-10-17T07:18:10+08:00",
+  "updated_at": "2026-10-17T07:18:12+08:00",
   "research_completed_at": "2026-10-17T07:18:10+08:00",
   "written_staged_at": "2026-10-17T07:18:10+08:00",
   "checkpoints": {
@@ -73,5 +73,8 @@
     "https://aiweekly.co/alerts/softbank-weighs-18b-allied-universal-buy-to-deploy-ai-robots",
     "https://aiweekly.co/alerts/replit-ceo-says-company-dropped-anthropic-for-openai-but-insiders-dispute-the",
     "https://k.sina.com.cn/article_7857201856_1d45362c001908r9se.html"
-  ]
+  ],
+  "spoken_committed_at": "2026-10-17T07:18:12+08:00",
+  "canonical_commit": "f4ec2dbef3c38a1680e2912c3c111895cde271e1",
+  "readback_verified": true
 }
