@@ -1,14 +1,77 @@
 {
   "date": "2026-10-17",
   "run_type": "daily_brief",
-  "status": "started",
+  "status": "written_staged",
   "started_at": "2026-10-17T07:15:37+08:00",
   "artifact_state": {
-    "written_draft": false,
+    "written_draft": true,
     "spoken_canonical": false,
     "podcast_verified": false,
     "written_published": false,
     "published_verified": false
   },
-  "updated_at": "2026-10-17T07:15:37+08:00"
+  "updated_at": "2026-10-17T07:18:10+08:00",
+  "research_completed_at": "2026-10-17T07:18:10+08:00",
+  "written_staged_at": "2026-10-17T07:18:10+08:00",
+  "checkpoints": {
+    "started": "2026-10-17T07:15:37+08:00",
+    "research_complete": "2026-10-17T07:18:10+08:00",
+    "written_staged": "2026-10-17T07:18:10+08:00"
+  },
+  "headline_count": 6,
+  "new_sections": {
+    "number_of_the_day": "Nasdaq weekly decline 4.5%",
+    "compute_dashboard": "BofA GPU rental +12-37% YTD; Anthropic junior debt ~8.5% vs CoreWeave 14.5%",
+    "ai_applications_watch": [
+      "robotics: SoftBank-Allied Universal talks (Bloomberg)",
+      "coding agents: Replit-Anthropic dispute (TechCrunch)"
+    ],
+    "call_review": "omitted: no call expired or materially tested",
+    "testable_calls": [
+      "2026-10-17-01"
+    ]
+  },
+  "source_access": {
+    "readable_copies_used": {
+      "US markets/oil/Fed odds/BofA/Truist/software": "Yahoo Finance live",
+      "weekly closes": "AP via KENS5 (search-confirmed), Yahoo",
+      "Anthropic KBRA (FT)": "AI Weekly",
+      "SoftBank (Bloomberg)": "AI Weekly",
+      "Replit (TechCrunch)": "AI Weekly",
+      "A-shares": "Sina Finance"
+    },
+    "omitted_unverified": [
+      "Claude quantum-circuit result (company blog only, not peer reviewed)",
+      "Microsoft MAI-Base-2 efficiency claims",
+      "Taiwan AI-chip export law (political, single source)",
+      "SOXX ninth straight decline (intraday framing)"
+    ],
+    "notes": "Yahoo live blog weekly figures conflicted (S&P -1.4%/-1.95%, Dow +0.7%/+1.5%); AP figures used (-1.9%, +0.7%)."
+  },
+  "dedup_audit": {
+    "strong_window": "2026-10-10 through 2026-10-16",
+    "admitted_with_information_gain": {
+      "markets": "new session and weekly totals",
+      "oil": "Brent $110 first since May",
+      "Fed odds": "new repricing",
+      "Anthropic KBRA": "new FT report",
+      "BofA GPU rental": "new research",
+      "Truist": "new results and loan sale"
+    },
+    "rejected_recurring": [
+      "TSMC results (10-16)",
+      "Anthropic Q3 revenue (10-16)",
+      "CoreWeave bond detail (10-15)",
+      "PPI/CPI releases (10-15, 10-16)"
+    ],
+    "dprk": "excluded per SOP rule 10"
+  },
+  "sources": [
+    "https://finance.yahoo.com/markets/live/stock-market-today-dow-sp-500-nasdaq-futures-mixed-amid-volatile-week-112939401.html",
+    "https://www.kens5.com/article/syndication/associatedpress/how-major-us-stock-indexes-fared-friday-10162026/616-a0bdb55c-653b-410b-bc01-ae1f2a7523c8",
+    "https://aiweekly.co/alerts/anthropic-landed-bb-kbra-rating-in-june-ahead-of-35b-apollo-deal",
+    "https://aiweekly.co/alerts/softbank-weighs-18b-allied-universal-buy-to-deploy-ai-robots",
+    "https://aiweekly.co/alerts/replit-ceo-says-company-dropped-anthropic-for-openai-but-insiders-dispute-the",
+    "https://k.sina.com.cn/article_7857201856_1d45362c001908r9se.html"
+  ]
 }

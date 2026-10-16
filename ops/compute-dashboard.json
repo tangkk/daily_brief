@@ -133,6 +133,25 @@
       },
       "q3_actual": 13.8,
       "source_url": "https://www.fool.com/earnings/call-transcripts/2026/10/15/tsmc-tsm-q3-2026-earnings-call-transcript/"
+    },
+    {
+      "indicator": "GPU rental price change YTD (BofA research, range across chip classes)",
+      "value": "12-37",
+      "unit": "percent YTD",
+      "as_of": "2026-10-16",
+      "kind": "sell-side estimate",
+      "previous": null,
+      "source_url": "https://finance.yahoo.com/markets/live/stock-market-today-dow-sp-500-nasdaq-futures-mixed-amid-volatile-week-112939401.html"
+    },
+    {
+      "indicator": "Anthropic-linked junior chip-financing debt yield (KBRA BB+)",
+      "value": 8.5,
+      "unit": "percent",
+      "as_of": "2026 (FT report, published 2026-10-16)",
+      "kind": "reported deal terms",
+      "previous": null,
+      "comparison": "CoreWeave 2032 bond 14.5% (2026-10-13)",
+      "source_url": "https://aiweekly.co/alerts/anthropic-landed-bb-kbra-rating-in-june-ahead-of-35b-apollo-deal"
     }
   ]
 }

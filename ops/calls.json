@@ -107,6 +107,18 @@
       "status": "open",
       "resolved_on": null,
       "evidence_source": null
+    },
+    {
+      "id": "2026-10-17-01",
+      "made_on": "2026-10-17",
+      "edition": "_posts/2026-10-17-daily-brief.md",
+      "wording": "2026 年 10 月 30 日前，布伦特原油期货每日收盘价维持在每桶 100 美元以上。",
+      "indicator": "ICE Brent front-month futures daily settlement",
+      "threshold_direction": "every close > USD 100/bbl through window end",
+      "window_end": "2026-10-30",
+      "status": "open",
+      "resolved_on": null,
+      "evidence_source": null
     }
   ],
   "reviews": [
