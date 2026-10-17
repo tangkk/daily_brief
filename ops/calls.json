@@ -175,6 +175,17 @@
       "sources": [
         "https://www.cbsnews.com/news/september-cpi-report-inflation-energy-costs/"
       ]
+    },
+    {
+      "reviewed_in": "2026-10-18",
+      "original_edition": "2026-10-11",
+      "original_wording": "人工智能周期的焦点，正从需求有没有，转向收入按什么口径、能否覆盖融资成本。",
+      "grade": "成立",
+      "evidence": "Week of 10-12: TSMC/ASML/Alphabet demand raised while CoreWeave 2032 bond yield hit 14.5% and Anthropic-linked junior debt priced ~8.5% under KBRA BB+; equities repriced by profit realization (Dell downgrade, software selloff).",
+      "sources": [
+        "https://www.fool.com/investing/2026/10/14/why-coreweave-stock-tumbled-today/",
+        "https://aiweekly.co/alerts/anthropic-landed-bb-kbra-rating-in-june-ahead-of-35b-apollo-deal"
+      ]
     }
   ],
   "weekly_summary": {
@@ -190,6 +201,28 @@
         "2026-10-08-02",
         "2026-10-09-01",
         "2026-10-10-01"
+      ]
+    },
+    "2026-10-18": {
+      "graded_reviews_to_date": {
+        "成立": 4,
+        "部分成立": 1,
+        "不成立": 1
+      },
+      "ledger_calls_resolved": 1,
+      "resolved_this_week": [
+        "2026-10-12-01 成立"
+      ],
+      "open_calls": [
+        "2026-10-08-01",
+        "2026-10-08-02",
+        "2026-10-09-01",
+        "2026-10-10-01",
+        "2026-10-13-01",
+        "2026-10-14-01",
+        "2026-10-15-01",
+        "2026-10-16-01",
+        "2026-10-17-01"
       ]
     }
   }

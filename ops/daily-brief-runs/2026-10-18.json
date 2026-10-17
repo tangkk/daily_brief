@@ -1,14 +1,51 @@
 {
   "date": "2026-10-18",
   "run_type": "weekly_review",
-  "status": "started",
+  "status": "written_staged",
   "started_at": "2026-10-18T07:02:52+08:00",
   "artifact_state": {
-    "written_draft": false,
+    "written_draft": true,
     "spoken_canonical": false,
     "podcast_verified": false,
     "written_published": false,
     "published_verified": false
   },
-  "updated_at": "2026-10-18T07:02:52+08:00"
+  "updated_at": "2026-10-18T07:05:23+08:00",
+  "research_completed_at": "2026-10-18T07:05:23+08:00",
+  "written_staged_at": "2026-10-18T07:05:23+08:00",
+  "checkpoints": {
+    "started": "2026-10-18T07:02:52+08:00",
+    "research_complete": "2026-10-18T07:05:23+08:00",
+    "written_staged": "2026-10-18T07:05:23+08:00"
+  },
+  "new_sections": {
+    "weekly_number": "~6pp spread: CoreWeave 2032 bond 14.5% vs Anthropic-linked junior debt ~8.5% (calculated)",
+    "compute_dashboard": "folded into AI 信用周期 weekly indicator summary",
+    "ai_applications_watch": "weekly sector summary (coding/enterprise agents, finance, healthcare, robotics, AI music)",
+    "call_review": [
+      {
+        "call_id": "2026-10-12-01",
+        "grade": "成立"
+      },
+      {
+        "original": "2026-10-11 weekly judgment",
+        "grade": "成立"
+      }
+    ],
+    "concept_corner": "投资级与投机级",
+    "testable_calls": "none (Sunday)"
+  },
+  "source_access": {
+    "note": "Weekly synthesis drawn from sources verified in the 10-12..10-17 runs; no new weekend primary news of significance found.",
+    "omitted_unverified": [
+      "Brent Friday settlement (only intraday $110 verified)",
+      "SOX Friday close (only 10-14 close verified)",
+      "CoreWeave weekly decline ~26% (aggregator only)"
+    ]
+  },
+  "dedup_audit": {
+    "window": "2026-10-11 Weekly Review and 2026-10-12..10-17 dailies",
+    "approach": "thesis-level synthesis; no replay of each daily item",
+    "dprk": "excluded per SOP rule 10"
+  }
 }
