@@ -152,6 +152,15 @@
       "previous": null,
       "comparison": "CoreWeave 2032 bond 14.5% (2026-10-13)",
       "source_url": "https://aiweekly.co/alerts/anthropic-landed-bb-kbra-rating-in-june-ahead-of-35b-apollo-deal"
+    },
+    {
+      "indicator": "US data center pipeline credibility / blocked projects",
+      "value": 35,
+      "unit": "percent of planned pipeline judged credible (Bernstein)",
+      "as_of": "2026-10 (FT report)",
+      "kind": "sell-side estimate + RegLayer tally (47+ projects delayed/withdrawn/blocked in 2026)",
+      "previous": null,
+      "source_url": "https://aiweekly.co/alerts/ft-47-large-us-data-center-projects-delayed-withdrawn-or-blocked-in-2026"
     }
   ]
 }

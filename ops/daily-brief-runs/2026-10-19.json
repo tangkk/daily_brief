@@ -1,14 +1,82 @@
 {
   "date": "2026-10-19",
   "run_type": "daily_brief",
-  "status": "started",
+  "status": "written_staged",
   "started_at": "2026-10-19T07:02:56+08:00",
   "artifact_state": {
-    "written_draft": false,
+    "written_draft": true,
     "spoken_canonical": false,
     "podcast_verified": false,
     "written_published": false,
     "published_verified": false
   },
-  "updated_at": "2026-10-19T07:02:56+08:00"
+  "updated_at": "2026-10-19T07:05:57+08:00",
+  "research_completed_at": "2026-10-19T07:05:57+08:00",
+  "written_staged_at": "2026-10-19T07:05:57+08:00",
+  "checkpoints": {
+    "started": "2026-10-19T07:02:56+08:00",
+    "research_complete": "2026-10-19T07:05:57+08:00",
+    "written_staged": "2026-10-19T07:05:57+08:00"
+  },
+  "headline_count": 6,
+  "new_sections": {
+    "number_of_the_day": "Bernstein: ~35% of planned US data-center pipeline credible",
+    "compute_dashboard": "new indicator: data-center pipeline credibility",
+    "ai_applications_watch": [
+      "assistants/e-commerce agents: platforms blocking third-party agents (The Verge)",
+      "coding agents: DeepSeek V4.1-Flash cost per run"
+    ],
+    "call_review": "omitted: no call expired or materially tested",
+    "testable_calls": [
+      "2026-10-19-01"
+    ]
+  },
+  "source_access": {
+    "readable_copies_used": {
+      "Brent settlement (Reuters)": "FinanceFeeds, Srpske Novine",
+      "Sunday futures/oil (CNBC)": "snippet only, attributed explicitly",
+      "data centers (FT)": "AI Weekly",
+      "AI agents blocked (The Verge)": "AI Weekly",
+      "DeepSeek": "AI Weekly",
+      "Huang remarks (Bloomberg)": "Herve Cuviliez newsletter",
+      "Anthropic labor report": "AI Weekly",
+      "PBOC/LPR/A-share weekly": "Sina Finance"
+    },
+    "omitted_unverified": [
+      "California AI executive order (newsletter only)",
+      "DOE $4.4B nuclear restart loan (headline only)",
+      "China 40-technology export restriction proposal (single secondary source)",
+      "Chamath/All-In Anthropic valuation commentary (opinion)"
+    ]
+  },
+  "dedup_audit": {
+    "strong_window": "2026-10-12 through 2026-10-18 (incl. Sunday Weekly Review)",
+    "admitted_with_information_gain": {
+      "Brent": "first verified settlement figure (weekly review had intraday only)",
+      "data centers": "new FT report",
+      "agent blocking": "new Verge report",
+      "DeepSeek": "new release",
+      "Huang": "new remarks",
+      "PBOC": "new statement",
+      "Anthropic labor report": "new data"
+    },
+    "rejected_recurring": [
+      "CPI/PPI/Fed odds (weekly review)",
+      "TSMC/ASML (weekly review)",
+      "Anthropic KBRA (10-17, 10-18)"
+    ],
+    "dprk": "excluded per SOP rule 10"
+  },
+  "sources": [
+    "https://financefeeds.com/oil-price-near-110-as-iran-demands-us-withdrawal-but-keeps-hormuz-proposal-open/",
+    "https://srpske.rs/en/news/ekonomija/2026/10/17/brent-oil-hits-110-dollars-highest-since-may",
+    "https://aiweekly.co/alerts/ft-47-large-us-data-center-projects-delayed-withdrawn-or-blocked-in-2026",
+    "https://aiweekly.co/alerts/amazon-yelp-delta-join-banks-blocking-third-party-ai-agents",
+    "https://aiweekly.co/alerts/deepseek-opens-v41-flash-1017-weights-and-075-search-api",
+    "https://hervecuviliez.substack.com/p/market-news-sunday-18-october-2026",
+    "https://aiweekly.co/alerts/anthropic-junior-technical-hire-share-fell-from-27-to-9",
+    "https://k.sina.com.cn/article_7857201856_1d45362c001908rfke.html",
+    "https://k.sina.com.cn/article_7857201856_1d45362c001908ric6.html",
+    "https://finance.sina.com.cn/roll/2026-10-18/doc-inivqyiu1149141.shtml"
+  ]
 }

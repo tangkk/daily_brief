@@ -119,6 +119,18 @@
       "status": "open",
       "resolved_on": null,
       "evidence_source": null
+    },
+    {
+      "id": "2026-10-19-01",
+      "made_on": "2026-10-19",
+      "edition": "_posts/2026-10-19-daily-brief.md",
+      "wording": "10 月 20 日公布的 1 年期 LPR 维持在 3.0%。",
+      "indicator": "China 1-year Loan Prime Rate, October 2026 fixing (PBOC/NIFC)",
+      "threshold_direction": "== 3.0%",
+      "window_end": "2026-10-20",
+      "status": "open",
+      "resolved_on": null,
+      "evidence_source": null
     }
   ],
   "reviews": [
