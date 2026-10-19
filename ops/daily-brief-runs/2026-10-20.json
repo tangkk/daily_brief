@@ -1,14 +1,74 @@
 {
   "date": "2026-10-20",
   "run_type": "daily_brief",
-  "status": "started",
+  "status": "written_staged",
   "started_at": "2026-10-20T07:02:55+08:00",
   "artifact_state": {
-    "written_draft": false,
+    "written_draft": true,
     "spoken_canonical": false,
     "podcast_verified": false,
     "written_published": false,
     "published_verified": false
   },
-  "updated_at": "2026-10-20T07:02:55+08:00"
+  "updated_at": "2026-10-20T07:05:23+08:00",
+  "research_completed_at": "2026-10-20T07:05:23+08:00",
+  "written_staged_at": "2026-10-20T07:05:23+08:00",
+  "checkpoints": {
+    "started": "2026-10-20T07:02:55+08:00",
+    "research_complete": "2026-10-20T07:05:23+08:00",
+    "written_staged": "2026-10-20T07:05:23+08:00"
+  },
+  "headline_count": 6,
+  "new_sections": {
+    "number_of_the_day": "China Q3 GDP +4.5% YoY",
+    "compute_dashboard": "Nscale-Anthropic ~$45B/460MW (estimate per MW); BofA memory P/E 2-3x",
+    "ai_applications_watch": "one line: no material new deployment/revenue evidence (Town $108M round judged low priority)",
+    "call_review": "omitted: LPR call 2026-10-19-01 resolves after 09:00 release today; no other call expired or materially tested",
+    "testable_calls": [
+      "2026-10-20-01"
+    ]
+  },
+  "source_access": {
+    "readable_copies_used": {
+      "China data": "NBS",
+      "US close": "Anadolu Agency, TradingKey",
+      "memory/BofA/CoreWeave ratings": "TradingKey",
+      "Nscale (Bloomberg)": "AI Weekly",
+      "DeepSeek-Ascend (The Information)": "AI Weekly",
+      "Tenstorrent (SiliconANGLE)": "AI Weekly",
+      "A-shares": "Sina Finance"
+    },
+    "omitted_unverified": [
+      "Brent Monday settlement (only intraday range 108-110)",
+      "Trump-Putin diesel / Russia sanctions waiver (political; oil impact not settled)",
+      "Altman humanoid demo 2027 (low information gain)"
+    ]
+  },
+  "dedup_audit": {
+    "strong_window": "2026-10-13 through 2026-10-19",
+    "admitted_with_information_gain": {
+      "China data": "new release",
+      "tech rebound": "new session",
+      "BofA memory": "new research",
+      "CoreWeave ratings": "new analyst actions",
+      "Nscale": "new report",
+      "DeepSeek-Ascend": "new report",
+      "Tenstorrent": "new round"
+    },
+    "rejected_recurring": [
+      "Brent $109.86 settlement (10-19)",
+      "data-center pipeline (10-19)",
+      "agent blocking (10-19)"
+    ],
+    "dprk": "excluded per SOP rule 10"
+  },
+  "sources": [
+    "https://www.stats.gov.cn/sj/zxfb/202610/t20261019_1965618.html",
+    "https://aa.com.tr/en/economy/us-stocks-close-monday-mixed-as-tech-shares-raise/4093958",
+    "https://www.tradingkey.com/analysis/stocks/us-stocks/262224387-us-stock-market-close-nasdaq-rise-memory-micron-sandisk-tradingkey",
+    "https://aiweekly.co/alerts/nscale-in-talks-for-second-anthropic-deal-worth-45b-460mw-of-vera-rubin-at-west",
+    "https://aiweekly.co/alerts/the-information-deepseek-will-pre-train-on-huawei-ascend-950dt-by-end-of-2026",
+    "https://aiweekly.co/alerts/tenstorrent-raises-15b-series-e-at-62b-valuation-pulling-in-fidelity-ark-morgan",
+    "https://k.sina.com.cn/article_7857201856_1d45362c001908rmlu.html"
+  ]
 }

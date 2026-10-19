@@ -161,6 +161,15 @@
       "kind": "sell-side estimate + RegLayer tally (47+ projects delayed/withdrawn/blocked in 2026)",
       "previous": null,
       "source_url": "https://aiweekly.co/alerts/ft-47-large-us-data-center-projects-delayed-withdrawn-or-blocked-in-2026"
+    },
+    {
+      "indicator": "Long-term compute contract value per MW (Nscale-Anthropic, reported talks)",
+      "value": 98,
+      "unit": "USD million per MW (estimate: ~$45B / 460MW)",
+      "as_of": "2026-10-19 (Bloomberg report)",
+      "kind": "estimate from reported deal terms",
+      "previous": null,
+      "source_url": "https://aiweekly.co/alerts/nscale-in-talks-for-second-anthropic-deal-worth-45b-460mw-of-vera-rubin-at-west"
     }
   ]
 }

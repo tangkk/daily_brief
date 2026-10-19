@@ -131,6 +131,18 @@
       "status": "open",
       "resolved_on": null,
       "evidence_source": null
+    },
+    {
+      "id": "2026-10-20-01",
+      "made_on": "2026-10-20",
+      "edition": "_posts/2026-10-20-daily-brief.md",
+      "wording": "中国十月社会消费品零售总额同比增速（预计 11 月中旬公布）低于 2%。",
+      "indicator": "China retail sales of consumer goods, October 2026, YoY (NBS)",
+      "threshold_direction": "< 2.0%",
+      "window_end": "2026-11-20",
+      "status": "open",
+      "resolved_on": null,
+      "evidence_source": null
     }
   ],
   "reviews": [
