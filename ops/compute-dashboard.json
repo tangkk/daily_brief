@@ -170,6 +170,40 @@
       "kind": "estimate from reported deal terms",
       "previous": null,
       "source_url": "https://aiweekly.co/alerts/nscale-in-talks-for-second-anthropic-deal-worth-45b-460mw-of-vera-rubin-at-west"
+    },
+    {
+      "indicator": "Anthropic long-term compute commitments",
+      "value": 518,
+      "unit": "USD billion over ~10 years (~80% non-cancellable)",
+      "as_of": "draft S-1 (WSJ report, 2026-10-20)",
+      "kind": "reported filing data",
+      "previous": {
+        "value": "518+",
+        "as_of": "2026-10-14 Reuters report via AI Weekly"
+      },
+      "source_url": "https://aiweekly.co/alerts/anthropic-s-1-shows-163b-h1-revenue-25-from-two-customers-and-807b-non-cash"
+    },
+    {
+      "indicator": "SpaceX AI ('Super Intelligence') segment revenue incl. compute leasing",
+      "value": 7.56,
+      "unit": "USD billion per quarter",
+      "as_of": "2026-Q3",
+      "kind": "company results",
+      "previous": {
+        "value": 2.56,
+        "as_of": "2026-Q2"
+      },
+      "capex_q3": 19.6,
+      "source_url": "https://fortune.com/2026/10/20/spacex-q3-profit-ai-si-elon-musk/"
+    },
+    {
+      "indicator": "Google Pine Island MN data center proposal",
+      "value": 780,
+      "unit": "MW (with 1,900MW wind/solar/storage; >=75% take-or-pay)",
+      "as_of": "2026-10-20",
+      "kind": "regulatory filing (CNBC report)",
+      "previous": null,
+      "source_url": "https://aiweekly.co/alerts/google-proposes-780mw-pine-island-ai-data-center-backed-by-1900mw-of-xcel-wind"
     }
   ]
 }

@@ -1,14 +1,88 @@
 {
   "date": "2026-10-21",
   "run_type": "daily_brief",
-  "status": "started",
+  "status": "written_staged",
   "started_at": "2026-10-21T07:03:33+08:00",
   "artifact_state": {
-    "written_draft": false,
+    "written_draft": true,
     "spoken_canonical": false,
     "podcast_verified": false,
     "written_published": false,
     "published_verified": false
   },
-  "updated_at": "2026-10-21T07:03:33+08:00"
+  "updated_at": "2026-10-21T07:06:23+08:00",
+  "research_completed_at": "2026-10-21T07:06:23+08:00",
+  "written_staged_at": "2026-10-21T07:06:23+08:00",
+  "checkpoints": {
+    "started": "2026-10-21T07:03:33+08:00",
+    "research_complete": "2026-10-21T07:06:23+08:00",
+    "written_staged": "2026-10-21T07:06:23+08:00"
+  },
+  "headline_count": 6,
+  "new_sections": {
+    "number_of_the_day": "Anthropic $518B compute commitments (~80% non-cancellable)",
+    "compute_dashboard": "Anthropic commitments; SpaceX SI revenue; Google Pine Island",
+    "ai_applications_watch": [
+      "assistants: Meta Muse 10.2M US downloads in 40 days, retention 30%/23% (Sensor Tower via TechCrunch)",
+      "advertising: Netflix ad revenue guide cut to $2.7B"
+    ],
+    "call_review": [
+      {
+        "call_id": "2026-10-19-01",
+        "grade": "成立"
+      }
+    ],
+    "testable_calls": [
+      "2026-10-21-01"
+    ]
+  },
+  "source_access": {
+    "readable_copies_used": {
+      "Anthropic S-1 (WSJ)": "AI Weekly",
+      "SpaceX": "Fortune",
+      "Netflix": "Deadline",
+      "US close (AP)": "KRMG",
+      "GM/housing/10y": "Yahoo Finance live",
+      "LPR/PBOC": "21jingji",
+      "Google Pine Island (CNBC)": "AI Weekly",
+      "Meta Muse (TechCrunch)": "AI Weekly",
+      "A-shares": "Sina Finance"
+    },
+    "omitted_unverified": [
+      "Chinese tech firms' $35B Nvidia orders (aggregator only)",
+      "OpenAI $30B raise at >$1.4T (repeat of 10-10 coverage; Reuters via aggregator)",
+      "OpenAI shift on China export controls (Politico via aggregator; political)",
+      "Netflix after-hours exact decline (4.0%-5.9% conflicting)"
+    ]
+  },
+  "dedup_audit": {
+    "strong_window": "2026-10-14 through 2026-10-20",
+    "admitted_with_information_gain": {
+      "Anthropic S-1": "new filing data (H1 revenue, concentration, commitments split)",
+      "SpaceX": "new results",
+      "Netflix": "new results",
+      "markets": "new session",
+      "LPR": "new fixing; resolves call",
+      "Google DC": "new filing",
+      "Muse": "new usage data"
+    },
+    "rejected_recurring": [
+      "Anthropic Q3 $16.8B revenue (10-16)",
+      "Nscale talks (10-20)",
+      "data-center pipeline (10-19)"
+    ],
+    "dprk": "excluded per SOP rule 10"
+  },
+  "sources": [
+    "https://aiweekly.co/alerts/anthropic-s-1-shows-163b-h1-revenue-25-from-two-customers-and-807b-non-cash",
+    "https://fortune.com/2026/10/20/spacex-q3-profit-ai-si-elon-musk/",
+    "https://deadline.com/2026/10/netflix-q3-2026-earnings-layoffs-streaming-1237168825/",
+    "https://krmg.com/2026/10/20/how-major-us-stock-indexes-fared-tuesday-10-20-2026/",
+    "https://finance.yahoo.com/markets/live/copy-stock-market-today-dow-sp-500-nasdaq-futures-mixed-amid-volatile-week-111612062.html",
+    "https://m.21jingji.com/article/20261020/herald/334a502ccbb55cf6b52266fdd3d3ef21.html",
+    "https://m.21jingji.com/article/20261020/herald/7d3da0115f560c01760f9ef8fddabe05.html",
+    "https://aiweekly.co/alerts/google-proposes-780mw-pine-island-ai-data-center-backed-by-1900mw-of-xcel-wind",
+    "https://aiweekly.co/alerts/metas-muse-app-hits-102m-us-downloads-in-first-40-days",
+    "https://k.sina.com.cn/article_7857201856_1d45362c001908rrc8.html"
+  ]
 }

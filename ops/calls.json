@@ -128,9 +128,9 @@
       "indicator": "China 1-year Loan Prime Rate, October 2026 fixing (PBOC/NIFC)",
       "threshold_direction": "== 3.0%",
       "window_end": "2026-10-20",
-      "status": "open",
-      "resolved_on": null,
-      "evidence_source": null
+      "status": "成立",
+      "resolved_on": "2026-10-21",
+      "evidence_source": "https://m.21jingji.com/article/20261020/herald/334a502ccbb55cf6b52266fdd3d3ef21.html"
     },
     {
       "id": "2026-10-20-01",
@@ -140,6 +140,18 @@
       "indicator": "China retail sales of consumer goods, October 2026, YoY (NBS)",
       "threshold_direction": "< 2.0%",
       "window_end": "2026-11-20",
+      "status": "open",
+      "resolved_on": null,
+      "evidence_source": null
+    },
+    {
+      "id": "2026-10-21-01",
+      "made_on": "2026-10-21",
+      "edition": "_posts/2026-10-21-daily-brief.md",
+      "wording": "若 Anthropic 在 2026 年 11 月 30 日前完成 IPO 定价，其对应估值低于 2 万亿美元。",
+      "indicator": "Anthropic IPO pricing implied valuation (if priced by 2026-11-30)",
+      "threshold_direction": "< USD 2 trillion; if no pricing by window end, grade 仍待验证",
+      "window_end": "2026-11-30",
       "status": "open",
       "resolved_on": null,
       "evidence_source": null
@@ -209,6 +221,17 @@
       "sources": [
         "https://www.fool.com/investing/2026/10/14/why-coreweave-stock-tumbled-today/",
         "https://aiweekly.co/alerts/anthropic-landed-bb-kbra-rating-in-june-ahead-of-35b-apollo-deal"
+      ]
+    },
+    {
+      "reviewed_in": "2026-10-21",
+      "original_edition": "2026-10-19",
+      "call_id": "2026-10-19-01",
+      "original_wording": "10 月 20 日公布的 1 年期 LPR 维持在 3.0%。",
+      "grade": "成立",
+      "evidence": "October 2026 1Y LPR 3.0%, 5Y+ 3.5%, unchanged for 17th month.",
+      "sources": [
+        "https://m.21jingji.com/article/20261020/herald/334a502ccbb55cf6b52266fdd3d3ef21.html"
       ]
     }
   ],
