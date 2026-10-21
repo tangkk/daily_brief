@@ -204,6 +204,32 @@
       "kind": "regulatory filing (CNBC report)",
       "previous": null,
       "source_url": "https://aiweekly.co/alerts/google-proposes-780mw-pine-island-ai-data-center-backed-by-1900mw-of-xcel-wind"
+    },
+    {
+      "indicator": "Meta quarterly capex",
+      "value": 34.9,
+      "unit": "USD billion",
+      "as_of": "2026-Q3",
+      "kind": "company results",
+      "previous": {
+        "value": 31.0,
+        "as_of": "2026-Q2"
+      },
+      "guidance": "FY2026 135-145 (was 130-145)",
+      "fcf_q3": -2.1,
+      "source_url": "https://fortune.com/2026/10/21/meta-q3-earnings-mark-zuckerberg-capex-muse/"
+    },
+    {
+      "indicator": "AI factory deployment time at prepared site (Nvidia DSX POD)",
+      "value": 14,
+      "unit": "days",
+      "as_of": "2026-10-21 (GTC Berlin)",
+      "kind": "vendor claim",
+      "previous": {
+        "value": "~6 months",
+        "as_of": "conventional integration"
+      },
+      "source_url": "https://aiweekly.co/alerts/nvidia-launches-dsx-pod-containerized-vera-rubin-ai-factory-that-cuts"
     }
   ]
 }

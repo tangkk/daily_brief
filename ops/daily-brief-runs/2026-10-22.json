@@ -1,14 +1,76 @@
 {
   "date": "2026-10-22",
   "run_type": "daily_brief",
-  "status": "started",
+  "status": "written_staged",
   "started_at": "2026-10-22T07:03:42+08:00",
   "artifact_state": {
-    "written_draft": false,
+    "written_draft": true,
     "spoken_canonical": false,
     "podcast_verified": false,
     "written_published": false,
     "published_verified": false
   },
-  "updated_at": "2026-10-22T07:03:42+08:00"
+  "updated_at": "2026-10-22T07:06:05+08:00",
+  "research_completed_at": "2026-10-22T07:06:05+08:00",
+  "written_staged_at": "2026-10-22T07:06:05+08:00",
+  "checkpoints": {
+    "started": "2026-10-22T07:03:42+08:00",
+    "research_complete": "2026-10-22T07:06:05+08:00",
+    "written_staged": "2026-10-22T07:06:05+08:00"
+  },
+  "headline_count": 6,
+  "new_sections": {
+    "number_of_the_day": "Meta Q3 free cash flow -$2.1B",
+    "compute_dashboard": "Meta capex/FCF; Nvidia DSX POD deployment time",
+    "ai_applications_watch": [
+      "advertising: ChatGPT ads 89 markets, 100k+ advertisers",
+      "assistants: Muse 10M+ set up in US/Canada (company)"
+    ],
+    "call_review": "omitted: 2026-10-08-01 window ends 10-22 (grade next run); no other call expired or materially tested",
+    "testable_calls": "none: no well-grounded new call today"
+  },
+  "source_access": {
+    "readable_copies_used": {
+      "Meta": "Fortune; ZeroHedge for after-hours",
+      "Tesla": "Electrek",
+      "Tesla-SpaceX merger committees/SpaceX/SOX/US close": "TradingKey; Yahoo Finance live",
+      "oil/Saudi field/AT&T": "Yahoo Finance live",
+      "Nvidia DSX POD (DCD)": "AI Weekly",
+      "ChatGPT ads": "AI Weekly",
+      "A-shares": "Chinanews (中新经纬)"
+    },
+    "omitted_unverified": [
+      "Meta after-hours final move (3%-5% conflicting, later faded)",
+      "Tesla after-hours move (conflicting)",
+      "Shanghai turnover exact figure (1.43-1.44万亿 differing)",
+      "Claude toxin-binder design (company claim)"
+    ]
+  },
+  "dedup_audit": {
+    "strong_window": "2026-10-15 through 2026-10-21",
+    "admitted_with_information_gain": {
+      "Meta": "new results",
+      "Tesla": "new results and merger committees",
+      "SpaceX stock": "new market reaction",
+      "markets/oil": "new session; Saudi field attack",
+      "DSX POD": "new product",
+      "ChatGPT ads": "new scale data"
+    },
+    "rejected_recurring": [
+      "SpaceX Q3 results detail (10-21)",
+      "Anthropic S-1 (10-21)",
+      "Muse download data (10-21)"
+    ],
+    "dprk": "excluded per SOP rule 10"
+  },
+  "sources": [
+    "https://fortune.com/2026/10/21/meta-q3-earnings-mark-zuckerberg-capex-muse/",
+    "https://www.zerohedge.com/markets/meta-jumps-after-q3-earnings-beat-boosts-guidance",
+    "https://electrek.co/2026/10/21/tesla-tsla-q3-2026-financial-results/",
+    "https://www.tradingkey.com/analysis/stocks/us-stocks/262230142-us-stock-close-nasdaq-dow-sp500-rise-spacex-tesla-crowdstike-tradingkey",
+    "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-october-21-dow-sp-500-nasdaq-100000105.html",
+    "https://aiweekly.co/alerts/nvidia-launches-dsx-pod-containerized-vera-rubin-ai-factory-that-cuts",
+    "https://aiweekly.co/alerts/openai-takes-chatgpt-ads-to-89-countries-100000-advertisers",
+    "https://www.chinanews.com.cn/cj/2026/10-21/10718499.shtml"
+  ]
 }
