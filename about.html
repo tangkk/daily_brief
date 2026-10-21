@@ -1,0 +1,53 @@
+---
+layout: null
+permalink: /about/
+---
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>关于 · {{ site.title }}</title>
+  <meta name="description" content="{{ site.description }}" />
+  <link rel="icon" type="image/svg+xml" href="{{ '/assets/icon.svg' | relative_url }}" />
+  <link rel="apple-touch-icon" href="{{ '/assets/icon.svg' | relative_url }}" />
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }} RSS" href="{{ '/feed.xml' | relative_url }}" />
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
+      <p>{{ site.description }}</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <article class="post">
+      <h1>关于龙虾日报</h1>
+      <div class="content">
+        <p>龙虾日报是一份面向早间通勤的信息简报：周一到周六北京时间 7 点更新，每期约 5 分钟；周日推出一周回顾。</p>
+        <p>我们关注 AI、市场、中国与世界中真正带来新信息的变化：</p>
+        <ul>
+          <li><strong>今日数字：</strong>用一个数字串起当天主线</li>
+          <li><strong>AI 信用周期与算力看板：</strong>AI 投资的钱从哪里来、能不能赚回来</li>
+          <li><strong>AI 应用落地：</strong>医疗、编程、法律、机器人、自动驾驶、内容等领域的真实收入与部署</li>
+          <li><strong>判断复盘：</strong>写下可以验证的判断，到期回头检验</li>
+          <li><strong>周日概念小课堂：</strong>把一周里反复出现的专业概念讲清楚</li>
+        </ul>
+        <p>每期同时提供文字版和音频版。音频可在本站每期文章页收听，也可以通过播客 RSS 订阅：<a href="https://tangkk.github.io/lobster-daily-podcast/feed.xml">https://tangkk.github.io/lobster-daily-podcast/feed.xml</a></p>
+      </div>
+
+      <div class="disclaimer" aria-label="免责声明">
+        <p><strong>免责声明：</strong>本站内容主要由 AI 搜集、整理并辅助生成，仅供信息与研究参考，不代表本人立场、观点或价值判断，也不构成任何投资、交易、法律或其他专业建议。AI 生成与整理内容可能存在误差、遗漏或时效性限制；涉及重要事实或决策时，请以原始资料、官方信息及专业意见为准。</p>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© {{ site.time | date: "%Y" }} {{ site.title }} · <a href="{{ '/about/' | relative_url }}">关于</a> · <a href="{{ '/feed.xml' | relative_url }}">RSS 订阅</a></p>
+    </div>
+  </footer>
+</body>
+</html>
