@@ -1,16 +1,16 @@
 {
   "date": "2026-10-22",
   "run_type": "daily_brief",
-  "status": "written_staged",
+  "status": "spoken_committed",
   "started_at": "2026-10-22T07:03:42+08:00",
   "artifact_state": {
     "written_draft": true,
-    "spoken_canonical": false,
+    "spoken_canonical": true,
     "podcast_verified": false,
     "written_published": false,
     "published_verified": false
   },
-  "updated_at": "2026-10-22T07:06:05+08:00",
+  "updated_at": "2026-10-22T07:06:07+08:00",
   "research_completed_at": "2026-10-22T07:06:05+08:00",
   "written_staged_at": "2026-10-22T07:06:05+08:00",
   "checkpoints": {
@@ -72,5 +72,8 @@
     "https://aiweekly.co/alerts/nvidia-launches-dsx-pod-containerized-vera-rubin-ai-factory-that-cuts",
     "https://aiweekly.co/alerts/openai-takes-chatgpt-ads-to-89-countries-100000-advertisers",
     "https://www.chinanews.com.cn/cj/2026/10-21/10718499.shtml"
-  ]
+  ],
+  "spoken_committed_at": "2026-10-22T07:06:07+08:00",
+  "canonical_commit": "0a2b59f5c5a6a0a58145d01054c358b7781fd6aa",
+  "readback_verified": true
 }
