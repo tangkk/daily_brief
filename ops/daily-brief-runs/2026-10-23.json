@@ -10,7 +10,7 @@
     "written_published": false,
     "published_verified": false
   },
-  "updated_at": "2026-10-23T07:05:55+08:00",
+  "updated_at": "2026-10-23T07:37:04+08:00",
   "research_completed_at": "2026-10-23T07:05:53+08:00",
   "written_staged_at": "2026-10-23T07:05:53+08:00",
   "checkpoints": {
@@ -77,5 +77,13 @@
   ],
   "spoken_committed_at": "2026-10-23T07:05:55+08:00",
   "canonical_commit": "2a21275dc881ff8c291e6b777082be9897430723",
-  "readback_verified": true
+  "readback_verified": true,
+  "recovery": [
+    {
+      "at": "2026-10-23T07:37:04+08:00",
+      "failure_stage": "podcast_publication",
+      "failure_detail": "Auto Publish Daily run 39869558721 (head ed3be2f) cancelled after ~30 min hang in 'Install runtime dependencies'; no TTS/R2/RSS steps ran.",
+      "action": "rerun_workflow_run on same run (head_sha matches podcast main ed3be2f)"
+    }
+  ]
 }
