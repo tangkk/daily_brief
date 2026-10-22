@@ -1,16 +1,16 @@
 {
   "date": "2026-10-23",
   "run_type": "daily_brief",
-  "status": "written_staged",
+  "status": "spoken_committed",
   "started_at": "2026-10-23T07:03:05+08:00",
   "artifact_state": {
     "written_draft": true,
-    "spoken_canonical": false,
+    "spoken_canonical": true,
     "podcast_verified": false,
     "written_published": false,
     "published_verified": false
   },
-  "updated_at": "2026-10-23T07:05:53+08:00",
+  "updated_at": "2026-10-23T07:05:55+08:00",
   "research_completed_at": "2026-10-23T07:05:53+08:00",
   "written_staged_at": "2026-10-23T07:05:53+08:00",
   "checkpoints": {
@@ -74,5 +74,8 @@
     "https://finance.yahoo.com/markets/live/stock-market-today-thursday-october-22-dow-sp-500-nasdaq-tesla-meta-112217857.html",
     "https://www.fx168news.com/express/fastnews/1453224",
     "https://aiweekly.co/ai-news-today/edition/2026-10-22"
-  ]
+  ],
+  "spoken_committed_at": "2026-10-23T07:05:55+08:00",
+  "canonical_commit": "2a21275dc881ff8c291e6b777082be9897430723",
+  "readback_verified": true
 }
