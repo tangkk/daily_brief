@@ -230,6 +230,15 @@
         "as_of": "conventional integration"
       },
       "source_url": "https://aiweekly.co/alerts/nvidia-launches-dsx-pod-containerized-vera-rubin-ai-factory-that-cuts"
+    },
+    {
+      "indicator": "Nvidia supplier capacity commitments (substrate / advanced packaging)",
+      "value": "substrate 2.5x in 3 yrs; Amkor packaging +300% by end-2028",
+      "unit": "capacity multiple",
+      "as_of": "2026-10-21 (GTC Berlin)",
+      "kind": "vendor/supplier announcements",
+      "previous": null,
+      "source_url": "https://aiweekly.co/ai-news-today/edition/2026-10-22"
     }
   ]
 }

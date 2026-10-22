@@ -1,14 +1,78 @@
 {
   "date": "2026-10-23",
   "run_type": "daily_brief",
-  "status": "started",
+  "status": "written_staged",
   "started_at": "2026-10-23T07:03:05+08:00",
   "artifact_state": {
-    "written_draft": false,
+    "written_draft": true,
     "spoken_canonical": false,
     "podcast_verified": false,
     "written_published": false,
     "published_verified": false
   },
-  "updated_at": "2026-10-23T07:03:05+08:00"
+  "updated_at": "2026-10-23T07:05:53+08:00",
+  "research_completed_at": "2026-10-23T07:05:53+08:00",
+  "written_staged_at": "2026-10-23T07:05:53+08:00",
+  "checkpoints": {
+    "started": "2026-10-23T07:03:05+08:00",
+    "research_complete": "2026-10-23T07:05:53+08:00",
+    "written_staged": "2026-10-23T07:05:53+08:00"
+  },
+  "headline_count": 6,
+  "new_sections": {
+    "number_of_the_day": "US 10-year yield ~4.97%, below 5% first time in a month",
+    "compute_dashboard": "Nvidia supplier substrate/packaging expansion",
+    "ai_applications_watch": [
+      "incumbent software: IBM kept 4-5% revenue guide; firms controlling AI spend"
+    ],
+    "call_review": [
+      {
+        "call_id": "2026-10-08-01",
+        "grade": "不成立"
+      }
+    ],
+    "testable_calls": [
+      "2026-10-23-01"
+    ]
+  },
+  "source_access": {
+    "readable_copies_used": {
+      "US close/AP analysis/Asia/oil/10y": "BNN Bloomberg (AP), Yahoo Finance live",
+      "A-shares": "FX168",
+      "Micron strike (Nikkei Asia)": "AI Weekly edition",
+      "Nvidia suppliers": "AI Weekly edition",
+      "Blackstone/IBM": "Yahoo Finance live"
+    },
+    "omitted_unverified": [
+      "Dow close discrepancy (Sunday Guardian -0.53% vs AP/Yahoo +0.02%; AP used)",
+      "Claude Duet product (company launch, low info gain)",
+      "Storm-0940 ConnectWise hack attribution (political/security, single source)",
+      "Moderna leaked trial (non-AI)"
+    ],
+    "notes": "10-year close reported as ~4.97% (AP) and 4.953% (Yahoo); both below 5%."
+  },
+  "dedup_audit": {
+    "strong_window": "2026-10-16 through 2026-10-22",
+    "admitted_with_information_gain": {
+      "AI selloff": "new session, Meta/Lam reactions",
+      "10y": "new low, resolves call",
+      "oil": "new 5-month high",
+      "Asia/A-shares": "new session lows",
+      "Micron strike": "new event",
+      "Nvidia suppliers": "new commitments",
+      "IBM": "new results"
+    },
+    "rejected_recurring": [
+      "Meta results detail (10-22)",
+      "Tesla results (10-22)",
+      "DSX POD (10-22)"
+    ],
+    "dprk": "excluded per SOP rule 10"
+  },
+  "sources": [
+    "https://www.bnnbloomberg.ca/markets/2026/10/22/ai-stocks-drag-markets-down-worldwide-as-oil-prices-climb-to-their-highest-since-may/",
+    "https://finance.yahoo.com/markets/live/stock-market-today-thursday-october-22-dow-sp-500-nasdaq-tesla-meta-112217857.html",
+    "https://www.fx168news.com/express/fastnews/1453224",
+    "https://aiweekly.co/ai-news-today/edition/2026-10-22"
+  ]
 }
