@@ -44,9 +44,9 @@
       "indicator": "University of Michigan Index of Consumer Sentiment, October 2026 final",
       "threshold_direction": "<= 48.1",
       "window_end": "2026-10-23",
-      "status": "open",
-      "resolved_on": null,
-      "evidence_source": null
+      "status": "成立",
+      "resolved_on": "2026-10-24",
+      "evidence_source": "https://www.sca.isr.umich.edu/"
     },
     {
       "id": "2026-10-12-01",
@@ -256,6 +256,17 @@
       "sources": [
         "https://www.bnnbloomberg.ca/markets/2026/10/22/ai-stocks-drag-markets-down-worldwide-as-oil-prices-climb-to-their-highest-since-may/",
         "https://finance.yahoo.com/markets/live/stock-market-today-thursday-october-22-dow-sp-500-nasdaq-tesla-meta-112217857.html"
+      ]
+    },
+    {
+      "reviewed_in": "2026-10-24",
+      "original_edition": "2026-10-10",
+      "call_id": "2026-10-10-01",
+      "original_wording": "密歇根大学十月消费者信心指数终值（10 月 23 日公布）不高于九月的 48.1。",
+      "grade": "成立",
+      "evidence": "October 2026 final sentiment 48.0 vs September 48.1 (preliminary 46.3); narrow margin.",
+      "sources": [
+        "https://www.sca.isr.umich.edu/"
       ]
     }
   ],

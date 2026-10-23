@@ -239,6 +239,27 @@
       "kind": "vendor/supplier announcements",
       "previous": null,
       "source_url": "https://aiweekly.co/ai-news-today/edition/2026-10-22"
+    },
+    {
+      "indicator": "OpenAI private valuation (pre-money, round in negotiation)",
+      "value": 1.25,
+      "unit": "USD trillion",
+      "as_of": "2026-10-22 (CNBC report)",
+      "kind": "reported deal terms",
+      "previous": {
+        "value": 1.4,
+        "as_of": "early Oct 2026 pitch"
+      },
+      "source_url": "https://aiweekly.co/alerts/openai-nears-30b-uae-and-coatue-round-at-125t-valuation"
+    },
+    {
+      "indicator": "ASML EUV tool output (per Intel CTO)",
+      "value": "<100",
+      "unit": "tools per year",
+      "as_of": "2026-10 (Dwarkesh podcast)",
+      "kind": "executive statement",
+      "previous": null,
+      "source_url": "https://aiweekly.co/alerts/intel-cto-tool-supply-caps-wafer-capacity-at-2x-not-10x"
     }
   ]
 }

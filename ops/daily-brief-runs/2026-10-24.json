@@ -1,14 +1,82 @@
 {
   "date": "2026-10-24",
   "run_type": "daily_brief",
-  "status": "started",
+  "status": "written_staged",
   "started_at": "2026-10-24T07:02:55+08:00",
   "artifact_state": {
-    "written_draft": false,
+    "written_draft": true,
     "spoken_canonical": false,
     "podcast_verified": false,
     "written_published": false,
     "published_verified": false
   },
-  "updated_at": "2026-10-24T07:02:55+08:00"
+  "updated_at": "2026-10-24T07:05:41+08:00",
+  "research_completed_at": "2026-10-24T07:05:41+08:00",
+  "written_staged_at": "2026-10-24T07:05:41+08:00",
+  "checkpoints": {
+    "started": "2026-10-24T07:02:55+08:00",
+    "research_complete": "2026-10-24T07:05:41+08:00",
+    "written_staged": "2026-10-24T07:05:41+08:00"
+  },
+  "headline_count": 6,
+  "new_sections": {
+    "number_of_the_day": "OpenAI $1.25T pre-money (down from $1.4T)",
+    "compute_dashboard": "OpenAI valuation; EUV output constraint",
+    "ai_applications_watch": [
+      "healthcare: Microsoft MAI-DxO 83% vs 36% on NEJM cases (Science)"
+    ],
+    "call_review": [
+      {
+        "call_id": "2026-10-10-01",
+        "grade": "成立"
+      }
+    ],
+    "testable_calls": "none: no well-grounded new call today"
+  },
+  "source_access": {
+    "readable_copies_used": {
+      "OpenAI round (CNBC)": "AI Weekly",
+      "DeepSeek round": "AI Weekly",
+      "US close/oil/10y": "Yahoo Finance quote strip",
+      "SOX -6.7% (Reuters)": "Yahoo Finance (Reuters)",
+      "UMich": "Surveys of Consumers official page",
+      "A-shares": "Sina Finance (中国经济网)",
+      "Intel CTO": "AI Weekly",
+      "Google Finland (Fortune)": "AI Weekly",
+      "MAI-DxO (TechCrunch/Science)": "AI Weekly"
+    },
+    "omitted_unverified": [
+      "Amex layoffs AI linkage (CNBC snippet only; reported without AI attribution)",
+      "Weekly Dow change (0.4% vs 1.4% conflicting; omitted)",
+      "Tesla/Nvidia $2.8B Samsung Electro-Mechanics substrate investment (unconfirmed Korean report)",
+      "Next-week megacap earnings dates (unverified; generalized)"
+    ]
+  },
+  "dedup_audit": {
+    "strong_window": "2026-10-17 through 2026-10-23",
+    "admitted_with_information_gain": {
+      "OpenAI round": "new lower valuation",
+      "DeepSeek round": "new",
+      "US close/oil": "new session",
+      "SOX -6.7%": "new figure not in 10-23 edition",
+      "UMich final": "new release; resolves call",
+      "A-shares": "new session V-reversal",
+      "Intel CTO/Google Finland": "new"
+    },
+    "rejected_recurring": [
+      "Meta/Tesla results (10-22, 10-23)",
+      "10y below 5% (10-23)"
+    ],
+    "dprk": "excluded per SOP rule 10"
+  },
+  "sources": [
+    "https://aiweekly.co/alerts/openai-nears-30b-uae-and-coatue-round-at-125t-valuation",
+    "https://aiweekly.co/alerts/deepseek-reportedly-raises-15b-with-tencent-and-catl-backing",
+    "https://finance.yahoo.com/markets/stocks/articles/nasdaq-futures-drop-over-1-093849296.html",
+    "https://www.sca.isr.umich.edu/",
+    "https://k.sina.com.cn/article_7857201856_1d45362c001908s5rw.html",
+    "https://aiweekly.co/alerts/intel-cto-tool-supply-caps-wafer-capacity-at-2x-not-10x",
+    "https://aiweekly.co/alerts/finland-halts-googles-13b-muhos-data-center-after-it-cleared-250000-trees",
+    "https://aiweekly.co/alerts/microsofts-mai-dxo-beats-doctors-83-to-36-on-nejm-cases"
+  ]
 }
