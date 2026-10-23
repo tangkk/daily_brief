@@ -1,16 +1,16 @@
 {
   "date": "2026-10-24",
   "run_type": "daily_brief",
-  "status": "written_staged",
+  "status": "spoken_committed",
   "started_at": "2026-10-24T07:02:55+08:00",
   "artifact_state": {
     "written_draft": true,
-    "spoken_canonical": false,
+    "spoken_canonical": true,
     "podcast_verified": false,
     "written_published": false,
     "published_verified": false
   },
-  "updated_at": "2026-10-24T07:05:41+08:00",
+  "updated_at": "2026-10-24T07:05:43+08:00",
   "research_completed_at": "2026-10-24T07:05:41+08:00",
   "written_staged_at": "2026-10-24T07:05:41+08:00",
   "checkpoints": {
@@ -78,5 +78,8 @@
     "https://aiweekly.co/alerts/intel-cto-tool-supply-caps-wafer-capacity-at-2x-not-10x",
     "https://aiweekly.co/alerts/finland-halts-googles-13b-muhos-data-center-after-it-cleared-250000-trees",
     "https://aiweekly.co/alerts/microsofts-mai-dxo-beats-doctors-83-to-36-on-nejm-cases"
-  ]
+  ],
+  "spoken_committed_at": "2026-10-24T07:05:43+08:00",
+  "canonical_commit": "404b11f5f43dab91416d9f37a6975e94de7331d9",
+  "readback_verified": true
 }
