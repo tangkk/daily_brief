@@ -1,14 +1,60 @@
 {
   "date": "2026-10-25",
   "run_type": "weekly_review",
-  "status": "started",
+  "status": "written_staged",
   "started_at": "2026-10-25T07:03:20+08:00",
   "artifact_state": {
-    "written_draft": false,
+    "written_draft": true,
     "spoken_canonical": false,
     "podcast_verified": false,
     "written_published": false,
     "published_verified": false
   },
-  "updated_at": "2026-10-25T07:03:20+08:00"
+  "updated_at": "2026-10-25T07:05:49+08:00",
+  "research_completed_at": "2026-10-25T07:05:49+08:00",
+  "written_staged_at": "2026-10-25T07:05:49+08:00",
+  "checkpoints": {
+    "started": "2026-10-25T07:03:20+08:00",
+    "research_complete": "2026-10-25T07:05:49+08:00",
+    "written_staged": "2026-10-25T07:05:49+08:00"
+  },
+  "new_sections": {
+    "weekly_number": "SOX >26% below June record (Reuters)",
+    "compute_dashboard": "folded into AI 信用周期 weekly indicator summary",
+    "ai_applications_watch": "weekly sector summary (assistants/ads, healthcare, streaming ads, incumbent software)",
+    "call_review": [
+      {
+        "call_id": "2026-10-19-01",
+        "grade": "成立"
+      },
+      {
+        "call_id": "2026-10-08-01",
+        "grade": "不成立"
+      },
+      {
+        "call_id": "2026-10-10-01",
+        "grade": "成立"
+      },
+      {
+        "original": "2026-10-18 weekly judgment",
+        "grade": "部分成立"
+      }
+    ],
+    "concept_corner": "自由现金流",
+    "testable_calls": "none (Sunday)"
+  },
+  "source_access": {
+    "note": "Weekly synthesis from sources verified in 10-19..10-24 runs plus Brent Friday settlement (FinanceFeeds).",
+    "weekly_index_changes": "computed from verified closes 10-16 vs 10-23",
+    "omitted_unverified": [
+      "UAE OPEC exit (undated aggregator)",
+      "Weekend developments (none verified)",
+      "Gas price status for call 2026-10-14-01 (not checked this week)"
+    ]
+  },
+  "dedup_audit": {
+    "window": "2026-10-18 Weekly Review and 2026-10-19..10-24 dailies",
+    "approach": "thesis-level synthesis",
+    "dprk": "excluded per SOP rule 10"
+  }
 }

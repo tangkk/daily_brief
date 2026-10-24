@@ -268,6 +268,17 @@
       "sources": [
         "https://www.sca.isr.umich.edu/"
       ]
+    },
+    {
+      "reviewed_in": "2026-10-25",
+      "original_edition": "2026-10-18",
+      "original_wording": "在通胀扩散、油价重回 110 美元的环境里，融资成本是这个周期最敏感的变量。",
+      "grade": "部分成立",
+      "evidence": "Brent rose to $116.72 (supports inflation/energy backdrop), but the week's sharpest AI selloff (10-22) coincided with the 10-year falling below 5%; driver shifted to capex cash returns (Meta FCF -$2.1B).",
+      "sources": [
+        "https://www.bnnbloomberg.ca/markets/2026/10/22/ai-stocks-drag-markets-down-worldwide-as-oil-prices-climb-to-their-highest-since-may/",
+        "https://fortune.com/2026/10/21/meta-q3-earnings-mark-zuckerberg-capex-muse/"
+      ]
     }
   ],
   "weekly_summary": {
@@ -305,6 +316,35 @@
         "2026-10-15-01",
         "2026-10-16-01",
         "2026-10-17-01"
+      ]
+    },
+    "2026-10-25": {
+      "graded_reviews_to_date": {
+        "成立": 6,
+        "部分成立": 2,
+        "不成立": 2
+      },
+      "ledger_calls_resolved": 4,
+      "ledger_calls_resolved_breakdown": {
+        "成立": 3,
+        "不成立": 1
+      },
+      "resolved_this_week": [
+        "2026-10-19-01 成立",
+        "2026-10-08-01 不成立",
+        "2026-10-10-01 成立"
+      ],
+      "open_calls": [
+        "2026-10-08-02",
+        "2026-10-09-01",
+        "2026-10-13-01",
+        "2026-10-14-01",
+        "2026-10-15-01",
+        "2026-10-16-01",
+        "2026-10-17-01",
+        "2026-10-20-01",
+        "2026-10-21-01",
+        "2026-10-23-01"
       ]
     }
   }
