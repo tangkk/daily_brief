@@ -1,16 +1,16 @@
 {
   "date": "2026-10-25",
   "run_type": "weekly_review",
-  "status": "spoken_committed",
+  "status": "podcast_verified",
   "started_at": "2026-10-25T07:03:20+08:00",
   "artifact_state": {
     "written_draft": true,
     "spoken_canonical": true,
-    "podcast_verified": false,
+    "podcast_verified": true,
     "written_published": false,
     "published_verified": false
   },
-  "updated_at": "2026-10-25T07:05:52+08:00",
+  "updated_at": "2026-10-25T07:11:37+08:00",
   "research_completed_at": "2026-10-25T07:05:49+08:00",
   "written_staged_at": "2026-10-25T07:05:49+08:00",
   "checkpoints": {
@@ -59,5 +59,6 @@
   },
   "spoken_committed_at": "2026-10-25T07:05:52+08:00",
   "canonical_commit": "ad78566d867a6e2a59df2d67d07984119af26145",
-  "readback_verified": true
+  "readback_verified": true,
+  "podcast_verified_at": "2026-10-25T07:11:37+08:00"
 }
