@@ -1,16 +1,16 @@
 {
   "date": "2026-10-26",
   "run_type": "daily_brief",
-  "status": "written_staged",
+  "status": "spoken_committed",
   "started_at": "2026-10-26T07:03:03+08:00",
   "artifact_state": {
     "written_draft": true,
-    "spoken_canonical": false,
+    "spoken_canonical": true,
     "podcast_verified": false,
     "written_published": false,
     "published_verified": false
   },
-  "updated_at": "2026-10-26T07:05:37+08:00",
+  "updated_at": "2026-10-26T07:05:40+08:00",
   "research_completed_at": "2026-10-26T07:05:37+08:00",
   "written_staged_at": "2026-10-26T07:05:37+08:00",
   "checkpoints": {
@@ -73,5 +73,8 @@
     "https://tribune.com.pk/story/2636875/wall-st-week-ahead-earnings-flood-fed-meeting-will-test-rickety-ai-market-rally",
     "https://k.sina.com.cn/article_7857201856_1d45362c001908sd28.html",
     "https://k.sina.com.cn/article_7857201856_1d45362c001908senq.html"
-  ]
+  ],
+  "spoken_committed_at": "2026-10-26T07:05:40+08:00",
+  "canonical_commit": "dea12457c74b12cfa6ed5c1fa7e6ffef3ce2026a",
+  "readback_verified": true
 }
