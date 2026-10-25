@@ -1,14 +1,77 @@
 {
   "date": "2026-10-26",
   "run_type": "daily_brief",
-  "status": "started",
+  "status": "written_staged",
   "started_at": "2026-10-26T07:03:03+08:00",
   "artifact_state": {
-    "written_draft": false,
+    "written_draft": true,
     "spoken_canonical": false,
     "podcast_verified": false,
     "written_published": false,
     "published_verified": false
   },
-  "updated_at": "2026-10-26T07:03:03+08:00"
+  "updated_at": "2026-10-26T07:05:37+08:00",
+  "research_completed_at": "2026-10-26T07:05:37+08:00",
+  "written_staged_at": "2026-10-26T07:05:37+08:00",
+  "checkpoints": {
+    "started": "2026-10-26T07:03:03+08:00",
+    "research_complete": "2026-10-26T07:05:37+08:00",
+    "written_staged": "2026-10-26T07:05:37+08:00"
+  },
+  "headline_count": 6,
+  "new_sections": {
+    "number_of_the_day": "Data center late-delivery penalties >$5M/day",
+    "compute_dashboard": "AWS sold out/Amazon capex; late-delivery penalties",
+    "ai_applications_watch": [
+      "coding agents: Rippling workload share shift; Replit $100M+/yr to OpenAI at 30%+ discount"
+    ],
+    "call_review": "omitted: no call expired or materially tested (Fed call resolves 10-28)",
+    "testable_calls": [
+      "2026-10-26-01"
+    ]
+  },
+  "source_access": {
+    "readable_copies_used": {
+      "Brent settlement/Houthi claims (Reuters, France 24)": "FinanceFeeds",
+      "Monday oil open/gold/10y": "ABC News Australia live",
+      "AWS (The Information)": "AI Weekly",
+      "late fees (The Information)": "AI Weekly",
+      "Replit/Rippling (The Information)": "AI Weekly",
+      "week ahead (Reuters)": "Express Tribune",
+      "Citi China/MLF": "Sina Finance"
+    },
+    "omitted_unverified": [
+      "PBOC +500B relending quotas (aggregator summary only)",
+      "CSRC first 18 active ETFs (aggregator summary only)",
+      "Sunday US futures levels (CNBC unreadable)",
+      "Brent contract-roll quoted prices (inconsistent across platforms)"
+    ]
+  },
+  "dedup_audit": {
+    "strong_window": "2026-10-19 through 2026-10-25 (incl. Weekly Review)",
+    "admitted_with_information_gain": {
+      "oil": "weekend Saudi facility claims + Monday open",
+      "AWS": "new capacity statement",
+      "late fees": "new report",
+      "Replit/Rippling": "new pricing and share data (supersedes 10-17 dispute)",
+      "week ahead": "new previews",
+      "China": "new approvals/MLF"
+    },
+    "rejected_recurring": [
+      "Brent $116.72 as standalone (10-25 weekly)",
+      "Anthropic S-1 (10-21, 10-25)",
+      "Meta FCF (10-22, 10-25)"
+    ],
+    "dprk": "excluded per SOP rule 10"
+  },
+  "sources": [
+    "https://financefeeds.com/brent-crude-oil-price-116-72-sunday-futures-open-houthi-yanbu-rabigh-claims-riyadh-intercepts-fed-week-bull-120-bear-108/",
+    "https://abc.net.au/news/2026-10-26/asx-markets-business-live-news-october-26/107306820",
+    "https://aiweekly.co/alerts/andy-jassy-says-aws-is-sold-out-through-2027-with-chunks-of-2028-already-spoken",
+    "https://aiweekly.co/alerts/data-center-late-fees-jump-to-5m-a-day-marsh-rolls-out-cover",
+    "https://aiweekly.co/alerts/replit-shifts-100m-ai-spend-to-openai-after-30-price-cut",
+    "https://tribune.com.pk/story/2636875/wall-st-week-ahead-earnings-flood-fed-meeting-will-test-rickety-ai-market-rally",
+    "https://k.sina.com.cn/article_7857201856_1d45362c001908sd28.html",
+    "https://k.sina.com.cn/article_7857201856_1d45362c001908senq.html"
+  ]
 }

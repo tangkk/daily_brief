@@ -260,6 +260,28 @@
       "kind": "executive statement",
       "previous": null,
       "source_url": "https://aiweekly.co/alerts/intel-cto-tool-supply-caps-wafer-capacity-at-2x-not-10x"
+    },
+    {
+      "indicator": "Amazon 2026 capex (CEO statement); AWS capacity sold out 2026, largely 2027",
+      "value": 220,
+      "unit": "USD billion",
+      "as_of": "2026-10-23 (a16z podcast)",
+      "kind": "executive statement",
+      "previous": null,
+      "source_url": "https://aiweekly.co/alerts/andy-jassy-says-aws-is-sold-out-through-2027-with-chunks-of-2028-already-spoken"
+    },
+    {
+      "indicator": "Data center late-delivery penalties demanded by tenants",
+      "value": 5,
+      "unit": "USD million per day (and up)",
+      "as_of": "2026-10 (The Information)",
+      "kind": "reported contract terms",
+      "previous": {
+        "value": 1,
+        "as_of": "spring 2026"
+      },
+      "note": "Goldman: ~half of scheduled US capacity on time",
+      "source_url": "https://aiweekly.co/alerts/data-center-late-fees-jump-to-5m-a-day-marsh-rolls-out-cover"
     }
   ]
 }

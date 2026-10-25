@@ -167,6 +167,18 @@
       "status": "open",
       "resolved_on": null,
       "evidence_source": null
+    },
+    {
+      "id": "2026-10-26-01",
+      "made_on": "2026-10-26",
+      "edition": "_posts/2026-10-26-daily-brief.md",
+      "wording": "亚马逊在本周第三季度财报中给出的 2026 年资本开支不低于 2,000 亿美元。",
+      "indicator": "Amazon FY2026 capex guidance/estimate in Q3 2026 earnings (expected 10-29)",
+      "threshold_direction": ">= USD 200B",
+      "window_end": "2026-10-30",
+      "status": "open",
+      "resolved_on": null,
+      "evidence_source": null
     }
   ],
   "reviews": [
