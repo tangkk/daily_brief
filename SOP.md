@@ -258,6 +258,7 @@ Added by owner decision on 2026-10-13. Tracks where AI is actually being deploye
 - Use indicators that are publicly observable and sourced (market prices, official statistics, company disclosures, tracked Compute & Supply-Chain Dashboard values). Prefer windows of one week to three months. Avoid political, electoral, military, and other calls excluded by the spoken and editorial rules.
 - A call must follow from the edition's evidence and stated reasoning; do not add calls only to fill the slot. If no well-grounded call exists, write one fewer, and on a day with none, omit the line rather than padding it.
 - Keep an internal ledger at `ops/calls.json` (id, made-on date, edition, exact wording, indicator, threshold/direction, window end, status `open`/`成立`/`部分成立`/`不成立`/`仍待验证`, resolved-on date, evidence source). Add new calls in the same commit as the staged draft, and never edit the wording of a recorded call.
+- Spoken: the spoken script may carry the edition's testable call(s) as one or two short sentences near the end, before the outlook (for example `我们的判断是：未来两周十年期美债收益率仍将维持在百分之五以上。`). State the call and its time window plainly; do not grade, revisit, or review past calls in spoken or written copy.
 - Resolve every expired call in the ledger (internal only); a call whose indicator cannot be observed at expiry is graded `仍待验证` with the reason recorded. There is no published Call Review section (removed by owner decision on 2026-10-26).
 
 ### Sunday Weekly Review
