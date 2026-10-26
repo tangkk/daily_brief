@@ -211,7 +211,7 @@ The normal Monday–Saturday Daily Brief includes a dedicated **AI Credit Cycle 
 
 Three standing sections added by owner decision on 2026-10-07. They apply to the Monday–Saturday Daily Brief; Sunday handling is noted below. All of them follow the existing source, Information-Gain, deduplication, safety, and editorial-invisibility rules.
 
-Written section order: opening summary paragraph → **Number of the Day / 今日数字** → Top Headlines → AI Credit Cycle Pulse → **Compute & Supply-Chain Dashboard / 算力与供应链看板** → **AI Applications Watch / AI 应用落地看板** → Markets Dashboard → China Dashboard → AI × Employment Watch → Science Watch → Persistent World State / Bayesian Update → What to Watch Today.
+Written section order: opening summary paragraph → **Number of the Day / 今日数字** → Top Headlines → AI Credit Cycle Pulse → **Compute & Supply-Chain Dashboard / 算力与供应链看板** → **AI Applications Watch / AI 应用落地看板** → Markets Dashboard → China Dashboard → AI × Employment Watch → Science Watch → Persistent World State / Bayesian Update → **Overlooked Signal / 被忽视的信号** → What to Watch Today.
 
 ### Number of the Day / 今日数字
 
@@ -251,6 +251,17 @@ Added by owner decision on 2026-10-13. Tracks where AI is actually being deploye
 - **Evidence standard:** prefer observed adoption and money (revenue, paid users, contracts, reimbursements, shipments) over pilots, partnerships, surveys, and executive claims. Label projections and company-reported figures as such.
 - **Spoken:** include at most one or two items with material new evidence, never defense; otherwise omit.
 - **Sunday Weekly Review:** summarize the week's application-side changes by sector inside or next to the AI 信用周期 section.
+
+### Overlooked Signal / 被忽视的信号
+
+Added by owner decision on 2026-10-26, replacing the former Call Review.
+
+- At most one item per edition: a development that did not make Top Headlines and received little mainstream coverage, but may matter more than it appears, for example an obscure regulatory filing, an order or capacity change at a second-tier supplier, a little-noticed paper or dataset, or an early turn in an industry indicator.
+- Two or three sentences: what happened (with a reliable source link), and what it could affect and why. Do not overstate; label it as a signal to watch, not a conclusion.
+- It must pass the normal source, deduplication, and Information-Gain rules, and must not repeat a story already covered in the prior 7 days. Avoid political and military signals.
+- If no suitable signal exists, omit the section rather than padding it.
+- Spoken: may be included as one or two sentences after the testable calls and before the outlook.
+- Sunday Weekly Review: optionally one overlooked signal from the week.
 
 ### Testable calls / 可验证判断
 
