@@ -207,11 +207,11 @@ The normal Monday–Saturday Daily Brief includes a dedicated **AI Credit Cycle 
 - Sunday Weekly Review remains the full weekly synthesis of the AI credit cycle and should integrate the week's Daily Pulse evidence into a higher-level cycle assessment rather than replay each daily item.
 - The historical standalone AI 信用周期 archive remains unchanged and is not reactivated as a separate daily publication stream.
 
-## Number of the Day, Compute & Supply-Chain Dashboard, and Call Review
+## Number of the Day, Compute & Supply-Chain Dashboard, and related sections
 
 Three standing sections added by owner decision on 2026-10-07. They apply to the Monday–Saturday Daily Brief; Sunday handling is noted below. All of them follow the existing source, Information-Gain, deduplication, safety, and editorial-invisibility rules.
 
-Written section order: opening summary paragraph → **Number of the Day / 今日数字** → Top Headlines → AI Credit Cycle Pulse → **Compute & Supply-Chain Dashboard / 算力与供应链看板** → **AI Applications Watch / AI 应用落地看板** → Markets Dashboard → China Dashboard → AI × Employment Watch → Science Watch → Persistent World State / Bayesian Update → **Call Review / 判断复盘** → What to Watch Today.
+Written section order: opening summary paragraph → **Number of the Day / 今日数字** → Top Headlines → AI Credit Cycle Pulse → **Compute & Supply-Chain Dashboard / 算力与供应链看板** → **AI Applications Watch / AI 应用落地看板** → Markets Dashboard → China Dashboard → AI × Employment Watch → Science Watch → Persistent World State / Bayesian Update → What to Watch Today.
 
 ### Number of the Day / 今日数字
 
@@ -252,27 +252,17 @@ Added by owner decision on 2026-10-13. Tracks where AI is actually being deploye
 - **Spoken:** include at most one or two items with material new evidence, never defense; otherwise omit.
 - **Sunday Weekly Review:** summarize the week's application-side changes by sector inside or next to the AI 信用周期 section.
 
-### Call Review / 判断复盘
-
-- Revisit one or two specific earlier judgments from prior editions' Persistent World State, Bayesian Update, or analysis when new evidence now tests them. Cite the edition date of the original call, quote or closely paraphrase it, present the new evidence with sources, and grade it as `成立`, `部分成立`, `不成立`, or `仍待验证`.
-- Grade honestly, including misses; never reword the original call after the fact to make it look right. Do not manufacture reviews: if no earlier call was materially tested by new evidence, omit the section from the written edition rather than padding it.
-- Prefer calls about markets, rates, energy, AI economics, technology, and China business; avoid political forecasts.
-- Record internally in the run log which calls were reviewed and their grades.
-- Spoken: include only a call graded `成立` or `不成立` on clear evidence, in two or three sentences; otherwise omit.
-
 ### Testable calls / 可验证判断
 
 - Each Monday–Saturday edition's Persistent World State / Bayesian Update ends with one or two **可验证判断**: explicit, falsifiable calls that state a direction or threshold, a named indicator, and a time window, for example `未来两周美国十年期国债收益率维持在 5% 以上` or `十月内高端 GPU 长期租赁价格不低于每芯片小时 1.5 美元`.
 - Use indicators that are publicly observable and sourced (market prices, official statistics, company disclosures, tracked Compute & Supply-Chain Dashboard values). Prefer windows of one week to three months. Avoid political, electoral, military, and other calls excluded by the spoken and editorial rules.
 - A call must follow from the edition's evidence and stated reasoning; do not add calls only to fill the slot. If no well-grounded call exists, write one fewer, and on a day with none, omit the line rather than padding it.
 - Keep an internal ledger at `ops/calls.json` (id, made-on date, edition, exact wording, indicator, threshold/direction, window end, status `open`/`成立`/`部分成立`/`不成立`/`仍待验证`, resolved-on date, evidence source). Add new calls in the same commit as the staged draft, and never edit the wording of a recorded call.
-- Call Review draws first from ledger calls whose window has ended or whose outcome is already clear, then from older implicit judgments in past editions. Resolve every expired call; a call whose indicator cannot be observed at expiry is graded `仍待验证` with the reason recorded internally.
-- Sunday Weekly Review summarizes the week's resolved calls and the running hit rate from the ledger.
+- Resolve every expired call in the ledger (internal only); a call whose indicator cannot be observed at expiry is graded `仍待验证` with the reason recorded. There is no published Call Review section (removed by owner decision on 2026-10-26).
 
 ### Sunday Weekly Review
 
 - Number of the Day becomes **本周数字** (one number for the week).
-- Call Review becomes a fuller weekly section covering the week's tested calls, graded the same way.
 - The Compute & Supply-Chain Dashboard is folded into the Weekly Review's AI 信用周期 section as a week-over-week indicator summary.
 - **概念小课堂 / Concept Corner** (Sunday only, added by owner decision on 2026-10-13): explain one concept that recurred during the week and that a general listener may not fully understand, for example 期限溢价, why HBM is expensive, residual-value risk in GPU leasing, or the difference between ARR and recognized revenue.
   - One or two short paragraphs in plain language: what it is, why it mattered this week (tie it to a specific item from the week), and what to watch. Use at most one simple sourced example figure; no formulas unless essential.
