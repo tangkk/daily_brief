@@ -282,6 +282,27 @@
       },
       "note": "Goldman: ~half of scheduled US capacity on time",
       "source_url": "https://aiweekly.co/alerts/data-center-late-fees-jump-to-5m-a-day-marsh-rolls-out-cover"
+    },
+    {
+      "indicator": "Anthropic-SpaceXAI compute arrangement",
+      "value": 120.5,
+      "unit": "USD billion through 2029 (~$3.1B/month at full capacity, expected Dec 2026)",
+      "as_of": "2026-10-26 (public S-1)",
+      "kind": "filing disclosure",
+      "previous": null,
+      "source_url": "https://finance.yahoo.com/markets/live/stock-market-today-monday-october-26-dow-sp-500-nasdaq-101153035.html"
+    },
+    {
+      "indicator": "Broadcom SPV chip-leasing financing for Anthropic",
+      "value": 63,
+      "unit": "USD billion",
+      "as_of": "2026-10-26 (Bloomberg/Reuters)",
+      "kind": "reported deal terms; Broadcom residual-value support",
+      "previous": {
+        "value": 35,
+        "as_of": "earlier Apollo-Blackstone package"
+      },
+      "source_url": "https://aiweekly.co/alerts/broadcom-lines-up-63b-bank-and-blackstone-spv-to-lease-ai-chips-to-anthropic"
     }
   ]
 }

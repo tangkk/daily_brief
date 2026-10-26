@@ -179,6 +179,18 @@
       "status": "open",
       "resolved_on": null,
       "evidence_source": null
+    },
+    {
+      "id": "2026-10-27-01",
+      "made_on": "2026-10-27",
+      "edition": "_posts/2026-10-27-daily-brief.md",
+      "wording": "Alphabet 在本周第三季度财报中上调 2026 年资本开支指引，高于此前 1,800 亿至 1,900 亿美元的区间。",
+      "indicator": "Alphabet FY2026 capex guidance in Q3 2026 earnings (expected 10-28)",
+      "threshold_direction": "guidance raised above USD 180-190B range",
+      "window_end": "2026-10-30",
+      "status": "open",
+      "resolved_on": null,
+      "evidence_source": null
     }
   ],
   "reviews": [

@@ -1,14 +1,83 @@
 {
   "date": "2026-10-27",
   "run_type": "daily_brief",
-  "status": "started",
+  "status": "written_staged",
   "started_at": "2026-10-27T07:03:20+08:00",
   "artifact_state": {
-    "written_draft": false,
+    "written_draft": true,
     "spoken_canonical": false,
     "podcast_verified": false,
     "written_published": false,
     "published_verified": false
   },
-  "updated_at": "2026-10-27T07:03:20+08:00"
+  "updated_at": "2026-10-27T07:06:18+08:00",
+  "research_completed_at": "2026-10-27T07:06:18+08:00",
+  "written_staged_at": "2026-10-27T07:06:18+08:00",
+  "checkpoints": {
+    "started": "2026-10-27T07:03:20+08:00",
+    "research_complete": "2026-10-27T07:06:18+08:00",
+    "written_staged": "2026-10-27T07:06:18+08:00"
+  },
+  "headline_count": 6,
+  "sop_changes_applied": [
+    "Call Review removed (internal ledger grading only)",
+    "Overlooked Signal section added",
+    "testable calls included in spoken script"
+  ],
+  "new_sections": {
+    "number_of_the_day": "Anthropic-SpaceXAI arrangements up to $120.5B",
+    "compute_dashboard": "Anthropic-SpaceXAI arrangement; Broadcom $63B SPV",
+    "ai_applications_watch": [
+      "enterprise agents: Arrakis report 76% idle 60+ days"
+    ],
+    "overlooked_signal": "Nvidia ~$2,000/GPU/yr agent software fee (Tom's Hardware via AI Weekly)",
+    "testable_calls": [
+      "2026-10-27-01"
+    ]
+  },
+  "source_access": {
+    "readable_copies_used": {
+      "Anthropic S-1/Meta raise/markets/oil/MSFT": "Yahoo Finance live",
+      "Broadcom SPV (Bloomberg/Reuters)": "AI Weekly",
+      "MSFT buyouts (TechCrunch)": "AI Weekly",
+      "Arrakis": "AI Weekly",
+      "Huang fee (Tom's Hardware)": "AI Weekly",
+      "Slok": "The Neuron",
+      "A-shares": "agudashi"
+    },
+    "omitted_unverified": [
+      "AMD/Broadcom/Nvidia each buying $5B of Meta shares (single aggregator)",
+      "SpaceX $40B AI-chip debt deal (digest only)",
+      "Brent exact Monday settlement (contract roll; 110-116 conflicting)",
+      "Lula election market reaction (political)",
+      "Sweden government AI access policy (policy, low info gain)"
+    ]
+  },
+  "dedup_audit": {
+    "strong_window": "2026-10-20 through 2026-10-26",
+    "admitted_with_information_gain": {
+      "Anthropic S-1": "public filing with new SpaceXAI terms and revised concentration",
+      "Broadcom SPV": "new $63B financing",
+      "Meta raise": "new",
+      "MSFT buyouts": "new",
+      "markets/oil": "new session; Saudi-Iran talks",
+      "A-shares": "new session"
+    },
+    "rejected_recurring": [
+      "Anthropic draft S-1 figures as standalone (10-21)",
+      "AWS sold out (10-26)",
+      "data center late fees (10-26)"
+    ],
+    "dprk": "excluded per SOP rule 10"
+  },
+  "internal_call_grading": "no ledger call expired today (2026-10-23-01 Fed resolves 10-28)",
+  "sources": [
+    "https://finance.yahoo.com/markets/live/stock-market-today-monday-october-26-dow-sp-500-nasdaq-101153035.html",
+    "https://aiweekly.co/alerts/broadcom-lines-up-63b-bank-and-blackstone-spv-to-lease-ai-chips-to-anthropic",
+    "https://aiweekly.co/alerts/microsoft-offers-buyouts-to-60000-workers-at-vp-level-and-below-across-us",
+    "https://aiweekly.co/alerts/arrakis-report-76-of-enabled-ai-agents-havent-run-in-60-days-994-lack-dlp-on",
+    "https://aiweekly.co/alerts/huang-floats-2000-per-gpu-yearly-fee-for-nvidia-agent-software",
+    "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-monday-october-26-2026/",
+    "https://agudashi.com/4477.html"
+  ]
 }
