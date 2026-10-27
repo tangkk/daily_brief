@@ -146,6 +146,7 @@ Owner decision 2026-10-27. Each edition writes `handoffs/YYYY-MM-DD-title.txt` i
 - Use Arabic numerals for readability (`160 亿美元`, `5%`); this affects the title text only, not spoken audio.
 - Factual tone; no clickbait words such as `震惊`, `重磅`. No political or military topics, and it must pass the sensitive-term list.
 - If the headline is missing, the episode falls back to the date-only title.
+- Also put the same headline in the staged draft's front matter as `headline: "..."`. The site uses it in the browser/search title (`<headline> · YYYY-MM-DD · 龙虾日报`) and Open Graph tags; the visible `<h1>` stays the date, which live verification depends on. Meta descriptions come from the opening summary paragraph automatically.
 
 ### Spoken opening convention
 
