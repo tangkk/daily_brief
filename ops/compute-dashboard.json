@@ -303,6 +303,15 @@
         "as_of": "earlier Apollo-Blackstone package"
       },
       "source_url": "https://aiweekly.co/alerts/broadcom-lines-up-63b-bank-and-blackstone-spv-to-lease-ai-chips-to-anthropic"
+    },
+    {
+      "indicator": "Supplier equity investment in customer (Nvidia into Meta offering)",
+      "value": 3,
+      "unit": "USD billion (suppliers' aggregate interest up to $5B)",
+      "as_of": "2026-10-27",
+      "kind": "company announcement",
+      "previous": null,
+      "source_url": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-october-27-dow-sp-500-nasdaq-081901995.html"
     }
   ]
 }

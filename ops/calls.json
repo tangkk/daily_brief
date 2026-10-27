@@ -191,6 +191,18 @@
       "status": "open",
       "resolved_on": null,
       "evidence_source": null
+    },
+    {
+      "id": "2026-10-28-01",
+      "made_on": "2026-10-28",
+      "edition": "_posts/2026-10-28-daily-brief.md",
+      "wording": "美联储在 12 月 8 至 9 日的会议上把联邦基金利率目标区间上调 25 个基点。",
+      "indicator": "FOMC decision 2026-12-09",
+      "threshold_direction": "+25bp to 4.00%-4.25%",
+      "window_end": "2026-12-09",
+      "status": "open",
+      "resolved_on": null,
+      "evidence_source": null
     }
   ],
   "reviews": [

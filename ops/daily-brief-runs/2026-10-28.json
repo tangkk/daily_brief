@@ -1,14 +1,81 @@
 {
   "date": "2026-10-28",
   "run_type": "daily_brief",
-  "status": "started",
+  "status": "written_staged",
   "started_at": "2026-10-28T07:03:04+08:00",
   "artifact_state": {
-    "written_draft": false,
+    "written_draft": true,
     "spoken_canonical": false,
     "podcast_verified": false,
     "written_published": false,
     "published_verified": false
   },
-  "updated_at": "2026-10-28T07:03:04+08:00"
+  "updated_at": "2026-10-28T07:06:12+08:00",
+  "research_completed_at": "2026-10-28T07:06:12+08:00",
+  "written_staged_at": "2026-10-28T07:06:12+08:00",
+  "checkpoints": {
+    "started": "2026-10-28T07:03:04+08:00",
+    "research_complete": "2026-10-28T07:06:12+08:00",
+    "written_staged": "2026-10-28T07:06:12+08:00"
+  },
+  "headline_count": 6,
+  "sop_changes_applied": [
+    "handoffs/2026-10-28-title.txt written",
+    "front matter headline added",
+    "spoken paragraphs open with topic phrases for chapters"
+  ],
+  "episode_headline": "英伟达入股 Meta 30 亿美元，科创 50 跌 4.8%",
+  "new_sections": {
+    "number_of_the_day": "Nvidia $3B into Meta equity offering",
+    "compute_dashboard": "supplier equity investment; Oracle multi-chip",
+    "ai_applications_watch": [
+      "robotics: Physical Intelligence ~$20B valuation, no disclosed revenue"
+    ],
+    "overlooked_signal": "omitted: no suitable signal beyond items already covered",
+    "testable_calls": [
+      "2026-10-28-01"
+    ]
+  },
+  "source_access": {
+    "readable_copies_used": {
+      "US close/Nvidia-Meta/Oracle/oil": "Yahoo Finance live",
+      "A-shares": "观点网",
+      "Physical Intelligence (Bloomberg)": "AI Weekly",
+      "Amazon memo (CNBC)": "AI Weekly",
+      "Fed pricing (Reuters)": "Express Tribune (10-25)"
+    },
+    "omitted_unverified": [
+      "Brent exact settle (113.88 vs <110 across contracts)",
+      "STAR 50 -40% from peak (Technology.org unreadable)",
+      "FTC Anthropic testimony demand (single aggregator)",
+      "Genie 4 / Apple Macs (low information gain)"
+    ],
+    "correction_note": "Meta suppliers' interest is up to $5B in aggregate (Yahoo), not $5B each; the per-company claim was correctly omitted on 10-27."
+  },
+  "dedup_audit": {
+    "strong_window": "2026-10-21 through 2026-10-27",
+    "admitted_with_information_gain": {
+      "Nvidia-Meta": "new investment",
+      "markets": "new session",
+      "Oracle chips": "new",
+      "A-shares": "new session",
+      "Physical Intelligence": "new round",
+      "Fed": "meeting start",
+      "Amazon memo": "new"
+    },
+    "rejected_recurring": [
+      "Meta $95B raise detail (10-27)",
+      "Anthropic S-1 (10-27)",
+      "Broadcom SPV (10-27)"
+    ],
+    "dprk": "excluded per SOP rule 10"
+  },
+  "internal_call_grading": "none expired today; 2026-10-23-01 resolves after tonight's FOMC",
+  "sources": [
+    "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-october-27-dow-sp-500-nasdaq-081901995.html",
+    "https://www.guandian.cn/article/20261027/618730.html",
+    "https://aiweekly.co/alerts/physical-intelligence-lines-up-1b-round-at-20b-nearly-doubling-may-valuation",
+    "https://aiweekly.co/alerts/amazon-memo-calls-token-usage-ai-adoption-metrics-deeply-flawed-pitches",
+    "https://tribune.com.pk/story/2636875/wall-st-week-ahead-earnings-flood-fed-meeting-will-test-rickety-ai-market-rally"
+  ]
 }
