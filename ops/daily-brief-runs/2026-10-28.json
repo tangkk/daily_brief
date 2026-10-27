@@ -1,16 +1,16 @@
 {
   "date": "2026-10-28",
   "run_type": "daily_brief",
-  "status": "written_staged",
+  "status": "spoken_committed",
   "started_at": "2026-10-28T07:03:04+08:00",
   "artifact_state": {
     "written_draft": true,
-    "spoken_canonical": false,
+    "spoken_canonical": true,
     "podcast_verified": false,
     "written_published": false,
     "published_verified": false
   },
-  "updated_at": "2026-10-28T07:06:12+08:00",
+  "updated_at": "2026-10-28T07:06:15+08:00",
   "research_completed_at": "2026-10-28T07:06:12+08:00",
   "written_staged_at": "2026-10-28T07:06:12+08:00",
   "checkpoints": {
@@ -77,5 +77,8 @@
     "https://aiweekly.co/alerts/physical-intelligence-lines-up-1b-round-at-20b-nearly-doubling-may-valuation",
     "https://aiweekly.co/alerts/amazon-memo-calls-token-usage-ai-adoption-metrics-deeply-flawed-pitches",
     "https://tribune.com.pk/story/2636875/wall-st-week-ahead-earnings-flood-fed-meeting-will-test-rickety-ai-market-rally"
-  ]
+  ],
+  "spoken_committed_at": "2026-10-28T07:06:15+08:00",
+  "canonical_commit": "959a621646227aaa1b27122bf9da22758c44ea0c",
+  "readback_verified": true
 }
