@@ -19,3 +19,8 @@ a:hover { text-decoration: underline; }
 
 .post-list--daily li { justify-content: center; }
 .post-list--daily .date { display: inline-block; font-size: 1.08rem; color: #000; text-align: center; }
+
+.subscribe { margin: 12px 0 0; }
+.subscribe a { display: inline-block; padding: 6px 14px; border: 1px solid #ddd; border-radius: 999px; font-size: 0.95rem; }
+.subscribe a:hover { text-decoration: none; border-color: #999; }
+.post .subscribe { text-align: center; margin: 0 0 24px; }
