@@ -131,12 +131,21 @@ Every scheduled Daily Brief / Weekly Review run must behave as a resumable state
 
 Daily Brief / Weekly Review publishing order is mandatory:
 1. Research and compose the canonical written edition and derive the canonical spoken edition under the current Daily/Weekly editorial contract.
-2. Save the written edition to `_drafts/YYYY-MM-DD-daily-brief.md` and the spoken derivative to `handoffs/YYYY-MM-DD-spoken.txt` in this repository. Prefer one durable commit containing both same-date artifacts plus checkpoint/run-state changes when practical.
+2. Save the written edition to `_drafts/YYYY-MM-DD-daily-brief.md`, the spoken derivative to `handoffs/YYYY-MM-DD-spoken.txt`, and a one-line podcast episode headline to `handoffs/YYYY-MM-DD-title.txt` in this repository. Prefer one durable commit containing both same-date artifacts plus checkpoint/run-state changes when practical.
 3. The handoff push triggers `Dispatch Podcast Handoff`, which dispatches the Podcast repository's `Ingest Daily Handoff`. The normal scheduled ChatGPT run does not directly create or update Podcast `episodes/` files.
 4. `Ingest Daily Handoff` validates the handoff, creates the canonical same-date Podcast `episodes/epNNN-daily-YYYY-MM-DD.txt` when needed, and explicitly dispatches `Auto Publish Daily`. Do not rely on a GitHub-token-authored push recursively triggering another workflow.
 5. The Podcast repository's `Auto Publish Daily` workflow generates TTS, publishes/replaces the final MP3 in R2, and upserts/verifies Podcast RSS.
 6. This repository's `Publish Daily After Podcast` workflow starts from the staged draft, performs deterministic written sensitive-term validation, and waits for the matching dated Podcast item to appear in the committed Podcast `feed.xml` with a real enclosure URL, byte length, and duration.
 7. Immediately before promotion, the written artifact is validated again. Only then does the workflow move the staged draft to `_posts/`, write the exact Podcast enclosure URL into `_data/audio.json`, build/deploy GitHub Pages itself, and verify that the live Daily Brief page contains the correct date title and exact final audio URL.
+
+### Podcast episode headline
+
+Owner decision 2026-10-27. Each edition writes `handoffs/YYYY-MM-DD-title.txt` in the same commit as the spoken handoff: one line, the headline only (no date, no `龙虾日报` prefix). The Podcast workflow turns it into `龙虾日报｜M月D日：<headline>` (Sunday: `龙虾日报｜周回顾 M月D日：<headline>`).
+
+- At most about 25 Chinese characters; one or two facts, usually the lead of the opening summary or the 今日数字.
+- Use Arabic numerals for readability (`160 亿美元`, `5%`); this affects the title text only, not spoken audio.
+- Factual tone; no clickbait words such as `震惊`, `重磅`. No political or military topics, and it must pass the sensitive-term list.
+- If the headline is missing, the episode falls back to the date-only title.
 
 ### Spoken opening convention
 
