@@ -140,10 +140,11 @@ Daily Brief / Weekly Review publishing order is mandatory:
 
 ### Podcast episode headline
 
-Owner decision 2026-10-27. Each edition writes `handoffs/YYYY-MM-DD-title.txt` in the same commit as the spoken handoff: one line, the headline only (no date, no `龙虾日报` prefix). The Podcast workflow turns it into `龙虾日报｜M月D日：<headline>` (Sunday: `龙虾日报｜周回顾 M月D日：<headline>`).
+Owner decision 2026-10-27, revised 2026-10-28. Each edition writes `handoffs/YYYY-MM-DD-title.txt` in the same commit as the spoken handoff: one line, the headline only (no date, no `龙虾日报`). The Podcast workflow turns it into `M.DD｜<headline>` (Sunday: `周回顾 M.DD｜<headline>`); the show name is omitted because platforms already display it.
 
-- At most about 25 Chinese characters; one or two facts, usually the lead of the opening summary or the 今日数字.
-- Use Arabic numerals for readability (`160 亿美元`, `5%`); this affects the title text only, not spoken audio.
+- Two or three items in order of importance, separated by `；`, at most about 40 Chinese characters in total. The first item is the day's most important development.
+- Each item names a concrete subject and, where possible, a number, for example `Meta 拟融资 950 亿`; avoid vague items such as `市场震荡` or `AI 继续升温`. If only one or two developments truly matter, use one or two items rather than padding.
+- Use Arabic numerals for readability (`160 亿美元`, `5%`); units such as `美元` may be dropped when clear. This affects the title text only, not spoken audio.
 - Factual tone; no clickbait words such as `震惊`, `重磅`. No political or military topics, and it must pass the sensitive-term list.
 - If the headline is missing, the episode falls back to the date-only title.
 - Also put the same headline in the staged draft's front matter as `headline: "..."`. The site uses it in the browser/search title (`<headline> · YYYY-MM-DD · 龙虾日报`) and Open Graph tags; the visible `<h1>` stays the date, which live verification depends on. Meta descriptions come from the opening summary paragraph automatically.
