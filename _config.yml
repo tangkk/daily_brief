@@ -4,6 +4,7 @@ url: "https://tangkk.github.io"
 baseurl: "/daily_brief"
 timezone: Asia/Shanghai
 xiaoyuzhou_url: "https://www.xiaoyuzhoufm.com/podcast/6a914c89a35d77dd1e6f4c51"
+apple_podcasts_url: "https://podcasts.apple.com/cn/podcast/%E9%BE%99%E8%99%BE%E6%97%A5%E6%8A%A5/id6803795525"
 markdown: kramdown
 permalink: /:year/:month/:day/
 future: true
