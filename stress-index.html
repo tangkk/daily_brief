@@ -1,0 +1,212 @@
+---
+layout: null
+permalink: /stress-index/
+---
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>龙虾压力指数 · {{ site.title }}</title>
+  <meta name="description" content="龙虾压力指数：用 8 个市场指标衡量全球市场的紧张程度，每日更新。50 为过去一年的正常水平，越高越紧张。" />
+  <link rel="canonical" href="{{ '/stress-index/' | absolute_url }}" />
+  <link rel="icon" type="image/svg+xml" href="{{ '/assets/icon.svg' | relative_url }}" />
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" />
+  <style>
+    .viz-root { --surface-1:#fcfcfb; --text-primary:#0b0b0b; --text-secondary:#52514e; --text-muted:#8a8984; --grid:#e6e5e1; --series-1:#2a78d6; }
+    @media (prefers-color-scheme: dark) {
+      :root:where(:not([data-theme="light"])) .viz-root { --surface-1:#1a1a19; --text-primary:#f0efec; --text-secondary:#c3c2b7; --text-muted:#8f8e86; --grid:#33332f; --series-1:#3987e5; }
+    }
+    :root[data-theme="dark"] .viz-root { --surface-1:#1a1a19; --text-primary:#f0efec; --text-secondary:#c3c2b7; --text-muted:#8f8e86; --grid:#33332f; --series-1:#3987e5; }
+    .viz-root { background: var(--surface-1); color: var(--text-primary); border-radius: 12px; padding: 16px; margin: 16px 0 24px; }
+    .si-hero { display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; }
+    .si-value { font-size: 3rem; font-weight: 700; line-height: 1; }
+    .si-change, .si-date, .si-note { color: var(--text-secondary); font-size: 0.95rem; }
+    .si-ranges { display: flex; gap: 8px; margin: 14px 0 6px; }
+    .si-ranges button { font: inherit; font-size: 0.85rem; padding: 3px 12px; border-radius: 999px; border: 1px solid var(--grid); background: transparent; color: var(--text-secondary); cursor: pointer; }
+    .si-ranges button[aria-pressed="true"] { color: var(--text-primary); border-color: var(--text-secondary); font-weight: 600; }
+    .si-chart { position: relative; }
+    .si-chart svg { display: block; width: 100%; height: auto; touch-action: none; }
+    .si-tip { position: absolute; pointer-events: none; background: var(--surface-1); border: 1px solid var(--grid); border-radius: 8px; padding: 6px 10px; font-size: 0.85rem; box-shadow: 0 2px 8px rgba(0,0,0,.12); display: none; white-space: nowrap; }
+    .si-tip strong { display: block; font-size: 1.05rem; color: var(--text-primary); }
+    .si-tip span { color: var(--text-secondary); }
+    .si-bars { margin: 8px 0 0; padding: 0; list-style: none; }
+    .si-bars li { display: grid; grid-template-columns: 9.5em 1fr 2.5em; align-items: center; gap: 10px; padding: 4px 0; font-size: 0.9rem; }
+    .si-bars .lab { color: var(--text-secondary); text-align: right; }
+    .si-bars .track { position: relative; height: 12px; }
+    .si-bars .bar { position: absolute; left: 0; top: 0; bottom: 0; background: var(--series-1); border-radius: 0 4px 4px 0; }
+    .si-bars .mid { position: absolute; left: 50%; top: -3px; bottom: -3px; border-left: 1px dashed var(--text-muted); }
+    .si-table { width: 100%; border-collapse: collapse; font-size: 0.9rem; margin-top: 8px; }
+    .si-table th, .si-table td { padding: 5px 6px; border-bottom: 1px solid var(--grid); text-align: right; }
+    .si-table th:first-child, .si-table td:first-child { text-align: left; }
+    .si-table th { color: var(--text-secondary); font-weight: 500; }
+    @media (max-width: 560px) { .si-bars li { grid-template-columns: 7em 1fr 2.2em; } .si-value { font-size: 2.4rem; } }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
+      <p>{{ site.description }}</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <article class="post">
+      <h1>龙虾压力指数</h1>
+      <div class="content">
+        <p>用一个 0–100 的数字衡量全球市场有多紧张：8 个市场指标各自在过去一年（252 个交易日）中所处的位置（百分位，按压力方向）取平均。<strong>50 = 过去一年的正常水平，越高越紧张。</strong>它衡量的是“比过去一年紧张多少”，不是经济好坏的判断。</p>
+      </div>
+
+      <section class="viz-root" aria-label="龙虾压力指数走势">
+        <div class="si-hero">
+          <span class="si-value" id="si-value">–</span>
+          <span class="si-change" id="si-change"></span>
+          <span class="si-date" id="si-date"></span>
+        </div>
+        <div class="si-ranges" role="group" aria-label="时间范围">
+          <button type="button" data-days="63">3 个月</button>
+          <button type="button" data-days="252" aria-pressed="true">1 年</button>
+          <button type="button" data-days="0">全部</button>
+        </div>
+        <div class="si-chart" id="si-chart"><div class="si-tip" id="si-tip" role="status"></div></div>
+        <h2 style="font-size:1.05rem;margin:22px 0 4px">最新各分项 <span class="si-note" id="si-comp-date"></span></h2>
+        <p class="si-note" style="margin:0">每项为压力方向的百分位（0–100），虚线为 50；半导体、沪深 300 与高收益债按价格取反。</p>
+        <ul class="si-bars" id="si-bars"></ul>
+        <h2 style="font-size:1.05rem;margin:22px 0 4px">最近 10 个交易日</h2>
+        <table class="si-table" id="si-table"><thead><tr><th>日期</th><th>指数</th><th>变化</th></tr></thead><tbody></tbody></table>
+      </section>
+
+      <div class="content">
+        <h2>指标与数据</h2>
+        <ul>
+          <li>利率与波动：十年期美债收益率、MOVE 债市波动指数、VIX 股市波动指数</li>
+          <li>信用与能源：高收益债（HYG ETF 价格，取反）、布伦特原油期货</li>
+          <li>美元与资产：美元指数、费城半导体指数（取反）、沪深 300（以 510300 ETF 代替，取反）</li>
+        </ul>
+        <p>数据来自 Yahoo Finance 每日收盘价，计算脚本与每日数值在本站仓库公开存档，可以复核。等权平均是一种简单取舍；长期停留在高位的指标会逐渐被“习惯”，读数随之回落。</p>
+      </div>
+
+      <div class="disclaimer" aria-label="免责声明">
+        <p><strong>免责声明：</strong>本指数由公开市场数据按固定方法自动计算，仅供信息与研究参考，不构成任何投资建议。</p>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© {{ site.time | date: "%Y" }} {{ site.title }} · <a href="{{ '/about/' | relative_url }}">关于</a> · <a href="{{ '/feed.xml' | relative_url }}">RSS 订阅</a></p>
+    </div>
+  </footer>
+
+  <script type="application/json" id="si-data">{{ site.data.stress_index | jsonify }}</script>
+  <script>
+  (function () {
+    var raw = document.getElementById('si-data').textContent;
+    var doc = null; try { doc = JSON.parse(raw); } catch (e) {}
+    var el = function (id) { return document.getElementById(id); };
+    if (!doc || !doc.series || !doc.series.length) { el('si-value').textContent = '暂无数据'; return; }
+    var S = doc.series, comps = doc.components;
+    var fmtChange = function (d) { return (d > 0 ? '+' : d < 0 ? '−' : '±') + Math.abs(d).toFixed(1); };
+    var last = S[S.length - 1], prev = S[S.length - 2];
+    el('si-value').textContent = last.index.toFixed(1);
+    if (prev) el('si-change').textContent = '较前一交易日 ' + fmtChange(last.index - prev.index);
+    el('si-date').textContent = last.date + ' 收盘';
+    el('si-comp-date').textContent = '（' + last.date + '）';
+    // component bars, highest stress first
+    var rows = comps.map(function (c, i) { return { label: c.label, v: last.c[i] }; })
+      .filter(function (r) { return r.v !== null; }).sort(function (a, b) { return b.v - a.v; });
+    rows.forEach(function (r) {
+      var li = document.createElement('li');
+      var lab = document.createElement('span'); lab.className = 'lab'; lab.textContent = r.label;
+      var tr = document.createElement('span'); tr.className = 'track';
+      var bar = document.createElement('span'); bar.className = 'bar'; bar.style.width = r.v + '%';
+      var mid = document.createElement('span'); mid.className = 'mid';
+      tr.appendChild(bar); tr.appendChild(mid);
+      var val = document.createElement('span'); val.textContent = r.v;
+      li.appendChild(lab); li.appendChild(tr); li.appendChild(val);
+      el('si-bars').appendChild(li);
+    });
+    // table of last 10 days
+    var tb = el('si-table').querySelector('tbody');
+    S.slice(-10).reverse().forEach(function (r, k, arr) {
+      var idx = S.indexOf(r), p = S[idx - 1];
+      var tr = document.createElement('tr');
+      [r.date, r.index.toFixed(1), p ? fmtChange(r.index - p.index) : ''].forEach(function (t) {
+        var td = document.createElement('td'); td.textContent = t; tr.appendChild(td);
+      });
+      tb.appendChild(tr);
+    });
+    // line chart
+    var NS = 'http://www.w3.org/2000/svg', W = 760, H = 300, M = { l: 34, r: 14, t: 12, b: 26 };
+    var box = el('si-chart'), tip = el('si-tip'), svg = null, data = S;
+    function mk(tag, attrs) { var n = document.createElementNS(NS, tag); for (var k in attrs) n.setAttribute(k, attrs[k]); return n; }
+    function draw(days) {
+      data = days ? S.slice(-days) : S;
+      if (svg) box.removeChild(svg);
+      svg = mk('svg', { viewBox: '0 0 ' + W + ' ' + H, role: 'img', 'aria-label': '龙虾压力指数走势图' });
+      var x = function (i) { return M.l + (W - M.l - M.r) * (data.length === 1 ? 0.5 : i / (data.length - 1)); };
+      var y = function (v) { return M.t + (H - M.t - M.b) * (1 - v / 100); };
+      [0, 25, 50, 75, 100].forEach(function (g) {
+        svg.appendChild(mk('line', { x1: M.l, x2: W - M.r, y1: y(g), y2: y(g), stroke: 'var(--grid)', 'stroke-width': 1,
+          'stroke-dasharray': g === 50 ? '4 4' : '' }));
+        var t = mk('text', { x: M.l - 6, y: y(g) + 4, 'text-anchor': 'end', 'font-size': 11, fill: 'var(--text-secondary)' });
+        t.textContent = g; svg.appendChild(t);
+      });
+      var step = Math.max(1, Math.floor(data.length / 6)), lastLab = -1;
+      for (var i = 0; i < data.length; i += step) {
+        var t = mk('text', { x: x(i), y: H - 6, 'text-anchor': 'middle', 'font-size': 11, fill: 'var(--text-secondary)' });
+        t.textContent = data[i].date.slice(0, 7); svg.appendChild(t); lastLab = i;
+      }
+      if (data.length - 1 - lastLab > step * 0.6) {
+        var te = mk('text', { x: x(data.length - 1), y: H - 6, 'text-anchor': 'end', 'font-size': 11, fill: 'var(--text-secondary)' });
+        te.textContent = data[data.length - 1].date.slice(5); svg.appendChild(te);
+      }
+      var d = data.map(function (r, i) { return (i ? 'L' : 'M') + x(i).toFixed(1) + ',' + y(r.index).toFixed(1); }).join('');
+      svg.appendChild(mk('path', { d: d, fill: 'none', stroke: 'var(--series-1)', 'stroke-width': 2, 'stroke-linejoin': 'round', 'stroke-linecap': 'round' }));
+      var n = data.length - 1;
+      svg.appendChild(mk('circle', { cx: x(n), cy: y(data[n].index), r: 4.5, fill: 'var(--series-1)', stroke: 'var(--surface-1)', 'stroke-width': 2 }));
+      var hair = mk('line', { y1: M.t, y2: H - M.b, stroke: 'var(--text-muted)', 'stroke-width': 1, visibility: 'hidden' });
+      var dot = mk('circle', { r: 5, fill: 'var(--series-1)', stroke: 'var(--surface-1)', 'stroke-width': 2, visibility: 'hidden' });
+      svg.appendChild(hair); svg.appendChild(dot);
+      var hit = mk('rect', { x: M.l, y: 0, width: W - M.l - M.r, height: H, fill: 'transparent', tabindex: 0 });
+      svg.appendChild(hit);
+      function show(i) {
+        i = Math.max(0, Math.min(n, i)); var r = data[i];
+        hair.setAttribute('x1', x(i)); hair.setAttribute('x2', x(i)); hair.setAttribute('visibility', 'visible');
+        dot.setAttribute('cx', x(i)); dot.setAttribute('cy', y(r.index)); dot.setAttribute('visibility', 'visible');
+        tip.textContent = ''; var s = document.createElement('strong'); s.textContent = r.index.toFixed(1);
+        var sp = document.createElement('span'); sp.textContent = r.date; tip.appendChild(s); tip.appendChild(sp);
+        tip.style.display = 'block';
+        var px = x(i) / W * box.clientWidth, half = tip.offsetWidth / 2;
+        tip.style.left = Math.max(0, Math.min(box.clientWidth - tip.offsetWidth, px - half)) + 'px';
+        tip.style.top = (y(r.index) / H * box.clientHeight - tip.offsetHeight - 12) + 'px';
+        cur = i;
+      }
+      function hide() { hair.setAttribute('visibility', 'hidden'); dot.setAttribute('visibility', 'hidden'); tip.style.display = 'none'; }
+      var cur = n;
+      hit.addEventListener('pointermove', function (e) {
+        var rect = svg.getBoundingClientRect(), vx = (e.clientX - rect.left) / rect.width * W;
+        show(Math.round((vx - M.l) / (W - M.l - M.r) * n));
+      });
+      hit.addEventListener('pointerleave', hide);
+      hit.addEventListener('focus', function () { show(n); });
+      hit.addEventListener('blur', hide);
+      hit.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowLeft') { show(cur - 1); e.preventDefault(); }
+        if (e.key === 'ArrowRight') { show(cur + 1); e.preventDefault(); }
+      });
+      box.insertBefore(svg, tip);
+    }
+    var btns = document.querySelectorAll('.si-ranges button');
+    Array.prototype.forEach.call(btns, function (b) {
+      b.addEventListener('click', function () {
+        Array.prototype.forEach.call(btns, function (o) { o.setAttribute('aria-pressed', o === b ? 'true' : 'false'); });
+        draw(+b.getAttribute('data-days'));
+      });
+    });
+    draw(252);
+  })();
+  </script>
+</body>
+</html>

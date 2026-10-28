@@ -264,6 +264,18 @@ Added by owner decision on 2026-10-13. Tracks where AI is actually being deploye
 - **Spoken:** include at most one or two items with material new evidence, never defense; otherwise omit.
 - **Sunday Weekly Review:** summarize the week's application-side changes by sector inside or next to the AI 信用周期 section.
 
+### 龙虾压力指数 / Lobster Stress Index
+
+Added by owner decision on 2026-10-28. A daily 0–100 reading of how stressed global markets are relative to the past year: eight market indicators (10-year Treasury yield, MOVE, VIX, high-yield bonds via HYG inverted, Brent, the dollar index, the SOX semiconductor index inverted, CSI 300 via the 510300 ETF inverted) are each ranked against their own trailing 252-trading-day window and averaged. 50 is the past year's normal level; higher means more stress. Method and code: `scripts/stress_index.py`; archive: `_data/stress_index.json`; page: `/stress-index/`.
+
+- **Run it first.** At the start of each run, after the checkpoint, run `python scripts/stress_index.py --edition YYYY-MM-DD`. It refreshes `_data/stress_index.json` and writes `handoffs/YYYY-MM-DD-stress.json` (latest market date before the edition, index, previous reading, change, top three components). Commit both in the same commit as the staged draft and spoken handoff.
+- **If it fails** (network or data-source error), do not block the edition: the script leaves existing files untouched; omit the index for that day, and record the error in the run log. Never invent or estimate a reading.
+- **Written:** the first line of the Markets Dashboard reads, for example, `- **龙虾压力指数**：83.1（前一交易日 85.7，−2.6），主要压力来自美元、布伦特原油和沪深 300。[走势](/daily_brief/stress-index/)`. Name the top components from the stress file; do not reinterpret the number.
+- **Spoken:** mention the index only when it moves by 10 points or more in a day, or crosses 50 or 80, in one sentence (for example `龙虾压力指数升到八十五，是一年来的高位，主要来自油价和美元。`). The episode title carries it every day anyway.
+- **Episode title:** the Podcast workflow adds `压力指数 NN` (rounded) after the date automatically from the stress file; do not write it into the headline file.
+- **Sunday Weekly Review:** state the week's change (previous Friday to this Friday) and its main drivers in the market section.
+- The index is a market-stress gauge, not a judgment of the economy or a forecast; never use it alone to support a call.
+
 ### Overlooked Signal / 被忽视的信号
 
 Added by owner decision on 2026-10-26, replacing the former Call Review.
