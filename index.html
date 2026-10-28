@@ -21,7 +21,7 @@ layout: null
 </head>
 <body>
   <header class="site-header">
-    <div class="container">
+    <div class="container container--wide">
       <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
       <p>{{ site.description }}</p>
       <p class="subscribe"><a href="{{ site.xiaoyuzhou_url }}" target="_blank" rel="noopener">🎧 在小宇宙收听与订阅</a></p>
@@ -31,7 +31,7 @@ layout: null
     </div>
   </header>
 
-  <main class="container">
+  <main class="container container--wide">
     <section>
       <ul class="post-list post-list--daily">
         {% assign daily_posts = site.posts | where: "layout", "daily_brief" %}
@@ -47,7 +47,7 @@ layout: null
   </main>
 
   <footer class="site-footer">
-    <div class="container">
+    <div class="container container--wide">
       <p>© {{ site.time | date: "%Y" }} {{ site.title }} · <a href="{{ '/stress-index/' | relative_url }}">龙虾压力指数</a> · <a href="{{ '/about/' | relative_url }}">关于</a> · <a href="{{ '/feed.xml' | relative_url }}">RSS 订阅</a></p>
     </div>
   </footer>
