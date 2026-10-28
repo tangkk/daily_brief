@@ -49,7 +49,7 @@
         <audio controls preload="metadata" src="{{ audio_url }}">您的浏览器不支持音频播放。</audio>
       </div>
       {% endif %}
-      <p class="subscribe"><a href="{{ site.xiaoyuzhou_url }}" target="_blank" rel="noopener">在小宇宙订阅龙虾日报，每天早上 7 点自动更新 →</a></p>
+      {% include subscribe.html %}
 
       <div class="content">{{ content }}</div>
     </article>
