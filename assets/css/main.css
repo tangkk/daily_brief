@@ -21,10 +21,10 @@ a:hover { text-decoration: underline; }
 .post-list--daily li { justify-content: flex-start; }
 .post-list--daily .date { display: inline-block; font-size: 1.02rem; line-height: 1.5; color: #000; text-align: left; }
 
-.subscribe { margin: 12px 0 0; }
+.subscribe { margin: 12px 0 0; display: flex; flex-wrap: wrap; gap: 8px; }
 .subscribe a { display: inline-block; padding: 6px 14px; border: 1px solid #ddd; border-radius: 999px; font-size: 0.95rem; }
 .subscribe a:hover { text-decoration: none; border-color: #999; }
-.post .subscribe { text-align: center; margin: 0 0 24px; }
+.post .subscribe { justify-content: center; text-align: center; margin: 0 0 24px; }
 
 @media (prefers-color-scheme: dark) {
   .post > h1, .post-list--daily .date { color: #f0efec; }
