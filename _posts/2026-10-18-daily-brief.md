@@ -2,6 +2,7 @@
 layout: daily_brief
 title: "2026-10-18"
 date: 2026-10-18 07:00:00 +0800
+headline: "台积电、ASML 称供不应求；CPI 升至 3.7% 推高加息预期；AI 与存储股大跌"
 ---
 
 ## 本周总览
