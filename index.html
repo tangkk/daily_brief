@@ -37,7 +37,8 @@ layout: null
         {% assign daily_posts = site.posts | where: "layout", "daily_brief" %}
         {% for post in daily_posts %}
           {% assign post_date = post.date | date: "%Y-%m-%d" %}
-          <li><a class="date" href="{{ post.url | relative_url }}">{{ post_date }}</a></li>
+          {% if post.title contains "｜" %}{% assign post_title = post.title %}{% else %}{% assign post_title = post_date %}{% endif %}
+          <li><a class="date" href="{{ post.url | relative_url }}">{{ post_title }}</a></li>
         {% else %}
           <li>还没有文章，先发布第一篇吧。</li>
         {% endfor %}

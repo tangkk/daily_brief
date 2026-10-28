@@ -1,6 +1,6 @@
 ---
 layout: daily_brief
-title: "2026-09-23"
+title: "9.23｜Anthropic 发布 Claude Opus 5.5；AI 债券利差扩大；阿里发布真武 V900 芯片｜压力指数 68"
 date: 2026-09-23 07:00:00 +0800
 headline: "Anthropic 发布 Claude Opus 5.5；AI 债券利差扩大；阿里发布真武 V900 芯片"
 ---

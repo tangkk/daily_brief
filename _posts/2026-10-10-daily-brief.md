@@ -1,6 +1,6 @@
 ---
 layout: daily_brief
-title: "2026-10-10"
+title: "10.10｜OpenAI 称年底年化收入超 700 亿美元；Verizon 大跌；美国消费者信心降至 46.3｜压力指数 75"
 date: 2026-10-10 07:00:00 +0800
 headline: "OpenAI 称年底年化收入超 700 亿美元；Verizon 大跌；美国消费者信心降至 46.3"
 ---

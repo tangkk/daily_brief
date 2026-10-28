@@ -15,10 +15,10 @@ a:hover { text-decoration: underline; }
 .audio-label { margin: 0 0 8px; color: #888; font-size: 0.9rem; }
 .audio audio { display: block; width: 100%; }
 
-.post > h1 { text-align: center; font-size: 2.25rem; color: #000; margin-top: 28px; margin-bottom: 12px; }
+.post > h1 { text-align: center; font-size: 1.6rem; line-height: 1.4; color: #000; margin-top: 28px; margin-bottom: 12px; }
 
-.post-list--daily li { justify-content: center; }
-.post-list--daily .date { display: inline-block; font-size: 1.08rem; color: #000; text-align: center; }
+.post-list--daily li { justify-content: flex-start; }
+.post-list--daily .date { display: inline-block; font-size: 1.02rem; line-height: 1.5; color: #000; text-align: left; }
 
 .subscribe { margin: 12px 0 0; }
 .subscribe a { display: inline-block; padding: 6px 14px; border: 1px solid #ddd; border-radius: 999px; font-size: 0.95rem; }

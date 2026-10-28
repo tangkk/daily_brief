@@ -1,6 +1,6 @@
 ---
 layout: daily_brief
-title: "2026-10-01"
+title: "10.01｜8 月 PCE 低于预期，加息预期降温；OpenAI 联手 Synopsys；DeepSeek 开源昇腾组件｜压力指数 78"
 date: 2026-10-01 07:00:00 +0800
 headline: "8 月 PCE 低于预期，加息预期降温；OpenAI 联手 Synopsys；DeepSeek 开源昇腾组件"
 ---

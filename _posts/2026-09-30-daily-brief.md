@@ -1,6 +1,6 @@
 ---
 layout: daily_brief
-title: "2026-09-30"
+title: "9.30｜Anthropic 披露 2025 年收入 46 亿美元；OpenAI 年化收入近 700 亿；AMD 收购 World Labs｜压力指数 77"
 date: 2026-09-30 07:00:00 +0800
 headline: "Anthropic 披露 2025 年收入 46 亿美元；OpenAI 年化收入近 700 亿；AMD 收购 World Labs"
 ---

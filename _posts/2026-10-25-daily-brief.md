@@ -1,6 +1,6 @@
 ---
 layout: daily_brief
-title: "2026-10-25"
+title: "周回顾 10.25｜AI 财务首次公开检验；Meta 自由现金流转负；OpenAI 估值下调 1500 亿美元｜压力指数 88"
 date: 2026-10-25 07:00:00 +0800
 headline: "AI 财务首次公开检验；Meta 自由现金流转负；OpenAI 估值下调 1500 亿美元"
 ---

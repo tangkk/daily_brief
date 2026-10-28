@@ -1,6 +1,6 @@
 ---
 layout: daily_brief
-title: "Daily Brief — 2026-08-15"
+title: "2026-08-15"
 date: 2026-08-15 08:00:00 +0800
 ---
 

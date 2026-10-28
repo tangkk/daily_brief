@@ -1,6 +1,6 @@
 ---
 layout: daily_brief
-title: "2026-10-13"
+title: "10.13｜长鑫 4F² DRAM 突破，美光跌破 1000 美元；微软发布 Maia 300；Meta 推出 Muse Wonder｜压力指数 77"
 date: 2026-10-13 07:00:00 +0800
 headline: "长鑫 4F² DRAM 突破，美光跌破 1000 美元；微软发布 Maia 300；Meta 推出 Muse Wonder"
 ---

@@ -1,6 +1,6 @@
 ---
 layout: daily_brief
-title: "2026-10-20"
+title: "10.20｜中国三季度 GDP 增 4.5%；存储股领涨科技反弹；Tenstorrent 融资 15 亿美元｜压力指数 86"
 date: 2026-10-20 07:00:00 +0800
 headline: "中国三季度 GDP 增 4.5%；存储股领涨科技反弹；Tenstorrent 融资 15 亿美元"
 ---

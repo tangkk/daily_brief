@@ -1,6 +1,6 @@
 ---
 layout: daily_brief
-title: "2026-10-24"
+title: "10.24｜OpenAI 估值下调至 1.25 万亿美元；DeepSeek 据报融资约 1000 亿元；美油站上 103 美元｜压力指数 88"
 date: 2026-10-24 07:00:00 +0800
 headline: "OpenAI 估值下调至 1.25 万亿美元；DeepSeek 据报融资约 1000 亿元；美油站上 103 美元"
 ---

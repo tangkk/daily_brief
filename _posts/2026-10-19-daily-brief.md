@@ -1,6 +1,6 @@
 ---
 layout: daily_brief
-title: "2026-10-19"
+title: "10.19｜布伦特收于 109.86 美元；大平台开始封堵第三方 AI 智能体；DeepSeek 开源 V4.1-Flash｜压力指数 88"
 date: 2026-10-19 07:00:00 +0800
 headline: "布伦特收于 109.86 美元；大平台开始封堵第三方 AI 智能体；DeepSeek 开源 V4.1-Flash"
 ---

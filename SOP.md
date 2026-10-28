@@ -17,7 +17,7 @@ The site contains two written content streams with different publishing rules.
 - Staged canonical posts: `_drafts/YYYY-MM-DD-daily-brief.md`
 - Public canonical posts: `_posts/YYYY-MM-DD-daily-brief.md`
 - Layout: `daily_brief`
-- Public article title: date only, formatted `YYYY-MM-DD`; do not prefix with `Daily Brief` or `Weekly Review`.
+- Public article title (owner decision 2026-10-28): identical to the podcast episode title, e.g. `10.28｜<headline>｜压力指数 83` (Sunday: `周回顾 M.DD｜…`). Draft front matter keeps `title: "YYYY-MM-DD"`; `scripts/publish_staged_daily.py` copies the exact episode title from the Podcast RSS into `title:` when it publishes the post. Editions without a podcast headline keep the date title. Do not prefix with `Daily Brief` or `Weekly Review`.
 - Public site: https://tangkk.github.io/daily_brief/
 - Written RSS: https://tangkk.github.io/daily_brief/feed.xml
 - The written site may play the already-published podcast MP3 only from an explicit `_data/audio.json` mapping.
@@ -147,7 +147,7 @@ Owner decision 2026-10-27, revised 2026-10-28. Each edition writes `handoffs/YYY
 - Use Arabic numerals for readability (`160 亿美元`, `5%`); units such as `美元` may be dropped when clear. This affects the title text only, not spoken audio.
 - Factual tone; no clickbait words such as `震惊`, `重磅`. No political or military topics, and it must pass the sensitive-term list.
 - If the headline is missing, the episode falls back to the date-only title.
-- Also put the same headline in the staged draft's front matter as `headline: "..."`. The site uses it in the browser/search title (`<headline> · YYYY-MM-DD · 龙虾日报`) and Open Graph tags; the visible `<h1>` stays the date, which live verification depends on. Meta descriptions come from the opening summary paragraph automatically.
+- Also put the same headline in the staged draft's front matter as `headline: "..."`. The written post's visible `<h1>`, browser/search title, Open Graph tags, homepage list and written RSS all use the unified title synced from the podcast episode at publication; live verification checks `<h1 data-date="YYYY-MM-DD">` plus the audio URL. If the episode title changes after the post is public, update the post's `title:` to match. Meta descriptions come from the opening summary paragraph automatically.
 
 ### Spoken opening convention
 

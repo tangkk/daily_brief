@@ -78,7 +78,7 @@ def main():
         html = html_path.read_text(encoding="utf-8") if html_path.exists() else ""
         live_verified = bool(
             item
-            and f"<h1>{args.date}</h1>" in html
+            and f'<h1 data-date="{args.date}">' in html
             and item["url"] in html
         )
 

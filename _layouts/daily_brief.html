@@ -4,7 +4,8 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   {% assign page_date = page.date | date: "%Y-%m-%d" %}
-  {% if page.headline %}{% capture seo_title %}{{ page.headline }} · {{ page_date }} · {{ site.title }}{% endcapture %}{% else %}{% capture seo_title %}{{ page_date }} · {{ site.title }}{% endcapture %}{% endif %}
+  {% if page.title contains "｜" %}{% assign display_title = page.title %}{% else %}{% assign display_title = page_date %}{% endif %}
+  {% capture seo_title %}{{ display_title }} · {{ site.title }}{% endcapture %}
   {% capture seo_desc %}{{ page.description | default: page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 }}{% endcapture %}
   <title>{{ seo_title | strip }}</title>
   <meta name="description" content="{{ seo_desc | strip | escape }}" />
@@ -30,7 +31,7 @@
 
   <main class="container">
     <article class="post">
-      <h1>{{ page.date | date: "%Y-%m-%d" }}</h1>
+      <h1 data-date="{{ page_date }}">{{ display_title }}</h1>
       <p class="meta">{{ page.date | date: "%Y-%m-%d %H:%M" }}</p>
 
       <div class="disclaimer" aria-label="免责声明">

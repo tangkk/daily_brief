@@ -1,6 +1,6 @@
 ---
 layout: daily_brief
-title: "2026-10-21"
+title: "10.21｜Anthropic 招股书草案：半年收入 163 亿美元；SpaceX 收入增 161%；Netflix 超预期｜压力指数 84"
 date: 2026-10-21 07:00:00 +0800
 headline: "Anthropic 招股书草案：半年收入 163 亿美元；SpaceX 收入增 161%；Netflix 超预期"
 ---

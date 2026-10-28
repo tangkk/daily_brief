@@ -1,6 +1,6 @@
 ---
 layout: daily_brief
-title: "Daily Brief — 2026-08-29"
+title: "8.29｜Warsh 在杰克逊霍尔放鹰；9 月加息概率跳升；黄金与比特币回落｜压力指数 58"
 date: 2026-08-29 08:00:00 +0800
 headline: "Warsh 在杰克逊霍尔放鹰；9 月加息概率跳升；黄金与比特币回落"
 ---

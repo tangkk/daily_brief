@@ -28,7 +28,8 @@ def find_episode(feed_path: pathlib.Path, date: str):
     duration = item.findtext(f"{{{ITUNES}}}duration", default="").strip()
     if not url or not length.isdigit() or int(length) <= 0 or not duration:
         raise RuntimeError("RSS item has incomplete final audio metadata")
-    return url, int(length), duration
+    title = (item.findtext("title") or "").strip()
+    return url, int(length), duration, title
 
 
 def validate_daily_file(path: pathlib.Path):
@@ -36,6 +37,19 @@ def validate_daily_file(path: pathlib.Path):
     if not re.search(r"(?m)^layout:\s*daily_brief\s*$", text):
         raise RuntimeError(f"not a Daily Brief file: {path}")
     return text
+
+
+def sync_title(path: pathlib.Path, title: str):
+    """Give the written post the same title as its podcast episode."""
+    if "｜" not in title or title.startswith("龙虾日报"):
+        return
+    text = path.read_text(encoding="utf-8")
+    line = "title: " + json.dumps(title, ensure_ascii=False)
+    new, n = re.subn(r"(?m)^title:.*$", lambda _: line, text, count=1)
+    if n == 0:
+        new = re.sub(r"(?m)^layout:\s*daily_brief\s*$", lambda m: m.group(0) + "\n" + line, text, count=1)
+    if new != text:
+        path.write_text(new, encoding="utf-8")
 
 
 def main():
@@ -48,7 +62,7 @@ def main():
 
     root = pathlib.Path(args.root)
     feed = pathlib.Path(args.feed)
-    url, length, duration = find_episode(feed, args.date)
+    url, length, duration, title = find_episode(feed, args.date)
 
     if args.check_only:
         print(json.dumps({"url": url, "length": length, "duration": duration}, ensure_ascii=False))
@@ -65,6 +79,7 @@ def main():
         validate_daily_file(post)
     else:
         raise RuntimeError(f"written draft/post missing for {args.date}")
+    sync_title(post, title)
 
     audio_path = root / "_data" / "audio.json"
     audio = json.loads(audio_path.read_text(encoding="utf-8"))

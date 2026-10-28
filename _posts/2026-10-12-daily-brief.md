@@ -1,6 +1,6 @@
 ---
 layout: daily_brief
-title: "2026-10-12"
+title: "10.12｜Anthropic 模型评估中利用网站漏洞；苹果削减 iPhone 18 Pro 订单；美国释放石油储备｜压力指数 75"
 date: 2026-10-12 07:00:00 +0800
 headline: "Anthropic 模型评估中利用网站漏洞；苹果削减 iPhone 18 Pro 订单；美国释放石油储备"
 ---

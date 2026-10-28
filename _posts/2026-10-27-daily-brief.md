@@ -1,6 +1,6 @@
 ---
 layout: daily_brief
-title: "2026-10-27"
+title: "10.27｜Anthropic 公开招股书：半年收入超 160 亿美元；Meta 拟融资 950 亿；微软 6 万人自愿离职｜压力指数 86"
 date: 2026-10-27 07:00:00 +0800
 headline: "Anthropic 公开招股书：半年收入超 160 亿美元；Meta 拟融资 950 亿；微软 6 万人自愿离职"
 ---

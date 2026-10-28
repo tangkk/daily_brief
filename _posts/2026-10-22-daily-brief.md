@@ -1,6 +1,6 @@
 ---
 layout: daily_brief
-title: "2026-10-22"
+title: "10.22｜Meta 自由现金流转负；特斯拉营业利润降 56%；ChatGPT 广告主超 10 万家｜压力指数 81"
 date: 2026-10-22 07:00:00 +0800
 headline: "Meta 自由现金流转负；特斯拉营业利润降 56%；ChatGPT 广告主超 10 万家"
 ---

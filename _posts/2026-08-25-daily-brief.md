@@ -1,6 +1,6 @@
 ---
 layout: daily_brief
-title: "Daily Brief — 2026-08-25"
+title: "8.25｜Perplexity 年化收入快速增长；美财政部长债回购受关注；AI 收入能否覆盖成本｜压力指数 62"
 date: 2026-08-25 08:00:00 +0800
 headline: "Perplexity 年化收入快速增长；美财政部长债回购受关注；AI 收入能否覆盖成本"
 ---

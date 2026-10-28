@@ -1,6 +1,6 @@
 ---
 layout: daily_brief
-title: "2026-10-16"
+title: "10.16｜台积电净利增 68.7% 并上调预期；KOSPI 暴跌 8%；Anthropic 季度收入据报 168 亿美元｜压力指数 81"
 date: 2026-10-16 07:00:00 +0800
 headline: "台积电净利增 68.7% 并上调预期；KOSPI 暴跌 8%；Anthropic 季度收入据报 168 亿美元"
 ---

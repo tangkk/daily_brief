@@ -1,6 +1,6 @@
 ---
 layout: daily_brief
-title: "2026-10-08"
+title: "10.08｜三星季度利润首破 100 万亿韩元；美债收益率升至 5.36%；Anthropic 推出 Haiku 5.5｜压力指数 73"
 date: 2026-10-08 07:00:00 +0800
 headline: "三星季度利润首破 100 万亿韩元；美债收益率升至 5.36%；Anthropic 推出 Haiku 5.5"
 ---

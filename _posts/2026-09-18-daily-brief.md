@@ -1,6 +1,6 @@
 ---
 layout: daily_brief
-title: "2026-09-18"
+title: "9.18｜美股加息后反弹；华为称 AI 算力需求超过供应；Anthropic 签下澳大利亚数据中心｜压力指数 73"
 date: 2026-09-18 07:00:00 +0800
 headline: "美股加息后反弹；华为称 AI 算力需求超过供应；Anthropic 签下澳大利亚数据中心"
 ---

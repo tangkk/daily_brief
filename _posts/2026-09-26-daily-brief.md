@@ -1,6 +1,6 @@
 ---
 layout: daily_brief
-title: "2026-09-26"
+title: "9.26｜Anthropic 与 Akamai 签 116 亿美元协议；美债收益率创新高后回落；微软扩展 Copilot｜压力指数 74"
 date: 2026-09-26 07:00:00 +0800
 headline: "Anthropic 与 Akamai 签 116 亿美元协议；美债收益率创新高后回落；微软扩展 Copilot"
 ---

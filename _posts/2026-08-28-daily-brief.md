@@ -1,6 +1,6 @@
 ---
 layout: daily_brief
-title: "Daily Brief — 2026-08-28"
+title: "8.28｜英伟达指引带动科技股大涨；Salesforce 释放 AI 收入信号；油价与美债仍是约束｜压力指数 52"
 date: 2026-08-28 08:00:00 +0800
 headline: "英伟达指引带动科技股大涨；Salesforce 释放 AI 收入信号；油价与美债仍是约束"
 ---
