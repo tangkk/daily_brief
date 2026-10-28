@@ -2,6 +2,7 @@
 layout: daily_brief
 title: "2026-09-10"
 date: 2026-09-10 07:00:00 +0800
+headline: "布伦特站上 100 美元；美国十年期收益率升至 2023 年来高位；全球股市承压"
 ---
 
 ## 1. Market View

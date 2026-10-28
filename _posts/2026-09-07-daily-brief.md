@@ -2,6 +2,7 @@
 layout: daily_brief
 title: "Daily Brief — 2026-09-07"
 date: 2026-09-07 08:00:00 +0800
+headline: "亚洲股市开盘反弹；韩国存储链走强；高油价未触发全面避险"
 ---
 
 ## 1. Market View

@@ -2,6 +2,7 @@
 layout: daily_brief
 title: "Daily Brief — 2026-08-23"
 date: 2026-08-23 08:00:00 +0800
+headline: "英伟达服务器涨价；存储、电力与融资成本推高 AI 回报门槛"
 ---
 
 ## 1. Market View

@@ -2,6 +2,7 @@
 layout: daily_brief
 title: "Daily Brief — 2026-08-24"
 date: 2026-08-24 08:00:00 +0800
+headline: "AI 成本全面上升：存储、服务器、电力与融资；长端财政风险仍压估值"
 ---
 
 ## 1. Market View

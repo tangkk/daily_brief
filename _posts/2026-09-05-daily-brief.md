@@ -2,6 +2,7 @@
 layout: daily_brief
 title: "Daily Brief — 2026-09-05"
 date: 2026-09-05 08:00:00 +0800
+headline: "美国 8 月就业强劲，9 月加息重回基准；中东航运受阻抬高能源风险"
 ---
 
 ## 1. Market View

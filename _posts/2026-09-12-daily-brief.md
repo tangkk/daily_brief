@@ -2,6 +2,7 @@
 layout: daily_brief
 title: "2026-09-12"
 date: 2026-09-12 07:00:00 +0800
+headline: "美国 8 月 CPI 同比 3.4%；下周加息定价一度升至九成；能源冲击传导至通胀"
 ---
 
 ## 1. Market View

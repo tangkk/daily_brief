@@ -2,6 +2,7 @@
 layout: daily_brief
 title: "Daily Brief — 2026-08-22"
 date: 2026-08-22 08:00:00 +0800
+headline: "美国长债财政风险溢价压制估值；美元走弱；黄金与比特币上涨"
 ---
 
 ## 1. Market View

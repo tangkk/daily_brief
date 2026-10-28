@@ -2,6 +2,7 @@
 layout: daily_brief
 title: "2026-09-09"
 date: 2026-09-09 07:00:00 +0800
+headline: "高油价与美股回落同时出现；道指跌 1.18%；新模型冲击软件股"
 ---
 
 ## 1. Market View

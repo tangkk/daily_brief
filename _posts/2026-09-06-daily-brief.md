@@ -2,6 +2,7 @@
 layout: daily_brief
 title: "Daily Brief — 2026-09-06"
 date: 2026-09-06 08:00:00 +0800
+headline: "GPT-6 Astra 发布；英伟达收购 Hugging Face；霍尔木兹航运风险升级"
 ---
 
 ## 1. Market View

@@ -2,6 +2,7 @@
 layout: daily_brief
 title: "Daily Brief — 2026-09-01"
 date: 2026-09-01 08:00:00 +0800
+headline: "英伟达投资联发科；中国制造业 PMI 回升至 49.8；房地产转向现房销售"
 ---
 
 ## 1. Market View

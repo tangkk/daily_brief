@@ -2,6 +2,7 @@
 layout: daily_brief
 title: "Daily Brief — 2026-09-04"
 date: 2026-09-04 08:00:00 +0800
+headline: "美国加息预期降温、日本升温；布伦特逼近 100 美元；美国柴油价创纪录"
 ---
 
 ## 1. Market View

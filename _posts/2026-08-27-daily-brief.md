@@ -2,6 +2,7 @@
 layout: daily_brief
 title: "Daily Brief — 2026-08-27"
 date: 2026-08-27 08:00:00 +0800
+headline: "英伟达季度收入超 960 亿美元；7 月 PCE 同比 3.7%；美债成本压估值"
 ---
 
 ## 1. Market View

@@ -2,6 +2,7 @@
 layout: daily_brief
 title: "2026-09-11"
 date: 2026-09-11 07:00:00 +0800
+headline: "布伦特涨 6.3% 至 107.63 美元；WTI 升破 100 美元；欧洲央行转向收紧"
 ---
 
 ## 1. Market View

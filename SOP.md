@@ -140,7 +140,7 @@ Daily Brief / Weekly Review publishing order is mandatory:
 
 ### Podcast episode headline
 
-Owner decision 2026-10-27, revised 2026-10-28. Each edition writes `handoffs/YYYY-MM-DD-title.txt` in the same commit as the spoken handoff: one line, the headline only (no date, no `龙虾日报`). The Podcast workflow turns it into `M.DD｜<headline>` (Sunday: `周回顾 M.DD｜<headline>`); the show name is omitted because platforms already display it.
+Owner decision 2026-10-27, revised 2026-10-28. Each edition writes `handoffs/YYYY-MM-DD-title.txt` in the same commit as the spoken handoff: one line, the headline only (no date, no `龙虾日报`). The Podcast workflow turns it into `M.DD｜<headline>｜压力指数 NN` (Sunday: `周回顾 M.DD｜<headline>｜压力指数 NN`); the show name is omitted because platforms already display it.
 
 - Two or three items in order of importance, separated by `；`, at most about 40 Chinese characters in total. The first item is the day's most important development.
 - Each item names a concrete subject and, where possible, a number, for example `Meta 拟融资 950 亿`; avoid vague items such as `市场震荡` or `AI 继续升温`. If only one or two developments truly matter, use one or two items rather than padding.
@@ -272,7 +272,7 @@ Added by owner decision on 2026-10-28. A daily 0–100 reading of how stressed g
 - **If it fails** (network or data-source error), do not block the edition: the script leaves existing files untouched; omit the index for that day, and record the error in the run log. Never invent or estimate a reading.
 - **Written:** the first line of the Markets Dashboard reads, for example, `- **龙虾压力指数**：83.1（前一交易日 85.7，−2.6），主要压力来自美元、布伦特原油和沪深 300。[走势](/daily_brief/stress-index/)`. Name the top components from the stress file; do not reinterpret the number.
 - **Spoken:** mention the index only when it moves by 10 points or more in a day, or crosses 50 or 80, in one sentence (for example `龙虾压力指数升到八十五，是一年来的高位，主要来自油价和美元。`). The episode title carries it every day anyway.
-- **Episode title:** the Podcast workflow adds `压力指数 NN` (rounded) after the date automatically from the stress file; do not write it into the headline file.
+- **Episode title:** the Podcast workflow appends `｜压力指数 NN` (rounded) at the end of the title automatically from the stress file; do not write it into the headline file.
 - **Sunday Weekly Review:** state the week's change (previous Friday to this Friday) and its main drivers in the market section.
 - The index is a market-stress gauge, not a judgment of the economy or a forecast; never use it alone to support a call.
 

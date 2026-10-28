@@ -2,6 +2,7 @@
 layout: daily_brief
 title: "Daily Brief — 2026-08-26"
 date: 2026-08-26 08:00:00 +0800
+headline: "美国住房与消费者信心转弱；长债收益率回落；黄金与比特币走强"
 ---
 
 ## 1. Market View

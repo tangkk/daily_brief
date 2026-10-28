@@ -2,6 +2,7 @@
 layout: daily_brief
 title: "Daily Brief — 2026-08-30"
 date: 2026-08-30 08:00:00 +0800
+headline: "英伟达季度收入 962 亿美元、同比翻倍；杰克逊霍尔把资金成本推回定价中心"
 ---
 
 ## 1. Market View

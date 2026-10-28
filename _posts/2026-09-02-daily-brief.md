@@ -2,6 +2,7 @@
 layout: daily_brief
 title: "Daily Brief — 2026-09-02"
 date: 2026-09-02 08:00:00 +0800
+headline: "日本十年期收益率触及 3%；全球长债同创多年高位；霍尔木兹航运受阻推高油价"
 ---
 
 ## 1. Market View

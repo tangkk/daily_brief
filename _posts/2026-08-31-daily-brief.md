@@ -2,6 +2,7 @@
 layout: daily_brief
 title: "Daily Brief — 2026-08-31"
 date: 2026-08-31 08:00:00 +0800
+headline: "英伟达预计下财年收入增约七成；定价权转向通胀与美联储；能源争夺长期资本"
 ---
 
 ## 1. Market View
