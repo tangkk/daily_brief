@@ -1,16 +1,16 @@
 {
   "date": "2026-10-29",
   "run_type": "daily_brief",
-  "status": "published_verified",
+  "status": "written_staged",
   "started_at": "2026-10-29T08:00:00+08:00",
   "artifact_state": {
     "written_draft": true,
-    "spoken_canonical": true,
-    "podcast_verified": true,
-    "written_published": true,
-    "published_verified": true
+    "spoken_canonical": false,
+    "podcast_verified": false,
+    "written_published": false,
+    "published_verified": false
   },
-  "updated_at": "2026-10-29T08:24:40+08:00",
+  "updated_at": "2026-10-29T08:35:00+08:00",
   "stress_index": {
     "status": "backfilled_verified",
     "initial_omission": {
@@ -74,6 +74,46 @@
       "public_article_title_and_reading": true,
       "public_article_audio_matches_rss": true,
       "verified_at": "2026-10-29T08:24:40+08:00"
+    }
+  },
+  "prior_release_checkpoint": {
+    "status": "published_verified",
+    "updated_at": "2026-10-29T08:24:40+08:00",
+    "podcast_rss": {
+      "guid": "ep070-daily-2026-10-29",
+      "title": "10.29｜美联储按兵不动；SK 海力士利润大增；A 股成长反弹｜压力指数 81",
+      "enclosure_url": "https://pub-e2d65fa7f70240878f2e556592826485.r2.dev/daily/ep070-daily-2026-10-29.mp3",
+      "enclosure_length": 590253,
+      "duration": "00:02:28"
+    }
+  },
+  "current_rework": {
+    "reason": "Full same-date editorial and audio rebuild after the initial 644-character / 2:28 script omitted material fresh Microsoft and Alphabet earnings and lacked usual spoken depth.",
+    "status": "canonical_pending_commit",
+    "started_at": "2026-10-29T08:35:00+08:00",
+    "history_preserved": true,
+    "dedup_audit": {
+      "strong_window": "2026-10-22 through 2026-10-28",
+      "admitted_with_information_gain": {
+        "Federal Reserve": "Oct 28 binding hold decision after Oct 28 preview",
+        "A-share growth rebound": "Oct 28 actual rebound after Oct 27-28 declines"
+      },
+      "rejected_recurring": [
+        "Anthropic S-1",
+        "Broadcom-Anthropic financing",
+        "Microsoft voluntary buyouts",
+        "Meta-Nvidia stake",
+        "Oracle alternate accelerators"
+      ]
+    },
+    "source_audit": "Primary Fed, Microsoft, SK hynix, Unitree filings; Alphabet earnings call plus accessible Reuters/AP full reports; China market NBD.",
+    "spoken_cjk_characters": 1351,
+    "old_enclosure_url": "https://pub-e2d65fa7f70240878f2e556592826485.r2.dev/daily/ep070-daily-2026-10-29.mp3",
+    "stress_preserved": {
+      "market_date": "2026-10-28",
+      "index": 80.6,
+      "prev_index": 83.2,
+      "change": -2.6
     }
   }
 }

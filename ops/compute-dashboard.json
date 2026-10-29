@@ -312,6 +312,28 @@
       "kind": "company announcement",
       "previous": null,
       "source_url": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-october-27-dow-sp-500-nasdaq-081901995.html"
+    },
+    {
+      "indicator": "Alphabet quarterly capital expenditures",
+      "value": 51.4,
+      "unit": "USD billion",
+      "as_of": "2026-Q3",
+      "kind": "company results",
+      "previous": {
+        "value": 44.9,
+        "as_of": "2026-Q2",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000071/goog-20260630.htm"
+      },
+      "source_url": "https://stockanalysis.com/stocks/googl/transcripts/712854-q3-2026/"
+    },
+    {
+      "indicator": "SK hynix long-term customer agreements covering 2027-2028 capacity",
+      "value": ">50",
+      "unit": "percent of total capacity",
+      "as_of": "2026-10-28",
+      "kind": "company announcement",
+      "previous": null,
+      "source_url": "https://news.skhynix.com/en/q3-2026-business-results/"
     }
   ]
 }
