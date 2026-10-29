@@ -1,16 +1,16 @@
 {
   "date": "2026-10-29",
   "run_type": "daily_brief",
-  "status": "podcast_verified",
+  "status": "written_published",
   "started_at": "2026-10-29T08:00:00+08:00",
   "artifact_state": {
     "written_draft": true,
     "spoken_canonical": true,
     "podcast_verified": true,
-    "written_published": false,
+    "written_published": true,
     "published_verified": false
   },
-  "updated_at": "2026-10-29T08:45:25+08:00",
+  "updated_at": "2026-10-29T08:45:27+08:00",
   "stress_index": {
     "status": "backfilled_verified",
     "initial_omission": {
