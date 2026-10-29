@@ -1,16 +1,16 @@
 {
   "date": "2026-10-29",
   "run_type": "daily_brief",
-  "status": "written_staged",
+  "status": "spoken_committed",
   "started_at": "2026-10-29T08:00:00+08:00",
   "artifact_state": {
     "written_draft": true,
-    "spoken_canonical": false,
+    "spoken_canonical": true,
     "podcast_verified": false,
     "written_published": false,
     "published_verified": false
   },
-  "updated_at": "2026-10-29T08:35:00+08:00",
+  "updated_at": "2026-10-29T08:39:00+08:00",
   "stress_index": {
     "status": "backfilled_verified",
     "initial_omission": {
@@ -89,7 +89,7 @@
   },
   "current_rework": {
     "reason": "Full same-date editorial and audio rebuild after the initial 644-character / 2:28 script omitted material fresh Microsoft and Alphabet earnings and lacked usual spoken depth.",
-    "status": "canonical_pending_commit",
+    "status": "podcast_replacement_in_progress",
     "started_at": "2026-10-29T08:35:00+08:00",
     "history_preserved": true,
     "dedup_audit": {
@@ -114,6 +114,10 @@
       "index": 80.6,
       "prev_index": 83.2,
       "change": -2.6
-    }
+    },
+    "daily_brief_canonical_commit": "65ebebc7ad8d1377ef1cfdf94938ec953ebd7167",
+    "podcast_canonical_commit": "396c328",
+    "podcast_auto_publish_run_id": 40795408788,
+    "spoken_handoff_equals_podcast_canonical": true
   }
 }
