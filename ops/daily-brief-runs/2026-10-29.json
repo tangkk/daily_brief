@@ -10,10 +10,20 @@
     "written_published": true,
     "published_verified": true
   },
-  "updated_at": "2026-10-29T08:13:16+08:00",
+  "updated_at": "2026-10-29T08:24:40+08:00",
   "stress_index": {
-    "status": "omitted",
-    "error": "python executable unavailable (exit 127); existing files left untouched"
+    "status": "backfilled_verified",
+    "initial_omission": {
+      "status": "omitted",
+      "error": "python executable unavailable (exit 127); existing files left untouched"
+    },
+    "market_date": "2026-10-28",
+    "index": 80.6,
+    "prev_date": "2026-10-27",
+    "prev_index": 83.2,
+    "change": -2.6,
+    "handoff": "handoffs/2026-10-29-stress.json",
+    "backfilled_at": "2026-10-29T08:24:40+08:00"
   },
   "recovery_worker": "v1_backstop",
   "dedup_audit": {
@@ -30,5 +40,40 @@
   "spoken_committed_at": "2026-10-29T08:06:25+08:00",
   "podcast_verified_at": "2026-10-29T08:12:52+08:00",
   "written_published_at": "2026-10-29T08:12:53+08:00",
-  "published_verified_at": "2026-10-29T08:13:16+08:00"
+  "published_verified_at": "2026-10-29T08:13:16+08:00",
+  "rework": {
+    "reason": "Backfill Lobster Stress Index after V1 python command was restored; align Podcast/article titles and correct Sunday SOP title rule.",
+    "result": "published_verified",
+    "spoken_script_changed": false,
+    "audio_replacement": "not required; index moved -2.6 and did not cross 50 or 80, so the spoken threshold was not met",
+    "canonical_commits": {
+      "daily_brief_stress_and_sop": "9e8937f",
+      "podcast_metadata_and_feed": "7cd4c8c",
+      "daily_brief_article": "16df33a"
+    },
+    "podcast_ingest_run_id": 40793258993,
+    "podcast_rss": {
+      "guid": "ep070-daily-2026-10-29",
+      "title": "10.29｜美联储按兵不动；SK 海力士利润大增；A 股成长反弹｜压力指数 81",
+      "enclosure_url": "https://pub-e2d65fa7f70240878f2e556592826485.r2.dev/daily/ep070-daily-2026-10-29.mp3",
+      "enclosure_length": 590253,
+      "duration": "00:02:28"
+    },
+    "audio_mapping": {
+      "result": "verified unchanged",
+      "url": "https://pub-e2d65fa7f70240878f2e556592826485.r2.dev/daily/ep070-daily-2026-10-29.mp3"
+    },
+    "written_redeploy": {
+      "result": "success",
+      "pages_run_id": 40793620242,
+      "url": "https://tangkk.github.io/daily_brief/2026/10/29/"
+    },
+    "end_to_end_verification": {
+      "result": "verified",
+      "public_podcast_rss_title": true,
+      "public_article_title_and_reading": true,
+      "public_article_audio_matches_rss": true,
+      "verified_at": "2026-10-29T08:24:40+08:00"
+    }
+  }
 }
