@@ -1,15 +1,44 @@
 {
   "date": "2026-10-30",
   "run_type": "daily_brief",
-  "status": "started",
+  "status": "spoken_committed",
   "started_at": "2026-10-30T07:16:43+08:00",
-  "updated_at": "2026-10-30T07:16:43+08:00",
+  "updated_at": "2026-10-30T07:21:16+08:00",
   "recovery_worker": "v1_backstop",
   "artifact_state": {
-    "written_draft": false,
-    "spoken_canonical": false,
+    "written_draft": true,
+    "spoken_canonical": true,
     "podcast_verified": false,
     "written_published": false,
     "published_verified": false
+  },
+  "research_completed_at": "2026-10-30T07:21:16+08:00",
+  "written_staged_at": "2026-10-30T07:21:16+08:00",
+  "spoken_committed_at": "2026-10-30T07:21:16+08:00",
+  "source_audit": "Discovery across official US macro data, company filings/releases, ECB policy, Korean semiconductor reporting, China local-language market and AI coverage, and independent market reporting. No single publisher controlled selection.",
+  "dedup_audit": {
+    "strong_window": "2026-10-23 through 2026-10-29",
+    "history_window": "2026-09-30 through 2026-10-29",
+    "rejected_recurring": [
+      "Alphabet quarterly earnings as a new result",
+      "Microsoft Azure quarterly earnings",
+      "SK hynix long-term agreements",
+      "Federal Reserve October hold",
+      "2026-10-28 A-share rebound"
+    ],
+    "admitted_with_information_gain": {
+      "Alphabet": "October 29 regular-session 12.6% share decline after earnings",
+      "China A shares": "October 29 4.45% ChiNext fall reversed October 28 rebound",
+      "Samsung": "October 29 final report disclosed chip-segment capital expenditures absent from October 8 guidance"
+    }
+  },
+  "stress_index": {
+    "status": "generated",
+    "market_date": "2026-10-29",
+    "index": 81.1,
+    "prev_date": "2026-10-28",
+    "prev_index": 81.2,
+    "change": -0.1,
+    "handoff": "handoffs/2026-10-30-stress.json"
   }
 }

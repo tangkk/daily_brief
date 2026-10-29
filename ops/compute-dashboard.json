@@ -334,6 +334,24 @@
       "kind": "company announcement",
       "previous": null,
       "source_url": "https://news.skhynix.com/en/q3-2026-business-results/"
+    },
+    {
+      "indicator": "Amazon expected 2026 cash capital expenditures",
+      "value": 220,
+      "unit": "USD billion",
+      "as_of": "2026-10-29 guidance",
+      "kind": "company guidance",
+      "previous": null,
+      "source_url": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Third-Quarter-Results/default.aspx"
+    },
+    {
+      "indicator": "Samsung Electronics Q3 2026 Device Solutions capital expenditures",
+      "value": 27.2,
+      "unit": "KRW trillion",
+      "as_of": "2026-Q3",
+      "kind": "company reported actual",
+      "previous": null,
+      "source_url": "https://news.samsung.com/global/samsung-electronics-announces-third-quarter-2026-results"
     }
   ]
 }

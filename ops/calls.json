@@ -164,9 +164,9 @@
       "indicator": "FOMC target range decision, 2026-10-28",
       "threshold_direction": "unchanged at 3.75%-4.00%",
       "window_end": "2026-10-28",
-      "status": "open",
-      "resolved_on": null,
-      "evidence_source": null
+      "status": "成立",
+      "resolved_on": "2026-10-30",
+      "evidence_source": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm"
     },
     {
       "id": "2026-10-26-01",
@@ -200,6 +200,18 @@
       "indicator": "FOMC decision 2026-12-09",
       "threshold_direction": "+25bp to 4.00%-4.25%",
       "window_end": "2026-12-09",
+      "status": "open",
+      "resolved_on": null,
+      "evidence_source": null
+    },
+    {
+      "id": "2026-10-30-01",
+      "made_on": "2026-10-30",
+      "edition": "_drafts/2026-10-30-daily-brief.md",
+      "wording": "到亚马逊下一次季度财报披露时，AWS 收入同比增速仍将不低于 30%。",
+      "indicator": "Amazon AWS quarterly revenue, year-over-year growth",
+      "threshold_direction": ">= 30% YoY in next reported quarter",
+      "window_end": "2027-02-28",
       "status": "open",
       "resolved_on": null,
       "evidence_source": null
