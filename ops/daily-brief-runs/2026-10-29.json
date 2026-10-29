@@ -4,13 +4,13 @@
   "status": "published_verified",
   "started_at": "2026-10-29T08:00:00+08:00",
   "artifact_state": {
-    "written_draft": true,
+    "written_draft": false,
     "spoken_canonical": true,
     "podcast_verified": true,
     "written_published": true,
     "published_verified": true
   },
-  "updated_at": "2026-10-29T08:45:48+08:00",
+  "updated_at": "2026-10-29T08:46:48+08:00",
   "stress_index": {
     "status": "backfilled_verified",
     "initial_omission": {
@@ -89,7 +89,7 @@
   },
   "current_rework": {
     "reason": "Full same-date editorial and audio rebuild after the initial 644-character / 2:28 script omitted material fresh Microsoft and Alphabet earnings and lacked usual spoken depth.",
-    "status": "podcast_verified_written_sync_pending",
+    "status": "published_verified",
     "started_at": "2026-10-29T08:35:00+08:00",
     "history_preserved": true,
     "dedup_audit": {
@@ -120,7 +120,16 @@
     "podcast_auto_publish_run_id": 40795408788,
     "spoken_handoff_equals_podcast_canonical": true,
     "podcast_feed_commit": "34cf8bf",
-    "podcast_replacement": "published and verified on current main and public RSS",
+    "podcast_replacement": {
+      "result": "published_verified",
+      "workflow_run_id": 40795408788,
+      "guid": "ep070-daily-2026-10-29",
+      "new_version": "v2",
+      "old_media_preserved": true,
+      "rss_main_and_public_match": true,
+      "byte_count_get_verified": 1246221,
+      "actual_duration_seconds": 311.496
+    },
     "podcast_rss": {
       "guid": "ep070-daily-2026-10-29",
       "title": "10.29｜谷歌云收入增 103%；微软 Azure 增 48%；海力士产能签约过半｜压力指数 81",
@@ -131,6 +140,46 @@
     "old_media_preserved": true,
     "new_media_bytes_verified": 1246221,
     "new_media_duration_seconds": 311.496,
-    "public_rss_verified": true
+    "public_rss_verified": true,
+    "canonical_commits": {
+      "daily_brief_written_spoken": "65ebebc7ad8d1377ef1cfdf94938ec953ebd7167",
+      "podcast_episode": "396c32899be482cfdd06a3d261e85320a757cc5d",
+      "podcast_feed": "34cf8bf",
+      "daily_brief_written_publication": "b9c8cdb",
+      "daily_brief_verified_checkpoint": "c1304c0fc29f659bb9378fe9b0205d805c52da7f"
+    },
+    "final_enclosure": {
+      "url": "https://pub-e2d65fa7f70240878f2e556592826485.r2.dev/daily/ep070-daily-2026-10-29-v2.mp3",
+      "length": 1246221,
+      "duration": "00:05:11",
+      "title": "10.29｜谷歌云收入增 103%；微软 Azure 增 48%；海力士产能签约过半｜压力指数 81",
+      "guid": "ep070-daily-2026-10-29"
+    },
+    "audio_mapping": {
+      "file": "_data/audio.json",
+      "date": "2026-10-29",
+      "url": "https://pub-e2d65fa7f70240878f2e556592826485.r2.dev/daily/ep070-daily-2026-10-29-v2.mp3",
+      "exact_rss_match": true
+    },
+    "written_redeploy": {
+      "result": "success",
+      "workflow": "Publish Daily After Podcast",
+      "workflow_run_id": 40796083471,
+      "url": "https://tangkk.github.io/daily_brief/2026/10/29/"
+    },
+    "end_to_end_verification": {
+      "result": "verified",
+      "single_stable_guid": true,
+      "public_rss_matches_main": true,
+      "rss_metadata_matches_media": true,
+      "old_media_still_exists": true,
+      "written_title_matches_podcast": true,
+      "written_content_corrected": true,
+      "live_page_audio_matches_rss": true,
+      "draft_removed_after_publication": true,
+      "podcast_notification_run_id": 40795903849,
+      "daily_brief_notification_run_id": 40796175623,
+      "verified_at": "2026-10-29T08:46:48+08:00"
+    }
   }
 }
