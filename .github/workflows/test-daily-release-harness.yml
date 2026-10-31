@@ -93,8 +93,8 @@ jobs:
 
           - **龙虾压力指数**：50.0（前一交易日 49.0，+1.0），合成测试。
           EOF
-          printf 'Synthetic top story\\n' > "build/release-test/root/handoffs/${DATE}-title.txt"
-          printf '{"market_date":"2098-12-31","index":50.0,"prev_index":49.0,"change":1.0}\\n' > "build/release-test/root/handoffs/${DATE}-stress.json"
+          printf 'Synthetic top story\n' > "build/release-test/root/handoffs/${DATE}-title.txt"
+          printf '{"market_date":"2098-12-31","index":50.0,"prev_index":49.0,"change":1.0}\n' > "build/release-test/root/handoffs/${DATE}-stress.json"
           printf '{}\n' > build/release-test/root/_data/audio.json
           cat > build/release-test/feed-ok.xml <<EOF
           <?xml version="1.0" encoding="UTF-8"?>
