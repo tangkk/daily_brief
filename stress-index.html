@@ -114,6 +114,7 @@ permalink: /stress-index/
     var S = doc.series, comps = doc.components;
     // Display each market close under the next day's Daily Brief edition date.
     function editionDate(marketDate) {
+      if (doc.edition_dates && doc.edition_dates[marketDate]) return doc.edition_dates[marketDate];
       var d = new Date(marketDate + 'T00:00:00Z');
       d.setUTCDate(d.getUTCDate() + 1);
       return d.toISOString().slice(0, 10);
