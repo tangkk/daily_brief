@@ -46,5 +46,22 @@
   },
   "podcast_verified_at": "2026-10-31T08:15:36+08:00",
   "written_published_at": "2026-10-31T08:15:38+08:00",
-  "published_verified_at": "2026-10-31T08:16:00+08:00"
+  "published_verified_at": "2026-10-31T08:16:00+08:00",
+  "rework": {
+    "reason": "Owner requested same-date redo to cover October 30 2026 US equities sharp selloff omitted from original edition",
+    "written_commit": "18354d2238487d89f8ed7931cc8f71671c1ba6b3",
+    "spoken_handoff_commit": "db916eaa1fd631b96d85726a985f74aef7417ad5",
+    "podcast_canonical_commit": "acfc6eb500e0afbb6592f99ca8000c45f5d4596d",
+    "podcast_workflow_run": "https://github.com/tangkk/lobster-daily-podcast/actions/runs/41150652442",
+    "podcast_replacement": "success",
+    "guid": "ep072-daily-2026-10-31",
+    "enclosure_url": "https://pub-e2d65fa7f70240878f2e556592826485.r2.dev/daily/ep072-daily-2026-10-31-v2.mp3",
+    "enclosure_length_bytes": 1090701,
+    "duration": "00:04:33",
+    "audio_mapping_commit": "a4dbebcc8f22c32be1af8ecb97cad3799f5e9cbc",
+    "audio_mapping_verified": true,
+    "written_redeploy_workflow": "https://github.com/tangkk/daily_brief/actions/runs/41150992978",
+    "written_redeploy_result": "success",
+    "final_status": "verified_by_podcast_rss_commit_and_pages_deployment; live HTML content and audio URL not independently fetched"
+  }
 }
