@@ -51,10 +51,12 @@ def validate_editorial_structure(path: pathlib.Path, date: str, root: pathlib.Pa
         numbers = [int(x) for x in re.findall(r"(?m)^### (\d+)\. ", section.group(1))]
         if len(numbers) < 6 or numbers != list(range(1, len(numbers) + 1)):
             raise RuntimeError(f"Top Headlines must have six or more consecutive headings from 1; got {numbers}")
-    # The number must exist and be a single explicit figure; editorial relevance remains a human gate.
-    number_section = re.search(r"(?ms)^## Number of the Day / 今日数字\s*\n(.*?)(?=^## |\Z)", text)
+    # Require the weekday number or Sunday weekly number, without judging editorial relevance.
+    sunday = datetime.date.fromisoformat(date).weekday() == 6
+    number_heading = "本周数字" if sunday else "Number of the Day / 今日数字"
+    number_section = re.search(r"(?ms)^## " + re.escape(number_heading) + r"[ \t]*\n(.*?)(?=^## |\Z)", text)
     if number_section is None or not re.search(r"\*\*[^*]+\*\*", number_section.group(1)):
-        raise RuntimeError("Number of the Day missing or has no highlighted figure")
+        raise RuntimeError(f"{number_heading} missing or has no highlighted figure")
     stress_path = root / "handoffs" / f"{date}-stress.json"
     if stress_path.exists():
         reading = json.loads(stress_path.read_text(encoding="utf-8"))
