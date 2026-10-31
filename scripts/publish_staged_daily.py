@@ -51,7 +51,98 @@ def validate_editorial_structure(path: pathlib.Path, date: str, root: pathlib.Pa
         numbers = [int(x) for x in re.findall(r"(?m)^### (\d+)\. ", section.group(1))]
         if len(numbers) < 6 or numbers != list(range(1, len(numbers) + 1)):
             raise RuntimeError(f"Top Headlines must have six or more consecutive headings from 1; got {numbers}")
-    headline_match = re.search(r'(?m)^headline:\s*"([^"]*)"\s*$', text)
+    # The number must exist and be a single explicit figure; editorial relevance remains a human gate.
+    number_section = re.search(r"(?ms)^## Number of the Day / 今日数字\s*\n(.*?)(?=^## |\Z)", text)
+    if number_section is None or not re.search(r"\*\*[^*]+\*\*", number_section.group(1)):
+        raise RuntimeError("Number of the Day missing or has no highlighted figure")
+    stress_path = root / "handoffs" / f"{date}-stress.json"
+    if stress_path.exists():
+        reading = json.loads(stress_path.read_text(encoding="utf-8"))
+        value = reading.get("index")
+        if not isinstance(value, (int, float)):
+            raise RuntimeError("Stress index reading is invalid")
+        market = re.search(r"(?ms)^## Markets Dashboard\s*\n(.*?)(?=^## |\Z)", text)
+        if market is None or not re.search(r"龙虾压力指数[^\n]*" + re.escape(f"{value:.1f}"), market.group(1)):
+            raise RuntimeError("Markets Dashboard stress reading disagrees with dated stress handoff")
+        if podcast_title and f"压力指数 {int(value + 0.5)}" not in podcast_title:
+            raise RuntimeError("Podcast title pressure-index suffix disagrees with stress handoff")
+    headline_match = re.search(r'(?m)^headline:\s*"([^"]*)"\s*
+    handoff_path = root / "handoffs" / f"{date}-title.txt"
+    if handoff_path.exists():
+        handoff = handoff_path.read_text(encoding="utf-8").strip()
+        if headline_match and headline_match.group(1) != handoff:
+            raise RuntimeError("Written headline and handoff title differ")
+        if podcast_title and handoff not in podcast_title:
+            raise RuntimeError("Podcast RSS title does not contain canonical handoff headline")
+
+
+def sync_title(path: pathlib.Path, title: str):
+    """Give the written post the same title as its podcast episode."""
+    if "｜" not in title or title.startswith("龙虾日报"):
+        return
+    text = path.read_text(encoding="utf-8")
+    line = "title: " + json.dumps(title, ensure_ascii=False)
+    new, n = re.subn(r"(?m)^title:.*$", lambda _: line, text, count=1)
+    if n == 0:
+        new = re.sub(r"(?m)^layout:\s*daily_brief\s*$", lambda m: m.group(0) + "\n" + line, text, count=1)
+    if new != text:
+        path.write_text(new, encoding="utf-8")
+
+
+def main():
+    p = argparse.ArgumentParser()
+    p.add_argument("--date", required=True)
+    p.add_argument("--feed", required=True)
+    p.add_argument("--root", default=".")
+    p.add_argument("--check-only", action="store_true")
+    args = p.parse_args()
+
+    root = pathlib.Path(args.root)
+    feed = pathlib.Path(args.feed)
+    url, length, duration, title = find_episode(feed, args.date)
+
+    draft = root / "_drafts" / f"{args.date}-daily-brief.md"
+    post = root / "_posts" / f"{args.date}-daily-brief.md"
+    target = draft if draft.exists() else post
+    if target.exists():
+        validate_editorial_structure(target, args.date, root, title)
+
+    if args.check_only:
+        print(json.dumps({"url": url, "length": length, "duration": duration}, ensure_ascii=False))
+        return 0
+
+    draft = root / "_drafts" / f"{args.date}-daily-brief.md"
+    post = root / "_posts" / f"{args.date}-daily-brief.md"
+
+    if draft.exists():
+        validate_daily_file(draft)
+        post.parent.mkdir(parents=True, exist_ok=True)
+        shutil.move(str(draft), str(post))
+    elif post.exists():
+        validate_daily_file(post)
+    else:
+        raise RuntimeError(f"written draft/post missing for {args.date}")
+    sync_title(post, title)
+
+    audio_path = root / "_data" / "audio.json"
+    audio = json.loads(audio_path.read_text(encoding="utf-8"))
+    audio[args.date] = url
+    audio_path.write_text(
+        json.dumps(audio, ensure_ascii=False, indent=2, sort_keys=True) + "\n",
+        encoding="utf-8",
+    )
+
+    print(json.dumps({"url": url, "length": length, "duration": duration}, ensure_ascii=False))
+    return 0
+
+
+if __name__ == "__main__":
+    try:
+        raise SystemExit(main())
+    except Exception as exc:
+        print(str(exc), file=sys.stderr)
+        raise SystemExit(2)
+, text)
     handoff_path = root / "handoffs" / f"{date}-title.txt"
     if handoff_path.exists():
         handoff = handoff_path.read_text(encoding="utf-8").strip()
