@@ -45,13 +45,24 @@ def validate_editorial_structure(path: pathlib.Path, date: str, root: pathlib.Pa
     import datetime
     text = validate_daily_file(path)
     if datetime.date.fromisoformat(date).weekday() != 6:
-        section = re.search(r"(?ms)^## Top Headlines\s*$([\s\S]*?)(?=^## |\Z)", text)
+        section = re.search(r"(?ms)^## Top Headlines[ \t]*\n(.*?)(?=^## |\Z)", text)
         if section is None:
             raise RuntimeError("Top Headlines section missing")
         numbers = [int(x) for x in re.findall(r"(?m)^### (\d+)\. ", section.group(1))]
         if len(numbers) < 6 or numbers != list(range(1, len(numbers) + 1)):
-            raise RuntimeError(f"Top Headlines must have at least six sequential headings starting at 1; got {numbers}")
-    headline_match = re.search(r'(?m)^headline:\s*["\']?(.*?)["\']?\s*    """Give the written post the same title as its podcast episode."""
+            raise RuntimeError(f"Top Headlines must have six or more consecutive headings from 1; got {numbers}")
+    headline_match = re.search(r'(?m)^headline:\s*"([^"]*)"\s*$', text)
+    handoff_path = root / "handoffs" / f"{date}-title.txt"
+    if handoff_path.exists():
+        handoff = handoff_path.read_text(encoding="utf-8").strip()
+        if headline_match and headline_match.group(1) != handoff:
+            raise RuntimeError("Written headline and handoff title differ")
+        if podcast_title and handoff not in podcast_title:
+            raise RuntimeError("Podcast RSS title does not contain canonical handoff headline")
+
+
+def sync_title(path: pathlib.Path, title: str):
+    """Give the written post the same title as its podcast episode."""
     if "｜" not in title or title.startswith("龙虾日报"):
         return
     text = path.read_text(encoding="utf-8")
