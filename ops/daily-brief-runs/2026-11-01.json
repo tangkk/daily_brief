@@ -2,7 +2,7 @@
   "date": "2026-11-01",
   "timezone": "Asia/Shanghai",
   "run_type": "weekly_review",
-  "status": "started",
+  "status": "failed",
   "started_at": "2026-11-01T07:00:00+08:00",
   "artifact_state": {
     "weekly_draft": "absent",
@@ -11,6 +11,6 @@
     "public_post": "absent"
   },
   "completed_milestones": [],
-  "failure_stage": null,
-  "failure_detail": null
+  "failure_stage": "research",
+  "failure_detail": "Research pass found inconsistent/low-confidence reporting for the review window; no candidate set met the SOP's verification and primary-source requirements. No dated content artifacts were written; do not dispatch Podcast handoff."
 }
