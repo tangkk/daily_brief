@@ -13,11 +13,11 @@ headline: "纳指跌 2.86%；英特尔股价暴跌；科创 50 跌 5.48%"
 
 ## Top Headlines
 
-### 2. 美股科技股遭遇抛售，纳斯达克指数单日下跌 2.86%
+### 1. 美股科技股遭遇抛售，纳斯达克指数单日下跌 2.86%
 
 十月三十日美股收盘，纳斯达克综合指数下跌 2.86%，为六月五日以来最大单日跌幅；标普 500 指数下跌 1.82%，道琼斯工业平均指数下跌 1.09%。英特尔股价暴跌 28.6%，英伟达下跌 4.2%，AMD 下跌 10.9%，费城半导体相关指数下跌 7.2%。亚马逊和英特尔业绩表现引发投资者重新审视人工智能巨额资本支出的成本与回报。纳斯达克指数较十月六日高点已回落约 7.8%；本次是已实现的市场价格变化，不能单凭行情判断 AI 投资需求已发生同等幅度的萎缩。[路透社十月三十日美股收盘报道](https://www.reuters.com/business/nasdaq-futures-tumble-amazon-intel-results-deepen-ai-spending-woes-2026-10-30/) · [雅虎财经收盘报道](https://finance.yahoo.com/markets/live/stock-market-today-friday-october-30-dow-sp-500-nasdaq-amazon-intel-ai-sell-off-191429143.html)
 
-### 1. 英特尔数据中心业务收入增 78%，下季收入指引低于本季
+### 2. 英特尔数据中心业务收入增 78%，下季收入指引低于本季
 
 英特尔第三季度收入 165 亿美元，同比增长 21%；数据中心与 AI 业务收入 73 亿美元，同比增长 78%，客户端计算业务收入 81 亿美元，同比下降 5%。公司预计第四季度收入 150 亿至 160 亿美元，低于本季，称个人电脑行业的放缓至少持续到明年上半年。服务器需求为公司增长提供支撑，产品结构与产能约束仍影响后续表现。[英特尔财报](https://www.intc.com/news-events/press-releases/detail/1786/intel-reports-third-quarter-2026-financial-results)
 
