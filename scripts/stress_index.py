@@ -138,7 +138,6 @@ def main():
         "updated": dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "series": rows,
     }
-    DATA.write_text(json.dumps(doc, ensure_ascii=False, separators=(",", ":")) + "\n", encoding="utf-8")
     last, prev = rows[-1], rows[-2] if len(rows) > 1 else None
     labels = [l for _, l, *_ in COMPONENTS]
     top = sorted(((c, labels[i]) for i, c in enumerate(last["c"]) if c is not None), reverse=True)[:3]
@@ -146,6 +145,22 @@ def main():
                "prev_date": prev and prev["date"], "prev_index": prev and prev["index"],
                "change": prev and round(last["index"] - prev["index"], 1),
                "top_components": [{"label": l, "percentile": c} for c, l in top]}
+    # Record actual edition-to-market dates. A Sunday/holiday edition may reuse a prior close.
+    edition_dates = {}
+    for item in (ROOT / "handoffs").glob("????-??-??-stress.json"):
+        try:
+            previous = json.loads(item.read_text(encoding="utf-8"))
+            md = previous["market_date"]
+            ed = item.name[:10]
+            if md not in edition_dates or ed > edition_dates[md]:
+                edition_dates[md] = ed
+        except (OSError, KeyError, ValueError, json.JSONDecodeError):
+            continue
+    if edition:
+        md = summary["market_date"]
+        edition_dates[md] = max(edition_dates.get(md, ""), edition.isoformat())
+    doc["edition_dates"] = edition_dates
+    DATA.write_text(json.dumps(doc, ensure_ascii=False, separators=(",", ":")) + "\n", encoding="utf-8")
     print(json.dumps(summary, ensure_ascii=False))
     if edition:
         out = ROOT / "handoffs" / f"{edition.isoformat()}-stress.json"
