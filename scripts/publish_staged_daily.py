@@ -66,7 +66,7 @@ def validate_editorial_structure(path: pathlib.Path, date: str, root: pathlib.Pa
             raise RuntimeError("Markets Dashboard stress reading disagrees with dated stress handoff")
         if podcast_title and f"压力指数 {int(value + 0.5)}" not in podcast_title:
             raise RuntimeError("Podcast title pressure-index suffix disagrees with stress handoff")
-    headline_match = re.search(r'(?m)^headline:\s*"([^"]*)"\s*
+    headline_match = re.search(r'(?m)^headline:\s*"([^"]*)"\s*$', text)
     handoff_path = root / "handoffs" / f"{date}-title.txt"
     if handoff_path.exists():
         handoff = handoff_path.read_text(encoding="utf-8").strip()
