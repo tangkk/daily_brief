@@ -74,10 +74,10 @@ permalink: /stress-index/
         </div>
         <div class="si-chart" id="si-chart"><div class="si-tip" id="si-tip" role="status"></div></div>
         <h2 style="font-size:1.05rem;margin:22px 0 4px">最新各分项 <span class="si-note" id="si-comp-date"></span></h2>
-        <p class="si-note" style="margin:0">每项为压力方向的百分位（0–100），虚线为 50；半导体、沪深 300 与高收益债按价格取反。</p>
+        <p class="si-note" style="margin:0">横轴日期为日报期数，市场数据通常截至前一日。每项为压力方向的百分位（0–100），虚线为 50；半导体、沪深 300 与高收益债按价格取反。</p>
         <ul class="si-bars" id="si-bars"></ul>
-        <h2 style="font-size:1.05rem;margin:22px 0 4px">最近 10 个交易日</h2>
-        <table class="si-table" id="si-table"><thead><tr><th>日期</th><th>指数</th><th>变化</th></tr></thead><tbody></tbody></table>
+        <h2 style="font-size:1.05rem;margin:22px 0 4px">最近 10 期市场数据</h2>
+        <table class="si-table" id="si-table"><thead><tr><th>日报日期</th><th>指数</th><th>变化</th></tr></thead><tbody></tbody></table>
       </section>
 
       <div class="content">
@@ -112,12 +112,18 @@ permalink: /stress-index/
     var el = function (id) { return document.getElementById(id); };
     if (!doc || !doc.series || !doc.series.length) { el('si-value').textContent = '暂无数据'; return; }
     var S = doc.series, comps = doc.components;
+    // Display each market close under the next day's Daily Brief edition date.
+    function editionDate(marketDate) {
+      var d = new Date(marketDate + 'T00:00:00Z');
+      d.setUTCDate(d.getUTCDate() + 1);
+      return d.toISOString().slice(0, 10);
+    }
     var fmtChange = function (d) { return (d > 0 ? '+' : d < 0 ? '−' : '±') + Math.abs(d).toFixed(1); };
     var last = S[S.length - 1], prev = S[S.length - 2];
     el('si-value').textContent = last.index.toFixed(1);
     if (prev) el('si-change').textContent = '较前一交易日 ' + fmtChange(last.index - prev.index);
-    el('si-date').textContent = last.date + ' 收盘';
-    el('si-comp-date').textContent = '（' + last.date + '）';
+    el('si-date').textContent = editionDate(last.date) + ' 日报 · 市场数据截至 ' + last.date;
+    el('si-comp-date').textContent = '（' + editionDate(last.date) + ' 日报，市场数据截至 ' + last.date + '）';
     // component bars, highest stress first
     var rows = comps.map(function (c, i) { return { label: c.label, v: last.c[i] }; })
       .filter(function (r) { return r.v !== null; }).sort(function (a, b) { return b.v - a.v; });
@@ -137,7 +143,7 @@ permalink: /stress-index/
     S.slice(-10).reverse().forEach(function (r, k, arr) {
       var idx = S.indexOf(r), p = S[idx - 1];
       var tr = document.createElement('tr');
-      [r.date, r.index.toFixed(1), p ? fmtChange(r.index - p.index) : ''].forEach(function (t) {
+      [editionDate(r.date), r.index.toFixed(1), p ? fmtChange(r.index - p.index) : ''].forEach(function (t) {
         var td = document.createElement('td'); td.textContent = t; tr.appendChild(td);
       });
       tb.appendChild(tr);
@@ -158,16 +164,16 @@ permalink: /stress-index/
         var t = mk('text', { x: M.l - 6, y: y(g) + 4, 'text-anchor': 'end', 'font-size': 11, fill: 'var(--text-secondary)' });
         t.textContent = g; svg.appendChild(t);
       });
-      // Reserve the right edge for the latest trading date, regardless of sampling interval.
+      // Reserve the right edge for the latest edition date, regardless of sampling interval.
       var step = Math.max(1, Math.floor(data.length / 6));
       for (var i = 0; i < data.length - 1; i += step) {
         // Avoid colliding with the final label; keep roughly one label width clear.
         if (x(data.length - 1) - x(i) < 85) continue;
         var t = mk('text', { x: x(i), y: H - 6, 'text-anchor': 'middle', 'font-size': 11, fill: 'var(--text-secondary)' });
-        t.textContent = data[i].date.slice(0, 7); svg.appendChild(t);
+        t.textContent = editionDate(data[i].date).slice(0, 7); svg.appendChild(t);
       }
       var te = mk('text', { x: x(data.length - 1), y: H - 6, 'text-anchor': 'end', 'font-size': 11, fill: 'var(--text-secondary)' });
-      te.textContent = data[data.length - 1].date.slice(5);
+      te.textContent = editionDate(data[data.length - 1].date).slice(5);
       svg.appendChild(te);
       var d = data.map(function (r, i) { return (i ? 'L' : 'M') + x(i).toFixed(1) + ',' + y(r.index).toFixed(1); }).join('');
       svg.appendChild(mk('path', { d: d, fill: 'none', stroke: 'var(--series-1)', 'stroke-width': 2, 'stroke-linejoin': 'round', 'stroke-linecap': 'round' }));
@@ -183,7 +189,7 @@ permalink: /stress-index/
         hair.setAttribute('x1', x(i)); hair.setAttribute('x2', x(i)); hair.setAttribute('visibility', 'visible');
         dot.setAttribute('cx', x(i)); dot.setAttribute('cy', y(r.index)); dot.setAttribute('visibility', 'visible');
         tip.textContent = ''; var s = document.createElement('strong'); s.textContent = r.index.toFixed(1);
-        var sp = document.createElement('span'); sp.textContent = r.date; tip.appendChild(s); tip.appendChild(sp);
+        var sp = document.createElement('span'); sp.textContent = editionDate(r.date) + ' 日报 · 数据截至 ' + r.date; tip.appendChild(s); tip.appendChild(sp);
         tip.style.display = 'block';
         var px = x(i) / W * box.clientWidth, half = tip.offsetWidth / 2;
         tip.style.left = Math.max(0, Math.min(box.clientWidth - tip.offsetWidth, px - half)) + 'px';
