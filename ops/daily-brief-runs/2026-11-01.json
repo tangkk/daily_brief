@@ -2,15 +2,61 @@
   "date": "2026-11-01",
   "timezone": "Asia/Shanghai",
   "run_type": "weekly_review",
-  "status": "failed",
+  "status": "spoken_committed",
   "started_at": "2026-11-01T07:00:00+08:00",
   "artifact_state": {
-    "weekly_draft": "absent",
-    "spoken_handoff": "absent",
-    "title_handoff": "absent",
+    "weekly_draft": "_drafts/2026-11-01-daily-brief.md",
+    "spoken_handoff": "handoffs/2026-11-01-spoken.txt",
+    "title_handoff": "handoffs/2026-11-01-title.txt",
+    "stress_handoff": "handoffs/2026-11-01-stress.json",
     "public_post": "absent"
   },
-  "completed_milestones": [],
-  "failure_stage": "research",
-  "failure_detail": "Research pass found inconsistent/low-confidence reporting for the review window; no candidate set met the SOP's verification and primary-source requirements. No dated content artifacts were written; do not dispatch Podcast handoff."
+  "completed_milestones": [
+    "started",
+    "research_complete",
+    "written_staged",
+    "spoken_committed"
+  ],
+  "failure_stage": null,
+  "failure_detail": null,
+  "updated_at": "2026-11-01T07:35:00+08:00",
+  "recovery_worker": "v1_hosted_backstop",
+  "research_completed_at": "2026-11-01T07:34:00+08:00",
+  "source_audit": "Broad discovery and verification across primary company filings/releases (Amazon, Alphabet SEC, Microsoft, SK hynix, Intel, Unitree), central banks and statistical agencies (Fed, BEA, BLS, NBS, BOJ), and independent Reuters/AP market coverage. No single reporting lineage determined candidate selection.",
+  "dedup_audit": {
+    "strong_window": "2026-10-25 through 2026-10-31",
+    "history_window": "2026-10-02 through 2026-10-31",
+    "rejected_recurring": [
+      "Anthropic S-1 filing and headline figures already covered on October 25/27; no additional verified weekly phase change",
+      "Meta Q3 cash flow already central to October 25 review; no fresh separate event",
+      "Fed hold and October 30 market close already covered in daily editions; included only in weekly synthesis"
+    ],
+    "admitted_with_information_gain": {
+      "cloud_cash_flow": "Amazon Q3 disclosure of TTM FCF negative $42.4B alongside AWS +39%; Alphabet Q3 FCF negative $9.065B alongside cloud +103%; Microsoft Azure +48% and commercial RPO $677B permit cross-company weekly comparison",
+      "market": "October 30 Nasdaq -2.86% and Intel -28.6% quantify repricing at week end",
+      "china": "October 31 NBS PMI 49.3, new orders 49.4 and production 49.8, released after October 31 edition cutoff"
+    }
+  },
+  "quality_gates": {
+    "major_news_omission_audit": "Checked latest completed US equity session (S&P 500 -1.82%, Nasdaq -2.86%, Dow -1.09%, Intel -28.6%), semiconductor and cloud earnings, Fed, US GDP/ECI, China PMI, BOJ. All consequential verified candidates were considered; Intel and BOJ included as weekly context, not standalone repetitive leads.",
+    "title_story_order": "pass: Amazon FCF leads headline, written overview, Number of the Week, and spoken overview",
+    "sunday_structure": "pass: weekly synthesis, AI credit cycle, week number, concept corner, next-week outlook; Daily headline numbering floor inapplicable",
+    "written_sensitive_terms": "pass: scripts/check_sensitive_terms.py",
+    "spoken_sensitive_terms": "pass: scripts/check_sensitive_terms.py",
+    "spoken_opening": "pass: fixed date identifier and Sunday sentence",
+    "country_name_pass": "pass: ordinary country names in Chinese",
+    "spoken_pronunciation_pass": "pass: no DRAM/SRAM/VRAM/NAND/Qwen tokens need conversion"
+  },
+  "stress_index": {
+    "status": "generated",
+    "market_date": "2026-10-30",
+    "index": 86.1,
+    "prev_date": "2026-10-29",
+    "prev_index": 81.8,
+    "change": 4.3,
+    "previous_friday_date": "2026-10-23",
+    "previous_friday_index": 87.6,
+    "weekly_change": -1.5,
+    "handoff": "handoffs/2026-11-01-stress.json"
+  }
 }
