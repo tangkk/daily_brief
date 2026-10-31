@@ -66,14 +66,28 @@ jobs:
         run: |
           set -euo pipefail
           rm -rf build/release-test
-          mkdir -p build/release-test/root/_drafts build/release-test/root/_posts build/release-test/root/_data
+          mkdir -p build/release-test/root/_drafts build/release-test/root/_posts build/release-test/root/_data build/release-test/root/handoffs
           cat > "build/release-test/root/_drafts/${DATE}-daily-brief.md" <<EOF
           ---
           layout: daily_brief
           title: "${DATE}"
           date: ${DATE} 07:00:00 +0800
+          headline: "Synthetic top story"
           ---
           Synthetic release harness fixture for ${DATE}.
+
+          ## Number of the Day / 今日数字
+
+          **1**：synthetic verified number.
+
+          ## Top Headlines
+
+          ### 1. Synthetic top story
+          ### 2. Synthetic second story
+          ### 3. Synthetic third story
+          ### 4. Synthetic fourth story
+          ### 5. Synthetic fifth story
+          ### 6. Synthetic sixth story
           EOF
           printf '{}\n' > build/release-test/root/_data/audio.json
           cat > build/release-test/feed-ok.xml <<EOF
@@ -81,7 +95,7 @@ jobs:
           <rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
             <channel>
               <item>
-                <title>龙虾日报｜synthetic</title>
+                <title>1.01｜Synthetic top story｜压力指数 50</title>
                 <guid isPermaLink="false">ep999-daily-${DATE}</guid>
                 <enclosure url="https://mock.invalid/daily/ep999-daily-${DATE}.mp3" length="123456" type="audio/mpeg" />
                 <itunes:duration>00:03:21</itunes:duration>
