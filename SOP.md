@@ -169,18 +169,18 @@ Every canonical Daily Brief spoken script must begin with the fixed spoken ident
 
 ### Same-date rework contract
 
-A Daily Brief that is rejected, corrected, or materially regenerated after its first publication must use the same-date rework path end-to-end. Editing canonical text alone is not a completed rework.
+A Daily Brief that is corrected or materially regenerated after its first publication must use the appropriate same-date rework path end-to-end. Audio-content edits require new TTS and media version; title/RSS metadata edits preserve unchanged audio; website-only changes require only written deployment. Editing canonical text alone is not proof of a completed rework.
 
 1. Regenerate/update the same dated canonical written artifact and the same dated canonical spoken script; never create a duplicate date or episode.
-2. Commit the corrected written artifact and corrected spoken handoff to their canonical staging locations in `daily_brief`, then let the GitHub-native handoff ingestion update the Podcast canonical episode. Perform GitHub-main read-back verification before downstream publication.
-3. The spoken-script update must run the Podcast same-date publish path, including spoken safety validation, TTS normalization, TTS regeneration, R2 replacement/versioning, Podcast RSS upsert, and verification of the final enclosure URL, byte length, and duration.
+2. Commit corrected canonical written content and the corresponding dated handoff metadata. Update the spoken handoff and Podcast canonical episode only when the spoken content needs correction; ingestion fails closed on divergent existing episodes, so use the explicit same-date Podcast rework path for changed audio. Perform GitHub-main read-back verification before downstream publication.
+3. When spoken content changes, the spoken-script update must run the Podcast same-date publish path, including spoken safety validation, TTS normalization, TTS regeneration, R2 replacement/versioning, Podcast RSS upsert, and verification of the final enclosure URL, byte length, and duration.
 4. After Podcast RSS reflects the replacement audio, the written repository must re-read the committed Podcast `feed.xml` for that date and update `_data/audio.json` to the **exact current enclosure URL**. Never assume that a same-date retry keeps the previous MP3 URL; versioned objects such as `-v2`, `-v3`, etc. are expected.
 5. Updating the spoken script or Podcast RSS is not sufficient. The written page must be redeployed after the audio mapping changes.
 6. Final rework verification is end-to-end and mandatory: Podcast RSS date/guid → final enclosure URL/length/duration → `daily_brief/_data/audio.json` exact URL equality → deployed written page contains that exact enclosure URL and the corrected written content. A mismatch at any point means the rework is incomplete.
 7. Same-date retries remain idempotent: update the existing dated written post, existing spoken script, existing Podcast item/guid, existing audio mapping key, and existing run-log file. Do not append duplicate episodes or duplicate dated artifacts.
 8. The internal run log at `ops/daily-brief-runs/YYYY-MM-DD.json` must record rework reason, canonical commit SHAs, Podcast replacement result, final RSS enclosure URL/length/duration, audio-mapping refresh, written redeploy result, and final end-to-end verification status.
 9. Failure handling preserves repository boundaries: if TTS/R2/RSS replacement fails, do not point the written page at an unverified audio object; if Podcast replacement succeeds but written mapping/deploy fails, preserve the valid Podcast item and retry only the written synchronization/deploy stage.
-10. A rework is complete only when the corrected written edition and corrected spoken audio are both the versions reachable from the public written Daily Brief page. Canonical handoff alone must never be reported as a completed rework.
+10. A rework is complete only when the corrected written edition and, if audio changed, the corrected spoken audio are both the versions reachable from the public written Daily Brief page. Canonical handoff alone must never be reported as a completed rework.
 
 ### Same-date rework completeness checklist (owner decision 2026-10-31)
 
@@ -340,19 +340,11 @@ AI's impact on employment is a persistent Daily Brief research theme, covering b
 - Do not force this theme into every edition. Persistent trends belong in Persistent World State; publish a headline or analysis only when new evidence materially changes the current assessment.
 - When material, incorporate the evidence into the normal AI/economy coverage and Sunday Weekly Review rather than creating a separate publication stream.
 
-## Watchdog recovery execution contract
+## Manual recovery execution contract
 
-The V1-hosted `daily-brief-watchdog` is a recovery worker, not an observer, and uses the durable-state recovery model defined above. There is no ChatGPT-side Daily Brief Watchdog.
+The user operates a single enabled ChatGPT `Daily Brief Work` task at 07:00 Asia/Shanghai. The separate ChatGPT watchdog tasks and former V1 watchdog are not active recovery workers. The written-site `Reconcile Daily Publication` GitHub workflow is **manual-dispatch only** (`workflow_dispatch`; no `schedule`). The Podcast `Ingest Daily Handoff` GitHub workflow retains its own GitHub-scheduled ingestion fallback at 08:17 Asia/Shanghai Monday–Saturday and 10:17 Sunday; this is an ingestion safeguard, not a second content-generation task. Do not enable or recreate a watchdog or scheduled written Reconcile without explicit owner approval.
 
-- **Schedule boundary:** do not inspect, run, disable, or re-enable ChatGPT recurring tasks from V1. Use same-date checkpoints, canonical artifacts, and GitHub Actions to decide whether recovery is needed.
-- **Concurrency guard:** do not race a healthy main run. Treat the main run as active and exit without publication side effects when a relevant GitHub Actions run is queued/in_progress or same-date durable artifacts/checkpoints have progressed within roughly the previous 15 minutes. Take over only when state is missing, stale, failed, or durable evidence proves recovery is required.
-- If no same-date run log or canonical artifacts exist because the main schedule failed before checkpointing, execute the normal same-date Daily Brief or Weekly Review flow under the current SOPs.
-- If partial durable state exists, resume from the first incomplete milestone rather than repeating completed upstream work.
-- If durable public state is already equivalent to `published_verified`, exit without publication side effects; reconcile a stale run log only when needed.
-- Downstream recovery must use one authoritative side-effect path at a time. Never hand-edit public post/audio mapping while a canonical publish workflow recovery is active.
-- When deciding whether to rerun a failed `Publish Daily After Podcast` run, compare its `head_sha` with current `main`. Rerun only when they match and rerun is the safe idempotent path. If `main` has advanced, the failed run is stale: dispatch the canonical workflow from current `main` for the exact date instead.
-- After recovery, independently verify the durable/public contract: dated public post exists, `_data/audio.json` exactly matches the committed Podcast RSS enclosure for that date, and the live page contains the correct date/title and exact final audio URL. Workflow success alone is insufficient.
-- If recovery still fails, preserve valid upstream artifacts, record `failure_stage` and concise `failure_detail` when possible, and leave all recurring automations enabled.
+For user-initiated recovery in Chat / Work, inspect canonical same-date checkpoints and GitHub Actions before making writes; avoid racing any queued or running release. Resume only incomplete milestones. Preserve one stable date/GUID; compare current `main` with failed workflow `head_sha` before rerunning. If `main` advanced, dispatch the existing canonical workflow on current `main` rather than replaying a stale checkout. Never regenerate audio for a website-only or metadata-only correction. Verify committed Podcast RSS, exact audio mapping, public article and, where affected, stress-index page. Report partial verification honestly.
 
 ## Isolated release test environment
 
@@ -369,14 +361,12 @@ Production workflow changes should be validated through isolated test paths befo
 
 ## Schedule architecture
 
-- Monday–Saturday: normal **Daily Brief at 07:00 Asia/Shanghai**, optimized for breakfast/commute listening before the main China/Hong Kong cash-equity open. Monday is no longer a separate schedule; it uses the same Daily Brief task and the same research/publishing contract as Tuesday–Saturday, while still applying rolling deduplication against the Sunday Weekly Review and prior history.
-- Do **not** routinely repeat a boilerplate sentence stating that China mainland/Hong Kong cash-equity markets have not yet entered normal trading (for example, `北京时间 07:00 前，中国内地和香港主要现金股票市场尚未进入正常交易时段。`). Omit this by default from both written and spoken editions. Mention pre-open/open status only when it is materially necessary to interpret a specific market move, distinguish overnight/indicative data from the current cash session, or prevent a concrete factual ambiguity.
-- Daily V1 recovery: **`daily-brief-watchdog` at 07:30 Asia/Shanghai**. It is an actionable recovery worker for the Monday–Saturday Daily Brief and Sunday Weekly Review: if the same-date run is already `published_verified`, it exits without side effects; otherwise it resumes idempotently from the first incomplete durable milestone, actively reruns/dispatches the canonical GitHub Actions recovery path when a downstream stage has failed, waits for that recovery path, and verifies durable/public artifacts before considering recovery complete. Before rerunning a failed Actions run, compare its `head_sha` with current `main`: rerun only when they still match. If `main` has advanced, treat the run as stale and dispatch the canonical workflow from current `main` for the exact date instead; do not rerun an old checkout that can rebase-conflict with newer `_data/audio.json` or publication state. It does not manage ChatGPT schedules.
-- Monday–Saturday GitHub reconciliation: **Reconcile Daily Publication at 08:00 Asia/Shanghai**. This is a narrow second recovery layer for the Podcast-first downstream boundary. If the same-date staged draft still exists and the committed Podcast RSS item validates, it dispatches the existing `Publish Daily After Podcast` workflow for that exact date. If the post is already public, the draft is absent, or Podcast is not yet verified, it exits without publication side effects.
-- Sunday: the combined **Daily Brief Work** scheduled task runs at **07:00 Asia/Shanghai** and selects the Weekly Review edition, including the integrated AI 信用周期 section in both written and spoken/podcast editions. There is no separate Weekly Review scheduled task.
-- There is no ChatGPT-side Daily Brief Watchdog. The V1 watchdog is active daily at 07:30 and runs separately from Daily Brief Work.
-- Sunday GitHub reconciliation: **Reconcile Daily Publication at 10:00 Asia/Shanghai** applies the same narrow Podcast-verified/still-staged downstream recovery rule to the Sunday edition.
-The combined Daily Brief Work schedule, V1 watchdog, and GitHub reconciliation all respect the same repository boundaries and durable-state/idempotence contracts. Recovery must use one authoritative side-effect path at a time and must never create a separate content edition.
+- The sole ChatGPT content-generation schedule is **Daily Brief Work at 07:00 Asia/Shanghai every day**. It creates Daily Brief Monday–Saturday and Weekly Review Sunday.
+- No ChatGPT or V1 watchdog is enabled. Failed production runs are recovered manually in Chat / Work when requested; do not silently re-enable disabled schedules.
+- Written-site `Reconcile Daily Publication` is manual-only; it has no GitHub cron trigger. Preserve its `workflow_dispatch` for targeted downstream written recovery.
+- Podcast `Ingest Daily Handoff` has a distinct scheduled GitHub fallback at **08:17 Monday–Saturday / 10:17 Sunday Asia/Shanghai**. It only processes existing canonical handoffs, and does not independently research or create a separate edition.
+- Do **not** routinely publish boilerplate about mainland/Hong Kong markets being pre-open merely because the scheduler is at 07:00; mention market-session state only when substantively necessary.
+- Keep all release and recovery paths idempotent; never run competing mutation paths for the same date.
 
 ## Repository boundary
 
