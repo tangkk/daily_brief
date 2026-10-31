@@ -9,7 +9,7 @@ headline: "纳指跌 2.86%；英特尔股价暴跌；科创 50 跌 5.48%"
 
 ## Number of the Day / 今日数字
 
-**78%**：英特尔第三季度数据中心与 AI 业务收入同比增幅，该业务收入为 73 亿美元；同期客户端计算业务收入下降 5%。这组分化显示服务器需求和个人电脑市场处于不同周期。[英特尔财报](https://www.intc.com/news-events/press-releases/detail/1786/intel-reports-third-quarter-2026-financial-results)
+**2.86%**：纳斯达克综合指数在十月三十日的单日跌幅，标普 500 同日下跌 1.82%，半导体板块指数下跌约 7.2%。科技股的集中抛售显示市场正在重新评估 AI 巨额资本支出的回报周期；这是市场价格的变化，尚不能直接推断实际 AI 需求同比例下降。[路透社美股收盘报道](https://www.reuters.com/business/nasdaq-futures-tumble-amazon-intel-results-deepen-ai-spending-woes-2026-10-30/)
 
 ## Top Headlines
 
