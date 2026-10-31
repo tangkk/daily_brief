@@ -20,6 +20,7 @@ on:
           - duplicate-guid
           - mapping-mismatch
           - already-published
+          - invalid-editorial
       date:
         description: Synthetic test date; must not be a real production date
         required: false
@@ -198,13 +199,39 @@ jobs:
             echo "::endgroup::"
           }
 
+          run_invalid_editorial() {
+            echo "::group::invalid-editorial"
+            fresh_fixture
+            sed -i 's/### 3. Synthetic third story/### 8. Synthetic third story/' "build/release-test/work/_drafts/${DATE}-daily-brief.md"
+            if python scripts/publish_staged_daily.py --date "$DATE" --feed build/release-test/feed-ok.xml --root build/release-test/work; then
+              echo "Expected broken headline numbering to block publication"; exit 1
+            fi
+            fresh_fixture
+            sed -i 's/\*\*1\*\*：synthetic verified number./Unselected number./' "build/release-test/work/_drafts/${DATE}-daily-brief.md"
+            if python scripts/publish_staged_daily.py --date "$DATE" --feed build/release-test/feed-ok.xml --root build/release-test/work; then
+              echo "Expected missing Number of the Day to block publication"; exit 1
+            fi
+            fresh_fixture
+            sed -i 's/龙虾压力指数\*\*：50.0/龙虾压力指数**：51.0/' "build/release-test/work/_drafts/${DATE}-daily-brief.md"
+            if python scripts/publish_staged_daily.py --date "$DATE" --feed build/release-test/feed-ok.xml --root build/release-test/work; then
+              echo "Expected stress-index mismatch to block publication"; exit 1
+            fi
+            fresh_fixture
+            sed -i 's/Synthetic top story"/Changed lead story"/' "build/release-test/work/_drafts/${DATE}-daily-brief.md"
+            if python scripts/publish_staged_daily.py --date "$DATE" --feed build/release-test/feed-ok.xml --root build/release-test/work; then
+              echo "Expected headline/title mismatch to block publication"; exit 1
+            fi
+            echo "::endgroup::"
+          }
+
           case "$SCENARIO" in
-            all) run_happy; run_missing; run_duplicate; run_mismatch; run_already ;;
+            all) run_happy; run_missing; run_duplicate; run_mismatch; run_already; run_invalid_editorial ;;
             happy-path) run_happy ;;
             podcast-missing) run_missing ;;
             duplicate-guid) run_duplicate ;;
             mapping-mismatch) run_mismatch ;;
             already-published) run_already ;;
+            invalid-editorial) run_invalid_editorial ;;
             *) echo "Unknown scenario: $SCENARIO"; exit 2 ;;
           esac
 
