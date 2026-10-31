@@ -1,0 +1,16 @@
+{
+  "date": "2026-11-01",
+  "timezone": "Asia/Shanghai",
+  "run_type": "weekly_review",
+  "status": "started",
+  "started_at": "2026-11-01T07:00:00+08:00",
+  "artifact_state": {
+    "weekly_draft": "absent",
+    "spoken_handoff": "absent",
+    "title_handoff": "absent",
+    "public_post": "absent"
+  },
+  "completed_milestones": [],
+  "failure_stage": null,
+  "failure_detail": null
+}
