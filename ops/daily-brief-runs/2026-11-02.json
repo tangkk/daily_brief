@@ -1,0 +1,29 @@
+{
+  "date": "2026-11-02",
+  "edition": "daily",
+  "status": "research_verified_preparing_handoff",
+  "trigger": "manual_chat_fallback",
+  "timezone": "Asia/Shanghai",
+  "research_cutoff": "2026-11-02T07:42:00+08:00",
+  "prior_edition_checked": "2026-11-01",
+  "prior_market_session": "2026-10-30",
+  "market_stress_index": 86.1,
+  "checkpoint": "research",
+  "candidate_pool": [
+    "OpenAI financing target report $20bn",
+    "China overnight reverse repo policy rate 1.25% effective November 2",
+    "Kling AI RMB19.80184bn funding close",
+    "DeepSeek super-agent research prototype",
+    "Hermantown Google data center 500MW approvals",
+    "Intel manufacturing capacity shift"
+  ],
+  "notes": "No 2026-11-02 market-close price exists at morning cutoff. Keep published 2026-10-30 market stress reading; no fresh reading invented. Validate headline, Number of Day, stress, podcast and public page before completion.",
+  "sources": [
+    "https://www.reuters.com/business/openai-cuts-funding-target-by-10-billion-ft-reports-2026-10-31/",
+    "https://finance.eastmoney.com/a/202611013917782138.html",
+    "https://www.reuters.com/business/retail-consumer/kuaishous-kling-ai-unit-completes-near-3-billion-funding-round-2026-10-30/",
+    "https://github.com/deepseek-ai/dsh-superagent-prototype",
+    "https://www.mprnews.org/story/2026/10/31/hermantown-approves-controversial-google-data-center-during-late-night-meeting",
+    "https://stockanalysis.com/stocks/intc/transcripts/714242-q3-2026/"
+  ]
+}
