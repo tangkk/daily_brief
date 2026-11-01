@@ -7,7 +7,7 @@ The repository SOPs are the authoritative source for **what the Daily Brief syst
 - **SOP owns durable behavior:** research scope, source policy, editorial standards, selection/deduplication, Daily/Weekly content contracts, AI Credit Cycle coverage, written/spoken derivation, Podcast-first publication, repository boundaries, checkpoints, recovery, idempotence, rework, and end-to-end verification.
 - **Task prompt owns invocation context:** task identity, current-date/timezone interpretation, the Monday–Saturday Daily Brief / Sunday Weekly Review branch, requirement to read both current SOPs before work, and recurring-automation lifecycle guards.
 - A task prompt must not duplicate durable business/editorial/publication logic merely as a second copy. If a durable rule changes, update the authoritative SOP rather than maintaining divergent copies in task prompts.
-- Normal execution or recovery must not disable, pause, stop, complete, or change the cadence/timezone of the recurring Daily Brief Work. Written Reconcile is manual-only and watchdogs are disabled by owner decision; never re-enable them implicitly. Completion refers to the current dated content run, not the recurring automation itself.
+- Normal execution or recovery must not disable, pause, stop, complete, or change the cadence/timezone of the recurring Daily Brief Work. Written Reconcile is manual-only. The sole V1 watchdog runs at 07:30 Asia/Shanghai; do not change its schedule or enable a ChatGPT watchdog implicitly. Completion refers to the current dated content run, not the recurring automation itself.
 - Manual recovery must use canonical GitHub state; it does not change ChatGPT scheduling or reactivate disabled recovery services.
 
 The site contains two written content streams with different publishing rules.
@@ -343,9 +343,13 @@ AI's impact on employment is a persistent Daily Brief research theme, covering b
 
 ## Manual recovery execution contract
 
-The user operates a single enabled ChatGPT `Daily Brief Work` task at 07:00 Asia/Shanghai. The separate ChatGPT watchdog tasks and former V1 watchdog are not active recovery workers. The written-site `Reconcile Daily Publication` GitHub workflow is **manual-dispatch only** (`workflow_dispatch`; no `schedule`). The Podcast `Ingest Daily Handoff` GitHub workflow retains its own GitHub-scheduled ingestion fallback at 08:17 Asia/Shanghai Monday–Saturday and 10:17 Sunday; this is an ingestion safeguard, not a second content-generation task. Do not enable or recreate a watchdog or scheduled written Reconcile without explicit owner approval.
+The user operates a single enabled ChatGPT `Daily Brief Work` task at 07:00 Asia/Shanghai. The sole V1 `daily-brief-watchdog` runs at 07:30 as a recovery worker. There is no ChatGPT-side watchdog. The written-site `Reconcile Daily Publication` GitHub workflow is **manual-dispatch only** (`workflow_dispatch`; no `schedule`). The Podcast `Ingest Daily Handoff` GitHub workflow retains its own GitHub-scheduled ingestion fallback at 08:17 Asia/Shanghai Monday–Saturday and 10:17 Sunday; this is an ingestion safeguard, not a second content-generation task. Do not create another watchdog or scheduled written Reconcile implicitly.
 
 For user-initiated recovery in Chat / Work, inspect canonical same-date checkpoints and GitHub Actions before making writes; avoid racing any queued or running release. Resume only incomplete milestones. Preserve one stable date/GUID; compare current `main` with failed workflow `head_sha` before rerunning. If `main` advanced, dispatch the existing canonical workflow on current `main` rather than replaying a stale checkout. Never regenerate audio for a website-only or metadata-only correction. Verify committed Podcast RSS, exact audio mapping, public article and, where affected, stress-index page. Report partial verification honestly.
+
+### Watchdog recovery execution contract
+
+The V1 watchdog is a recovery worker, not an observer. At 07:30, read the same-date run-state from current GitHub `main` and inspect active GitHub Actions and recent checkpoint progress before making writes. If publication is already verified or the primary run is still progressing, exit without mutation. Otherwise resume from the first incomplete durable milestone using the same canonical written and Podcast handoff paths. Do not generate a second edition, overwrite an existing same-date spoken handoff, or race an active workflow. Follow the same failed-workflow SHA rule and end-to-end verification requirements above. A Codex quota or billing failure may hand off to OpenCode with DeepSeek V4 Pro only when the V1 wrapper confirms that both repository heads and the same-date checkpoint have not changed. The provider does not change this SOP or grant broader write authority.
 
 ## Isolated release test environment
 
@@ -363,7 +367,7 @@ Production workflow changes should be validated through isolated test paths befo
 ## Schedule architecture
 
 - The sole ChatGPT content-generation schedule is **Daily Brief Work at 07:00 Asia/Shanghai every day**. It creates Daily Brief Monday–Saturday and Weekly Review Sunday.
-- No ChatGPT or V1 watchdog is enabled. Failed production runs are recovered manually in Chat / Work when requested; do not silently re-enable disabled schedules.
+- The sole V1 watchdog runs at 07:30 Asia/Shanghai as a recovery backstop. No ChatGPT-side watchdog is enabled. Do not create additional schedules.
 - Written-site `Reconcile Daily Publication` is manual-only; it has no GitHub cron trigger. Preserve its `workflow_dispatch` for targeted downstream written recovery.
 - Podcast `Ingest Daily Handoff` has a distinct scheduled GitHub fallback at **08:17 Monday–Saturday / 10:17 Sunday Asia/Shanghai**. It only processes existing canonical handoffs, and does not independently research or create a separate edition.
 - Do **not** routinely publish boilerplate about mainland/Hong Kong markets being pre-open merely because the scheduler is at 07:00; mention market-session state only when substantively necessary.
@@ -385,6 +389,6 @@ Normal Daily Brief / Weekly Review production must minimize ChatGPT connector wr
 5. The Podcast repository ingests the exact handoff, allocates/reuses the canonical same-date episode path idempotently, commits it with GitHub Actions, and explicitly dispatches the existing `Auto Publish Daily` TTS/R2/RSS chain. Do not rely on a `GITHUB_TOKEN`-authored push to recursively trigger another workflow.
 6. GitHub-native scheduled reconciliation in the Podcast repository independently checks for a same-date handoff. This is the recovery path if the event-driven cross-repository dispatch is missed or temporarily unavailable.
 7. After Podcast verification, the existing written publication/reconciliation path remains authoritative for promotion to `_posts/`, exact audio mapping, Pages deployment, and live verification.
-8. There is no active V1 watchdog. Owner-requested manual recovery inspects durable state and GitHub-native workflow outcomes first; it must not default to recreating the old direct ChatGPT-to-Podcast spoken commit path.
+8. V1 watchdog and owner-requested manual recovery inspect durable state and GitHub-native workflow outcomes first; neither defaults to recreating the old direct ChatGPT-to-Podcast spoken commit path.
 9. Direct ChatGPT writes to `tangkk/lobster-daily-podcast` remain valid for explicit Podcast maintenance, workflow/SOP/TTS/pronunciation changes, or an explicitly requested exceptional repair. They are not part of normal Daily Brief publication.
 10. Same-date idempotence and rework rules remain unchanged. A differing already-ingested same-date spoken script must fail closed and use the explicit same-date rework contract rather than silently overwrite canonical Podcast source.
