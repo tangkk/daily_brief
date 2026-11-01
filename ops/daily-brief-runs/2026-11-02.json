@@ -1,14 +1,14 @@
 {
   "date": "2026-11-02",
   "edition": "daily",
-  "status": "research_verified_preparing_handoff",
+  "status": "canonical_written_title_stress_ready",
   "trigger": "manual_chat_fallback",
   "timezone": "Asia/Shanghai",
   "research_cutoff": "2026-11-02T07:42:00+08:00",
   "prior_edition_checked": "2026-11-01",
   "prior_market_session": "2026-10-30",
   "market_stress_index": 86.1,
-  "checkpoint": "research",
+  "checkpoint": "spoken_handoff_pending",
   "candidate_pool": [
     "OpenAI financing target report $20bn",
     "China overnight reverse repo policy rate 1.25% effective November 2",
@@ -25,5 +25,14 @@
     "https://github.com/deepseek-ai/dsh-superagent-prototype",
     "https://www.mprnews.org/story/2026/10/31/hermantown-approves-controversial-google-data-center-during-late-night-meeting",
     "https://stockanalysis.com/stocks/intc/transcripts/714242-q3-2026/"
-  ]
+  ],
+  "written_staged": true,
+  "title_handoff_ready": true,
+  "stress_handoff_ready": true,
+  "stress_market_date": "2026-10-30",
+  "rework": false,
+  "headline_count": 6,
+  "number_of_day": "200 亿美元",
+  "sensitive_terms_audit": "manual_pre_handoff",
+  "market_data_note": "2026-11-02 morning: last complete US session 2026-10-30"
 }
