@@ -2,15 +2,67 @@
   "date": "2026-11-03",
   "edition": "daily",
   "run_type": "daily_brief",
-  "status": "started",
+  "status": "written_staged",
   "timezone": "Asia/Shanghai",
   "started_at": "2026-11-03T07:01:20+08:00",
-  "updated_at": "2026-11-03T07:01:20+08:00",
+  "updated_at": "2026-11-03T07:06:07+08:00",
   "artifact_state": {
-    "written_draft": false,
+    "written_draft": true,
     "spoken_canonical": false,
     "podcast_verified": false,
     "written_published": false,
     "published_verified": false
-  }
+  },
+  "research_complete_at": "2026-11-03T07:06:07+08:00",
+  "written_staged_at": "2026-11-03T07:06:07+08:00",
+  "research_cutoff": "2026-11-03T07:06:07+08:00",
+  "prior_edition_checked": "2026-11-02",
+  "history_window_checked": "2026-10-04 through 2026-11-02; prior 7 editions read at headline and thesis level",
+  "prior_market_session": "2026-11-02",
+  "market_stress_index": 85.4,
+  "stress_market_date": "2026-11-02",
+  "headline_count": 7,
+  "number_of_day": "1150 亿美元",
+  "title_handoff_ready": true,
+  "stress_handoff_ready": true,
+  "quality_gates": {
+    "major_news_omission_audit": "passed: November 2 completed US equity session, Apple and Palantir after-close earnings, Marvell-Lumentum deal, China market-support decision, oil, ISM and A-share close reviewed",
+    "title_story_order": "passed: Marvell-Lumentum agreement leads title, summary and Top Headlines",
+    "headline_numbering": "passed: seven consecutive numbered distinct headlines",
+    "sensitive_terms": "passed written and spoken deterministic check",
+    "source_diversity": "passed: AP/Axios global reporting, ISM/SEC/company primary documents, PBOC and CSRC releases via readable Chinese republications, Chinese local market reporting",
+    "deduplication": "passed: prior 7-day event and thesis audit; prior selloff not repeated as a generic thesis; November 2 split market breadth is new evidence"
+  },
+  "deduplication_audit": {
+    "material_recurring_candidates_rejected": [
+      "OpenAI financing target from November 2",
+      "DeepSeek super-agent prototype from November 2",
+      "Hermantown Google data center approval from November 2",
+      "October 30 Nasdaq 2.86% drop already covered"
+    ],
+    "recurring_candidates_admitted": [
+      "November 2 US tech index decline with nearly 70% of S&P 500 components rising; new breadth divergence",
+      "November 2 China market support decision at 1% rate; distinct from prior overnight reverse repo operating rule"
+    ]
+  },
+  "candidate_pool": [
+    "Marvell-Lumentum definitive $115B deal",
+    "Palantir Q3 revenue and US commercial cash evidence",
+    "Apple Q4 revenue and China growth",
+    "China stock buyback relending rate and permanent arrangement",
+    "Brent 7.6% decline",
+    "US ISM October manufacturing 55.5",
+    "November 2 Nasdaq -1.1% with broad market breadth",
+    "November 2 A-share rebound +3.11% STAR 50 (dashboard)",
+    "Lumentum $5B optical purchase commitment (dashboard)"
+  ],
+  "access_limitations": "Official Apple release not surfaced at cutoff; AP full-text and Axios checked. Reuters oil report read via Euronext syndication; AP closing price used. PBOC announcement and CSRC answer read via full-text Chinese republications.",
+  "sources": [
+    "https://investor.lumentum.com/financial-news-releases/news-details/2026/Marvell-and-Lumentum-to-Combine-Creating-a-Category-Leader-in-AI-Connectivity/default.aspx",
+    "https://investors.palantir.com/files/Palantir%20-%20Q3%202026%20Business%20Update.pdf",
+    "https://apnews.com/article/apple-earnings-profit-iphone-9698be9e0226091a537611382144eb44",
+    "https://finance.eastmoney.com/a/202611023918925478.html",
+    "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/pmi/october/",
+    "https://apnews.com/article/stocks-markets-ai-earnings-oil-iran-048328e49e47ce7afe6c1fb9d9acf13d"
+  ]
 }

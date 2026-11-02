@@ -352,6 +352,18 @@
       "kind": "company reported actual",
       "previous": null,
       "source_url": "https://news.samsung.com/global/samsung-electronics-announces-third-quarter-2026-results"
+    },
+    {
+      "indicator": "Lumentum quarterly revenue (optical networking proxy)",
+      "value": 1.26,
+      "unit": "USD billion",
+      "as_of": "FQ1 2027 (ended 2026-09-26)",
+      "kind": "company reported actual",
+      "previous": {
+        "value": 0.5338,
+        "as_of": "FQ1 2026"
+      },
+      "source_url": "https://investor.lumentum.com/financial-news-releases/news-details/2026/Lumentum-Announces-First-Quarter-of-Fiscal-Year-2027-Financial-Results/default.aspx"
     }
   ]
 }
