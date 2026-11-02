@@ -1,6 +1,6 @@
 ---
 layout: daily_brief
-title: "2026-11-03"
+title: "11.03｜Marvell 1150 亿美元收购 Lumentum；Palantir 营收增 96%；苹果营收 1145 亿｜压力指数 85"
 date: 2026-11-03 07:00:00 +0800
 headline: "Marvell 1150 亿美元收购 Lumentum；Palantir 营收增 96%；苹果营收 1145 亿"
 ---
