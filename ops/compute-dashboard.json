@@ -364,6 +364,39 @@
         "as_of": "FQ1 2026"
       },
       "source_url": "https://investor.lumentum.com/financial-news-releases/news-details/2026/Lumentum-Announces-First-Quarter-of-Fiscal-Year-2027-Financial-Results/default.aspx"
+    },
+    {
+      "indicator": "AMD quarterly Data Center segment revenue",
+      "value": 8.546,
+      "unit": "USD billion",
+      "as_of": "2026-Q3 (published 2026-11-03)",
+      "kind": "company results, segment includes CPUs and AI accelerators",
+      "previous": {
+        "value": 6.718,
+        "as_of": "2026-Q2"
+      },
+      "source_url": "https://de.advfn.com/borse/NASDAQ/AMD/nachrichten/99623374/form-8-k-current-report"
+    },
+    {
+      "indicator": "Arista quarterly total revenue (networking proxy)",
+      "value": 3.66,
+      "unit": "USD billion",
+      "as_of": "2026-Q3 (published 2026-11-03)",
+      "kind": "company results, not AI-only revenue",
+      "previous": {
+        "value": 3.037,
+        "as_of": "2026-Q2, calculated from 20.5% sequential growth"
+      },
+      "source_url": "https://www.arista.com/en/company/news/press-release/25025-pr-20261103"
+    },
+    {
+      "indicator": "Eaton data center sales growth",
+      "value": 65,
+      "unit": "percent year over year",
+      "as_of": "2026-Q3 (published 2026-11-03)",
+      "kind": "company-reported growth, no absolute segment value given",
+      "previous": null,
+      "source_url": "https://earningscalls.dev/transcripts/eaton-corporation-plc_etn_earnings_call_transcript_2026-11-03"
     }
   ]
 }

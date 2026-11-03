@@ -2,15 +2,71 @@
   "date": "2026-11-04",
   "edition": "daily",
   "run_type": "daily_brief",
-  "status": "started",
+  "status": "written_staged",
   "timezone": "Asia/Shanghai",
   "started_at": "2026-11-04T07:01:38+08:00",
-  "updated_at": "2026-11-04T07:01:38+08:00",
+  "updated_at": "2026-11-04T07:07:19+08:00",
   "artifact_state": {
-    "written_draft": false,
+    "written_draft": true,
     "spoken_canonical": false,
     "podcast_verified": false,
     "written_published": false,
     "published_verified": false
-  }
+  },
+  "research_complete_at": "2026-11-04T07:07:19+08:00",
+  "written_staged_at": "2026-11-04T07:07:19+08:00",
+  "research_cutoff": "2026-11-04T07:07:19+08:00",
+  "prior_edition_checked": "2026-11-03",
+  "history_window_checked": "2026-10-05 through 2026-11-03; seven most recent editions checked at event and thesis level",
+  "prior_market_session": "2026-11-03",
+  "market_stress_index": 85.0,
+  "stress_market_date": "2026-11-03",
+  "headline_count": 7,
+  "spoken_han_count": 1935,
+  "number_of_day": "85.46 亿美元",
+  "title_handoff_ready": true,
+  "stress_handoff_ready": true,
+  "quality_gates": {
+    "major_news_omission_audit": "passed: completed November 3 US index session, AMD and Arista after-close results, Eaton, Apple margin guidance, RBA, JOLTS, China AI hardware selloff and oil checked",
+    "title_story_order": "passed: AMD data center earnings leads title, opening and Top Headlines",
+    "headline_numbering": "passed: seven consecutive numbered distinct headlines",
+    "sensitive_terms": "passed written and spoken deterministic check",
+    "spoken_length": "passed: 1935 Han characters, floor 1300",
+    "source_diversity": "passed: issuer filings/releases, BLS and RBA primary, AP global reporting, Chinese local market reporting",
+    "deduplication": "passed: prior seven-day event/thesis audit; Apple margin guidance admitted as new forward cost evidence; November 3 hardware selloff and new company earnings distinct"
+  },
+  "deduplication_audit": {
+    "material_recurring_candidates_rejected": [
+      "November 2 Marvell-Lumentum agreement",
+      "November 2 Palantir commercial revenue",
+      "November 2 China buyback-loan policy",
+      "November 2 Brent oil decline as a standalone story"
+    ],
+    "recurring_candidates_admitted": [
+      "Apple December-quarter 45%-46% margin forecast: new forward cost evidence after November 3 revenue coverage",
+      "November 3 China AI hardware selloff: verified reversal of prior session rebound"
+    ]
+  },
+  "candidate_pool": [
+    "AMD Q3 data center revenue",
+    "Arista Q3 networking sales",
+    "Eaton Q3 data center sales/orders",
+    "Apple holiday-quarter margin guidance",
+    "RBA rate decision",
+    "US JOLTS September",
+    "China AI hardware equity selloff",
+    "US November 3 market breadth",
+    "Brent November 3 close",
+    "Booking Holdings Q3 release not accessible at cutoff"
+  ],
+  "access_limitations": "AMD issuer 8-K read via ADVFN full-text copy; Eaton issuer 8-K via StockTitan full-text copy and earnings-call transcript; AP market report via full news result. Booking Q3 release not accessible at cutoff and omitted.",
+  "sources": [
+    "https://de.advfn.com/borse/NASDAQ/AMD/nachrichten/99623374/form-8-k-current-report",
+    "https://www.arista.com/en/company/news/press-release/25025-pr-20261103",
+    "https://www.stocktitan.net/sec-filings/ETN/8-k-eaton-corp-plc-reports-material-event-0c831a445477.html",
+    "https://www.rba.gov.au/media-releases/2026/mr-26-30.html",
+    "https://www.bls.gov/news.release/jolts.htm",
+    "https://apnews.com/article/0d235af127a92c68da0cc2c45c028cef",
+    "https://finance.sina.com.cn/jjxw/2026-11-03/doc-inixmxcy2254012.shtml"
+  ]
 }
