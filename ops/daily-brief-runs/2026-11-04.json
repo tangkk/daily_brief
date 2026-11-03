@@ -2,15 +2,15 @@
   "date": "2026-11-04",
   "edition": "daily",
   "run_type": "daily_brief",
-  "status": "podcast_verified",
+  "status": "written_published",
   "timezone": "Asia/Shanghai",
   "started_at": "2026-11-04T07:01:38+08:00",
-  "updated_at": "2026-11-04T07:14:17+08:00",
+  "updated_at": "2026-11-04T07:14:19+08:00",
   "artifact_state": {
     "written_draft": true,
     "spoken_canonical": true,
     "podcast_verified": true,
-    "written_published": false,
+    "written_published": true,
     "published_verified": false
   },
   "research_complete_at": "2026-11-04T07:07:19+08:00",
@@ -69,5 +69,6 @@
     "https://apnews.com/article/0d235af127a92c68da0cc2c45c028cef",
     "https://finance.sina.com.cn/jjxw/2026-11-03/doc-inixmxcy2254012.shtml"
   ],
-  "podcast_verified_at": "2026-11-04T07:14:17+08:00"
+  "podcast_verified_at": "2026-11-04T07:14:17+08:00",
+  "written_published_at": "2026-11-04T07:14:19+08:00"
 }
