@@ -2,15 +2,72 @@
   "date": "2026-11-05",
   "edition": "daily",
   "run_type": "daily_brief",
-  "status": "started",
+  "status": "spoken_committed",
   "timezone": "Asia/Shanghai",
   "started_at": "2026-11-05T07:01:30+08:00",
-  "updated_at": "2026-11-05T07:01:30+08:00",
+  "updated_at": "2026-11-05T07:05:21+08:00",
   "artifact_state": {
-    "written_draft": false,
-    "spoken_canonical": false,
+    "written_draft": true,
+    "spoken_canonical": true,
     "podcast_verified": false,
     "written_published": false,
     "published_verified": false
-  }
+  },
+  "research_complete_at": "2026-11-05T07:05:21+08:00",
+  "written_staged_at": "2026-11-05T07:05:21+08:00",
+  "research_cutoff": "2026-11-05T07:05:21+08:00",
+  "prior_edition_checked": "2026-11-04",
+  "history_window_checked": "2026-10-06 through 2026-11-04; prior seven editions checked at event and thesis level",
+  "prior_market_session": "2026-11-04",
+  "market_stress_index": 75.6,
+  "stress_market_date": "2026-11-04",
+  "headline_count": 7,
+  "spoken_han_count": 1989,
+  "number_of_day": "每桶 94.62 美元",
+  "title_handoff_ready": true,
+  "stress_handoff_ready": true,
+  "quality_gates": {
+    "major_news_omission_audit": "passed: November 4 US equity close, AI infrastructure share declines, 8.7% Brent drop, China semiconductor rally, Arm and Coherent after-close results, ADP and BEA data checked; election and military narratives excluded from spoken copy",
+    "title_story_order": "passed: Brent drop leads title, opening summary and Top Headlines",
+    "headline_numbering": "passed: seven consecutive distinct numbered headlines",
+    "sensitive_terms": "passed written and spoken deterministic check",
+    "spoken_length": "passed: 1989 Han characters, floor 1300",
+    "source_diversity": "passed: primary Arm, Coherent, ADP and BEA releases; AP global reporting; Chinese local market reporting from 中新社 and 东方财富",
+    "deduplication": "passed: prior 7-day event/thesis audit; oil price move, China rebound and US market split admitted as new verified market states; company earnings and economic releases are new events"
+  },
+  "deduplication_audit": {
+    "material_recurring_candidates_rejected": [
+      "November 3 AMD, Arista and Eaton results already covered on November 4",
+      "November 3 Apple margin guidance already covered on November 4",
+      "November 2 Palantir earnings already covered on November 3",
+      "November 2 China buyback loan policy already covered on November 3"
+    ],
+    "recurring_candidates_admitted": [
+      "Brent November 4 price down 8.7% to $94.62: new material price state after November 3 $103.60 close",
+      "China STAR50 up 9.92% on November 4: verified reversal with higher turnover after November 3 hardware selloff",
+      "US November 4 broad index rally but Nvidia/CoreWeave decline: new cross-sectional market split"
+    ]
+  },
+  "candidate_pool": [
+    "Brent November 4 drop and Treasury repricing",
+    "China STAR50 and semiconductor rebound",
+    "Coherent fiscal Q1 optical revenue",
+    "Arm fiscal Q2 licensing and data-center royalties",
+    "US November 4 broad equity and AI-infrastructure split",
+    "ADP October payrolls and sector mix",
+    "BEA September trade and computer imports",
+    "ISM October services survey; primary full release not verified at cutoff",
+    "Stanford early Alzheimer biomarker study; preliminary research and below headline significance"
+  ],
+  "access_limitations": "Primary ISM October services release not located at cutoff; no material ISM figures used. Arm shareholder letter and Coherent filing read directly.",
+  "sources": [
+    "https://apnews.com/article/stock-markets-ai-earnings-oil-4d12764c0b3ce38ffde3077712811182",
+    "https://www.chinanews.com/cj/2026/11-04/10726146.shtml",
+    "https://fund.eastmoney.com/a/202611043921903739.html",
+    "https://ir.coherent.com/news-releases/news-release-details/coherent-corp-reports-first-quarter-fiscal-2027-results",
+    "https://ir.coherent.com/static-files/ac89d171-b7b9-4d92-b1a6-2d3c15e21f34",
+    "https://investors.arm.com/static-files/0b5baa2e-fc47-4d05-b724-e49de7bd4356",
+    "https://mediacenter.adp.com/2026-11-04-ADP-National-Employment-Report-Private-Sector-Employment-Increased-by-86,000-Jobs-in-October",
+    "https://bea.gov/index.php/news/2026/us-international-trade-goods-and-services-september-2026"
+  ]
 }
