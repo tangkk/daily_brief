@@ -20,9 +20,9 @@
       "indicator": "Samsung Electronics Q3 2026 consolidated operating profit (K-IFRS), final results",
       "threshold_direction": ">= KRW 107 trillion",
       "window_end": "2026-10-31",
-      "status": "open",
-      "resolved_on": null,
-      "evidence_source": null
+      "status": "成立",
+      "resolved_on": "2026-11-06",
+      "evidence_source": "https://news.samsung.com/global/samsung-electronics-announces-third-quarter-2026-results"
     },
     {
       "id": "2026-10-09-01",
@@ -80,9 +80,9 @@
       "indicator": "AAA US national average regular gasoline price",
       "threshold_direction": ">= USD 4.00/gal every day through window end",
       "window_end": "2026-10-31",
-      "status": "open",
-      "resolved_on": null,
-      "evidence_source": null
+      "status": "仍待验证",
+      "resolved_on": "2026-11-06",
+      "evidence_source": "完整逐日 AAA 汽油均价序列尚未核对；https://gasprices.aaa.com/2026/10/"
     },
     {
       "id": "2026-10-15-01",
@@ -92,9 +92,9 @@
       "indicator": "PHLX Semiconductor Index (SOX) daily close",
       "threshold_direction": "every close < 12,200 through window end",
       "window_end": "2026-10-31",
-      "status": "open",
-      "resolved_on": null,
-      "evidence_source": null
+      "status": "仍待验证",
+      "resolved_on": "2026-11-06",
+      "evidence_source": "完整逐日 SOX 收盘序列尚未核对；https://indexes.nasdaq.com/Index/Overview/SOX"
     },
     {
       "id": "2026-10-16-01",
@@ -116,9 +116,9 @@
       "indicator": "ICE Brent front-month futures daily settlement",
       "threshold_direction": "every close > USD 100/bbl through window end",
       "window_end": "2026-10-30",
-      "status": "open",
-      "resolved_on": null,
-      "evidence_source": null
+      "status": "仍待验证",
+      "resolved_on": "2026-11-06",
+      "evidence_source": "完整逐日 ICE 布伦特结算序列尚未核对；https://www.ice.com/products/219/Brent-Crude-Futures"
     },
     {
       "id": "2026-10-19-01",
@@ -176,9 +176,9 @@
       "indicator": "Amazon FY2026 capex guidance/estimate in Q3 2026 earnings (expected 10-29)",
       "threshold_direction": ">= USD 200B",
       "window_end": "2026-10-30",
-      "status": "open",
-      "resolved_on": null,
-      "evidence_source": null
+      "status": "成立",
+      "resolved_on": "2026-11-06",
+      "evidence_source": "https://ir.aboutamazon.com/files/doc_earnings/2026/q3/earnings-result/AMZN-Q3-2026-Earnings-Release.pdf"
     },
     {
       "id": "2026-10-27-01",
@@ -188,9 +188,9 @@
       "indicator": "Alphabet FY2026 capex guidance in Q3 2026 earnings (expected 10-28)",
       "threshold_direction": "guidance raised above USD 180-190B range",
       "window_end": "2026-10-30",
-      "status": "open",
-      "resolved_on": null,
-      "evidence_source": null
+      "status": "成立",
+      "resolved_on": "2026-11-06",
+      "evidence_source": "https://abc.xyz/investor/events/event-details/2026/2026-Q3-Earnings-Call-2026-Ujou16CTw9/default.aspx"
     },
     {
       "id": "2026-10-28-01",

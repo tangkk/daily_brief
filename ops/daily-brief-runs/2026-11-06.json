@@ -2,15 +2,71 @@
   "date": "2026-11-06",
   "edition": "daily",
   "run_type": "daily_brief",
-  "status": "started",
+  "status": "written_staged",
   "timezone": "Asia/Shanghai",
   "started_at": "2026-11-06T07:01:31+08:00",
-  "updated_at": "2026-11-06T07:01:31+08:00",
+  "updated_at": "2026-11-06T07:06:27+08:00",
   "artifact_state": {
-    "written_draft": false,
-    "spoken_canonical": false,
+    "written_draft": true,
+    "spoken_canonical": true,
     "podcast_verified": false,
     "written_published": false,
     "published_verified": false
-  }
+  },
+  "research_complete_at": "2026-11-06T07:06:27+08:00",
+  "written_staged_at": "2026-11-06T07:06:27+08:00",
+  "research_cutoff": "2026-11-06T07:06:27+08:00",
+  "history_window_checked": "2026-10-07 through 2026-11-05; prior seven canonical editions checked at event and thesis level",
+  "prior_edition_checked": "2026-11-05",
+  "prior_market_session": "2026-11-05",
+  "market_stress_index": 84.2,
+  "stress_market_date": "2026-11-05",
+  "headline_count": 6,
+  "spoken_han_count": 1406,
+  "number_of_day": "标普 500 单日跌 4.4%",
+  "title_handoff_ready": true,
+  "stress_handoff_ready": true,
+  "quality_gates": {
+    "major_news_omission_audit": "passed: November 5 US equity close, Nvidia/AMD/CoreWeave and Korean memory selloff, Bank of England rate decision, US productivity, weekly claims, AppLovin results and China model releases checked; Korean market incorporated in lead, China A-share continuation kept in dashboard",
+    "title_story_order": "passed: US market selloff leads title, opening summary and Top Headlines",
+    "headline_numbering": "passed: six distinct consecutive numbered headlines",
+    "sensitive_terms": "passed written and spoken deterministic checks",
+    "spoken_length": "passed: weekday hard floor 1200 Han; target range met",
+    "source_diversity": "passed: AP global markets, Korean Aju regional reporting, Bank of England/BLS/DOL official releases, AppLovin filing, Moonshot model files; no single-source discovery gatekeeper",
+    "deduplication": "passed: prior 7-day event/thesis audit; US/Korea market reversal admitted as new verified price state; other selected events are new decisions, releases or completed model-weight availability"
+  },
+  "deduplication_audit": {
+    "material_recurring_candidates_rejected": [
+      "November 4 Brent fall already covered November 5; no new verified oil settlement at cutoff",
+      "November 4 China technology rebound already covered November 5; November 5 moderate gains kept in dashboard",
+      "November 4 Arm and Coherent results already covered November 5"
+    ],
+    "recurring_candidates_admitted": [
+      "November 5 US equity and AI hardware selloff: S&P 500 -4.4%, Nasdaq -5.5%, Nvidia -9.3%, reversing prior-day rally; verified material market-state change"
+    ]
+  },
+  "candidate_pool": [
+    "US November 5 broad/AI selloff",
+    "Korean KOSPI and memory-stock decline",
+    "Bank of England rate increase",
+    "US Q3 productivity and labor share",
+    "AppLovin Q3 realized revenue and free cash flow",
+    "Moonshot Kimi K3.1 Pro downloadable weights",
+    "US weekly initial and continuing claims",
+    "Tencent Hy4 official edition; full primary release not established at cutoff",
+    "China November 5 A-share continuation; limited incremental significance",
+    "NIH preclinical nanoparticle study; below headline significance"
+  ],
+  "access_limitations": "Tencent Hy4 full official primary release and independently verified performance not established by cutoff; excluded. Kimi weight availability verified directly from model repository; developer benchmarks treated as claims.",
+  "sources": [
+    "https://apnews.com/article/stocks-markets-ai-midterm-oil-trump-7ee9c212805aa5e70cf34d25aab7a36e",
+    "https://apnews.com/article/wall-street-stocks-dow-nasdaq-afe254c608c3d1fe2ea792812ba9765a",
+    "https://www.ajupress.com/view/20261105171503986",
+    "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026",
+    "https://www.bls.gov/news.release/archives/prod2_11052026.htm",
+    "https://investors.applovin.com/news/news-details/2026/AppLovin-Announces-Third-Quarter-2026-Financial-Results/default.aspx",
+    "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
+    "https://www.dol.gov/sites/dolgov/files/OPA/newsreleases/ui-claims/20261680.pdf"
+  ],
+  "calls_ledger": "six expired prior calls reviewed: Samsung/Amazon/Alphabet verified成立; AAA/SOX/Brent marked仍待验证 with missing complete daily series noted; no new call made because no sufficiently grounded threshold selected"
 }
