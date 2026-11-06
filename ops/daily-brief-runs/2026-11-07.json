@@ -2,15 +2,74 @@
   "date": "2026-11-07",
   "edition": "daily",
   "run_type": "daily_brief",
-  "status": "started",
+  "status": "spoken_committed",
   "timezone": "Asia/Shanghai",
   "started_at": "2026-11-07T07:01:29+08:00",
-  "updated_at": "2026-11-07T07:01:29+08:00",
+  "updated_at": "2026-11-07T07:06:35+08:00",
   "artifact_state": {
-    "written_draft": false,
-    "spoken_canonical": false,
+    "written_draft": true,
+    "spoken_canonical": true,
     "podcast_verified": false,
     "written_published": false,
     "published_verified": false
-  }
+  },
+  "research_complete_at": "2026-11-07T07:06:35+08:00",
+  "written_staged_at": "2026-11-07T07:06:35+08:00",
+  "research_cutoff": "2026-11-07T07:06:35+08:00",
+  "history_window_checked": "2026-10-08 through 2026-11-06; prior seven canonical editions (October 31-November 6) checked at event and thesis level",
+  "prior_edition_checked": "2026-11-06",
+  "prior_market_session": "2026-11-06",
+  "market_stress_index": 83.8,
+  "stress_market_date": "2026-11-06",
+  "headline_count": 6,
+  "spoken_han_count": 1408,
+  "number_of_day": "IREN remaining FY27 target financing USD 6 billion",
+  "title_handoff_ready": true,
+  "stress_handoff_ready": true,
+  "quality_gates": {
+    "major_news_omission_audit": "passed: November 6 completed US equity close, Japan and Korea approximately 6% selloffs, US October payrolls, IREN, Cloudflare, Moderna, BioBasicsBench, China AI and AI regulatory sweep reviewed; Asian market second selloff incorporated as lead; modest US rebound kept in Markets Dashboard",
+    "ai_policy_sweep": "US federal data-center moratorium proposal (introduced March 2026) remains a proposal; no November 6 committee vote, chamber passage, executive action, rule or enforcement verified. EU AI Act existing timetable and China AI governance coverage reviewed; no eligible new material procedural action found. European campaign for moratorium is advocacy, not legislation.",
+    "title_story_order": "passed: Asia second selloff leads headline, summary, spoken opening and Top Headlines; draft headline equals title handoff",
+    "headline_numbering": "passed: six distinct entries numbered 1-6 consecutively",
+    "sensitive_terms": "passed written, title and spoken deterministic checks before handoff",
+    "spoken_length": "passed: 1408 Han characters, weekday 1200 hard floor and 1250-1450 editorial target",
+    "source_diversity": "passed: Korean Yonhap, Japanese/Chinese market reporting, US BLS, IREN and Moderna filings/releases, Cloudflare Business Wire full text, OpenAI/Ligo research; no single publisher or lineage dominated candidate discovery",
+    "deduplication": "passed: November 6 Japan/Korea additional ~6% selloff admitted as verified new price state after November 5 Korea -5.28%; US Friday +0.3% index continuation kept in dashboard; IREN, Cloudflare, Moderna, BLS and BioBasicsBench are newly released data/events"
+  },
+  "deduplication_audit": {
+    "material_recurring_candidates_rejected": [
+      "November 5 US -4.4% equity selloff already covered November 6; Friday modest rebound does not independently clear headline gate",
+      "Kimi K3.1 Pro weights already covered November 6; no new verified commercial adoption",
+      "AMD/Arista/Eaton earlier quarter results covered November 4",
+      "Anthropic IPO valuation commentary lacks a verified new filing/transaction at cutoff"
+    ],
+    "recurring_candidates_admitted": [
+      "November 6 Japan Nikkei -5.96% and Korea KOSPI -6.02%: a new completed session with additional material Asian selloff and trading halt"
+    ]
+  },
+  "candidate_pool": [
+    "Japan/Korea November 6 second market selloff",
+    "US October payrolls and underemployment",
+    "IREN AI cloud actual revenue, backlog and funding plan",
+    "Cloudflare Q3 actual revenue and cash conversion",
+    "Moderna Q3 results and guidance",
+    "OpenAI/Ligo wet-lab benchmark",
+    "US November 6 modest equity rebound; dashboard only",
+    "China Moxin AI reported funding; absolute revenue and independent funding terms unverified",
+    "European data center moratorium campaign; advocacy only",
+    "US federal data-center moratorium bill; old proposal, no verified new procedural action",
+    "Anthropic IPO valuation speculation; no verified new official filing"
+  ],
+  "access_limitations": "Cloudflare primary investor page did not expose the full new release to automated reader; Business Wire full-text syndication used. Moderna release verified from carried company announcement and SEC 8-K mirror. Congress.gov automated access blocked; no material new procedural change claimed. IREN primary PDF and BLS report read directly.",
+  "sources": [
+    "https://m-cn.yna.co.kr/view/ACK20261106003600881?section=economy%2Findex",
+    "https://www.nbd.com.cn/articles/2026-11-06/4640616.html",
+    "https://apnews.com/article/wall-street-stocks-dow-nasdaq-806f71d95105bc7efbc760b194dd8cad",
+    "https://www.bls.gov/news.release/archives/empsit_11062026.htm",
+    "https://iren.gcs-web.com/static-files/8b5ff1cc-4a7c-444d-a3bf-bf5a621cf4b7",
+    "https://www.financialcontent.com/article/bizwire-2026-11-5-cloudflare-announces-third-quarter-2026-financial-results",
+    "https://www.stocktitan.net/news/MRNA/moderna-reports-third-quarter-2026-financial-results-and-provides-9kk4tzh724ed.html",
+    "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science/"
+  ],
+  "calls_ledger": "No expired open calls as of November 7; no new call made because a defensible short-window threshold was not established."
 }

@@ -397,6 +397,27 @@
       "kind": "company-reported growth, no absolute segment value given",
       "previous": null,
       "source_url": "https://earningscalls.dev/transcripts/eaton-corporation-plc_etn_earnings_call_transcript_2026-11-03"
+    },
+    {
+      "indicator": "IREN quarterly AI Cloud revenue",
+      "value": 200,
+      "unit": "USD million",
+      "as_of": "FQ1 2027 (ended 2026-09-30; published 2026-11-05)",
+      "kind": "company reported actual",
+      "previous": {
+        "value": 71,
+        "as_of": "FQ4 2026"
+      },
+      "source_url": "https://iren.gcs-web.com/static-files/8b5ff1cc-4a7c-444d-a3bf-bf5a621cf4b7"
+    },
+    {
+      "indicator": "IREN remaining FY27 capex funding gap",
+      "value": 6,
+      "unit": "USD billion target financing",
+      "as_of": "2026-11-05 outlook",
+      "kind": "company funding target, subject to market conditions; $15B remaining capex, $9B cash/committed financing/prepayments",
+      "previous": null,
+      "source_url": "https://iren.gcs-web.com/static-files/8b5ff1cc-4a7c-444d-a3bf-bf5a621cf4b7"
     }
   ]
 }
