@@ -2,14 +2,14 @@
   "date": "2026-11-07",
   "edition": "daily",
   "run_type": "daily_brief",
-  "status": "spoken_committed",
+  "status": "podcast_verified",
   "timezone": "Asia/Shanghai",
   "started_at": "2026-11-07T07:01:29+08:00",
-  "updated_at": "2026-11-07T07:06:35+08:00",
+  "updated_at": "2026-11-07T07:12:31+08:00",
   "artifact_state": {
     "written_draft": true,
     "spoken_canonical": true,
-    "podcast_verified": false,
+    "podcast_verified": true,
     "written_published": false,
     "published_verified": false
   },
@@ -71,5 +71,6 @@
     "https://www.stocktitan.net/news/MRNA/moderna-reports-third-quarter-2026-financial-results-and-provides-9kk4tzh724ed.html",
     "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science/"
   ],
-  "calls_ledger": "No expired open calls as of November 7; no new call made because a defensible short-window threshold was not established."
+  "calls_ledger": "No expired open calls as of November 7; no new call made because a defensible short-window threshold was not established.",
+  "podcast_verified_at": "2026-11-07T07:12:31+08:00"
 }
