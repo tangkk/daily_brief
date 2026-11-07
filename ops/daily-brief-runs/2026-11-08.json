@@ -2,15 +2,70 @@
   "date": "2026-11-08",
   "edition": "weekly_review",
   "run_type": "weekly_review",
-  "status": "started",
+  "status": "written_staged",
   "timezone": "Asia/Shanghai",
   "started_at": "2026-11-08T07:01:36+08:00",
-  "updated_at": "2026-11-08T07:01:36+08:00",
+  "updated_at": "2026-11-08T07:07:11+08:00",
   "artifact_state": {
-    "written_draft": false,
+    "written_draft": true,
     "spoken_canonical": false,
     "podcast_verified": false,
     "written_published": false,
     "published_verified": false
-  }
+  },
+  "research_complete_at": "2026-11-08T07:07:11+08:00",
+  "written_staged_at": "2026-11-08T07:07:11+08:00",
+  "research_cutoff": "2026-11-08T07:07:11+08:00",
+  "history_window_checked": "2026-10-09 through 2026-11-07; prior seven canonical editions reviewed at event and thesis level; prior Sunday review checked",
+  "prior_edition_checked": "2026-11-07",
+  "prior_weekly_review_checked": "2026-11-01",
+  "market_stress_index": 84.2,
+  "stress_market_date": "2026-11-06",
+  "stress_prior_friday_index_recomputed": 86.2,
+  "spoken_han_count": 2505,
+  "number_of_week": "IREN quarterly AI cloud revenue USD 200 million",
+  "title_handoff_ready": true,
+  "stress_handoff_ready": true,
+  "quality_gates": {
+    "major_news_omission_audit": "passed: latest completed US S&P/Nasdaq/Dow session and full week, November 6 Japan/Korea ~6% selloff, IREN, BLS employment, UK/Australia rates, China AI and policy status reviewed; no late Saturday claim added without primary verification",
+    "ai_policy_sweep": "US federal data-center moratorium remained a proposed measure; no new binding action verified November 2-7. EU AI Act existing timetable and Chinese official/specialist reporting reviewed; no globally material new procedural action verified. Local Chinese compute subsidy notice was not globally material.",
+    "title_story_order": "passed: weekly US market repricing leads title, summary and market section; IREN and US employment follow",
+    "sensitive_terms": "passed written, title and spoken deterministic checks before handoff",
+    "spoken_length": "passed: 2505 Han characters, Sunday 1800 hard minimum",
+    "source_diversity": "passed: US official labor data, UK/Australian central banks, IREN/Palantir/Arista and model primary materials, Korean and Chinese regional reporting, AP markets; no single reporting lineage gatekeeper",
+    "deduplication": "passed: weekly synthesis compared with prior Sunday and daily editions, focusing on the new November 5-6 price state and newly reported IREN revenue/financing; recurring general AI capex thesis not promoted as a new event"
+  },
+  "deduplication_audit": {
+    "material_recurring_candidates_rejected": [
+      "Amazon/Alphabet cash-flow figures already analyzed in November 1 Weekly Review; retained only as historical context",
+      "Old US data-center moratorium proposal without new formal procedural step",
+      "Earlier cloud capex thesis without new independent evidence"
+    ],
+    "recurring_candidates_admitted": [
+      "November 5 US 4.4% S&P loss and November 6 Japan/Korea ~6% additional loss are new completed market states",
+      "IREN November 5 reported AI cloud revenue and funding plan create new cash-economics evidence"
+    ]
+  },
+  "candidate_pool": [
+    "US/Asia AI equity repricing",
+    "IREN actual cloud revenue, backlog and remaining funding target",
+    "AMD/Arista/Eaton/Coherent infrastructure revenue",
+    "Palantir/AppLovin/Cloudflare application revenue and cash conversion",
+    "US October payrolls and underemployment",
+    "UK and Australia rate increases",
+    "China monetary operations and Kimi weights",
+    "OpenAI/Ligo wet-lab benchmark",
+    "US AI data-center proposed measures and EU AI Act status"
+  ],
+  "access_limitations": "Congress.gov automated access blocked; govinfo bill text and existing status checked. AP accessible via search and prior full-text reporting; no exclusive snippet facts used. Cloudflare full-text syndication used.",
+  "sources": [
+    "https://www.bls.gov/news.release/archives/empsit_11062026.htm",
+    "https://www.bls.gov/news.release/archives/prod2_11052026.htm",
+    "https://iren.gcs-web.com/static-files/8b5ff1cc-4a7c-444d-a3bf-bf5a621cf4b7",
+    "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026",
+    "https://www.rba.gov.au/media-releases/2026/mr-26-30.html",
+    "https://m-cn.yna.co.kr/view/ACK20261106003600881?section=economy%2Findex",
+    "https://www.arista.com/en/company/news/press-release/25025-pr-20261103",
+    "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science/"
+  ]
 }
