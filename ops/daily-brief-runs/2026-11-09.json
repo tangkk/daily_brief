@@ -2,15 +2,75 @@
   "date": "2026-11-09",
   "edition": "daily_brief",
   "run_type": "daily_brief",
-  "status": "started",
+  "status": "written_staged",
   "timezone": "Asia/Shanghai",
   "started_at": "2026-11-09T07:01:36+08:00",
-  "updated_at": "2026-11-09T07:01:36+08:00",
+  "updated_at": "2026-11-09T07:07:21+08:00",
   "artifact_state": {
-    "written_draft": false,
+    "written_draft": true,
     "spoken_canonical": false,
     "podcast_verified": false,
     "written_published": false,
     "published_verified": false
-  }
+  },
+  "research_complete_at": "2026-11-09T07:07:21+08:00",
+  "written_staged_at": "2026-11-09T07:07:21+08:00",
+  "research_cutoff": "2026-11-09T07:07:21+08:00",
+  "history_window_checked": "2026-10-10 through 2026-11-08; previous seven canonical editions November 2-8 reviewed at event and thesis level; prior 30 days consulted",
+  "prior_edition_checked": "2026-11-08",
+  "prior_market_session": "2026-11-06",
+  "market_stress_index": 84.2,
+  "stress_market_date": "2026-11-06",
+  "headline_count": 7,
+  "spoken_han_count": 1408,
+  "number_of_day": "OpenAI reported initial funding close USD 11 billion",
+  "title_handoff_ready": true,
+  "stress_handoff_ready": true,
+  "quality_gates": {
+    "major_news_omission_audit": "passed: latest November 6 US S&P/Nasdaq/Dow close checked; OpenAI financing, Microsoft-Oracle nonrenewal, Crusoe-Google transfer, NASA transport orders, JNJ trial, FDA safety notice and Nvidia board statement reviewed; older US/Asian selloff retained as context only",
+    "ai_policy_sweep": "US HR 9442 data-center moratorium remains introduced/referred June 24 with no verified new committee action, passage or enforcement; EU AI Act existing timetable and China official AI measures searched; no qualifying new AI policy action verified by 07:00 Asia/Shanghai. FDA gene-therapy safety investigation is a separate medical regulatory event.",
+    "title_story_order": "passed: OpenAI funding close leads title, summary, spoken opening, Top Headlines and Number of the Day",
+    "headline_numbering": "passed: seven distinct entries numbered 1-7 consecutively",
+    "sensitive_terms": "passed written, title and spoken deterministic checks before handoff",
+    "spoken_length": "passed: 1408 Han characters; weekday minimum 1200, editorial target 1250-1450",
+    "source_diversity": "passed: Reuters syndicated full text, The Information independent account and Bloomberg, Crusoe/Google, NASA, JNJ, FDA, Nvidia board/AP, Chinese SAFE; no single publisher or lineage used as discovery gatekeeper",
+    "deduplication": "passed: November 2 OpenAI proposed funding advances to reported USD 11B closed; prior AI capex/market selloff not recycled; Microsoft old-chip nonrenewal, Crusoe transfer, NASA orders, JNJ results, FDA safety notice and Nvidia board action are distinct new events"
+  },
+  "deduplication_audit": {
+    "material_recurring_candidates_rejected": [
+      "November 5 US and November 6 Asian AI equity selloff already covered November 6-8; November 6 US modest rebound remains dashboard context",
+      "IREN quarterly revenue/funding target and China AI model releases already covered November 7-8",
+      "Old US HR 9442 data-center moratorium proposal has no verified new formal stage",
+      "MIT CAR-NK work republished on November 8 but originally published October 13; no new result"
+    ],
+    "recurring_candidates_admitted": [
+      "OpenAI: earlier proposed financing is now reported by Reuters as USD 11B initially closed, a concrete funding phase change",
+      "Google-Crusoe: November 6 confirmed transfer of Wyoming site supersedes earlier Google investment plan and Crusoe pause"
+    ]
+  },
+  "candidate_pool": [
+    "OpenAI USD 11B funding close",
+    "Microsoft nonrenewal of Oracle older-GPU capacity",
+    "Google acquisition of Crusoe Wyoming site",
+    "NASA six lunar transportation task orders",
+    "J&J ICOTYDE Phase 3 results",
+    "FDA Zolgensma insertional oncogenesis investigation",
+    "Nvidia board independent investigation",
+    "China October FX reserves +USD 4.9B (dashboard only)",
+    "New Zealand inconclusive election (global/economic impact insufficient for this edition)",
+    "US/EU/China AI policy sweep: no verified eligible new formal action"
+  ],
+  "access_limitations": "Reuters full-text syndication on MarketScreener used; Bloomberg snippet cross-checked against independently reported The Information full text. Congress.gov blocked by robots; govinfo introduced bill text and other searches showed no verified new formal stage. MIT November 8 syndication was traced to October 13 primary publication and excluded.",
+  "sources": [
+    "https://www.marketscreener.com/news/openai-secures-11-billion-funding-at-1-25-trillion-valuation-bloomberg-news-reports-ce785fd2dc8bf622",
+    "https://www.theinformation.com/briefings/microsoft-ends-deal-rent-cloud-servers-oracle",
+    "https://www.crusoe.ai/resources/newsroom/crusoe-wyoming-data-center-campus-update",
+    "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/wyoming-data-center/",
+    "https://www.nasa.gov/news-release/nasa-awards-moon-base-transportation-technology-science-projects/",
+    "https://www.jnj.com/media-center/press-releases/johnson-johnson-announces-icotyde-icotrokinra-delivers-significant-improvement-in-psoriatic-arthritis-disease-activity-among-biologic-naive-patients-with-once-daily-targeted-oral-peptide",
+    "https://www.fda.gov/vaccines-blood-biologics/safety-availability-biologics/fda-investigating-serious-risk-malignancy-linked-zolgensma-gene-therapy",
+    "https://www.globenewswire.com/news-release/2026/11/08/3398017/0/en/statement-from-nvidia-board-of-directors.html",
+    "https://www.safe.gov.cn/big5/big5/www.safe.gov.cn/safe/2026/1106/28067.html"
+  ],
+  "calls_ledger": "No expired open calls as of November 9; no new call made because a defensible short-window threshold was not established."
 }

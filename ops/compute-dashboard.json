@@ -418,6 +418,15 @@
       "kind": "company funding target, subject to market conditions; $15B remaining capex, $9B cash/committed financing/prepayments",
       "previous": null,
       "source_url": "https://iren.gcs-web.com/static-files/8b5ff1cc-4a7c-444d-a3bf-bf5a621cf4b7"
+    },
+    {
+      "indicator": "Google Wyoming planned fuel-cell power capacity",
+      "value": 702,
+      "unit": "MW planned",
+      "as_of": "2026-11-05 announcement; 2026-11-06 site acquisition",
+      "kind": "company plan, not operating capacity",
+      "previous": null,
+      "source_url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/wyoming-data-center/"
     }
   ]
 }
