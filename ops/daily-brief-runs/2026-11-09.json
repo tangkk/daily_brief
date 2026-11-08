@@ -2,14 +2,14 @@
   "date": "2026-11-09",
   "edition": "daily_brief",
   "run_type": "daily_brief",
-  "status": "written_staged",
+  "status": "podcast_verified",
   "timezone": "Asia/Shanghai",
   "started_at": "2026-11-09T07:01:36+08:00",
-  "updated_at": "2026-11-09T07:07:21+08:00",
+  "updated_at": "2026-11-09T07:14:12+08:00",
   "artifact_state": {
     "written_draft": true,
-    "spoken_canonical": false,
-    "podcast_verified": false,
+    "spoken_canonical": true,
+    "podcast_verified": true,
     "written_published": false,
     "published_verified": false
   },
@@ -72,5 +72,6 @@
     "https://www.globenewswire.com/news-release/2026/11/08/3398017/0/en/statement-from-nvidia-board-of-directors.html",
     "https://www.safe.gov.cn/big5/big5/www.safe.gov.cn/safe/2026/1106/28067.html"
   ],
-  "calls_ledger": "No expired open calls as of November 9; no new call made because a defensible short-window threshold was not established."
+  "calls_ledger": "No expired open calls as of November 9; no new call made because a defensible short-window threshold was not established.",
+  "podcast_verified_at": "2026-11-09T07:14:12+08:00"
 }
