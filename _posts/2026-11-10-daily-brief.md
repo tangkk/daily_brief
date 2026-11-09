@@ -1,6 +1,6 @@
 ---
 layout: daily_brief
-title: "2026-11-10"
+title: "11.10｜Anthropic 发布 Fable 5.2；美股反弹 2.3%；谷歌扩充 TPU｜压力指数 79"
 date: 2026-11-10 07:00:00 +0800
 headline: "Anthropic 发布 Fable 5.2；美股反弹 2.3%；谷歌扩充 TPU"
 ---

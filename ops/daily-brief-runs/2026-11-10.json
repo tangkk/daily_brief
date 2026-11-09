@@ -2,15 +2,15 @@
   "date": "2026-11-10",
   "edition": "daily_brief",
   "run_type": "daily_brief",
-  "status": "podcast_verified",
+  "status": "written_published",
   "timezone": "Asia/Shanghai",
   "started_at": "2026-11-10T07:01:20+08:00",
-  "updated_at": "2026-11-10T07:15:00+08:00",
+  "updated_at": "2026-11-10T07:15:01+08:00",
   "artifact_state": {
     "written_draft": true,
     "spoken_canonical": true,
     "podcast_verified": true,
-    "written_published": false,
+    "written_published": true,
     "published_verified": false
   },
   "research_complete_at": "2026-11-10T07:03:34+08:00",
@@ -67,5 +67,6 @@
   "title_handoff_ready": true,
   "stress_handoff_ready": true,
   "calls_ledger": "No new call: no defensible short-window threshold from currently observed evidence; prior ledger unchanged.",
-  "podcast_verified_at": "2026-11-10T07:15:00+08:00"
+  "podcast_verified_at": "2026-11-10T07:15:00+08:00",
+  "written_published_at": "2026-11-10T07:15:01+08:00"
 }
