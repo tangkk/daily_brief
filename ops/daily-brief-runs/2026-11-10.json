@@ -2,13 +2,13 @@
   "date": "2026-11-10",
   "edition": "daily_brief",
   "run_type": "daily_brief",
-  "status": "research_complete",
+  "status": "written_staged",
   "timezone": "Asia/Shanghai",
   "started_at": "2026-11-10T07:01:20+08:00",
-  "updated_at": "2026-11-10T07:03:34+08:00",
+  "updated_at": "2026-11-10T07:06:40+08:00",
   "artifact_state": {
-    "written_draft": false,
-    "spoken_canonical": false,
+    "written_draft": true,
+    "spoken_canonical": true,
     "podcast_verified": false,
     "written_published": false,
     "published_verified": false
@@ -43,7 +43,12 @@
   "quality_gates": {
     "source_diversity": "Primary company releases, China NBS, AP market reporting, Reuters syndication, specialist tech reporting and legislative sources searched; no single lineage controlled discovery",
     "ai_policy_sweep": "US Senate S.5653 introduced Sep 30; Nov 9 cloture on H.R.2347 scheduled, but no final result verified by cutoff; no enacted change claimed. EU AI Act official status checked; China AI policy sweep found no qualifying new binding action.",
-    "major_news_omission_audit": "Latest Nov 9 US S&P/Nasdaq/Dow and Brent checked; Anthropic release, Google TPU, China inflation, clinical trial, CoreWeave contract considered; Senate vote result not verified."
+    "major_news_omission_audit": "Latest Nov 9 US S&P/Nasdaq/Dow and Brent checked; Anthropic release, Google TPU, China inflation, clinical trial, CoreWeave contract considered; Senate vote result not verified.",
+    "title_story_order": "passed: Anthropic model launch leads headline, summary, spoken script and title",
+    "headline_numbering": "passed: six substantive headlines numbered 1-6 consecutively",
+    "sensitive_terms": "passed for written, title and spoken via maintained checker",
+    "spoken_length": "passed: 1389 Han, weekday minimum 1200, target 1250-1450",
+    "deduplication": "passed: previous seven editions checked; old Nvidia investigation, OpenAI funding, Cloudflare earnings and prior selloff not recycled"
   },
   "sources": [
     "https://www.anthropic.com/claude-fable-and-mythos-5-2",
@@ -53,5 +58,13 @@
     "https://rss.globenewswire.com/news-release/2026/11/09/3398586/0/en/boehringer-ingelheim-s-survodutide-is-the-first-glucagon-glp-1-dual-agonist-to-demonstrate-a-favorable-cardiovascular-safety-profile-in-global-phase-iii-synchronize-cvot-trial-alon.html",
     "https://coreweave.com/news/coreweave-to-power-wayves-ai-driver-training-in-multi-year-agreement",
     "https://www.dailypress.senate.gov/thursday-november-5-2026/"
-  ]
+  ],
+  "written_staged_at": "2026-11-10T07:06:40+08:00",
+  "research_cutoff": "2026-11-10T07:06:40+08:00",
+  "headline_count": 6,
+  "spoken_han_count": 1389,
+  "number_of_day": "Anthropic standard API USD 8 per million input tokens",
+  "title_handoff_ready": true,
+  "stress_handoff_ready": true,
+  "calls_ledger": "No new call: no defensible short-window threshold from currently observed evidence; prior ledger unchanged."
 }
