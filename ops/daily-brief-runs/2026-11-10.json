@@ -2,15 +2,56 @@
   "date": "2026-11-10",
   "edition": "daily_brief",
   "run_type": "daily_brief",
-  "status": "started",
+  "status": "research_complete",
   "timezone": "Asia/Shanghai",
   "started_at": "2026-11-10T07:01:20+08:00",
-  "updated_at": "2026-11-10T07:01:20+08:00",
+  "updated_at": "2026-11-10T07:03:34+08:00",
   "artifact_state": {
     "written_draft": false,
     "spoken_canonical": false,
     "podcast_verified": false,
     "written_published": false,
     "published_verified": false
-  }
+  },
+  "research_complete_at": "2026-11-10T07:03:34+08:00",
+  "history_window_checked": "2026-10-11 through 2026-11-09; prior seven canonical editions Nov 3-9 reviewed at event/thesis level; 30-day recurrence checked",
+  "prior_edition_checked": "2026-11-09",
+  "prior_market_session": "2026-11-09",
+  "market_stress_index": 79.1,
+  "stress_market_date": "2026-11-09",
+  "candidate_pool": [
+    "Anthropic Fable/Mythos 5.2 release",
+    "Google TPU 8tx/8i Max systems",
+    "US Nov 9 broad equity rebound and Brent decline",
+    "China October CPI/PPI",
+    "Boehringer survodutide Phase III cardiovascular safety results",
+    "CoreWeave-Wayve multi-year training agreement",
+    "Ceva Q3 AI licensing revenue",
+    "Senate permitting procedural vote: outcome unverified at cutoff"
+  ],
+  "deduplication_audit": {
+    "rejected": [
+      "Nov 5-6 AI selloff repeated as context only",
+      "Nov 8 Nvidia board investigation already covered Nov 9",
+      "OpenAI funding and Microsoft/Oracle lease already covered Nov 9",
+      "Cloudflare Q3 earnings already covered Nov 7"
+    ],
+    "admitted": [
+      "Nov 9 broad US equity reversal has new closing prices after earlier selloff"
+    ]
+  },
+  "quality_gates": {
+    "source_diversity": "Primary company releases, China NBS, AP market reporting, Reuters syndication, specialist tech reporting and legislative sources searched; no single lineage controlled discovery",
+    "ai_policy_sweep": "US Senate S.5653 introduced Sep 30; Nov 9 cloture on H.R.2347 scheduled, but no final result verified by cutoff; no enacted change claimed. EU AI Act official status checked; China AI policy sweep found no qualifying new binding action.",
+    "major_news_omission_audit": "Latest Nov 9 US S&P/Nasdaq/Dow and Brent checked; Anthropic release, Google TPU, China inflation, clinical trial, CoreWeave contract considered; Senate vote result not verified."
+  },
+  "sources": [
+    "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+    "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/tpu-8i-max-and-8tx/",
+    "https://apnews.com/article/stocks-markets-ai-trump-oil-d938f8e6ff42b3706e1d36e6245ec56b",
+    "https://www.stats.gov.cn/xxgk/jd/sjjd2020/202611/t20261109_1965796.html",
+    "https://rss.globenewswire.com/news-release/2026/11/09/3398586/0/en/boehringer-ingelheim-s-survodutide-is-the-first-glucagon-glp-1-dual-agonist-to-demonstrate-a-favorable-cardiovascular-safety-profile-in-global-phase-iii-synchronize-cvot-trial-alon.html",
+    "https://coreweave.com/news/coreweave-to-power-wayves-ai-driver-training-in-multi-year-agreement",
+    "https://www.dailypress.senate.gov/thursday-november-5-2026/"
+  ]
 }
