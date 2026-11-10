@@ -2,15 +2,69 @@
   "date": "2026-11-11",
   "edition": "daily_brief",
   "run_type": "daily_brief",
-  "status": "started",
+  "status": "research_complete",
   "timezone": "Asia/Shanghai",
   "started_at": "2026-11-11T07:01:29+08:00",
-  "updated_at": "2026-11-11T07:01:29+08:00",
+  "updated_at": "2026-11-11T07:05:48+08:00",
   "artifact_state": {
     "written_draft": false,
     "spoken_canonical": false,
     "podcast_verified": false,
     "written_published": false,
     "published_verified": false
-  }
+  },
+  "research_complete_at": "2026-11-11T07:05:48+08:00",
+  "research_cutoff": "2026-11-11T07:05:48+08:00",
+  "history_window_checked": "2026-10-12 through 2026-11-10; Nov 4-10 seven-day canonical editions checked at event/thesis level; prior 30-day headlines consulted",
+  "prior_edition_checked": "2026-11-10",
+  "prior_market_session": "2026-11-10",
+  "market_stress_index": 80.9,
+  "stress_market_date": "2026-11-10",
+  "candidate_pool": [
+    "CoreWeave Q3 revenue, interest expense, backlog and capex",
+    "US October CPI and Nov 10 completed US equity session",
+    "US Senate Nov 9 cloture on motion to proceed for H.R.2347 energy/data-center bill",
+    "TSMC October revenue",
+    "Infineon FY2026 results and FY2027 data-center power outlook",
+    "Google Gemini 4 Carbon paid availability",
+    "SoftBank FY2026 Q2 loss",
+    "Meta Muse Ember Nov 9 release",
+    "Alibaba Qianwen Office 2.0 and China AI product sweep"
+  ],
+  "deduplication_audit": {
+    "rejected": [
+      "Nov 9 CoreWeave-Wayve agreement covered Nov 10; not repeated as separate event",
+      "Nov 9 Anthropic Fable/Mythos release covered Nov 10",
+      "Nov 9 broad US equity rebound covered Nov 10",
+      "Older US AI data-center proposals without new procedural action",
+      "Meta Muse Ember launch less significant than selected independent developments"
+    ],
+    "admitted": [
+      "CoreWeave Q3 reported revenue, debt cost and guidance are new quantitative earnings evidence beyond prior Wayve contract",
+      "Nov 9 Senate 73-25 procedural cloture is a new formal status after prior pending bill",
+      "Nov 10 US CPI and market close are new data, not a replay of Nov 9 rebound"
+    ]
+  },
+  "quality_gates": {
+    "source_diversity": "Discovery across BLS, Senate roll call/committee, company investor relations, Taiwan foundry data, AP market reporting, China financial reporting and regional/local-language AI news; no publisher controlled candidate pool",
+    "ai_policy_sweep": "Nov 9 Senate roll call 257 passed 73-25 cloture on motion to proceed to H.R.2347, the legislative vehicle for proposed energy/data-center cost provisions; no bill passage or in-force fee. September 2026 bills and China/EU proposals checked with no newer binding action verified. China optical-transceiver ban reporting is an unfinalized regulatory possibility, not a new rule.",
+    "major_news_omission_audit": "Nov 10 US S&P/Nasdaq/Dow close, BLS CPI, CoreWeave after-hours earnings, TSMC October revenue, Infineon outlook, Google Carbon availability, SoftBank results and China equity close checked; Meta Muse Ember and Qianwen Office considered but lower incremental global significance",
+    "title_story_order": "passed: CoreWeave earnings lead written and spoken editions and title",
+    "headline_numbering": "passed: seven distinct entries numbered 1-7",
+    "sensitive_terms": "candidate written, title and spoken pass maintained checker",
+    "spoken_length": "candidate spoken script 1358 Han; weekday minimum 1200; target 1250-1450",
+    "deduplication": "prior seven editions and 30-day headline history checked"
+  },
+  "sources": [
+    "https://www.stocktitan.net/sec-filings/CRWV/8-k-core-weave-inc-reports-material-event-d9367aabcf7e.html",
+    "https://www.bls.gov/news.release/archives/cpi_11102026.htm",
+    "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00257.htm",
+    "https://investor.tsmc.com/english/monthly-revenue/2026",
+    "https://www.infineon.com/press-release/2026/infpr202611-025",
+    "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
+    "https://group.softbank/en/event/earnings_2026q2",
+    "https://apnews.com/article/wall-street-stocks-dow-nasdaq-a97eb31c415811065561f2c2ac552cd7",
+    "https://www.cnfin.com/yw-lb/detail/20261110/4493456_1.html"
+  ],
+  "access_limitations": "CoreWeave primary SEC 8-K full text was read via accessible StockTitan copy; this is the same filing/reporting lineage. SoftBank primary event page gives reports but AP full-text provides the quoted quarterly figures. No paywalled search snippet used for material facts."
 }
