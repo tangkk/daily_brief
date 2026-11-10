@@ -1,6 +1,6 @@
 ---
 layout: daily_brief
-title: "2026-11-11"
+title: "11.11｜CoreWeave 季收 36.61 亿美元；美国 CPI 涨 0.4%；台积电月收增 59.7%｜压力指数 81"
 date: 2026-11-11 07:00:00 +0800
 headline: "CoreWeave 季收 36.61 亿美元；美国 CPI 涨 0.4%；台积电月收增 59.7%"
 ---
