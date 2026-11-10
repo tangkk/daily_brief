@@ -2,13 +2,13 @@
   "date": "2026-11-11",
   "edition": "daily_brief",
   "run_type": "daily_brief",
-  "status": "research_complete",
+  "status": "written_staged",
   "timezone": "Asia/Shanghai",
   "started_at": "2026-11-11T07:01:29+08:00",
-  "updated_at": "2026-11-11T07:05:48+08:00",
+  "updated_at": "2026-11-11T07:07:00+08:00",
   "artifact_state": {
-    "written_draft": false,
-    "spoken_canonical": false,
+    "written_draft": true,
+    "spoken_canonical": true,
     "podcast_verified": false,
     "written_published": false,
     "published_verified": false
@@ -66,5 +66,12 @@
     "https://apnews.com/article/wall-street-stocks-dow-nasdaq-a97eb31c415811065561f2c2ac552cd7",
     "https://www.cnfin.com/yw-lb/detail/20261110/4493456_1.html"
   ],
-  "access_limitations": "CoreWeave primary SEC 8-K full text was read via accessible StockTitan copy; this is the same filing/reporting lineage. SoftBank primary event page gives reports but AP full-text provides the quoted quarterly figures. No paywalled search snippet used for material facts."
+  "access_limitations": "CoreWeave primary SEC 8-K full text was read via accessible StockTitan copy; this is the same filing/reporting lineage. SoftBank primary event page gives reports but AP full-text provides the quoted quarterly figures. No paywalled search snippet used for material facts.",
+  "written_staged_at": "2026-11-11T07:07:00+08:00",
+  "headline_count": 7,
+  "spoken_han_count": 1358,
+  "number_of_day": "CoreWeave Q3 net interest expense USD 846 million",
+  "title_handoff_ready": true,
+  "stress_handoff_ready": true,
+  "calls_ledger": "No new call: no defensible short-window threshold from the current evidence; prior ledger unchanged."
 }
