@@ -1,6 +1,6 @@
 ---
 layout: daily_brief
-title: "2026-11-12"
+title: "11.12｜Anthropic IPO拟募593亿美元；西门子能源订单1640亿欧元；千问4预览上线｜压力指数 78"
 date: 2026-11-12 07:00:00 +0800
 headline: "Anthropic IPO拟募593亿美元；西门子能源订单1640亿欧元；千问4预览上线"
 ---
