@@ -2,10 +2,10 @@
   "date": "2026-11-12",
   "edition": "daily_brief",
   "run_type": "daily_brief",
-  "status": "started",
+  "status": "research_complete",
   "timezone": "Asia/Shanghai",
   "started_at": "2026-11-12T07:01:42+08:00",
-  "updated_at": "2026-11-12T07:01:42+08:00",
+  "updated_at": "2026-11-12T07:04:21+08:00",
   "artifact_state": {
     "written_draft": false,
     "spoken_canonical": false,
@@ -13,6 +13,58 @@
     "written_published": false,
     "published_verified": false
   },
+  "research_complete_at": "2026-11-12T07:04:21+08:00",
+  "research_cutoff": "2026-11-12T07:04:21+08:00",
+  "history_window_checked": "2026-10-13 through 2026-11-11; canonical Nov 4-11 editions reviewed at event and thesis level",
+  "prior_edition_checked": "2026-11-11",
+  "prior_market_session": "2026-11-11",
+  "market_stress_index": 78.0,
+  "stress_market_date": "2026-11-11",
+  "candidate_pool": [
+    "Anthropic November 10 S-1 amendment sets 825 million-share $70-$78 IPO range and updates nine-month results",
+    "Siemens Energy November 11 FY2026 earnings, order backlog and grid/turbine outlook",
+    "Alibaba Qwen4-Max-Preview made available November 11 in Token Plan and apps",
+    "November 11 completed US equity session, CoreWeave share reaction and memory stocks",
+    "November 11 China ChiNext and optical-interconnect share rebound with higher turnover",
+    "Australia November 10 government announcement of proposed mandatory frontier AI obligations",
+    "November 10 US CPI follow-up and Fed speeches",
+    "Marvell-Lumentum acquisition reported again November 11",
+    "Older Chinese QwenWork token memberships reported in early November"
+  ],
+  "deduplication_audit": {
+    "rejected": [
+      "US October CPI data and CoreWeave Q3 financial figures already led November 11; today's US closing-price response is a new observable market fact",
+      "Marvell-Lumentum merger announced November 2 and covered November 3; no new binding phase change found",
+      "QwenWork membership sales occurred November 2 and do not become new because Singles Day is November 11",
+      "Fed inflation concerns and older data-center policy proposals have no independently verified new binding action"
+    ],
+    "admitted": [
+      "Anthropic's November 10 filed price/share range and updated nine-month results materially advance the older IPO prospectus thesis",
+      "Siemens Energy annual cash flow, backlog, and fiscal 2027 guidance are new reported results",
+      "Qwen4 preview availability is a new product deployment, separate from prior QwenWork rollout",
+      "November 11 US and China completed sessions provide fresh measured regional market repricing"
+    ]
+  },
+  "quality_gates": {
+    "source_diversity": "Discovery across SEC filing, European company earnings, Chinese primary model documentation and regional market reporting, US AP closing data, Australian government notice, science and macro sources; no single outlet determined candidate pool",
+    "ai_policy_sweep": "Australia government announced November 10 intended mandatory frontier-model safety duties and a proposed regulator. Draft legislation, enacted law and effective penalties were not evidenced. US H.R.2347 November 9 procedural step was covered November 11; no newer formal step found. EU and China sweeps found no verified new material binding action.",
+    "major_news_omission_audit": "Checked November 11 US S&P 500/Nasdaq/Dow closes, CoreWeave and Micron share reactions, Siemens Energy earnings, Anthropic SEC amendment, Qwen4 primary documentation, China and Hong Kong closes, Australian AI government notice; older Marvell deal and CPI facts excluded from new headline selection",
+    "title_story_order": "pending final written and spoken composition",
+    "headline_numbering": "pending deterministic validation",
+    "sensitive_terms": "pending deterministic validation",
+    "spoken_length": "pending canonical script derivation"
+  },
+  "sources": [
+    "https://www.sec.gov/Archives/edgar/data/2130357/000162828026072484/anthropicpbc-sx1ax2.htm",
+    "https://www.siemens-energy.com/content/siemensenergy-aem/global/en/home/press-releases/earnings-release-q4-fy-2026--siemens-energy-reports-a-record-yea.html",
+    "https://docs.bailian.console.aliyun.com/zh/model-studio/qwen4-max-preview",
+    "https://apnews.com/article/stock-markets-ai-earnings-oil-297d040c83844a9563327340b370c24e",
+    "https://www.minister.defence.gov.au/media-releases/2026-11-10/new-australian-ai-safety-security-protections",
+    "https://finance.eastmoney.com/a/202611113928447384.html",
+    "https://english.news.cn/20261111/8eddab6f61fb4837b219b8a62ce8254e/c.html"
+  ],
+  "access_limitations": "Material figures were checked against readable primary or full-text reporting. No paywalled search snippet was used as sole evidence.",
+  "stress_source_revision_note": "Fresh Yahoo history recalculated November 10 index to 80.7 versus yesterday's committed 80.9; November 12 uses current script output and records that the prior reading was revised.",
   "failure_stage": null,
   "failure_detail": null
 }
