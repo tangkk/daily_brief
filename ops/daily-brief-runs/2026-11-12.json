@@ -2,12 +2,12 @@
   "date": "2026-11-12",
   "edition": "daily_brief",
   "run_type": "daily_brief",
-  "status": "research_complete",
+  "status": "written_staged",
   "timezone": "Asia/Shanghai",
   "started_at": "2026-11-12T07:01:42+08:00",
-  "updated_at": "2026-11-12T07:04:21+08:00",
+  "updated_at": "2026-11-12T07:08:51+08:00",
   "artifact_state": {
-    "written_draft": false,
+    "written_draft": true,
     "spoken_canonical": false,
     "podcast_verified": false,
     "written_published": false,
@@ -49,10 +49,11 @@
     "source_diversity": "Discovery across SEC filing, European company earnings, Chinese primary model documentation and regional market reporting, US AP closing data, Australian government notice, science and macro sources; no single outlet determined candidate pool",
     "ai_policy_sweep": "Australia government announced November 10 intended mandatory frontier-model safety duties and a proposed regulator. Draft legislation, enacted law and effective penalties were not evidenced. US H.R.2347 November 9 procedural step was covered November 11; no newer formal step found. EU and China sweeps found no verified new material binding action.",
     "major_news_omission_audit": "Checked November 11 US S&P 500/Nasdaq/Dow closes, CoreWeave and Micron share reactions, Siemens Energy earnings, Anthropic SEC amendment, Qwen4 primary documentation, China and Hong Kong closes, Australian AI government notice; older Marvell deal and CPI facts excluded from new headline selection",
-    "title_story_order": "pending final written and spoken composition",
-    "headline_numbering": "pending deterministic validation",
-    "sensitive_terms": "pending deterministic validation",
-    "spoken_length": "pending canonical script derivation"
+    "title_story_order": "passed: Anthropic filing leads title, written summary, first headline and spoken summary",
+    "headline_numbering": "passed: six distinct numbered entries 1-6",
+    "sensitive_terms": "candidate written, spoken and title pass maintained checker",
+    "spoken_length": "canonical spoken script 1481 Han; minimum 1200, soft upper guide 1500",
+    "deduplication": "prior seven editions and 30-day headline history checked"
   },
   "sources": [
     "https://www.sec.gov/Archives/edgar/data/2130357/000162828026072484/anthropicpbc-sx1ax2.htm",
@@ -61,10 +62,18 @@
     "https://apnews.com/article/stock-markets-ai-earnings-oil-297d040c83844a9563327340b370c24e",
     "https://www.minister.defence.gov.au/media-releases/2026-11-10/new-australian-ai-safety-security-protections",
     "https://finance.eastmoney.com/a/202611113928447384.html",
-    "https://english.news.cn/20261111/8eddab6f61fb4837b219b8a62ce8254e/c.html"
+    "https://english.news.cn/20261111/8eddab6f61fb4837b219b8a62ce8254e/c.html",
+    "https://www.siemensenergy.com/global/en/home/press-releases/earnings-release-q4-fy-2025.html"
   ],
   "access_limitations": "Material figures were checked against readable primary or full-text reporting. No paywalled search snippet was used as sole evidence.",
   "stress_source_revision_note": "Fresh Yahoo history recalculated November 10 index to 80.7 versus yesterday's committed 80.9; November 12 uses current script output and records that the prior reading was revised.",
   "failure_stage": null,
-  "failure_detail": null
+  "failure_detail": null,
+  "written_staged_at": "2026-11-12T07:08:51+08:00",
+  "headline_count": 6,
+  "spoken_han_count": 1481,
+  "number_of_day": "Anthropic proposed primary IPO proceeds USD 59.3 billion at $74 midpoint",
+  "title_handoff_ready": true,
+  "stress_handoff_ready": true,
+  "calls_ledger": "Resolved expired 2026-10-09-01 from TSMC official monthly revenue; no new call with defensible threshold today."
 }

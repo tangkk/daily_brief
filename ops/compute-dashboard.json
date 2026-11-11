@@ -448,6 +448,19 @@
       "kind": "company forecast, not actual revenue",
       "previous": null,
       "source_url": "https://www.infineon.com/press-release/2026/infpr202611-025"
+    },
+    {
+      "indicator": "Siemens Energy fiscal year-end total order backlog (power equipment proxy)",
+      "value": 164,
+      "unit": "EUR billion",
+      "as_of": "FY2026 year-end (published 2026-11-11)",
+      "kind": "company reported total backlog; includes non-data-center business",
+      "previous": {
+        "value": 138,
+        "as_of": "FY2025 year-end",
+        "source_url": "https://www.siemensenergy.com/global/en/home/press-releases/earnings-release-q4-fy-2025.html"
+      },
+      "source_url": "https://www.siemens-energy.com/content/siemensenergy-aem/global/en/home/press-releases/earnings-release-q4-fy-2026--siemens-energy-reports-a-record-yea.html"
     }
   ]
 }

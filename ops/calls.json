@@ -32,9 +32,9 @@
       "indicator": "TSMC October 2026 consolidated monthly revenue, YoY growth",
       "threshold_direction": ">= +40% YoY",
       "window_end": "2026-11-10",
-      "status": "open",
-      "resolved_on": null,
-      "evidence_source": null
+      "status": "成立",
+      "resolved_on": "2026-11-12",
+      "evidence_source": "https://investor.tsmc.com/english/monthly-revenue/2026"
     },
     {
       "id": "2026-10-10-01",
