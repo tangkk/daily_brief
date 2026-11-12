@@ -2,10 +2,10 @@
   "date": "2026-11-13",
   "edition": "daily_brief",
   "run_type": "daily_brief",
-  "status": "started",
+  "status": "research_complete",
   "timezone": "Asia/Shanghai",
   "started_at": "2026-11-13T07:02:14+08:00",
-  "updated_at": "2026-11-13T07:02:14+08:00",
+  "updated_at": "2026-11-13T07:04:30+08:00",
   "artifact_state": {
     "written_draft": false,
     "spoken_canonical": false,
@@ -14,5 +14,57 @@
     "published_verified": false
   },
   "failure_stage": null,
-  "failure_detail": null
+  "failure_detail": null,
+  "research_complete_at": "2026-11-13T07:04:30+08:00",
+  "research_cutoff": "2026-11-13T07:04:30+08:00",
+  "history_window_checked": "2026-10-14 through 2026-11-12; prior seven canonical editions 2026-11-06 through 2026-11-12 reviewed at event and thesis level",
+  "prior_edition_checked": "2026-11-12",
+  "prior_market_session": "2026-11-12",
+  "market_stress_index": 82.3,
+  "stress_market_date": "2026-11-12",
+  "candidate_pool": [
+    "Nvidia November 12 CEO resignation, interim CEO appointment and stock reaction",
+    "Cisco November 12 fiscal Q1 2027 results and raised AI infrastructure revenue target",
+    "Applied Materials November 12 fiscal Q4 2026 results",
+    "Baidu November 12 model and Token Exchange launch",
+    "UK ONS November 12 Q3 GDP first estimate",
+    "November 12 California advocacy coalition complaint against five AI firms",
+    "November 12 completed US equity and bond session",
+    "November 12 China A-share decline after November 11 rally",
+    "US November 7 initial claims released November 12",
+    "Older Australian proposed AI safety duties and US H.R.2347"
+  ],
+  "deduplication_audit": {
+    "rejected": [
+      "Anthropic IPO filing, Siemens Energy results, Qwen4 preview and earlier AI equity rebound led November 12; no new filing or result verified",
+      "Australia government AI safety proposal was covered November 12; no new formal legislative step verified",
+      "November 12 US index losses near 0.4% alone do not justify a separate headline; Nvidia-specific shock is the material new event",
+      "November 12 China A-share pullback reverses November 11 rally but is not independently large enough for a headline",
+      "US weekly initial claims rose only 9,000 and are background labor data, not a significant new global headline"
+    ],
+    "admitted": [
+      "Nvidia board resignation and interim appointment are a binding corporate state change since prior investigation coverage",
+      "Cisco reports new quarterly revenue and raises FY27 hyperscaler AI infrastructure revenue expectation from $7.5B to $9B",
+      "Applied Materials reports new quarterly revenue, margin and cash flow",
+      "Baidu launches distinct new model and model marketplace, with reported actual use",
+      "UK Q3 GDP first estimate is new official macro data",
+      "California lawsuit is a new filed legal challenge, with no injunction or finding; written coverage only"
+    ]
+  },
+  "quality_gates": {
+    "source_diversity": "Discovery across Nvidia and Cisco company releases, Applied company release syndicated full-text, Baidu primary company release, ONS and US Labor official statistics, AP independent reporting, Chinese regional market coverage and EU/US/China policy sources; no single outlet is candidate gatekeeper",
+    "ai_policy_sweep": "November 12 California Superior Court complaint by advocacy groups seeks halt to new model development at five firms; filing only, no judge order or effective restriction. Australia November 10 proposal covered November 12 with no new formal step. US H.R.2347 earlier procedural step covered November 11; Congress site blocked to web access; no newer corroborated step. EU AI Act existing implementation timeline and China standing rules show no verified new November 12 material action.",
+    "major_news_omission_audit": "Checked November 12 S&P 500, Nasdaq, Dow, Nvidia, semiconductor peers, Treasury yield, Brent, Cisco and Applied releases, UK GDP, Baidu launches, China/Hong Kong close, US claims and AI legal/policy sweep; no omitted candidate with stronger verified information gain than selected six."
+  },
+  "sources": [
+    "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition",
+    "https://apnews.com/article/stock-markets-oil-ai-earnings-nvidia-8bf08407eafe1655ed73112f7494029a",
+    "https://www.prnewswire.com/news-releases/cisco-reports-first-quarter-earnings-302938394.html",
+    "https://mfn.se/one/a/applied-materials/applied-materials-announces-fourth-quarter-and-fiscal-year-2026-results-47ef0dd1",
+    "https://finviz.com/news/421825/baidu-unveils-latest-ernie-models-amid-broader-full-stack-ai-lineup-and-debuts-token-exchange-to-power-intelligent-organizations",
+    "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/gdpfirstquarterlyestimateuk/julytoseptember2026",
+    "https://apnews.com/article/artificial-intelligence-ai-lawsuit-cyberattacks-anthropic-openai-03ece37b96979fe834f60976648504ba",
+    "https://oui.doleta.gov/press/2026/111226.pdf"
+  ],
+  "access_limitations": "US Congress site blocked by robots; no procedural claim based on snippet. Material figures from readable company releases, official statistics or accessible full-text reporting; no paywalled snippet used as sole evidence."
 }
