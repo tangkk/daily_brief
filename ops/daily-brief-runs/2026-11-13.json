@@ -2,12 +2,12 @@
   "date": "2026-11-13",
   "edition": "daily_brief",
   "run_type": "daily_brief",
-  "status": "research_complete",
+  "status": "written_staged",
   "timezone": "Asia/Shanghai",
   "started_at": "2026-11-13T07:02:14+08:00",
-  "updated_at": "2026-11-13T07:04:30+08:00",
+  "updated_at": "2026-11-13T07:08:23+08:00",
   "artifact_state": {
-    "written_draft": false,
+    "written_draft": true,
     "spoken_canonical": false,
     "podcast_verified": false,
     "written_published": false,
@@ -54,7 +54,12 @@
   "quality_gates": {
     "source_diversity": "Discovery across Nvidia and Cisco company releases, Applied company release syndicated full-text, Baidu primary company release, ONS and US Labor official statistics, AP independent reporting, Chinese regional market coverage and EU/US/China policy sources; no single outlet is candidate gatekeeper",
     "ai_policy_sweep": "November 12 California Superior Court complaint by advocacy groups seeks halt to new model development at five firms; filing only, no judge order or effective restriction. Australia November 10 proposal covered November 12 with no new formal step. US H.R.2347 earlier procedural step covered November 11; Congress site blocked to web access; no newer corroborated step. EU AI Act existing implementation timeline and China standing rules show no verified new November 12 material action.",
-    "major_news_omission_audit": "Checked November 12 S&P 500, Nasdaq, Dow, Nvidia, semiconductor peers, Treasury yield, Brent, Cisco and Applied releases, UK GDP, Baidu launches, China/Hong Kong close, US claims and AI legal/policy sweep; no omitted candidate with stronger verified information gain than selected six."
+    "major_news_omission_audit": "Checked November 12 S&P 500, Nasdaq, Dow, Nvidia, semiconductor peers, Treasury yield, Brent, Cisco and Applied releases, UK GDP, Baidu launches, China/Hong Kong close, US claims and AI legal/policy sweep; no omitted candidate with stronger verified information gain than selected six.",
+    "title_story_order": "passed: Nvidia CEO transition leads title, written summary, first headline and spoken summary",
+    "headline_numbering": "passed: six distinct consecutively numbered entries 1-6",
+    "sensitive_terms": "written draft, spoken handoff and title passed deterministic checkers",
+    "spoken_length": "1414 Han, weekday minimum 1200 and within 1250-1450 editorial target",
+    "deduplication": "previous seven canonical editions and 30-day event/thesis headline history reviewed"
   },
   "sources": [
     "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition",
@@ -66,5 +71,12 @@
     "https://apnews.com/article/artificial-intelligence-ai-lawsuit-cyberattacks-anthropic-openai-03ece37b96979fe834f60976648504ba",
     "https://oui.doleta.gov/press/2026/111226.pdf"
   ],
-  "access_limitations": "US Congress site blocked by robots; no procedural claim based on snippet. Material figures from readable company releases, official statistics or accessible full-text reporting; no paywalled snippet used as sole evidence."
+  "access_limitations": "US Congress site blocked by robots; no procedural claim based on snippet. Material figures from readable company releases, official statistics or accessible full-text reporting; no paywalled snippet used as sole evidence.",
+  "written_staged_at": "2026-11-13T07:08:23+08:00",
+  "headline_count": 6,
+  "spoken_han_count": 1414,
+  "number_of_day": "Cisco FY2027 hyperscaler AI infrastructure revenue forecast USD 9 billion",
+  "title_handoff_ready": true,
+  "stress_handoff_ready": true,
+  "call_ledger": "No open call expired by 2026-11-13; no new call with a defensible threshold today."
 }

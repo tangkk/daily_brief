@@ -461,6 +461,34 @@
         "source_url": "https://www.siemensenergy.com/global/en/home/press-releases/earnings-release-q4-fy-2025.html"
       },
       "source_url": "https://www.siemens-energy.com/content/siemensenergy-aem/global/en/home/press-releases/earnings-release-q4-fy-2026--siemens-energy-reports-a-record-yea.html"
+    },
+    {
+      "indicator": "Cisco FY2027 hyperscaler AI infrastructure revenue outlook",
+      "value": 9,
+      "unit": "USD billion",
+      "as_of": "FY2027 company forecast published 2026-11-12",
+      "kind": "company forecast; not actual sales",
+      "previous": {
+        "value": 7.5,
+        "as_of": "FY2027 prior guidance"
+      },
+      "actual_baseline": {
+        "value": 4,
+        "as_of": "FY2026 actual, approximately"
+      },
+      "source_url": "https://www.prnewswire.com/news-releases/cisco-reports-first-quarter-earnings-302938394.html"
+    },
+    {
+      "indicator": "Applied Materials quarterly consolidated revenue (wafer equipment proxy)",
+      "value": 10.409,
+      "unit": "USD billion",
+      "as_of": "FQ4 2026 ended 2026-10-25, published 2026-11-12",
+      "kind": "company reported total revenue; includes non-AI demand",
+      "previous": {
+        "value": 6.8,
+        "as_of": "FQ4 2025"
+      },
+      "source_url": "https://mfn.se/one/a/applied-materials/applied-materials-announces-fourth-quarter-and-fiscal-year-2026-results-47ef0dd1"
     }
   ]
 }
