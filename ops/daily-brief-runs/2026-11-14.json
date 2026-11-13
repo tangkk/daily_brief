@@ -2,10 +2,10 @@
   "date": "2026-11-14",
   "edition": "daily_brief",
   "run_type": "daily_brief",
-  "status": "started",
+  "status": "research_complete",
   "timezone": "Asia/Shanghai",
   "started_at": "2026-11-14T07:01:24+08:00",
-  "updated_at": "2026-11-14T07:01:24+08:00",
+  "updated_at": "2026-11-14T07:03:22+08:00",
   "artifact_state": {
     "written_draft": false,
     "spoken_canonical": false,
@@ -14,5 +14,57 @@
     "published_verified": false
   },
   "failure_stage": null,
-  "failure_detail": null
+  "failure_detail": null,
+  "research_complete_at": "2026-11-14T07:03:22+08:00",
+  "research_cutoff": "2026-11-14T07:03:22+08:00",
+  "history_window_checked": "2026-10-15 through 2026-11-13; prior seven canonical editions 2026-11-07 through 2026-11-13 checked at event and thesis level",
+  "prior_edition_checked": "2026-11-13",
+  "prior_market_session": "2026-11-13",
+  "market_stress_index": 84.0,
+  "stress_market_date": "2026-11-13",
+  "candidate_pool": [
+    "November 13 Microsoft 365 multi-region outage and recovery",
+    "November 13 US October producer-price index release",
+    "November 12 Hon Hai third-quarter results",
+    "November 12 Cerebras third-quarter results and two new hyperscaler customers",
+    "November 12 SMIC third-quarter results and guidance",
+    "November 12 US October existing-home sales",
+    "November 13 US and China/Hong Kong completed equity sessions",
+    "November 13 Microsoft opposition to previously proposed US optical-transceiver import restriction",
+    "Existing EU AI Act Article 50 obligations, California AI lawsuit and Australian proposal"
+  ],
+  "deduplication_audit": {
+    "rejected": [
+      "Nvidia CEO departure was the November 13 lead; subsequent November 13 2% share decline and sector sympathy alone do not establish a distinct phase change",
+      "US index moves were below headline materiality; included in markets context",
+      "Microsoft opposition to an import restriction first reported in August is advocacy around an existing proposal, not a verified new formal decision",
+      "Prior California lawsuit, Australian proposal and standing EU obligations show no verified new procedural step"
+    ],
+    "admitted": [
+      "Microsoft 365 outage is a new real-world service failure affecting multiple regions and institutions",
+      "October US PPI is newly released official inflation data; annual rate reached 6.5%",
+      "Hon Hai, Cerebras and SMIC disclose new, separate realized quarterly sales and margin data across assembly, alternative inference and Chinese foundry segments",
+      "October US existing-home sales of 3.75 million annualized is new sector-wide demand evidence"
+    ]
+  },
+  "quality_gates": {
+    "source_diversity": "Discovery spanned AP and Reuters syndicated reporting, specialist technology coverage, Hon Hai and Cerebras releases, SMIC HKEX filing, NAR release, US BLS-linked AP coverage, Chinese regional reporting, Microsoft service-status records and EU/China official policy sources; no single reporting lineage gated candidates",
+    "ai_policy_sweep": "Checked EU Commission Article 50 primary guidance: obligations effective August 2, 2026, with limited December 2 grace period, no new November 13 action. November 12 California complaint remains a filing without court order. Australian proposal remains at proposal stage. Microsoft opposition to US optical-transceiver restrictions concerns an August proposal, without verified new formal agency decision. Congress site blocked by robots; no procedural advancement inferred. No qualifying new AI policy development verified before cutoff.",
+    "major_news_omission_audit": "Checked latest completed November 13 S&P 500, Nasdaq, Dow, Nvidia and semiconductor moves, US PPI and existing-home sales, Microsoft outage, Hon Hai/Cerebras/SMIC releases, China/Hong Kong closes, AI policy records and major science candidates. Index and Nvidia continuation lack independent information gain; China growth-board decline is context rather than a separate top event.",
+    "deduplication": "previous seven canonical editions plus 30-day event/thesis history checked"
+  },
+  "sources": [
+    "https://apnews.com/article/microsoft-outage-outlook-email-365-status-down-d92547a821930290db2964388016979a",
+    "https://mailservices.isc.upenn.edu/computing/email/penno365/alerts/ms-incidents.html?q=MO1465074",
+    "https://apnews.com/article/producer-prices-inflation-economy-iran-5f427443fd31a4aa2bd2a1b6cebfe549",
+    "https://www.honhai.com/en-us/press-center/press-releases/latest-news/2154",
+    "https://investors.cerebras.ai/news-releases/news-release-details/cerebras-systems-delivers-record-revenue-third-quarter-2026",
+    "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/1112/2026111200682.pdf",
+    "https://www.nar.realtor/newsroom/existing-home-sales-decreased-5-5-percent-october-nar-report",
+    "https://apnews.com/article/stocks-markets-ai-us-oil-f8edd0eeb1494d4d2584715686c5e619",
+    "https://news.10jqka.com.cn/20261113/c681796980.shtml",
+    "https://news.rthk.hk/rthk/en/component/k2/1877702-20261113.htm?archive_date=2026-11-13",
+    "https://digital-strategy.ec.europa.eu/en/faqs/transparency-obligations-under-article-50-ai-act"
+  ],
+  "access_limitations": "BLS October PPI archive returned HTTP 403; used readable AP full-text quoting the released Labor Department figures. US Congress site blocked by robots; no snippet-only legal status claims."
 }
