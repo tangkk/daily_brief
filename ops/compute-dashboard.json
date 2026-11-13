@@ -489,6 +489,43 @@
         "as_of": "FQ4 2025"
       },
       "source_url": "https://mfn.se/one/a/applied-materials/applied-materials-announces-fourth-quarter-and-fiscal-year-2026-results-47ef0dd1"
+    },
+    {
+      "indicator": "Hon Hai quarterly consolidated revenue (AI server assembly proxy)",
+      "value": 3.02,
+      "unit": "NTD trillion",
+      "as_of": "2026-Q3 (published 2026-11-12)",
+      "kind": "company reported total revenue; includes non-AI products",
+      "previous": {
+        "value": 2.068493150684932,
+        "as_of": "2025-Q3, derived from company 46% growth"
+      },
+      "source_url": "https://www.honhai.com/en-us/press-center/press-releases/latest-news/2154"
+    },
+    {
+      "indicator": "Cerebras GAAP cloud and other services quarterly revenue",
+      "value": 141.928,
+      "unit": "USD million",
+      "as_of": "2026-Q3 (published 2026-11-12)",
+      "kind": "company reported actual, not total contracted capacity",
+      "previous": {
+        "value": 38.92,
+        "as_of": "2025-Q3"
+      },
+      "source_url": "https://investors.cerebras.ai/news-releases/news-release-details/cerebras-systems-delivers-record-revenue-third-quarter-2026"
+    },
+    {
+      "indicator": "SMIC quarterly gross margin (foundry proxy)",
+      "value": 29.9,
+      "unit": "percent",
+      "as_of": "2026-Q3 (published 2026-11-12)",
+      "kind": "company reported consolidated actual, not AI-only",
+      "previous": {
+        "value": 25.3,
+        "as_of": "2026-Q2"
+      },
+      "guidance": "2026-Q4 26%-28%",
+      "source_url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/1112/2026111200682.pdf"
     }
   ]
 }

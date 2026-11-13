@@ -2,13 +2,13 @@
   "date": "2026-11-14",
   "edition": "daily_brief",
   "run_type": "daily_brief",
-  "status": "research_complete",
+  "status": "spoken_committed",
   "timezone": "Asia/Shanghai",
   "started_at": "2026-11-14T07:01:24+08:00",
-  "updated_at": "2026-11-14T07:03:22+08:00",
+  "updated_at": "2026-11-14T07:07:01+08:00",
   "artifact_state": {
-    "written_draft": false,
-    "spoken_canonical": false,
+    "written_draft": true,
+    "spoken_canonical": true,
     "podcast_verified": false,
     "written_published": false,
     "published_verified": false
@@ -51,7 +51,12 @@
     "source_diversity": "Discovery spanned AP and Reuters syndicated reporting, specialist technology coverage, Hon Hai and Cerebras releases, SMIC HKEX filing, NAR release, US BLS-linked AP coverage, Chinese regional reporting, Microsoft service-status records and EU/China official policy sources; no single reporting lineage gated candidates",
     "ai_policy_sweep": "Checked EU Commission Article 50 primary guidance: obligations effective August 2, 2026, with limited December 2 grace period, no new November 13 action. November 12 California complaint remains a filing without court order. Australian proposal remains at proposal stage. Microsoft opposition to US optical-transceiver restrictions concerns an August proposal, without verified new formal agency decision. Congress site blocked by robots; no procedural advancement inferred. No qualifying new AI policy development verified before cutoff.",
     "major_news_omission_audit": "Checked latest completed November 13 S&P 500, Nasdaq, Dow, Nvidia and semiconductor moves, US PPI and existing-home sales, Microsoft outage, Hon Hai/Cerebras/SMIC releases, China/Hong Kong closes, AI policy records and major science candidates. Index and Nvidia continuation lack independent information gain; China growth-board decline is context rather than a separate top event.",
-    "deduplication": "previous seven canonical editions plus 30-day event/thesis history checked"
+    "deduplication": "previous seven canonical editions plus 30-day event/thesis history checked",
+    "title_story_order": "passed: Microsoft 365 outage leads title, written summary, first headline and spoken summary",
+    "headline_numbering": "passed: six distinct consecutively numbered entries 1-6",
+    "sensitive_terms": "written draft, spoken handoff and title passed deterministic checker",
+    "spoken_length": "1449 Han, weekday minimum 1200 and within 1250-1450 editorial target",
+    "date_naturalness": "spoken fixed opening uses edition date once; market-session and reporting-period language checked"
   },
   "sources": [
     "https://apnews.com/article/microsoft-outage-outlook-email-365-status-down-d92547a821930290db2964388016979a",
@@ -66,5 +71,13 @@
     "https://news.rthk.hk/rthk/en/component/k2/1877702-20261113.htm?archive_date=2026-11-13",
     "https://digital-strategy.ec.europa.eu/en/faqs/transparency-obligations-under-article-50-ai-act"
   ],
-  "access_limitations": "BLS October PPI archive returned HTTP 403; used readable AP full-text quoting the released Labor Department figures. US Congress site blocked by robots; no snippet-only legal status claims."
+  "access_limitations": "BLS October PPI archive returned HTTP 403; used readable AP full-text quoting the released Labor Department figures. US Congress site blocked by robots; no snippet-only legal status claims.",
+  "written_staged_at": "2026-11-14T07:07:01+08:00",
+  "spoken_committed_at": "2026-11-14T07:07:01+08:00",
+  "headline_count": 6,
+  "spoken_han_count": 1449,
+  "number_of_day": "US October 2026 PPI final demand 6.5% year over year",
+  "title_handoff_ready": true,
+  "stress_handoff_ready": true,
+  "call_ledger": "No unresolved call expired by 2026-11-14; no new call with a defensible threshold today."
 }
