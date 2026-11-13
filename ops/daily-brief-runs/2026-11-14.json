@@ -2,14 +2,14 @@
   "date": "2026-11-14",
   "edition": "daily_brief",
   "run_type": "daily_brief",
-  "status": "spoken_committed",
+  "status": "podcast_verified",
   "timezone": "Asia/Shanghai",
   "started_at": "2026-11-14T07:01:24+08:00",
-  "updated_at": "2026-11-14T07:07:01+08:00",
+  "updated_at": "2026-11-14T07:13:41+08:00",
   "artifact_state": {
     "written_draft": true,
     "spoken_canonical": true,
-    "podcast_verified": false,
+    "podcast_verified": true,
     "written_published": false,
     "published_verified": false
   },
@@ -79,5 +79,6 @@
   "number_of_day": "US October 2026 PPI final demand 6.5% year over year",
   "title_handoff_ready": true,
   "stress_handoff_ready": true,
-  "call_ledger": "No unresolved call expired by 2026-11-14; no new call with a defensible threshold today."
+  "call_ledger": "No unresolved call expired by 2026-11-14; no new call with a defensible threshold today.",
+  "podcast_verified_at": "2026-11-14T07:13:41+08:00"
 }
