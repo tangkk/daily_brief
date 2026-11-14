@@ -2,13 +2,13 @@
   "date": "2026-11-15",
   "edition": "weekly_review",
   "run_type": "weekly_review",
-  "status": "research_complete",
+  "status": "spoken_committed",
   "timezone": "Asia/Shanghai",
   "started_at": "2026-11-15T07:01:20+08:00",
-  "updated_at": "2026-11-15T07:03:29+08:00",
+  "updated_at": "2026-11-15T07:07:17+08:00",
   "artifact_state": {
-    "written_draft": false,
-    "spoken_canonical": false,
+    "written_draft": true,
+    "spoken_canonical": true,
     "podcast_verified": false,
     "written_published": false,
     "published_verified": false
@@ -53,7 +53,13 @@
     "ai_policy_sweep": "US Senate H.R.2347 advanced only to consideration after November 9 procedural votes; data-center grid-cost terms proposed, not law. Australian November 10 mandatory AI standards announcement remains proposal without published bill text. EU Article 50 existing implementation timetable unchanged. No verified November 13-14 binding AI policy action before cutoff; Congress.gov blocked by robots, so no status inferred from snippets.",
     "major_news_omission_audit": "Checked latest completed November 13 S&P/Nasdaq/Dow closes and weekly gains, Nvidia/AMD/Broadcom chip declines, October CPI/PPI, Anthropic IPO and CoreWeave accounts, China market and foundry evidence, November 13 FAA ground stop/restoration, AI policy formal stages. FAA event is significant infrastructure context but does not change weekly AI credit thesis.",
     "deduplication": "Prior Sunday and seven daily editions plus 30-day thesis history reviewed; weekly synthesis focuses on changes since previous Sunday",
-    "access_limitations": "Congress.gov robots block; used Senate vote record and committee materials. Some company IR pages are intermittently inaccessible; relied on readable primary filings or accessible full-text releases, with original attribution."
+    "access_limitations": "Congress.gov robots block; used Senate vote record and committee materials. Some company IR pages are intermittently inaccessible; relied on readable primary filings or accessible full-text releases, with original attribution.",
+    "title_story_order": "passed: Anthropic near-term obligations lead title, opening summary, first written thematic section and spoken narrative; CoreWeave and weekly markets follow",
+    "weekly_structure": "passed: Sunday synthesis, dedicated AI credit cycle, market week change, China and infrastructure, world state, concept corner, next-week outlook; no Daily Top Headlines numbering imposed",
+    "sensitive_terms": "written draft, spoken handoff and title passed written deterministic checker; spoken handoff also passed Podcast checker",
+    "spoken_length": "2726 Han characters, above Sunday 1800 hard minimum; deeper treatment concentrated in Anthropic, CoreWeave and market/financing context",
+    "date_naturalness": "fixed Sunday opening and first sentence present; chronology and week/session language reviewed",
+    "concept_uniqueness": "contractual payment obligations not previously in concept ledger"
   },
   "sources": [
     "https://apnews.com/article/wall-street-stocks-dow-nasdaq-12c1e8155fb85c3c7b09e058ed6d3c74",
@@ -70,5 +76,10 @@
     "https://www.minister.defence.gov.au/media-releases/2026-11-10/new-australian-ai-safety-security-protections"
   ],
   "number_of_week": "Anthropic USD 70.7B contractual obligations due within 12 months of September 30, 2026",
-  "call_ledger": "No open call expired by 2026-11-15; no new call without a defensible threshold."
+  "call_ledger": "No open call expired by 2026-11-15; no new call without a defensible threshold.",
+  "written_staged_at": "2026-11-15T07:07:17+08:00",
+  "spoken_committed_at": "2026-11-15T07:07:17+08:00",
+  "spoken_han_count": 2726,
+  "title_handoff_ready": true,
+  "stress_handoff_ready": true
 }
