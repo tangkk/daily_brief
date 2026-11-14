@@ -1,6 +1,6 @@
 ---
 layout: daily_brief
-title: "2026-11-15"
+title: "周回顾 11.15｜Anthropic 一年付款义务 707 亿；标普周涨 2.5%；CoreWeave 季收 36.61 亿｜压力指数 84"
 date: 2026-11-15 07:00:00 +0800
 headline: "Anthropic 一年付款义务 707 亿；标普周涨 2.5%；CoreWeave 季收 36.61 亿"
 ---
