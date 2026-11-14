@@ -2,10 +2,10 @@
   "date": "2026-11-15",
   "edition": "weekly_review",
   "run_type": "weekly_review",
-  "status": "started",
+  "status": "research_complete",
   "timezone": "Asia/Shanghai",
   "started_at": "2026-11-15T07:01:20+08:00",
-  "updated_at": "2026-11-15T07:01:20+08:00",
+  "updated_at": "2026-11-15T07:03:29+08:00",
   "artifact_state": {
     "written_draft": false,
     "spoken_canonical": false,
@@ -14,5 +14,61 @@
     "published_verified": false
   },
   "failure_stage": null,
-  "failure_detail": null
+  "failure_detail": null,
+  "research_completed_at": "2026-11-15T07:03:29+08:00",
+  "research_cutoff": "2026-11-15T07:03:29+08:00",
+  "history_window_checked": "2026-10-16 through 2026-11-14; previous seven canonical editions 2026-11-08 through 2026-11-14 and prior Sunday review checked at event and thesis level",
+  "prior_edition_checked": "2026-11-14",
+  "prior_weekly_review_checked": "2026-11-08",
+  "prior_market_session": "2026-11-13",
+  "market_stress_index": 84.1,
+  "stress_market_date": "2026-11-13",
+  "stress_prior_friday_index_recomputed": 84.2,
+  "candidate_pool": [
+    "US equity week ended November 13: S&P +2.5%, Nasdaq +2.3%, Dow +2.1%, then Friday chip selloff",
+    "Nvidia CEO resignation and market repricing, no verified order cancellation",
+    "US October CPI +0.4% monthly and PPI +6.5% annual, 10-year yield 5.15% Friday",
+    "Anthropic November 10 S-1/A proposed IPO; USD 33.2B nine-month revenue and USD 70.7B obligations due within 12 months",
+    "OpenAI reported USD 11B financing closing; CoreWeave quarterly USD 3.661B revenue and USD 846M interest",
+    "TSMC October revenue, Cisco AI guidance, Infineon power outlook, Siemens Energy backlog, Hon Hai and Cerebras sales",
+    "China October producer prices, Qwen4 preview, Baidu ERNIE platform and SMIC results",
+    "US data-center grid-cost bill at Senate procedural stage; Australian proposed AI standards; EU AI Act standing obligations",
+    "FAA November 13-14 nationwide flight ground stop after communications issue, restored"
+  ],
+  "deduplication_audit": {
+    "rejected": [
+      "Prior Sunday IREN financing and supplier-sales thesis retained only as comparison, not repeated as this week's new development",
+      "November 13 Microsoft 365 outage already covered; weekly synthesis may mention infrastructure reliability without re-reporting as fresh",
+      "Existing EU AI Act duties and prior US proposals without verified new procedural action excluded"
+    ],
+    "admitted": [
+      "New November 9-13 weekly index recovery and Friday sector divergence change the previous Sunday market state",
+      "Anthropic IPO amendment discloses new proposed financing terms, realized revenue and near-term compute obligations",
+      "CoreWeave, Hon Hai, Cisco, Cerebras, SMIC and Siemens Energy report new distinct quarterly or annual financial data",
+      "October US CPI/PPI and current Treasury yield provide new financing-cost evidence"
+    ]
+  },
+  "quality_gates": {
+    "source_diversity": "Discovery across AP and specialist market reporting, IMF market monitor, SEC and company filings, US BLS/FAA/Senate records, Taiwanese and Chinese company releases, Chinese regional reporting, Australian and EU government records; no single reporting lineage gatekeeper",
+    "ai_policy_sweep": "US Senate H.R.2347 advanced only to consideration after November 9 procedural votes; data-center grid-cost terms proposed, not law. Australian November 10 mandatory AI standards announcement remains proposal without published bill text. EU Article 50 existing implementation timetable unchanged. No verified November 13-14 binding AI policy action before cutoff; Congress.gov blocked by robots, so no status inferred from snippets.",
+    "major_news_omission_audit": "Checked latest completed November 13 S&P/Nasdaq/Dow closes and weekly gains, Nvidia/AMD/Broadcom chip declines, October CPI/PPI, Anthropic IPO and CoreWeave accounts, China market and foundry evidence, November 13 FAA ground stop/restoration, AI policy formal stages. FAA event is significant infrastructure context but does not change weekly AI credit thesis.",
+    "deduplication": "Prior Sunday and seven daily editions plus 30-day thesis history reviewed; weekly synthesis focuses on changes since previous Sunday",
+    "access_limitations": "Congress.gov robots block; used Senate vote record and committee materials. Some company IR pages are intermittently inaccessible; relied on readable primary filings or accessible full-text releases, with original attribution."
+  },
+  "sources": [
+    "https://apnews.com/article/wall-street-stocks-dow-nasdaq-12c1e8155fb85c3c7b09e058ed6d3c74",
+    "https://www.imfconnect.org/content/dam/imf/News%20and%20Generic%20Content/GMM/archive/GMM%20November%2013%2C%202026.pdf",
+    "https://www.bls.gov/news.release/archives/cpi_11102026.htm",
+    "https://apnews.com/article/producer-prices-inflation-economy-iran-5f427443fd31a4aa2bd2a1b6cebfe549",
+    "https://www.sec.gov/Archives/edgar/data/2130357/000162828026072484/anthropicpbc-sx1ax2.htm",
+    "https://www.stocktitan.net/sec-filings/CRWV/8-k-core-weave-inc-reports-material-event-d9367aabcf7e.html",
+    "https://investor.tsmc.com/english/monthly-revenue/2026",
+    "https://www.honhai.com/en-us/press-center/press-releases/latest-news/2154",
+    "https://www.prnewswire.com/news-releases/cisco-reports-first-quarter-earnings-302938394.html",
+    "https://www.siemens-energy.com/content/siemensenergy-aem/global/en/home/press-releases/earnings-release-q4-fy-2026--siemens-energy-reports-a-record-yea.html",
+    "https://www.faa.gov/newsroom/faa-statement-nationwide-ground-stop",
+    "https://www.minister.defence.gov.au/media-releases/2026-11-10/new-australian-ai-safety-security-protections"
+  ],
+  "number_of_week": "Anthropic USD 70.7B contractual obligations due within 12 months of September 30, 2026",
+  "call_ledger": "No open call expired by 2026-11-15; no new call without a defensible threshold."
 }
