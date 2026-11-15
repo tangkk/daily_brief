@@ -1,6 +1,6 @@
 ---
 layout: daily_brief
-title: "2026-11-16"
+title: "11.16｜美联储估算算力相关发债超6800亿；特斯拉开放Cybercab个人预订；OpenAI推出支付钱包｜压力指数 84"
 date: 2026-11-16 07:00:00 +0800
 headline: "美联储估算算力相关发债超6800亿；特斯拉开放Cybercab个人预订；OpenAI推出支付钱包"
 ---
