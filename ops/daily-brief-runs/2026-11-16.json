@@ -2,13 +2,13 @@
   "date": "2026-11-16",
   "edition": "daily_brief",
   "run_type": "daily_brief",
-  "status": "research_complete",
+  "status": "spoken_committed",
   "timezone": "Asia/Shanghai",
   "started_at": "2026-11-16T07:02:33+08:00",
-  "updated_at": "2026-11-16T07:09:47+08:00",
+  "updated_at": "2026-11-16T07:12:55+08:00",
   "artifact_state": {
-    "written_draft": false,
-    "spoken_canonical": false,
+    "written_draft": true,
+    "spoken_canonical": true,
     "podcast_verified": false,
     "written_published": false,
     "published_verified": false
@@ -58,8 +58,12 @@
     "ai_policy_sweep": "Checked US Senate data-center energy proposals, California AI litigation, EU AI Act enforcement status, Australian proposed safety obligations, Chinese MIIT notices. No verified November 14-16 binding AI policy action or materially changed formal stage before cutoff; US Treasury Secretary Nvidia comments are allegations, not enforcement. Congress.gov robots blocked; relied on Senate and agency primary pages.",
     "major_news_omission_audit": "Latest completed US session November 13 S&P/Nasdaq/Dow, Nvidia and chip selloff, October PPI, Anthropic/CoreWeave and other prior-edition AI finance, Fed Financial Stability Report, Microsoft outage, FAA ground stop, and AI policy stages checked. Market/session and outage events already covered November 14-15; Fed debt quantification is new. Japan Q3 GDP and China October activity data were not released by 07:00-07:09 Asia/Shanghai cutoff.",
     "access_limitations": "Congress.gov robots block. Fed report, OpenAI, DeepSeek, LangChain and Tesla agreement readable as primary. COMAC facts through Xinhua reporting from company; W5000 through IT Home reporting company announcement. No paywalled snippets used as sole material evidence.",
-    "title_story_order": "Fed debt quantification leads title, opening summary and first headline; Tesla and OpenAI next",
-    "headline_structure": "Seven distinct numbered headlines selected; verify mechanically before handoff"
+    "title_story_order": "passed: Fed advanced-computing debt issuance leads title, opening summary, and first numbered headline; draft headline matches handoff title",
+    "headline_structure": "passed: seven distinct substantive headlines numbered 1 through 7 without gaps",
+    "sensitive_terms": "written draft, spoken handoff and title passed written deterministic checker; spoken handoff also passed Podcast checker",
+    "spoken_length": "1484 Han characters; above Monday 1200 hard minimum, within 1500 soft guide",
+    "date_naturalness": "fixed 2026-11-16 opening; US Friday market session and weekend event dates distinguished; no unnecessary repeated full dates in spoken narrative",
+    "stress": "2026-11-13 market observation 84.1, prior recomputed 82.6; no separate spoken stress sentence because change <10 and no threshold crossing"
   },
   "sources": [
     "https://www.federalreserve.gov/publications/files/financial-stability-report-20261113.pdf",
@@ -70,5 +74,12 @@
     "https://www.langchain.com/blog/series-c",
     "https://www2.xinhuanet.com/politics/20261114/cb8c94c4e6cc4a809ec8d81b7167b36b/c.html",
     "https://www.ithome.com/1/027/068.htm"
-  ]
+  ],
+  "written_staged_at": "2026-11-16T07:12:55+08:00",
+  "spoken_committed_at": "2026-11-16T07:12:55+08:00",
+  "spoken_han_count": 1484,
+  "title_handoff_ready": true,
+  "stress_handoff_ready": true,
+  "number_of_day": "Fed estimate: over USD 680B advanced-computing-related debt issuance in 2026 through October, versus USD 130B in full-year 2023",
+  "call_ledger": "No defensible new threshold call made; existing ledger unchanged."
 }
