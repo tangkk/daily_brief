@@ -2,10 +2,10 @@
   "date": "2026-11-16",
   "edition": "daily_brief",
   "run_type": "daily_brief",
-  "status": "started",
+  "status": "research_complete",
   "timezone": "Asia/Shanghai",
   "started_at": "2026-11-16T07:02:33+08:00",
-  "updated_at": "2026-11-16T07:02:33+08:00",
+  "updated_at": "2026-11-16T07:09:47+08:00",
   "artifact_state": {
     "written_draft": false,
     "spoken_canonical": false,
@@ -14,5 +14,61 @@
     "published_verified": false
   },
   "failure_stage": null,
-  "failure_detail": null
+  "failure_detail": null,
+  "research_completed_at": "2026-11-16T07:09:47+08:00",
+  "research_cutoff": "2026-11-16T07:09:47+08:00",
+  "history_window_checked": "2026-10-17 through 2026-11-15; prior seven canonical editions 2026-11-09 through 2026-11-15 checked at event and thesis level",
+  "prior_edition_checked": "2026-11-15",
+  "prior_market_session": "2026-11-13",
+  "market_stress_index": 84.1,
+  "stress_market_date": "2026-11-13",
+  "candidate_pool": [
+    "Fed November 13 Financial Stability Report: advanced-computing debt issuance over USD 680B by October 2026; public outstanding over USD 1.1T",
+    "Tesla November 13 invitation-only Cybercab personal orders at USD 29,990 and USD 299 monthly autonomy subscription; no deliveries yet",
+    "OpenAI November 13 ChatGPT Wallet limited rollout to US Pro users via dots, with per-purchase biometric approval",
+    "DeepSeek November 13 full app-capability APIs, standalone OCR/ASR/TTS and open-source front end",
+    "LangChain November 13 USD 300M Series C and company-reported over 7,000 LangSmith organizations",
+    "COMAC CE-25A first crewed flight November 14; 19-seat electric aircraft, certification application accepted",
+    "W5000 first technical validation flight November 14; 5-ton payload target, not certified or commercially operating",
+    "Microsoft 365 service restoration and preliminary cause after prior-edition outage",
+    "FAA nationwide ground-stop cause investigation, no confirmed new root cause",
+    "US Senate data-center grid-cost and permitting proposals; Australia AI safety proposals; EU standing AI Act obligations",
+    "US Treasury Secretary comments about Nvidia allegations without new formal enforcement action"
+  ],
+  "deduplication_audit": {
+    "rejected": [
+      "Microsoft 365 outage already led November 14; subsequent provisional cause/restoration adds insufficient new global state change for headline",
+      "FAA ground stop already included in November 15 review; root-cause investigation ongoing without confirmed finding",
+      "Anthropic IPO and compute-obligation figures led November 15; no new filing or priced offer verified before cutoff",
+      "Nvidia CEO departure covered November 13 and 15; new political statements are allegations, not a verified order or operating change",
+      "Prior AI model releases, China policy proposals and EU standing rules have no new procedural phase"
+    ],
+    "admitted": [
+      "Fed November 13 report adds quantified cross-sector debt issuance and outstanding stock not in prior seven editions",
+      "Tesla invitation-only personal ordering and subscription terms are a new commercial phase beyond September robotaxi service",
+      "OpenAI wallet introduces limited live agent payment flow with card-network tokenization",
+      "DeepSeek full-suite API release changes developer access to search, file and voice tools",
+      "LangChain new financing and disclosed organizational adoption quantify a separate agent-infrastructure platform",
+      "CE-25A crewed flight is a new engineering milestone after February uncrewed test",
+      "W5000 technical validation flight moves from 2025 assembly to actual flight; separate turboprop cargo design from electric passenger CE-25A"
+    ]
+  },
+  "quality_gates": {
+    "source_diversity": "Discovery across AP and other global reporting, specialist AI/EV/aviation journalism, Fed and company primary sources, Chinese Xinhua and regional reporting, US/EU/China/Australia policy records; no single lineage gatekeeper",
+    "ai_policy_sweep": "Checked US Senate data-center energy proposals, California AI litigation, EU AI Act enforcement status, Australian proposed safety obligations, Chinese MIIT notices. No verified November 14-16 binding AI policy action or materially changed formal stage before cutoff; US Treasury Secretary Nvidia comments are allegations, not enforcement. Congress.gov robots blocked; relied on Senate and agency primary pages.",
+    "major_news_omission_audit": "Latest completed US session November 13 S&P/Nasdaq/Dow, Nvidia and chip selloff, October PPI, Anthropic/CoreWeave and other prior-edition AI finance, Fed Financial Stability Report, Microsoft outage, FAA ground stop, and AI policy stages checked. Market/session and outage events already covered November 14-15; Fed debt quantification is new. Japan Q3 GDP and China October activity data were not released by 07:00-07:09 Asia/Shanghai cutoff.",
+    "access_limitations": "Congress.gov robots block. Fed report, OpenAI, DeepSeek, LangChain and Tesla agreement readable as primary. COMAC facts through Xinhua reporting from company; W5000 through IT Home reporting company announcement. No paywalled snippets used as sole material evidence.",
+    "title_story_order": "Fed debt quantification leads title, opening summary and first headline; Tesla and OpenAI next",
+    "headline_structure": "Seven distinct numbered headlines selected; verify mechanically before handoff"
+  },
+  "sources": [
+    "https://www.federalreserve.gov/publications/files/financial-stability-report-20261113.pdf",
+    "https://www.tesla.com/configurator/api/v4/terms?locale=en_US&model=cc&saleType=Sale",
+    "https://techcrunch.com/2026/11/14/tesla-opens-cybercab-pre-orders-for-personal-use-with-geo-restrictions-and-a-299-monthly-fee/",
+    "https://openai.com/index/introducing-chatgpt-wallet/",
+    "https://api-docs.deepseek.com/news/news261113/",
+    "https://www.langchain.com/blog/series-c",
+    "https://www2.xinhuanet.com/politics/20261114/cb8c94c4e6cc4a809ec8d81b7167b36b/c.html",
+    "https://www.ithome.com/1/027/068.htm"
+  ]
 }
