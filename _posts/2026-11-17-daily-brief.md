@@ -1,6 +1,6 @@
 ---
 layout: daily_brief
-title: "2026-11-17"
+title: "11.17｜美股科技板块再跌；中国10月零售仅增0.4%；AMD完成World Labs收购｜压力指数 85"
 date: 2026-11-17 07:00:00 +0800
 headline: "美股科技板块再跌；中国10月零售仅增0.4%；AMD完成World Labs收购"
 ---
