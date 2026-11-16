@@ -2,13 +2,13 @@
   "date": "2026-11-17",
   "edition": "daily_brief",
   "run_type": "daily_brief",
-  "status": "research_complete",
+  "status": "spoken_committed",
   "timezone": "Asia/Shanghai",
   "started_at": "2026-11-17T07:01:50+08:00",
-  "updated_at": "2026-11-17T07:04:00+08:00",
+  "updated_at": "2026-11-17T07:08:20+08:00",
   "artifact_state": {
-    "written_draft": false,
-    "spoken_canonical": false,
+    "written_draft": true,
+    "spoken_canonical": true,
     "podcast_verified": false,
     "written_published": false,
     "published_verified": false
@@ -31,7 +31,8 @@
     "JPMorgan November 16 technical issue delayed online/transaction access; Zelle network itself operational",
     "China November 16 ChiNext -4.37% and optical component selloff",
     "Data-center emissions advocacy study and COP draft",
-    "Unverified Nvidia MLPerf claim and Huawei model digest"
+    "Unverified Nvidia MLPerf claim and Huawei model digest",
+    "MLCommons November 16 MLPerf Training v6.1: 24 submitters, 153 systems, 250 results, first Rubin and TPUv7 results"
   ],
   "deduplication_audit": {
     "rejected": [
@@ -45,14 +46,21 @@
       "BIS new interim final rule is a formal regulatory step distinct from prior proposals; effect date needs exact qualification",
       "China October activity data and Japan preliminary Q3 GDP are new statistical releases",
       "AMD closing and share count now formalized in SEC 8-K/A",
-      "JPMorgan processing interruption is a new incident with direct customer/transaction effect"
+      "JPMorgan processing interruption is a new incident with direct customer/transaction effect",
+      "MLPerf Training v6.1 new round includes new systems and tasks with independent public results"
     ]
   },
   "quality_gates": {
     "source_diversity": "Discovery across AP, Reuters syndicated copy, China NBS, Japan Cabinet Office, US BIS, AMD filing/company release, regional China market reporting, specialist technology reporting. No single publisher or lineage was candidate gatekeeper.",
     "ai_policy_sweep": "BIS RIN 0694-AK50 interim final rule displayed November 15/16; official PDF DATES placeholder says effective on Federal Register publication, so do not assert confirmed in-force date. Prior US Senate data-center bills, Australia proposed obligations, EU standing AI Act checked; no stronger new formal step found.",
-    "major_news_omission_audit": "Checked completed November 16 US S&P/Nasdaq/Dow and chips, China October NBS activity, Japan Q3 GDP, AI finance and model releases, bank disruption, data-center emissions report, and new BIS control. China ChiNext selloff may be contextual to broad chip repricing; climate advocacy and unverified model performance claims excluded pending independent evidence.",
-    "access_limitations": "BIS official pre-publication PDF contains placeholder effective date; authoritative effect date must be qualified. No paywalled snippet used alone for material claim."
+    "major_news_omission_audit": "Checked completed November 16 US S&P/Nasdaq/Dow and chips, China October NBS activity, Japan Q3 GDP, AI finance/model releases, bank disruption, new BIS rule, MLPerf Training v6.1 and data-center emissions report. MLPerf is included from MLCommons primary publication; advocacy emissions estimate lacks independent corroboration at cutoff.",
+    "access_limitations": "BIS official pre-publication PDF contains placeholder effective date; authoritative effect date must be qualified. No paywalled snippet used alone for material claim.",
+    "title_story_order": "passed: broad US technology selloff leads title, opening summary and first numbered headline; draft headline matches handoff",
+    "headline_structure": "passed: seven distinct substantive headlines numbered 1 through 7 without gaps",
+    "sensitive_terms": "written draft and title passed written checker; spoken handoff passed Podcast checker",
+    "spoken_length": "1441 Han characters; above 1200 hard minimum and within 1250-1450 target",
+    "date_naturalness": "fixed 2026-11-17 opening; US November 16 market session, China November 16 releases and AMD November 13 close distinguished; no unnecessary repeated full dates",
+    "stress": "2026-11-16 market observation 85.2, prior 84.1; no separate spoken stress sentence because change <10 and no threshold crossing"
   },
   "sources": [
     "https://apnews.com/article/wall-street-stocks-dow-nasdaq-2e6a9c41b6336e9240c1b01585d20cd4",
@@ -61,6 +69,15 @@
     "https://www.esri.cao.go.jp/en/sna/data/sokuhou/files/2026/qe263/pdf/gaiyou2631_e.pdf",
     "https://ir.amd.com/financial-information/sec-filings/content/0001193125-26-462340/d105780d8ka.htm",
     "https://newsroom.amd.com/news/amd-completes-acquisition-world-labs/",
-    "https://apnews.com/article/bank-outage-chase-wells-fargo-truist-50fee2693c22f597fa6ca51a97ef2cda"
-  ]
+    "https://apnews.com/article/bank-outage-chase-wells-fargo-truist-50fee2693c22f597fa6ca51a97ef2cda",
+    "https://mlcommons.org/2026/11/mlperf-training-v6-1-results/",
+    "https://results.mlcommons.org/training"
+  ],
+  "written_staged_at": "2026-11-17T07:08:20+08:00",
+  "spoken_committed_at": "2026-11-17T07:08:20+08:00",
+  "spoken_han_count": 1441,
+  "title_handoff_ready": true,
+  "stress_handoff_ready": true,
+  "number_of_day": "Nasdaq Composite -2.5% on November 16, 2026, closing at 24,509.76",
+  "call_ledger": "No defensible new threshold call made; existing ledger unchanged."
 }
