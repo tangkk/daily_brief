@@ -2,10 +2,10 @@
   "date": "2026-11-17",
   "edition": "daily_brief",
   "run_type": "daily_brief",
-  "status": "started",
+  "status": "research_complete",
   "timezone": "Asia/Shanghai",
   "started_at": "2026-11-17T07:01:50+08:00",
-  "updated_at": "2026-11-17T07:01:50+08:00",
+  "updated_at": "2026-11-17T07:04:00+08:00",
   "artifact_state": {
     "written_draft": false,
     "spoken_canonical": false,
@@ -14,5 +14,53 @@
     "published_verified": false
   },
   "failure_stage": null,
-  "failure_detail": null
+  "failure_detail": null,
+  "research_completed_at": "2026-11-17T07:04:00+08:00",
+  "research_cutoff": "2026-11-17T07:04:00+08:00",
+  "history_window_checked": "2026-10-18 through 2026-11-16; prior seven canonical editions 2026-11-10 through 2026-11-16 checked at event and thesis level",
+  "prior_edition_checked": "2026-11-16",
+  "prior_market_session": "2026-11-16",
+  "market_stress_index": 85.2,
+  "stress_market_date": "2026-11-16",
+  "candidate_pool": [
+    "US November 16 S&P 500 -1.9%, Nasdaq -2.5%, Dow -1.4%, broad tech/chip repricing",
+    "BIS interim final rule addressing remote access to advanced chips via overseas data centers; official rule text on display, Federal Register publication/effective date to verify",
+    "China October industrial production +4.8%, retail +0.4%, January-October fixed investment -8.1%",
+    "Japan July-September real GDP -0.1% annualized preliminary",
+    "AMD completed World Labs acquisition November 13, disclosed November 16; USD 8.2B shares and 14,978,322 shares issued",
+    "JPMorgan November 16 technical issue delayed online/transaction access; Zelle network itself operational",
+    "China November 16 ChiNext -4.37% and optical component selloff",
+    "Data-center emissions advocacy study and COP draft",
+    "Unverified Nvidia MLPerf claim and Huawei model digest"
+  ],
+  "deduplication_audit": {
+    "rejected": [
+      "Nvidia CEO resignation itself covered November 13 and 15; new November 16 broad market price action clears separate verified market-reaction gate",
+      "Microsoft 365 and FAA outages covered November 14-15; JPMorgan banking incident is a distinct payment/transaction event",
+      "AMD acquisition announced September; November 13 closing and share issuance are new phase",
+      "China October PPI published November 10 and already covered; November 16 activity statistics are new release"
+    ],
+    "admitted": [
+      "November 16 broad US index and semiconductor selloff is material verified market state change",
+      "BIS new interim final rule is a formal regulatory step distinct from prior proposals; effect date needs exact qualification",
+      "China October activity data and Japan preliminary Q3 GDP are new statistical releases",
+      "AMD closing and share count now formalized in SEC 8-K/A",
+      "JPMorgan processing interruption is a new incident with direct customer/transaction effect"
+    ]
+  },
+  "quality_gates": {
+    "source_diversity": "Discovery across AP, Reuters syndicated copy, China NBS, Japan Cabinet Office, US BIS, AMD filing/company release, regional China market reporting, specialist technology reporting. No single publisher or lineage was candidate gatekeeper.",
+    "ai_policy_sweep": "BIS RIN 0694-AK50 interim final rule displayed November 15/16; official PDF DATES placeholder says effective on Federal Register publication, so do not assert confirmed in-force date. Prior US Senate data-center bills, Australia proposed obligations, EU standing AI Act checked; no stronger new formal step found.",
+    "major_news_omission_audit": "Checked completed November 16 US S&P/Nasdaq/Dow and chips, China October NBS activity, Japan Q3 GDP, AI finance and model releases, bank disruption, data-center emissions report, and new BIS control. China ChiNext selloff may be contextual to broad chip repricing; climate advocacy and unverified model performance claims excluded pending independent evidence.",
+    "access_limitations": "BIS official pre-publication PDF contains placeholder effective date; authoritative effect date must be qualified. No paywalled snippet used alone for material claim."
+  },
+  "sources": [
+    "https://apnews.com/article/wall-street-stocks-dow-nasdaq-2e6a9c41b6336e9240c1b01585d20cd4",
+    "https://www.bis.gov/media/documents/rin-0694-ak50.pdf",
+    "https://www.stats.gov.cn/sj/xwfbh/fbhwd/202611/t20261116_1965844.html",
+    "https://www.esri.cao.go.jp/en/sna/data/sokuhou/files/2026/qe263/pdf/gaiyou2631_e.pdf",
+    "https://ir.amd.com/financial-information/sec-filings/content/0001193125-26-462340/d105780d8ka.htm",
+    "https://newsroom.amd.com/news/amd-completes-acquisition-world-labs/",
+    "https://apnews.com/article/bank-outage-chase-wells-fargo-truist-50fee2693c22f597fa6ca51a97ef2cda"
+  ]
 }
