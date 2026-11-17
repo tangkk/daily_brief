@@ -2,13 +2,13 @@
   "date": "2026-11-18",
   "edition": "daily_brief",
   "run_type": "daily_brief",
-  "status": "research_complete",
+  "status": "spoken_committed",
   "timezone": "Asia/Shanghai",
   "started_at": "2026-11-18T07:04:01+08:00",
-  "updated_at": "2026-11-18T07:07:26+08:00",
+  "updated_at": "2026-11-18T07:10:20+08:00",
   "artifact_state": {
-    "written_draft": false,
-    "spoken_canonical": false,
+    "written_draft": true,
+    "spoken_canonical": true,
     "podcast_verified": false,
     "written_published": false,
     "published_verified": false
@@ -53,7 +53,12 @@
     "ai_policy_sweep": "BIS interim final rule announced November 16 and covered November 17. Federal Register public-inspection copy now says scheduled publication November 19; not yet in force at cutoff. EU Commission November 16 draft Article 27 assessment template is consultation, not new binding rule. November 17 EU DMA high-level meeting discussed AI Act without formal regulatory change. No eligible new policy headline.",
     "major_news_omission_audit": "Checked completed November 17 S&P/Nasdaq/Dow and chips, Nvidia earnings after close, Microsoft Ignite, Baidu and Tencent AI releases, US retail and industrial production, Home Depot, China market close, AI policy status. Market decline is continuation in dashboard; seven independent substantive headlines selected.",
     "access_limitations": "Congress.gov blocked by robots.txt; primary BIS/Federal Register and EU Commission records available. No paywalled snippet used alone.",
-    "stress": "November 17 market observation 86.2, prior computed 85.5; change 0.7, no spoken mention."
+    "stress": "November 17 market observation 86.2, prior computed 85.5; change 0.7, no spoken mention.",
+    "title_story_order": "passed: Nvidia results lead title, opening summary and first numbered headline; draft headline matches handoff",
+    "headline_structure": "passed: seven distinct substantive headlines numbered 1 through 7 without gaps",
+    "sensitive_terms": "written draft and title passed written checker; spoken handoff passed Podcast checker",
+    "spoken_length": "1407 Han characters; above 1200 minimum and within 1250-1450 editorial target",
+    "date_naturalness": "fixed 2026-11-18 opening; Nvidia reporting period, November 17 US data releases and market close distinguished; no redundant full dates"
   },
   "sources": [
     "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Third-Quarter-Fiscal-2027/default.aspx",
@@ -65,5 +70,12 @@
     "https://ir.homedepot.com/news-releases/2026/11-17-2026-110221331",
     "https://apnews.com/article/wall-street-stocks-dow-nasdaq-ff6caef4d9289cf7f1e6ee48a706eddc",
     "https://public-inspection.federalregister.gov/2026-23529.pdf"
-  ]
+  ],
+  "written_staged_at": "2026-11-18T07:10:20+08:00",
+  "spoken_committed_at": "2026-11-18T07:10:20+08:00",
+  "spoken_han_count": 1407,
+  "title_handoff_ready": true,
+  "stress_handoff_ready": true,
+  "number_of_day": "Nvidia Q3 FY2027 data center revenue USD 107.6 billion, +110% year over year",
+  "call_ledger": "No new well-grounded threshold call made; existing ledger unchanged."
 }
