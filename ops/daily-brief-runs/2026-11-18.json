@@ -2,10 +2,10 @@
   "date": "2026-11-18",
   "edition": "daily_brief",
   "run_type": "daily_brief",
-  "status": "started",
+  "status": "research_complete",
   "timezone": "Asia/Shanghai",
   "started_at": "2026-11-18T07:04:01+08:00",
-  "updated_at": "2026-11-18T07:04:01+08:00",
+  "updated_at": "2026-11-18T07:07:26+08:00",
   "artifact_state": {
     "written_draft": false,
     "spoken_canonical": false,
@@ -14,5 +14,56 @@
     "published_verified": false
   },
   "failure_stage": null,
-  "failure_detail": null
+  "failure_detail": null,
+  "research_completed_at": "2026-11-18T07:07:26+08:00",
+  "research_cutoff": "2026-11-18T07:07:26+08:00",
+  "history_window_checked": "2026-10-19 through 2026-11-17; prior seven canonical editions 2026-11-11 through 2026-11-17 checked at event and thesis level",
+  "prior_edition_checked": "2026-11-17",
+  "prior_market_session": "2026-11-17",
+  "market_stress_index": 86.2,
+  "stress_market_date": "2026-11-17",
+  "candidate_pool": [
+    "Nvidia fiscal 2027 Q3 revenue USD 115.8B, data center USD 107.6B, Q4 guide USD 130B",
+    "Microsoft Ignite 2026 Code 2, Code 2 Flash and Decision 1.1 GA",
+    "Baidu Q3 AI Cloud Infra RMB 8.2B +94% and token consumption +1159%, report November 16 after prior editorial cutoff",
+    "US October retail sales +0.2% after +0.8% September",
+    "US October industrial production -0.4% while manufacturing +0.3%",
+    "Tencent Hy4 flash 224B total, 12B active, production rollout",
+    "Home Depot Q3 sales USD 43.4B +4.9%, comp sales +2.2%, transactions -0.5%",
+    "US November 17 S&P -1%, Dow -1.6%, Nasdaq -0.7%",
+    "BIS remote-access rule scheduled Federal Register publication November 19, after prior edition left date unconfirmed"
+  ],
+  "deduplication_audit": {
+    "rejected": [
+      "Repeat of November 16 broad tech selloff as standalone headline: November 17 losses are smaller and same thesis; retain in Markets Dashboard",
+      "BIS rule text already top headline November 17; November 19 scheduled publication adds procedural timing but does not warrant another Top Headline",
+      "Baidu ERNIE 5.5 product preview already covered November 13; use new financial metrics only"
+    ],
+    "admitted": [
+      "Nvidia new Q3 audited-quarter company results and Q4 guidance provide material new scale and cash evidence",
+      "Microsoft new generally available first-party models are a distinct product release",
+      "Baidu Q3 AI Cloud revenue and customer token usage are new quantitative demand data",
+      "US October retail and industrial production are distinct new official data releases",
+      "Tencent Hy4 flash has new architecture, price and rollout versus November 4 Hy4",
+      "Home Depot Q3 results provide new housing-linked retail transaction evidence"
+    ]
+  },
+  "quality_gates": {
+    "source_diversity": "Discovery across AP, Axios, primary Nvidia/Microsoft/Tencent/Baidu/Home Depot, US Census/Federal Reserve, China regional market sources, EU Commission and US BIS/Federal Register; no single lineage gatekeeper.",
+    "ai_policy_sweep": "BIS interim final rule announced November 16 and covered November 17. Federal Register public-inspection copy now says scheduled publication November 19; not yet in force at cutoff. EU Commission November 16 draft Article 27 assessment template is consultation, not new binding rule. November 17 EU DMA high-level meeting discussed AI Act without formal regulatory change. No eligible new policy headline.",
+    "major_news_omission_audit": "Checked completed November 17 S&P/Nasdaq/Dow and chips, Nvidia earnings after close, Microsoft Ignite, Baidu and Tencent AI releases, US retail and industrial production, Home Depot, China market close, AI policy status. Market decline is continuation in dashboard; seven independent substantive headlines selected.",
+    "access_limitations": "Congress.gov blocked by robots.txt; primary BIS/Federal Register and EU Commission records available. No paywalled snippet used alone.",
+    "stress": "November 17 market observation 86.2, prior computed 85.5; change 0.7, no spoken mention."
+  },
+  "sources": [
+    "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Third-Quarter-Fiscal-2027/default.aspx",
+    "https://blogs.microsoft.com/blog/2026/11/17/ignite-2026-building-the-frontier-ecosystem/",
+    "https://baidu.gcs-web.com/news-releases/news-release-details/baidu-announces-third-quarter-2026-results",
+    "https://www.census.gov/retail/sales.html",
+    "https://www.federalreserve.gov/releases/g17/20261117/g17.pdf",
+    "https://www.prnewswire.co.uk/news-releases/tencent-launches-hy4-flash-to-power-high-speed-cost-efficient-ai-deployment-for-everyday-workflows-302941888.html",
+    "https://ir.homedepot.com/news-releases/2026/11-17-2026-110221331",
+    "https://apnews.com/article/wall-street-stocks-dow-nasdaq-ff6caef4d9289cf7f1e6ee48a706eddc",
+    "https://public-inspection.federalregister.gov/2026-23529.pdf"
+  ]
 }
