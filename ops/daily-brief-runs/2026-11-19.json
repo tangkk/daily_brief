@@ -2,10 +2,10 @@
   "date": "2026-11-19",
   "edition": "daily_brief",
   "run_type": "daily_brief",
-  "status": "started",
+  "status": "research_complete",
   "timezone": "Asia/Shanghai",
   "started_at": "2026-11-19T07:01:35+08:00",
-  "updated_at": "2026-11-19T07:01:35+08:00",
+  "updated_at": "2026-11-19T07:04:14+08:00",
   "artifact_state": {
     "written_draft": false,
     "spoken_canonical": false,
@@ -14,5 +14,56 @@
     "published_verified": false
   },
   "failure_stage": null,
-  "failure_detail": null
+  "failure_detail": null,
+  "research_completed_at": "2026-11-19T07:04:14+08:00",
+  "research_cutoff": "2026-11-19T07:00:00+08:00",
+  "history_window_checked": "2026-10-20 through 2026-11-18; seven canonical editions 2026-11-12 through 2026-11-18 checked at event and thesis level",
+  "prior_edition_checked": "2026-11-18",
+  "prior_market_session": "2026-11-18",
+  "market_stress_index": 84.1,
+  "stress_market_date": "2026-11-18",
+  "candidate_pool": [
+    "Anthropic IPO reported final price $83 vs $70-$78 range, November 18 US evening",
+    "Tencent Q3 2026 cloud +35%, capex payments RMB 65.1B, free cash outflow RMB 69.1B",
+    "Fed October meeting minutes released November 18, broad rate-hike expectation and AI debt risk discussion",
+    "US October housing starts 1.309M +9.9%, permits 1.295M -7.4%",
+    "Target Q3 sales +7.1%, comps +5.6%, traffic +5.0%",
+    "UK October CPI 3.6% vs 3.5%",
+    "UK Commons committee November 18 report recommending statutory AI regulator; recommendation only",
+    "Lowe’s Q3 sales $22.8B, comps +1.8%",
+    "Nvidia November 18 shares -2.9% after earnings; S&P -0.2%, Nasdaq +0.4%"
+  ],
+  "deduplication_audit": {
+    "rejected": [
+      "Nvidia results already November 18 lead; subsequent 2.9% share decline lacks a distinct fundamental change and stays in market dashboard",
+      "Lowe’s new quarter is real but housing retail thesis overlaps November 18 Home Depot and stronger official construction data",
+      "Anthropic earlier IPO filing covered November 12; actual reported $83 final pricing is a meaningful phase change",
+      "Tencent Hy4 flash release covered November 18; November 18 quarterly cash flow and paid cloud metrics are new"
+    ],
+    "admitted": [
+      "Anthropic reported final pricing above filed range materially changes financing scale and price discovery",
+      "Tencent quarterly capex prepayments and free cash outflow change cloud credit-cycle cash assessment",
+      "Fed newly released committee minutes establish broad policy and AI-debt risk perspectives beyond November 16 stability report",
+      "Housing permits and starts are new official forward/activity data",
+      "Target traffic recovery diverges from prior Home Depot transaction decline",
+      "UK inflation and Commons AI report are separate new national data and procedural status"
+    ]
+  },
+  "quality_gates": {
+    "source_diversity": "Discovery across AP, Axios, specialist reporting, China regional reporting and primary SEC, Tencent, Federal Reserve, Census/HUD, Target, UK ONS and UK Parliament materials; no single reporting lineage gatekeeper.",
+    "ai_policy_sweep": "UK Commons committee published November 18 report recommending AI Safety and Security Bill and statutory regulator with powers over development/deployment; recommendations only, government response pending within two months. US BIS remote-access rule announced November 16, already covered November 17 and scheduled for Federal Register November 19; no fresh binding US action by cutoff. EU Article 27 template remains November 16 consultation. California OpenAI suit filed November 16 and prior general litigation covered; no new order verified. Congress.gov access blocked.",
+    "major_news_omission_audit": "Checked completed November 18 S&P/Nasdaq/Dow and Nvidia post-earnings trade, Anthropic IPO pricing, Tencent earnings, Fed minutes, housing, UK inflation, Target and Lowe’s earnings, AI policy. Nvidia stock reversal retained in dashboard; Lowe’s excluded due weaker incremental thesis.",
+    "access_limitations": "Congress.gov robots block. Anthropic $83 price at cutoff confirmed by AP citing multiple reports; final SEC pricing prospectus not yet located, so attributed as reported. Census current official release used instead of stale cached PDF."
+  },
+  "sources": [
+    "https://apnews.com/article/anthropic-ipo-pricing-70b660ddf900d90bbf484ecdf1fb441c",
+    "https://www.sec.gov/Archives/edgar/data/2130357/000162828026074338/anthropicpbc-sx1ax3.htm",
+    "https://www.tencent.com/wp-content/uploads/2026/11/%E8%85%BE%E8%AE%AF%E5%85%AC%E5%B8%83%E4%BA%8C%E9%9B%B6%E4%BA%8C%E5%85%AD%E5%B9%B4%E7%AC%AC%E4%B8%89%E5%AD%A3%E4%B8%9A%E7%BB%A9.pdf",
+    "https://www.federalreserve.gov/monetarypolicy/fomcminutes20261028.htm",
+    "https://www.census.gov/construction/nrc/current/",
+    "https://corporate.target.com/press/release/2026/11/target-corporation-reports-third-quarter-earnings",
+    "https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/consumerpriceinflation/october2026",
+    "https://publications.parliament.uk/pa/cm5902/cmselect/cmbeis/689/report.html",
+    "https://apnews.com/article/stock-markets-ai-earnings-oil-apec-shenzhen-dad5715bc91b4aba23a567a40e22b1fc"
+  ]
 }
