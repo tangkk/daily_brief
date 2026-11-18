@@ -1,6 +1,6 @@
 ---
 layout: daily_brief
-title: "2026-11-19"
+title: "11.19｜Anthropic IPO 据报定价 83 美元；腾讯季度自由现金流流出 691 亿｜压力指数 84"
 date: 2026-11-19 07:00:00 +0800
 headline: "Anthropic IPO 据报定价 83 美元；腾讯季度自由现金流流出 691 亿"
 ---
