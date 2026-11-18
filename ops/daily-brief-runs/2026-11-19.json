@@ -2,13 +2,13 @@
   "date": "2026-11-19",
   "edition": "daily_brief",
   "run_type": "daily_brief",
-  "status": "research_complete",
+  "status": "spoken_committed",
   "timezone": "Asia/Shanghai",
   "started_at": "2026-11-19T07:01:35+08:00",
-  "updated_at": "2026-11-19T07:04:14+08:00",
+  "updated_at": "2026-11-19T07:08:04+08:00",
   "artifact_state": {
-    "written_draft": false,
-    "spoken_canonical": false,
+    "written_draft": true,
+    "spoken_canonical": true,
     "podcast_verified": false,
     "written_published": false,
     "published_verified": false
@@ -53,7 +53,13 @@
     "source_diversity": "Discovery across AP, Axios, specialist reporting, China regional reporting and primary SEC, Tencent, Federal Reserve, Census/HUD, Target, UK ONS and UK Parliament materials; no single reporting lineage gatekeeper.",
     "ai_policy_sweep": "UK Commons committee published November 18 report recommending AI Safety and Security Bill and statutory regulator with powers over development/deployment; recommendations only, government response pending within two months. US BIS remote-access rule announced November 16, already covered November 17 and scheduled for Federal Register November 19; no fresh binding US action by cutoff. EU Article 27 template remains November 16 consultation. California OpenAI suit filed November 16 and prior general litigation covered; no new order verified. Congress.gov access blocked.",
     "major_news_omission_audit": "Checked completed November 18 S&P/Nasdaq/Dow and Nvidia post-earnings trade, Anthropic IPO pricing, Tencent earnings, Fed minutes, housing, UK inflation, Target and Lowe’s earnings, AI policy. Nvidia stock reversal retained in dashboard; Lowe’s excluded due weaker incremental thesis.",
-    "access_limitations": "Congress.gov robots block. Anthropic $83 price at cutoff confirmed by AP citing multiple reports; final SEC pricing prospectus not yet located, so attributed as reported. Census current official release used instead of stale cached PDF."
+    "access_limitations": "Congress.gov robots block. Anthropic $83 price at cutoff confirmed by AP citing multiple reports; final SEC pricing prospectus not yet located, so attributed as reported. Census current official release used instead of stale cached PDF.",
+    "stress": "November 18 market observation 84.1; revised prior market observation 86.4, change -2.3; no threshold crossing or 10-point move, omitted from spoken.",
+    "title_story_order": "passed: Anthropic reported IPO pricing leads title, opening summary and first numbered headline; draft headline equals handoff title.",
+    "headline_structure": "passed: seven distinct substantive Top Headlines numbered 1 through 7 without gaps.",
+    "sensitive_terms": "written draft/title passed written checker; spoken handoff passed Podcast checker.",
+    "spoken_length": "1324 Han characters; above 1200 hard minimum and within 1250-1450 editorial target.",
+    "date_naturalness": "fixed 2026-11-19 opening; US November 18 events and third-quarter reporting periods distinguished; no repeated full dates in narration."
   },
   "sources": [
     "https://apnews.com/article/anthropic-ipo-pricing-70b660ddf900d90bbf484ecdf1fb441c",
@@ -65,5 +71,12 @@
     "https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/consumerpriceinflation/october2026",
     "https://publications.parliament.uk/pa/cm5902/cmselect/cmbeis/689/report.html",
     "https://apnews.com/article/stock-markets-ai-earnings-oil-apec-shenzhen-dad5715bc91b4aba23a567a40e22b1fc"
-  ]
+  ],
+  "written_staged_at": "2026-11-19T07:08:04+08:00",
+  "spoken_committed_at": "2026-11-19T07:08:04+08:00",
+  "spoken_han_count": 1324,
+  "title_handoff_ready": true,
+  "stress_handoff_ready": true,
+  "number_of_day": "Tencent Q3 2026 free cash flow outflow RMB 69.1 billion",
+  "call_ledger": "No new well-grounded threshold call made; existing ledger unchanged."
 }

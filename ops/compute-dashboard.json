@@ -526,6 +526,18 @@
       },
       "guidance": "2026-Q4 26%-28%",
       "source_url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/1112/2026111200682.pdf"
+    },
+    {
+      "indicator": "Tencent quarterly capital expenditure payments",
+      "value": 65.1,
+      "unit": "RMB billion",
+      "as_of": "2026-Q3 (published 2026-11-18)",
+      "kind": "company reported cash payments; includes AI and other IT infrastructure",
+      "previous": {
+        "value": "approximately 20.0",
+        "as_of": "2025-Q3, implied by +225% year-over-year company growth"
+      },
+      "source_url": "https://www.tencent.com/wp-content/uploads/2026/11/Tencent-Announces-2026-Third-Quarter-Results.pdf"
     }
   ]
 }
