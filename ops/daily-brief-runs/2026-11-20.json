@@ -2,13 +2,13 @@
   "date": "2026-11-20",
   "edition": "daily_brief",
   "run_type": "daily_brief",
-  "status": "research_complete",
+  "status": "spoken_committed",
   "timezone": "Asia/Shanghai",
   "started_at": "2026-11-20T07:01:41+08:00",
-  "updated_at": "2026-11-20T07:03:43+08:00",
+  "updated_at": "2026-11-20T07:08:02+08:00",
   "artifact_state": {
-    "written_draft": false,
-    "spoken_canonical": false,
+    "written_draft": true,
+    "spoken_canonical": true,
     "podcast_verified": false,
     "written_published": false,
     "published_verified": false
@@ -52,7 +52,13 @@
     "ai_policy_sweep": "BIS November 19 Federal Register interim final rule is effective November 19; previously announced November 16/covered November 17, new binding effectiveness and 90-day window for existing remote-compute services are material procedural changes. UK Commons November 18 committee recommendation covered November 19, government response pending; no new legislative stage. Other prominent candidates lacked new formal action by cutoff.",
     "major_news_omission_audit": "Checked completed November 19 S&P/Nasdaq/Dow and >90% negative breadth, Anthropic debut/final SEC pricing, Alibaba/Lenovo/Walmart earnings, Intel foundry milestone, BIS effective rule, weekly jobless claims and AI security report. Jobless claims and unverified attack details excluded from Top Headlines.",
     "access_limitations": "AP Anthropic narrative contains one inconsistent $82 reference; SEC final pricing document confirms $83 and is used for offer figures. Intel customer has no named counterparty or value; specialist reporting quotes CEO and CTO, so no commercial scale inferred.",
-    "stress": "2026-11-19 observation 84.5, previous recalculated 84.4, +0.1; HYG, dollar, VIX top components; no spoken threshold."
+    "stress": "2026-11-19 observation 84.5, previous recalculated 84.4, +0.1; HYG, dollar, VIX top components; no spoken threshold.",
+    "title_story_order": "passed: broad US S&P selloff leads title, summary and first numbered headline; draft headline equals title handoff.",
+    "headline_structure": "passed: seven distinct substantive Top Headlines numbered 1 through 7.",
+    "sensitive_terms": "written draft/title and spoken handoff passed maintained checkers.",
+    "spoken_length": "1476 Han characters; above 1200 hard minimum, under 1500 soft upper guide.",
+    "date_naturalness": "fixed 2026-11-20 spoken opening, US November 19 market session and September quarter reporting periods distinguished.",
+    "call_ledger": "No new well-grounded threshold call made; existing ledger unchanged."
   },
   "sources": [
     "https://apnews.com/article/wall-street-stocks-dow-nasdaq-2f178054aea79d282e5ccf8d62f26a28",
@@ -63,5 +69,11 @@
     "https://www.datacenterdynamics.com/en/news/intel-secures-first-external-customer-for-18a-p-process-node/",
     "https://corporate.walmart.com/news/2026/11/walmart-releases-q3-fy27-earnings",
     "https://www.govinfo.gov/content/pkg/FR-2026-11-19/pdf/2026-23529.pdf"
-  ]
+  ],
+  "written_staged_at": "2026-11-20T07:08:02+08:00",
+  "spoken_committed_at": "2026-11-20T07:08:02+08:00",
+  "spoken_han_count": 1476,
+  "title_handoff_ready": true,
+  "stress_handoff_ready": true,
+  "number_of_day": "More than 90% of S&P 500 constituents fell November 19"
 }
