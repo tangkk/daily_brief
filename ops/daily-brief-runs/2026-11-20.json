@@ -2,10 +2,10 @@
   "date": "2026-11-20",
   "edition": "daily_brief",
   "run_type": "daily_brief",
-  "status": "started",
+  "status": "research_complete",
   "timezone": "Asia/Shanghai",
   "started_at": "2026-11-20T07:01:41+08:00",
-  "updated_at": "2026-11-20T07:01:41+08:00",
+  "updated_at": "2026-11-20T07:03:43+08:00",
   "artifact_state": {
     "written_draft": false,
     "spoken_canonical": false,
@@ -14,5 +14,54 @@
     "published_verified": false
   },
   "failure_stage": null,
-  "failure_detail": null
+  "failure_detail": null,
+  "research_completed_at": "2026-11-20T07:03:43+08:00",
+  "research_cutoff": "2026-11-20T07:00:00+08:00",
+  "history_window_checked": "2026-10-21 through 2026-11-19; all 2026-11-13 through 2026-11-19 canonical editions compared at event and thesis level",
+  "prior_edition_checked": "2026-11-19",
+  "prior_market_session": "2026-11-19",
+  "market_stress_index": 84.5,
+  "stress_market_date": "2026-11-19",
+  "candidate_pool": [
+    "November 19 US broad stock selloff: S&P -2%, Dow -2.2%, Nasdaq -2.3%, >90% of S&P constituents lower",
+    "Anthropic November 19 first trading day closed $97.17, +17% over $83 offer; SEC final pricing filing 980m shares",
+    "Alibaba September quarter cloud +53% to RMB60.973b, external revenue +64%, cloud adjusted EBITA +121%",
+    "Lenovo fiscal Q2 group revenue $30.238b +48%, AI-related revenue >$10b +79%, FCF $1.2b",
+    "Walmart fiscal Q3 revenue +5.2%, US comps +2.9%, US ecommerce +23%",
+    "Intel CEO reported first outside 18A customer; CTO identified 18A-P, customer and contract value undisclosed",
+    "BIS advanced compute remote access interim final rule effective November 19; 90-day application window for existing services",
+    "US jobless claims 203k versus revised 202k, insufficient standalone significance",
+    "EU institution AI-assisted cyberattack report, impact and attribution unverified for top headline"
+  ],
+  "deduplication_audit": {
+    "rejected": [
+      "November 18 Anthropic $83 pricing alone already led November 19; admit only November 19 actual trading and final SEC share/proceeds facts",
+      "November 17 and earlier AI equity declines already covered; November 19 new broad -2% session and >90% breadth qualify as material market state change",
+      "November 17 BIS announcement already covered; November 19 effectiveness is a binding phase change, distinguish from introduction",
+      "US claims 203k versus 202k provides little new labor-market information"
+    ],
+    "admitted": [
+      "Anthropic actual first-day close and definitive 980m share offer alter price-discovery and proceeds assessment",
+      "Alibaba and Lenovo new quarterly revenue/margin/cash figures are distinct new demand and supply evidence",
+      "Intel first outside 18A-P manufacturing customer changes foundry commercialization stage but no revenue scale disclosed",
+      "Walmart new quarter provides consumer spending and online channel evidence"
+    ]
+  },
+  "quality_gates": {
+    "source_diversity": "Discovery across AP, Axios, specialist semiconductor reporting, China-company primary disclosures, SEC, Federal Register/BIS, Walmart and US labor sources; no publisher was sole gatekeeper.",
+    "ai_policy_sweep": "BIS November 19 Federal Register interim final rule is effective November 19; previously announced November 16/covered November 17, new binding effectiveness and 90-day window for existing remote-compute services are material procedural changes. UK Commons November 18 committee recommendation covered November 19, government response pending; no new legislative stage. Other prominent candidates lacked new formal action by cutoff.",
+    "major_news_omission_audit": "Checked completed November 19 S&P/Nasdaq/Dow and >90% negative breadth, Anthropic debut/final SEC pricing, Alibaba/Lenovo/Walmart earnings, Intel foundry milestone, BIS effective rule, weekly jobless claims and AI security report. Jobless claims and unverified attack details excluded from Top Headlines.",
+    "access_limitations": "AP Anthropic narrative contains one inconsistent $82 reference; SEC final pricing document confirms $83 and is used for offer figures. Intel customer has no named counterparty or value; specialist reporting quotes CEO and CTO, so no commercial scale inferred.",
+    "stress": "2026-11-19 observation 84.5, previous recalculated 84.4, +0.1; HYG, dollar, VIX top components; no spoken threshold."
+  },
+  "sources": [
+    "https://apnews.com/article/wall-street-stocks-dow-nasdaq-2f178054aea79d282e5ccf8d62f26a28",
+    "https://www.sec.gov/Archives/edgar/data/2130357/000162828026074937/anthropicpbc-fwppricing.htm",
+    "https://apnews.com/article/anthropic-ipo-nasdaq-ai-b6a74b8949021207dc162fcc876c4649",
+    "https://home.alibabagroup.com/en-US/document-2060213191907999744",
+    "https://investor.lenovo.com/en/financial/results/press_2627_q2.pdf",
+    "https://www.datacenterdynamics.com/en/news/intel-secures-first-external-customer-for-18a-p-process-node/",
+    "https://corporate.walmart.com/news/2026/11/walmart-releases-q3-fy27-earnings",
+    "https://www.govinfo.gov/content/pkg/FR-2026-11-19/pdf/2026-23529.pdf"
+  ]
 }
