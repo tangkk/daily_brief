@@ -2,14 +2,14 @@
   "date": "2026-11-20",
   "edition": "daily_brief",
   "run_type": "daily_brief",
-  "status": "spoken_committed",
+  "status": "podcast_verified",
   "timezone": "Asia/Shanghai",
   "started_at": "2026-11-20T07:01:41+08:00",
-  "updated_at": "2026-11-20T07:08:02+08:00",
+  "updated_at": "2026-11-20T07:17:25+08:00",
   "artifact_state": {
     "written_draft": true,
     "spoken_canonical": true,
-    "podcast_verified": false,
+    "podcast_verified": true,
     "written_published": false,
     "published_verified": false
   },
@@ -58,7 +58,9 @@
     "sensitive_terms": "written draft/title and spoken handoff passed maintained checkers.",
     "spoken_length": "1476 Han characters; above 1200 hard minimum, under 1500 soft upper guide.",
     "date_naturalness": "fixed 2026-11-20 spoken opening, US November 19 market session and September quarter reporting periods distinguished.",
-    "call_ledger": "No new well-grounded threshold call made; existing ledger unchanged."
+    "call_ledger": "No new well-grounded threshold call made; existing ledger unchanged.",
+    "podcast_public_verification": "Committed Podcast RSS and public Pages RSS have exactly one matching GUID; public MP3 GET 1316012 bytes and 00:05:29 ffprobe duration; local scripts/verify_public_release.py passed after raw GitHub cache recovered. Original Auto Publish Daily run final verification failed transiently after raw GitHub returned 0 items for two minutes; no audio rerun performed.",
+    "written_recovery": "Original written workflow canceled after deterministic stress-rounding mismatch 84.5: Podcast title 84, written validator expected 85. Corrected validator to use Podcast title rounding and confirmed --check-only against committed RSS before fresh dispatch."
   },
   "sources": [
     "https://apnews.com/article/wall-street-stocks-dow-nasdaq-2f178054aea79d282e5ccf8d62f26a28",
@@ -75,5 +77,11 @@
   "spoken_han_count": 1476,
   "title_handoff_ready": true,
   "stress_handoff_ready": true,
-  "number_of_day": "More than 90% of S&P 500 constituents fell November 19"
+  "number_of_day": "More than 90% of S&P 500 constituents fell November 19",
+  "podcast_verified_at": "2026-11-20T07:17:25+08:00",
+  "podcast_guid": "ep092-daily-2026-11-20",
+  "podcast_enclosure_url": "https://pub-e2d65fa7f70240878f2e556592826485.r2.dev/daily/ep092-daily-2026-11-20.mp3",
+  "podcast_enclosure_length": 1316012,
+  "podcast_duration": "00:05:29",
+  "github_main_readback": "written draft, spoken handoff, title, stress, and Podcast episode/title/stress blob hashes matched GitHub main"
 }
