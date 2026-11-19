@@ -2,16 +2,16 @@
   "date": "2026-11-20",
   "edition": "daily_brief",
   "run_type": "daily_brief",
-  "status": "written_published",
+  "status": "published_verified",
   "timezone": "Asia/Shanghai",
   "started_at": "2026-11-20T07:01:41+08:00",
-  "updated_at": "2026-11-20T07:18:53+08:00",
+  "updated_at": "2026-11-20T07:19:20+08:00",
   "artifact_state": {
     "written_draft": true,
     "spoken_canonical": true,
     "podcast_verified": true,
     "written_published": true,
-    "published_verified": false
+    "published_verified": true
   },
   "failure_stage": null,
   "failure_detail": null,
@@ -84,5 +84,6 @@
   "podcast_enclosure_length": 1316012,
   "podcast_duration": "00:05:29",
   "github_main_readback": "written draft, spoken handoff, title, stress, and Podcast episode/title/stress blob hashes matched GitHub main",
-  "written_published_at": "2026-11-20T07:18:53+08:00"
+  "written_published_at": "2026-11-20T07:18:53+08:00",
+  "published_verified_at": "2026-11-20T07:19:20+08:00"
 }
