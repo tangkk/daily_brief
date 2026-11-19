@@ -1,6 +1,6 @@
 ---
 layout: daily_brief
-title: "2026-11-20"
+title: "11.20｜标普跌 2%；Anthropic 首日涨 17%；阿里云营收增 53%｜压力指数 84"
 date: 2026-11-20 07:00:00 +0800
 headline: "标普跌 2%；Anthropic 首日涨 17%；阿里云营收增 53%"
 ---
