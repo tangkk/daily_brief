@@ -1,6 +1,6 @@
 ---
 layout: daily_brief
-title: "2026-11-21"
+title: "11.21｜标普跌 3.7%；快手季利降 84%；Intuit 出售 Mailchimp｜压力指数 86"
 date: 2026-11-21 07:00:00 +0800
 headline: "标普跌 3.7%；快手季利降 84%；Intuit 出售 Mailchimp"
 ---
