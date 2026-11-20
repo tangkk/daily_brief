@@ -2,13 +2,13 @@
   "date": "2026-11-21",
   "edition": "daily_brief",
   "run_type": "daily_brief",
-  "status": "research_complete",
+  "status": "spoken_committed",
   "timezone": "Asia/Shanghai",
   "started_at": "2026-11-21T07:01:48+08:00",
-  "updated_at": "2026-11-21T07:04:03+08:00",
+  "updated_at": "2026-11-21T07:07:07+08:00",
   "artifact_state": {
-    "written_draft": false,
-    "spoken_canonical": false,
+    "written_draft": true,
+    "spoken_canonical": true,
     "podcast_verified": false,
     "written_published": false,
     "published_verified": false
@@ -52,7 +52,14 @@
     "ai_policy_sweep": "US Senate H.R.2347 passed 62-33 November 19; House pending, data-center power costs and permitting provisions proposed only. US president floated overseas data-center tax November 20 but no formal proposal or implementation; exclude. Prior BIS remote-compute rule and UK committee recommendation lack new stage by cutoff.",
     "major_news_omission_audit": "Checked November 20 completed US indices and chip sector, Anthropic/Nvidia close, China technology results, Senate data-center provisions, UK retail, Japan CPI, Michigan sentiment; no separate Anthropic or Michigan headline after deduplication/materiality check.",
     "access_limitations": "UK ONS English page inaccessible in browser; Welsh-language ONS page and official PDF accessible. AP article corrected Anthropic close to $88.91, -8.5%; used corrected version.",
-    "stress": "2026-11-20 observation 85.5, prior recomputed 85.2, +0.3; HYG, VIX, dollar top components; no spoken threshold."
+    "stress": "2026-11-20 observation 85.5, prior recomputed 85.2, +0.3; HYG, VIX, dollar top components; no spoken threshold.",
+    "title_story_order": "passed: US S&P 500 selloff leads title, summary and first numbered headline; draft headline equals title handoff.",
+    "headline_structure": "passed: seven distinct substantive Top Headlines numbered 1 through 7.",
+    "sensitive_terms": "written draft, title and spoken handoff passed maintained Daily Brief and Podcast checkers.",
+    "spoken_length": "1499 Han characters; above 1200 hard minimum and below 1500 soft guide.",
+    "date_naturalness": "fixed 2026-11-21 spoken opening, November 20 US market session, Q3 reporting periods, proposed Senate bill status and UK/Japan October data distinguished.",
+    "call_ledger": "No new well-grounded threshold call made; existing ledger unchanged.",
+    "compute_ledger": "No new directly comparable hard compute indicator; existing ledger unchanged."
   },
   "sources": [
     "https://apnews.com/article/stock-markets-anthropic-ai-chips-boom-c4c3f4878b12989347f8a930ed813dad",
@@ -64,5 +71,11 @@
     "https://www.stat.go.jp/data/cpi/sokuhou/tsuki/pdf/zenkoku.pdf",
     "https://cy.ons.gov.uk/businessindustryandtrade/retailindustry/bulletins/retailsales/october2026",
     "https://isr.umich.edu/news-events/news-releases/sentiment-ticks-up-as-election-expected-to-usher-in-changes-to-economic-policy/"
-  ]
+  ],
+  "written_staged_at": "2026-11-21T07:07:07+08:00",
+  "spoken_committed_at": "2026-11-21T07:07:07+08:00",
+  "spoken_han_count": 1499,
+  "title_handoff_ready": true,
+  "stress_handoff_ready": true,
+  "number_of_day": "PHLX Semiconductor Index -10.7% on 2026-11-20"
 }
