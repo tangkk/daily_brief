@@ -2,10 +2,10 @@
   "date": "2026-11-21",
   "edition": "daily_brief",
   "run_type": "daily_brief",
-  "status": "started",
+  "status": "research_complete",
   "timezone": "Asia/Shanghai",
   "started_at": "2026-11-21T07:01:48+08:00",
-  "updated_at": "2026-11-21T07:01:48+08:00",
+  "updated_at": "2026-11-21T07:04:03+08:00",
   "artifact_state": {
     "written_draft": false,
     "spoken_canonical": false,
@@ -14,5 +14,55 @@
     "published_verified": false
   },
   "failure_stage": null,
-  "failure_detail": null
+  "failure_detail": null,
+  "research_completed_at": "2026-11-21T07:04:03+08:00",
+  "research_cutoff": "2026-11-21T07:00:00+08:00",
+  "history_window_checked": "2026-10-22 through 2026-11-20; 2026-11-14 through 2026-11-20 checked at event and thesis level",
+  "prior_edition_checked": "2026-11-20",
+  "prior_market_session": "2026-11-20",
+  "market_stress_index": 85.5,
+  "stress_market_date": "2026-11-20",
+  "candidate_pool": [
+    "November 20 US S&P -3.7%, Nasdaq negative for 2026, semiconductor index -10.7%",
+    "November 19 Senate passage of H.R.2347 62-33, proposed data-center power-cost provisions; House pending",
+    "Kuaishou Q3 revenue RMB31.6b -11.1%, adjusted profit RMB0.79b vs RMB5b",
+    "PDD Q3 revenue RMB108.3b flat, operating profit RMB31.2b",
+    "Intuit definitive Mailchimp sale agreement $3.68b, pending closing",
+    "Japan October CPI 2.3% vs September 2.1%, core excluding fresh food 2.2%",
+    "UK October retail volume +0.7% month-on-month after revised -0.6%",
+    "Michigan November final consumer sentiment 51.5 vs 48 October; +3.5 below 4.8-point 95% significance threshold",
+    "Anthropic second trading day -8.5% and Nvidia -13.8%; incorporated in market lead, not separate headline",
+    "US presidential overseas data-center tax threat lacks formal proposal or enforcement; exclude"
+  ],
+  "deduplication_audit": {
+    "rejected": [
+      "November 19 market -2% and Anthropic debut already covered; November 20 broader -3.7% session and year-to-date Nasdaq reversal are new market state, together one story",
+      "Anthropic Friday retreat and Nvidia decline are part of same market dislocation and do not consume separate headline slots",
+      "Kling 4.0 product release predates edition; use new Kuaishou quarterly financial results only",
+      "Michigan sentiment final revision is only +0.5 above preliminary and monthly +3.5 is below survey 95% significance threshold; dashboard only"
+    ],
+    "admitted": [
+      "Senate chamber passage is a new formal stage, distinct from prior proposals; bill is not law",
+      "Kuaishou, PDD, and Intuit disclose distinct new financial/business events",
+      "UK and Japan report new monthly observations"
+    ]
+  },
+  "quality_gates": {
+    "source_diversity": "Discovery across AP, Reuters full-text syndicated copy, US Senate records, Chinese company IR and regional reporting, Japan Statistics Bureau, UK ONS, Michigan primary survey; no single publisher gatekeeper.",
+    "ai_policy_sweep": "US Senate H.R.2347 passed 62-33 November 19; House pending, data-center power costs and permitting provisions proposed only. US president floated overseas data-center tax November 20 but no formal proposal or implementation; exclude. Prior BIS remote-compute rule and UK committee recommendation lack new stage by cutoff.",
+    "major_news_omission_audit": "Checked November 20 completed US indices and chip sector, Anthropic/Nvidia close, China technology results, Senate data-center provisions, UK retail, Japan CPI, Michigan sentiment; no separate Anthropic or Michigan headline after deduplication/materiality check.",
+    "access_limitations": "UK ONS English page inaccessible in browser; Welsh-language ONS page and official PDF accessible. AP article corrected Anthropic close to $88.91, -8.5%; used corrected version.",
+    "stress": "2026-11-20 observation 85.5, prior recomputed 85.2, +0.3; HYG, VIX, dollar top components; no spoken threshold."
+  },
+  "sources": [
+    "https://apnews.com/article/stock-markets-anthropic-ai-chips-boom-c4c3f4878b12989347f8a930ed813dad",
+    "https://www.periodicalpress.senate.gov/on-the-floor/",
+    "https://apnews.com/article/energy-permitting-data-center-power-grid-trump-b41c2017e4a9fe2e6de92ec77a4cdd0a",
+    "https://ir.kuaishou.com/news-releases/news-release-details/kuaishou-technology-announces-third-quarter-2026-unaudited/",
+    "https://investor.pddholdings.com/news-releases/news-release-details/pdd-holdings-announces-third-quarter-2026-unaudited-financial",
+    "https://investors.intuit.com/news-events/press-releases/detail/1331/intuit-reports-first-quarter-results-and-enters-agreement-to-sell-mailchimp-to-bending-spoons",
+    "https://www.stat.go.jp/data/cpi/sokuhou/tsuki/pdf/zenkoku.pdf",
+    "https://cy.ons.gov.uk/businessindustryandtrade/retailindustry/bulletins/retailsales/october2026",
+    "https://isr.umich.edu/news-events/news-releases/sentiment-ticks-up-as-election-expected-to-usher-in-changes-to-economic-policy/"
+  ]
 }
