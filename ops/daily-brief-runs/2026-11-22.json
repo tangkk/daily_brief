@@ -2,17 +2,84 @@
   "date": "2026-11-22",
   "edition": "weekly_review",
   "run_type": "weekly_review",
-  "status": "started",
+  "status": "spoken_committed",
   "timezone": "Asia/Shanghai",
   "started_at": "2026-11-22T07:01:44+08:00",
-  "updated_at": "2026-11-22T07:01:44+08:00",
+  "updated_at": "2026-11-22T07:06:43+08:00",
   "artifact_state": {
-    "written_draft": false,
-    "spoken_canonical": false,
+    "written_draft": true,
+    "spoken_canonical": true,
     "podcast_verified": false,
     "written_published": false,
     "published_verified": false
   },
   "failure_stage": null,
-  "failure_detail": null
+  "failure_detail": null,
+  "research_cutoff": "2026-11-22T07:00:00+08:00",
+  "history_window_checked": "2026-10-23 through 2026-11-21; 2026-11-15 through 2026-11-21 checked at event and thesis level",
+  "prior_edition_checked": "2026-11-21",
+  "prior_sunday_checked": "2026-11-15",
+  "prior_market_session": "2026-11-20",
+  "market_stress_index": 86.6,
+  "stress_market_date": "2026-11-20",
+  "candidate_pool": [
+    "US weekly S&P -8.6%, Nasdaq -10%, Friday semiconductor index -10.7%",
+    "Nvidia Q3 $115.8b revenue, $107.6b data center",
+    "Anthropic IPO 980m shares at $83, $81.34b gross public offering, $26b parallel private placement",
+    "Federal Reserve advanced-compute debt issuance over $680b through October",
+    "Alibaba AI cloud RMB60.973b revenue and RMB8.838b adjusted profit",
+    "Baidu AI infrastructure RMB8.2b revenue; Tencent cloud +35%, capex cash RMB65.1b and FCF outflow RMB69.1b",
+    "China October retail +0.4% and January-October fixed investment -8.1%",
+    "US remote-compute rule effective November 19; Senate H.R.2347 passed 62-33 November 19, House pending; UK committee recommendation November 18",
+    "US October retail +0.2%, industrial output -0.4%, manufacturing +0.3%",
+    "Kuaishou and PDD quarterly divergence; Microsoft/Tencent/DeepSeek model and tool releases"
+  ],
+  "deduplication_audit": {
+    "rejected": [
+      "Friday single-day S&P -3.7% is already November 21 lead; Sunday uses new full-week -8.6% state and cross-week synthesis",
+      "Anthropic IPO price and first day were covered November 19-20; Sunday focuses on completed capital stack and distinction from customer revenue",
+      "Nvidia earnings already covered November 18; Sunday compares verified supplier cash with financing and demand",
+      "October macro observations and company reports are used only in the weekly comparative synthesis, not presented as Sunday breaking news"
+    ],
+    "admitted": [
+      "Full-week broad equity dislocation versus prior Sunday +2.5% week materially changes financing and valuation state",
+      "Completed Anthropic offering and Friday share repricing allow a cross-week capital-versus-cash assessment",
+      "Remote-compute rule effective and Senate passage are distinct formal stages from prior proposals; House action remains pending"
+    ]
+  },
+  "quality_gates": {
+    "source_diversity": "Discovery across AP and specialist market reporting, Federal Reserve and SEC filings, US Federal Register and Senate, UK Parliament, US and Chinese company disclosures, China statistical authority; no single outlet gatekeeper.",
+    "ai_policy_sweep": "US BIS remote-compute interim final rule effective November 19, with 90-day existing-service application window; Senate H.R.2347 passed 62-33 November 19, House pending, cost provisions proposed only; UK Commons committee recommendations November 18, no government bill or in-force restriction. New H.R.11002 federal-land proposal remains introduced and lacks further formal progress; not a weekly lead.",
+    "major_news_omission_audit": "Checked completed November 20 US S&P/Nasdaq/Dow and semiconductor decline, Nvidia/Anthropic pricing and results, Federal Reserve debt and minutes, China cloud and platform earnings, US and China macro, data-center and model policy. Broad weekly selloff leads; no independent market-reaction claim for a single policy action.",
+    "access_limitations": "Congress.gov blocked automated access; used Senate records and AP for chamber stage. Primary Federal Register and UK Parliament text accessible. No material fact based solely on paywalled snippets.",
+    "stress": "November 20 observation 86.6, November 13 observation 84.1, weekly +2.5; HYG, CSI 300 and VIX top latest components. Friday observation reused for Sunday without inventing a weekend market close.",
+    "title_story_order": "passed: weekly US S&P -8.6% leads title, summary and market synthesis; draft headline equals title handoff.",
+    "sunday_structure": "passed: integrated AI credit-cycle section, markets, China/technology, rules, world state, concept corner and next-week outlook; no Daily-style minimum imposed.",
+    "sensitive_terms": "written draft, title and spoken handoff passed maintained Daily Brief and Podcast checkers.",
+    "spoken_length": "2322 Han characters; exceeds Sunday 1800 hard minimum.",
+    "date_naturalness": "fixed November 22 opening; week ending November 20 distinguished from Sunday episode date; no repetitive full dates.",
+    "call_ledger": "No new threshold call made; previous ledger unchanged.",
+    "compute_ledger": "No new comparable GPU rental price, utilization or power-price measure; ledgers unchanged."
+  },
+  "sources": [
+    "https://apnews.com/article/c10b797a17c2acf37924d834efebe135",
+    "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Third-Quarter-Fiscal-2027/default.aspx",
+    "https://www.sec.gov/Archives/edgar/data/2130357/000162828026074937/anthropicpbc-fwppricing.htm",
+    "https://www.sec.gov/Archives/edgar/data/2130357/000162828026072484/anthropicpbc-sx1ax2.htm",
+    "https://www.federalreserve.gov/publications/files/financial-stability-report-20261113.pdf",
+    "https://home.alibabagroup.com/en-US/document-2060213191907999744",
+    "https://baidu.gcs-web.com/news-releases/news-release-details/baidu-announces-third-quarter-2026-results",
+    "https://www.tencent.com/wp-content/uploads/2026/11/Tencent-Announces-2026-Third-Quarter-Results.pdf",
+    "https://www.stats.gov.cn/sj/xwfbh/fbhwd/202611/t20261116_1965844.html",
+    "https://www.govinfo.gov/content/pkg/FR-2026-11-19/pdf/2026-23529.pdf",
+    "https://www.periodicalpress.senate.gov/on-the-floor/",
+    "https://publications.parliament.uk/pa/cm5902/cmselect/cmbeis/689/report.html"
+  ],
+  "spoken_han_count": 2322,
+  "title_handoff_ready": true,
+  "stress_handoff_ready": true,
+  "number_of_week": "S&P 500 weekly decline 8.6% through 2026-11-20",
+  "research_completed_at": "2026-11-22T07:06:38+08:00",
+  "written_staged_at": "2026-11-22T07:06:40+08:00",
+  "spoken_committed_at": "2026-11-22T07:06:43+08:00"
 }
