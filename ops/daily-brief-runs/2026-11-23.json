@@ -2,17 +2,80 @@
   "date": "2026-11-23",
   "edition": "daily_brief",
   "run_type": "daily_brief",
-  "status": "started",
+  "status": "spoken_committed",
   "timezone": "Asia/Shanghai",
   "started_at": "2026-11-23T07:01:27+08:00",
-  "updated_at": "2026-11-23T07:01:27+08:00",
+  "updated_at": "2026-11-23T07:07:15+08:00",
   "artifact_state": {
-    "written_draft": false,
-    "spoken_canonical": false,
+    "written_draft": true,
+    "spoken_canonical": true,
     "podcast_verified": false,
     "written_published": false,
     "published_verified": false
   },
   "failure_stage": null,
-  "failure_detail": null
+  "failure_detail": null,
+  "research_cutoff": "2026-11-23T07:00:00+08:00",
+  "history_window_checked": "2026-10-24 through 2026-11-22; strong event/thesis window 2026-11-16 through 2026-11-22",
+  "prior_edition_checked": "2026-11-22",
+  "prior_market_session": "2026-11-20",
+  "market_stress_index": 85.7,
+  "stress_market_date": "2026-11-20",
+  "spoken_han_count": 1455,
+  "title_handoff_ready": true,
+  "stress_handoff_ready": true,
+  "number_of_day": "Reported maximum 45% post-contract AI server price increase (Financial Times, 2026-11-22)",
+  "research_completed_at": "2026-11-23T07:07:15+08:00",
+  "written_staged_at": "2026-11-23T07:07:15+08:00",
+  "spoken_committed_at": "2026-11-23T07:07:15+08:00",
+  "candidate_pool": [
+    "Lean/Mathlib 2026-11-21 independent formal verification of Alpoge/Claude Riemann proof",
+    "FT 2026-11-22 AI server supplier post-contract price increase report, up to 45%",
+    "COP31 2026-11-22 closing without agreement on two Presidency-led decisions",
+    "Thinking Machines 2026-11-20 Inkling 2 Mini open weights release",
+    "OpenAI 2026-11-20 adversarial distillation protection results",
+    "Signal 2026-11-20 mobile screen capture restriction for OS AI assistants",
+    "Amazon-Decart talks reportedly advanced, but 2026-10 acquisition talks already known and no signed agreement",
+    "Lux supercomputer opened to users 2026-11-16, older than current news window",
+    "2026-11-20 US equity drop and weekly selloff, already covered in Nov 21 and 22 editions",
+    "TSMC affected China advanced orders reportedly paused after Nov 19 rule; formal rule and supply risk already in prior editions"
+  ],
+  "deduplication_audit": {
+    "rejected": [
+      "US Nov 20 equity decline: Nov 21 and Nov 22 lead, no new market session",
+      "Anthropic IPO and Nvidia earnings: covered repeatedly in last 7 days",
+      "Amazon-Decart acquisition talks: October event, new near-deal reports do not establish signed transaction or material changed state",
+      "Lux opening: Nov 16, less timely after multiple prior editions",
+      "TSMC order restrictions: reported Nov 19 after rule, but could not substantiate a distinct new Monday phase beyond covered remote-compute rule and weekly policy synthesis"
+    ],
+    "admitted": [
+      "Riemann proof: independent Lean/Mathlib certification Nov 21 materially upgrades initial Nov 20 researcher claim",
+      "Server repricing: new reported contract-cost evidence, distinct from prior equity selloff and supplier earnings",
+      "COP31: final Nov 22 conference outcome, separate from earlier negotiations",
+      "Three technical/product releases absent from previous 7 days"
+    ]
+  },
+  "quality_gates": {
+    "source_diversity": "Discovery across AP, FT, specialist technology press, Chinese-language regional reporting, Lean/Mathlib, UNFCCC, Thinking Machines, OpenAI, Signal, regulatory and company primary materials; no one publisher controlled candidate entry.",
+    "ai_policy_sweep": "Checked US Federal Register Nov 19 remote-compute rule effective, Senate H.R.2347 Nov 19 passage with House pending, Nov 20 senator proposal for AI select committee (advocacy only, no enacted measure), EU official AI Act status and Council Cloud and AI Development Act compromise text awaiting Nov 24 discussion. No new qualifying formal AI policy action since previous editions. China foundry order report considered but no additional independently substantiated formal Monday action.",
+    "major_news_omission_audit": "Checked latest completed Nov 20 S&P/Nasdaq/Dow and SOX selloff, Nvidia/Anthropic, compute supply costs, COP31 final outcome, AI research and product releases, China chip restrictions, AI policy status. Prior equity session already covered; no new US close over weekend.",
+    "access_limitations": "FT page inaccessible to automated reader. Verified report against readable full-text reproduction and publisher headline/social summary; retained FT attribution, stated reported figures as claims and noted unknown contract terms. Congress.gov robots blocked; used Federal Register, EU and AP/full-text materials.",
+    "title_story_order": "Passed: Lean verification leads title, opening summary, spoken summary and Top Headlines. Draft headline equals title handoff.",
+    "headline_structure": "Passed: six distinct substantive entries numbered consecutively 1-6.",
+    "sensitive_terms": "Written draft, title and spoken handoff passed Daily Brief checker; spoken passed Podcast checker.",
+    "spoken_length": "1455 Han characters; above weekday 1200 minimum and below 1500 soft guide.",
+    "date_naturalness": "Fixed Nov 23 opening; prior US Nov 20 market session stated distinctly; no repeated fully spoken dates in narration.",
+    "compute_ledger": "No new regular comparable tracked indicator; FT figures are reported requests, not established market price, so ledger unchanged.",
+    "call_ledger": "No new evidence-grounded threshold call; ledger unchanged."
+  },
+  "sources": [
+    "https://leanprover-community.github.io/blog/posts/riemann-hypothesis/",
+    "https://www.math.uwaterloo.ca/~mrubinst/alpoge_claude_grh/zeta-paper.pdf",
+    "https://www.ft.com/content/dd2a6594-6146-4ff1-ac8e-54749c1fc99f",
+    "https://unfccc.int/news/un-climate-change-executive-secretary-simon-stiell-remarks-at-the-closing-plenary-of-cop31",
+    "https://apnews.com/article/f6e36c4caf13ec6fed57c9f077cbd067",
+    "https://thinkingmachines.ai/news/inkling-2-mini/",
+    "https://openai.com/index/combatting-adversarial-distillation/",
+    "https://signal.org/blog/protecting-your-privacy/"
+  ]
 }
