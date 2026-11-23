@@ -2,10 +2,10 @@
   "date": "2026-11-24",
   "edition": "daily_brief",
   "run_type": "daily_brief",
-  "status": "started",
+  "status": "research_complete",
   "timezone": "Asia/Shanghai",
   "started_at": "2026-11-24T07:01:52+08:00",
-  "updated_at": "2026-11-24T07:01:52+08:00",
+  "updated_at": "2026-11-24T07:03:57+08:00",
   "artifact_state": {
     "written_draft": false,
     "spoken_canonical": false,
@@ -15,5 +15,51 @@
   },
   "failure_stage": null,
   "failure_detail": null,
-  "research_cutoff": "2026-11-24T07:00:00+08:00"
+  "research_cutoff": "2026-11-24T07:00:00+08:00",
+  "research_completed_at": "2026-11-24T07:03:57+08:00",
+  "history_window_checked": "2026-10-25 through 2026-11-23; strong event/thesis window 2026-11-17 through 2026-11-23",
+  "prior_edition_checked": "2026-11-23",
+  "prior_market_session": "2026-11-23",
+  "market_stress_index": 82.9,
+  "stress_market_date": "2026-11-23",
+  "candidate_pool": [
+    "Nvidia board reinstated Jensen Huang effective Nov 22, announced Nov 23; Nov 23 Nvidia and broad US AI-equity rebound",
+    "Amazon signed Nov 23 agreement to purchase Decart optimization technology and hire team; October talks were not a signed agreement",
+    "Ant Group Nov 23 LingSante medical model family with two open-weight models and reported Afu app scale",
+    "S&P Global Nov 23 US flash composite PMI 54.6 vs October 55.9",
+    "Shanghai exchange Nov 22 rule lowers minimum margin collateral ratio 100% to 80% effective Nov 30; absent from prior edition",
+    "Oregon and Virginia Nov 23 filed separate Grok/X image-safeguard complaints; allegations not adjudicated",
+    "Oracle Nov 20 fully-funded OpenAI contract statement, already before Nov 23 edition; Nov 23 share reaction covered within market item",
+    "Prior Nov 20 US equity selloff already covered Nov 21 and Nov 23; Nov 23 reversal is new state",
+    "EU Cloud and AI Development Act discussion expected Nov 24 after cutoff; no enacted action by cutoff"
+  ],
+  "deduplication_audit": {
+    "rejected": [
+      "Oracle Nov 20 funding statement: old disclosure, stock reaction included only in market context",
+      "Nov 20 US selloff and Nvidia earnings: in previous editions, no repetition as separate headlines",
+      "Amazon-Decart October talks: earlier stage, only Nov 23 signed technology purchase is admitted"
+    ],
+    "admitted": [
+      "Nov 23 Nvidia reinstatement and Nasdaq 6.5% rebound: binding management reversal and verified market move",
+      "Nov 23 Amazon-Decart signed technology transaction: material phase change from talks",
+      "Four other fresh primary-documented releases, survey, rule and lawsuits"
+    ]
+  },
+  "quality_gates": {
+    "source_diversity": "Discovery across AP, S&P Global, Nvidia and SEC, Amazon, Ant Group, Shanghai Stock Exchange, Oregon DOJ, Chinese-language market reporting, specialist AI publications and EU/US policy reporting. No single reporting lineage determined the candidate pool.",
+    "ai_policy_sweep": "Checked US federal AI compute controls and prior Senate energy-permitting stage, EU AI Act and Cloud and AI Development Act procedural calendar, China controls and fresh US state litigation. Oregon/Virginia Grok complaints filed Nov 23 are the qualifying new regulatory-risk action; these are allegations, not a court finding. No new verified federal/EU binding action by Nov 23 23:00 UTC cutoff.",
+    "major_news_omission_audit": "Checked completed Nov 23 S&P 500/Nasdaq/Dow and Nvidia/semiconductor move, Oracle financing statement and price reaction, new AI technology and healthcare models, US PMI, China margin rules, and AI policy litigation.",
+    "access_limitations": "Primary Nvidia, SEC, Amazon, Ant Group, S&P Global, Shanghai Stock Exchange and Oregon DOJ material located. AP full page tool access limited; its close figures cross-checked with market close sources. No material paywalled-exclusive fact used."
+  },
+  "sources": [
+    "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director",
+    "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000090/nvda-20261122.htm",
+    "https://apnews.com/article/49ba1beba78fa4ed2bd5898029f79c91",
+    "https://apnews.com/article/fcdf1bad36b4f81c90cbb0f33a2c5704",
+    "https://www.aboutamazon.com/news/company-news/amazon-decart-ai-optimization",
+    "https://www.antgroup.com/en/news-media/press-releases/1795402800000",
+    "https://www.spglobal.com/market-intelligence/en/news-insights/research/2026/11/us-flash-pmi-indicates-still-elevated-but-cooling-business-activity-growth-and-price-pressures",
+    "https://www.sse.com.cn/lawandrules/sselawsrules2025/trade/specific/margin/c/c_20261122_10838633.shtml",
+    "https://www.doj.state.or.us/media-home/news-media-releases/ag-rayfield-takes-legal-action-against-grok-for-failing-to-block-child-exploitation/"
+  ]
 }
