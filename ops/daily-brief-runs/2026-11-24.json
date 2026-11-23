@@ -2,13 +2,13 @@
   "date": "2026-11-24",
   "edition": "daily_brief",
   "run_type": "daily_brief",
-  "status": "research_complete",
+  "status": "spoken_committed",
   "timezone": "Asia/Shanghai",
   "started_at": "2026-11-24T07:01:52+08:00",
-  "updated_at": "2026-11-24T07:03:57+08:00",
+  "updated_at": "2026-11-24T07:06:54+08:00",
   "artifact_state": {
-    "written_draft": false,
-    "spoken_canonical": false,
+    "written_draft": true,
+    "spoken_canonical": true,
     "podcast_verified": false,
     "written_published": false,
     "published_verified": false
@@ -49,7 +49,14 @@
     "source_diversity": "Discovery across AP, S&P Global, Nvidia and SEC, Amazon, Ant Group, Shanghai Stock Exchange, Oregon DOJ, Chinese-language market reporting, specialist AI publications and EU/US policy reporting. No single reporting lineage determined the candidate pool.",
     "ai_policy_sweep": "Checked US federal AI compute controls and prior Senate energy-permitting stage, EU AI Act and Cloud and AI Development Act procedural calendar, China controls and fresh US state litigation. Oregon/Virginia Grok complaints filed Nov 23 are the qualifying new regulatory-risk action; these are allegations, not a court finding. No new verified federal/EU binding action by Nov 23 23:00 UTC cutoff.",
     "major_news_omission_audit": "Checked completed Nov 23 S&P 500/Nasdaq/Dow and Nvidia/semiconductor move, Oracle financing statement and price reaction, new AI technology and healthcare models, US PMI, China margin rules, and AI policy litigation.",
-    "access_limitations": "Primary Nvidia, SEC, Amazon, Ant Group, S&P Global, Shanghai Stock Exchange and Oregon DOJ material located. AP full page tool access limited; its close figures cross-checked with market close sources. No material paywalled-exclusive fact used."
+    "access_limitations": "Primary Nvidia, SEC, Amazon, Ant Group, S&P Global, Shanghai Stock Exchange and Oregon DOJ material located. AP full page tool access limited; its close figures cross-checked with market close sources. No material paywalled-exclusive fact used.",
+    "title_story_order": "Passed: Nasdaq 6.5% / Nvidia reversal leads title, opening summary and Top Headlines; draft headline equals title handoff.",
+    "headline_structure": "Passed: six distinct substantive entries numbered consecutively 1-6.",
+    "sensitive_terms": "Written draft, title, and spoken handoff pass Daily Brief checker; spoken passes Podcast checker.",
+    "spoken_length": "1440 Han characters; weekday 1200 minimum and 1250-1450 editorial target.",
+    "date_naturalness": "Fixed Nov 24 opening; US Nov 23 close and Nvidia Nov 22 board decision distinguished; no repetitive full-date spoken narration.",
+    "compute_ledger": "No new comparable tracked compute indicator; ledger unchanged.",
+    "call_ledger": "No evidence-grounded new threshold call; ledger unchanged."
   },
   "sources": [
     "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director",
@@ -61,5 +68,11 @@
     "https://www.spglobal.com/market-intelligence/en/news-insights/research/2026/11/us-flash-pmi-indicates-still-elevated-but-cooling-business-activity-growth-and-price-pressures",
     "https://www.sse.com.cn/lawandrules/sselawsrules2025/trade/specific/margin/c/c_20261122_10838633.shtml",
     "https://www.doj.state.or.us/media-home/news-media-releases/ag-rayfield-takes-legal-action-against-grok-for-failing-to-block-child-exploitation/"
-  ]
+  ],
+  "written_staged_at": "2026-11-24T07:06:54+08:00",
+  "spoken_committed_at": "2026-11-24T07:06:54+08:00",
+  "spoken_han_count": 1440,
+  "title_handoff_ready": true,
+  "stress_handoff_ready": true,
+  "number_of_day": "Nasdaq Composite +6.5% at Nov 23 US close (AP and market close)"
 }
