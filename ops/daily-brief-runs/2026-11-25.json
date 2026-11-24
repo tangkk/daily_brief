@@ -2,13 +2,13 @@
   "date": "2026-11-25",
   "edition": "daily_brief",
   "run_type": "daily_brief",
-  "status": "research_complete",
+  "status": "spoken_committed",
   "timezone": "Asia/Shanghai",
   "started_at": "2026-11-25T07:01:39+08:00",
-  "updated_at": "2026-11-25T07:04:04+08:00",
+  "updated_at": "2026-11-25T07:07:19+08:00",
   "artifact_state": {
-    "written_draft": false,
-    "spoken_canonical": false,
+    "written_draft": true,
+    "spoken_canonical": true,
     "podcast_verified": false,
     "written_published": false,
     "published_verified": false
@@ -48,7 +48,14 @@
     "source_diversity": "Discovery across AP, Reuters syndicated copy, Dell and Medtronic investor releases, Conference Board, ACEA, Australian minister and parliamentary documents, EU Council, China-related primary statistical material; no single outlet was candidate gatekeeper.",
     "ai_policy_sweep": "Australian Digital Duty of Care bill pending as of Nov 24: government announced agreement on amendments, proposed maximum 5% global revenue; no Senate or House passage yet verified. EU Cloud and AI Development Act first compromise under working-party discussion Nov 24, no new binding action. US federal compute restrictions from Nov 19 remain unchanged; no fresh verified binding action.",
     "major_news_omission_audit": "Reviewed completed Nov 24 S&P 500, Nasdaq, Dow and Nvidia/AI equities; Dell after-close results, macro releases, EU registrations, China LEI and Australian AI-platform bill.",
-    "access_limitations": "AP full article and primary corporate/statistical releases readable. Australian Parliament main domain robots-blocked; used official minister transcript and hosted parliamentary schedule PDF. No exclusive paywalled snippet used."
+    "access_limitations": "AP full article and primary corporate/statistical releases readable. Australian Parliament main domain robots-blocked; used official minister transcript and hosted parliamentary schedule PDF. No exclusive paywalled snippet used.",
+    "title_story_order": "Passed: Dell backlog leads title, opening summary and Top Headlines; draft headline equals title handoff.",
+    "headline_structure": "Passed: seven distinct substantive entries numbered consecutively 1-7.",
+    "sensitive_terms": "Written draft, title and spoken handoff passed Daily Brief checker; spoken passed Podcast checker.",
+    "spoken_length": "1453 Han characters; weekday 1200 minimum and 1250-1450 editorial target approximately met; below 1500 soft guide.",
+    "date_naturalness": "Fixed Nov 25 opening; Dell fiscal quarter ending Oct 30 and Nov 24 US close distinguished; no repetitive full-date spoken narration.",
+    "compute_ledger": "Dell is a server supplier; fixed ledger has no directly comparable new GPU rental, memory, hyperscaler CapEx or power indicator; ledger unchanged.",
+    "call_ledger": "No evidence-grounded new threshold call; ledger unchanged."
   },
   "sources": [
     "https://investors.delltechnologies.com/news-events/press-releases/detail/1665/dell-technologies-delivers-third-quarter-fiscal-2027-financial-results",
@@ -59,5 +66,11 @@
     "https://www.conference-board.org/topics/business-cycle-indicators/china/",
     "https://news.medtronic.com/2026-11-24-Medtronic-reports-second-quarter-fiscal-2027-results-performance-reflects-consistent-execution-across-the-portfolio",
     "https://data.consilium.europa.eu/doc/document/ST-15300-2026-INIT/en/pdf"
-  ]
+  ],
+  "written_staged_at": "2026-11-25T07:07:19+08:00",
+  "spoken_committed_at": "2026-11-25T07:07:19+08:00",
+  "spoken_han_count": 1453,
+  "title_handoff_ready": true,
+  "stress_handoff_ready": true,
+  "number_of_day": "Dell AI server backlog USD 132.3B at 2026-10-30, vs USD 95B previous quarter"
 }
