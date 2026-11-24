@@ -2,10 +2,10 @@
   "date": "2026-11-25",
   "edition": "daily_brief",
   "run_type": "daily_brief",
-  "status": "started",
+  "status": "research_complete",
   "timezone": "Asia/Shanghai",
   "started_at": "2026-11-25T07:01:39+08:00",
-  "updated_at": "2026-11-25T07:01:39+08:00",
+  "updated_at": "2026-11-25T07:04:04+08:00",
   "artifact_state": {
     "written_draft": false,
     "spoken_canonical": false,
@@ -15,5 +15,49 @@
   },
   "failure_stage": null,
   "failure_detail": null,
-  "research_cutoff": "2026-11-25T07:00:00+08:00"
+  "research_cutoff": "2026-11-25T07:00:00+08:00",
+  "research_completed_at": "2026-11-25T07:04:04+08:00",
+  "history_window_checked": "2026-10-26 through 2026-11-24; strong event/thesis window 2026-11-18 through 2026-11-24",
+  "prior_edition_checked": "2026-11-24",
+  "prior_market_session": "2026-11-24",
+  "market_stress_index": 83.1,
+  "stress_market_date": "2026-11-24",
+  "candidate_pool": [
+    "Dell Nov 24 FY27 Q3: AI server revenue $22.0B, backlog $132.3B vs $95B prior quarter; FY guidance raised",
+    "Nov 24 US close: Nasdaq -1.48%, Nvidia -5.9%, Dow +0.85%; material reversal and divergence after Nov 23 rebound",
+    "Conference Board Nov 24 consumer confidence 103.3 vs revised 91.9 October",
+    "ACEA Nov 24 October report: EU January-October BEV share 23.4% vs 16.4% year prior",
+    "Australia Nov 24 Digital Duty of Care amendment agreement: proposed 5% global revenue maximum; bill not yet passed",
+    "Conference Board Nov 24 China October LEI -0.3% to 147.3; fourth monthly fall",
+    "Medtronic Nov 24 FY27 Q2: $9.364B revenue, cardiac ablation growth 58%",
+    "EU Cloud and AI Development Act Nov 24 working-party discussion only; no binding decision verified"
+  ],
+  "deduplication_audit": {
+    "rejected": [
+      "Nov 23 Nvidia CEO restoration and Nasdaq +6.5% already covered; Nov 24 split market close admitted solely as a new verified reversal with different cross-sector outcome",
+      "EU Cloud and AI Development Act Council discussion is an expected procedural continuation without verified adoption or implementation",
+      "Amazon-Decart transaction and Ant Group medical models are unchanged from Nov 24 edition"
+    ],
+    "admitted": [
+      "Dell new quarterly revenue/backlog and guidance provide quantitative change in AI infrastructure thesis",
+      "Nov 24 actual market reversal provides a new pricing state",
+      "Other selected candidates are fresh official datasets, results, or a concrete proposed amendment agreement"
+    ]
+  },
+  "quality_gates": {
+    "source_diversity": "Discovery across AP, Reuters syndicated copy, Dell and Medtronic investor releases, Conference Board, ACEA, Australian minister and parliamentary documents, EU Council, China-related primary statistical material; no single outlet was candidate gatekeeper.",
+    "ai_policy_sweep": "Australian Digital Duty of Care bill pending as of Nov 24: government announced agreement on amendments, proposed maximum 5% global revenue; no Senate or House passage yet verified. EU Cloud and AI Development Act first compromise under working-party discussion Nov 24, no new binding action. US federal compute restrictions from Nov 19 remain unchanged; no fresh verified binding action.",
+    "major_news_omission_audit": "Reviewed completed Nov 24 S&P 500, Nasdaq, Dow and Nvidia/AI equities; Dell after-close results, macro releases, EU registrations, China LEI and Australian AI-platform bill.",
+    "access_limitations": "AP full article and primary corporate/statistical releases readable. Australian Parliament main domain robots-blocked; used official minister transcript and hosted parliamentary schedule PDF. No exclusive paywalled snippet used."
+  },
+  "sources": [
+    "https://investors.delltechnologies.com/news-events/press-releases/detail/1665/dell-technologies-delivers-third-quarter-fiscal-2027-financial-results",
+    "https://apnews.com/article/stock-markets-ai-earnings-oil-feec0e25b9994b1c86b16329cf770192",
+    "https://www.prnewswire.com/news-releases/us-consumer-confidence-surged-in-november-302949447.html",
+    "https://www.acea.auto/pc-registrations/new-car-registrations-5-4-in-october-2026-year-to-date-battery-electric-23-4-market-share/",
+    "https://minister.infrastructure.gov.au/wells/transcript/press-conference-parliament-house",
+    "https://www.conference-board.org/topics/business-cycle-indicators/china/",
+    "https://news.medtronic.com/2026-11-24-Medtronic-reports-second-quarter-fiscal-2027-results-performance-reflects-consistent-execution-across-the-portfolio",
+    "https://data.consilium.europa.eu/doc/document/ST-15300-2026-INIT/en/pdf"
+  ]
 }
