@@ -2,13 +2,13 @@
   "date": "2026-11-26",
   "edition": "daily_brief",
   "run_type": "daily_brief",
-  "status": "research_complete",
+  "status": "spoken_committed",
   "timezone": "Asia/Shanghai",
   "started_at": "2026-11-26T07:01:30+08:00",
-  "updated_at": "2026-11-26T07:03:17+08:00",
+  "updated_at": "2026-11-26T07:07:51+08:00",
   "artifact_state": {
-    "written_draft": false,
-    "spoken_canonical": false,
+    "written_draft": true,
+    "spoken_canonical": true,
     "podcast_verified": false,
     "written_published": false,
     "published_verified": false
@@ -51,7 +51,14 @@
     "source_diversity": "Discovery included AP, Reuters syndicated full text, Axios, BEA, DOL, USTR, corporate SEC/investor releases, Chinese data-center company materials, European Commission, science journals, and Asian/regional reporting. No single outlet was discovery gatekeeper.",
     "ai_policy_sweep": "Checked USTR new trade proposals for chip/compute exposure; formal Nov 25 determinations/proposals, no tariff in force. Australian digital duty bill remains pending from prior edition. EU Cloud and AI Development Act shows no new verified adoption or enforcement. No qualifying fresh direct AI model regulation found.",
     "major_news_omission_audit": "Reviewed completed Nov 25 US close including S&P, Nasdaq, Dow and AI shares; GDP, PCE, jobless claims, USTR proposals, GDS, BP/Wipro and Nutanix. Claims are lower-information context; GDP and PCE lead macro coverage.",
-    "access_limitations": "Used full BEA, DOL, USTR, GDS SEC/investor, Nutanix investor, AP and Reuters syndicated reporting. No exclusive paywalled snippet relied upon."
+    "access_limitations": "Used full BEA, DOL, USTR, GDS SEC/investor, Nutanix investor, AP and Reuters syndicated reporting. No exclusive paywalled snippet relied upon.",
+    "title_story_order": "Passed: October PCE leads title, opening summary and lead Top Headline; draft headline equals title handoff.",
+    "headline_structure": "Passed: seven distinct substantive entries numbered consecutively 1-7.",
+    "sensitive_terms": "Written draft, title, spoken handoff passed Daily Brief checker; spoken passed Podcast checker.",
+    "spoken_length": "1436 Han characters; weekday hard floor 1200 and target 1250-1450 passed.",
+    "date_naturalness": "Fixed Nov 26 opening, GDP third-quarter period and October PCE period distinguished; prior US market session described precisely.",
+    "compute_ledger": "GDS area utilization is a new facility indicator but existing fixed ledger has no matching prior indicator; ledger unchanged.",
+    "call_ledger": "No evidence-grounded new threshold call; ledger unchanged."
   },
   "sources": [
     "https://www.bea.gov/index.php/news/2026/gdp-second-estimate-and-corporate-profits-3rd-quarter-2026",
@@ -62,5 +69,11 @@
     "https://ir.nutanix.com/node/16801/pdf",
     "https://live.euronext.com/en/financial-news/bp-transfers-3000-finance-operations-staff-indian-ai-services-firm-wipro",
     "https://www.dol.gov/index.php/newsroom/releases?agency=39&page=0&state=All&topic=All&year=all"
-  ]
+  ],
+  "written_staged_at": "2026-11-26T07:07:51+08:00",
+  "spoken_committed_at": "2026-11-26T07:07:51+08:00",
+  "spoken_han_count": 1436,
+  "title_handoff_ready": true,
+  "stress_handoff_ready": true,
+  "number_of_day": "US October 2026 PCE price index +3.8% year over year"
 }
