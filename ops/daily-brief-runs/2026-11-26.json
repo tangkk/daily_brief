@@ -2,10 +2,10 @@
   "date": "2026-11-26",
   "edition": "daily_brief",
   "run_type": "daily_brief",
-  "status": "started",
+  "status": "research_complete",
   "timezone": "Asia/Shanghai",
   "started_at": "2026-11-26T07:01:30+08:00",
-  "updated_at": "2026-11-26T07:01:30+08:00",
+  "updated_at": "2026-11-26T07:03:17+08:00",
   "artifact_state": {
     "written_draft": false,
     "spoken_canonical": false,
@@ -14,5 +14,53 @@
     "published_verified": false
   },
   "failure_stage": null,
-  "failure_detail": null
+  "failure_detail": null,
+  "research_cutoff": "2026-11-26T07:00:00+08:00",
+  "research_completed_at": "2026-11-26T07:03:17+08:00",
+  "history_window_checked": "2026-10-27 through 2026-11-25; strong event/thesis window 2026-11-19 through 2026-11-25",
+  "prior_edition_checked": "2026-11-25",
+  "prior_market_session": "2026-11-25",
+  "market_stress_index": 83.2,
+  "stress_market_date": "2026-11-25",
+  "candidate_pool": [
+    "US Q3 GDP second estimate Nov 25: 4.3% annualized versus 3.4% initial",
+    "US October PCE Nov 25: headline 3.8% year over year, core 3.3%; real consumption flat",
+    "US Nov 25 close: S&P 500 -0.25%, Nasdaq -0.62%, Dow +0.33% after large intraday losses",
+    "USTR Nov 25 determinations across 14 economies and proposed Section 301 tariffs; comment/hearing pending, no new tariff in force",
+    "GDS Q3 Nov 25: committed area +25.5%, utilized +15.3%, EBITDA margin down to 43.4%",
+    "BP/Wipro Nov 25: about 3000 finance staff transfer planned for 2027, AI/automation stated goal, no realized savings disclosed",
+    "Nutanix Nov 24 after close: ARR $2.63B +15%, FCF $209.3M; not AI-specific revenue",
+    "US Nov 25 initial claims 189,000 versus revised 202,000",
+    "EU Cloud and AI Development Act procedural discussion without verified new binding action"
+  ],
+  "deduplication_audit": {
+    "rejected": [
+      "Nvidia leadership restoration and Nov 23 rally already covered; Nov 25 close considered only as new intraday 3.2% S&P drawdown/reversal and final pricing state",
+      "Dell AI server orders already covered; no new standalone Dell headline",
+      "EU Cloud and AI Development Act prior discussion has no verified new binding action"
+    ],
+    "admitted": [
+      "GDP second estimate has +0.9 percentage point upward revision",
+      "October PCE is new measured price/spending data, separate from September PCE and November sentiment",
+      "GDS first reported Q3 utilization and bookings numbers",
+      "BP/Wipro is new signed 3000-employee operating transfer plan, distinguish transfer from layoffs and realized AI gains",
+      "USTR made new formal 14-economy determinations and published proposed actions, with no tariffs yet effective"
+    ]
+  },
+  "quality_gates": {
+    "source_diversity": "Discovery included AP, Reuters syndicated full text, Axios, BEA, DOL, USTR, corporate SEC/investor releases, Chinese data-center company materials, European Commission, science journals, and Asian/regional reporting. No single outlet was discovery gatekeeper.",
+    "ai_policy_sweep": "Checked USTR new trade proposals for chip/compute exposure; formal Nov 25 determinations/proposals, no tariff in force. Australian digital duty bill remains pending from prior edition. EU Cloud and AI Development Act shows no new verified adoption or enforcement. No qualifying fresh direct AI model regulation found.",
+    "major_news_omission_audit": "Reviewed completed Nov 25 US close including S&P, Nasdaq, Dow and AI shares; GDP, PCE, jobless claims, USTR proposals, GDS, BP/Wipro and Nutanix. Claims are lower-information context; GDP and PCE lead macro coverage.",
+    "access_limitations": "Used full BEA, DOL, USTR, GDS SEC/investor, Nutanix investor, AP and Reuters syndicated reporting. No exclusive paywalled snippet relied upon."
+  },
+  "sources": [
+    "https://www.bea.gov/index.php/news/2026/gdp-second-estimate-and-corporate-profits-3rd-quarter-2026",
+    "https://bea.gov/news/2026/personal-income-and-outlays-october-2026",
+    "https://apnews.com/article/94fdb0ecb060ec65c0b02879ce0d2d09",
+    "https://www.ustr.gov/about/policy-offices/press-office/press-releases/2026/november/ustr-makes-determinations-and-proposes-actions-14-section-301-investigations-relating-structural",
+    "https://gdsholdingsltd.gcs-web.com/static-files/c46ade06-9840-49e6-82c6-a7cb84c6ee14",
+    "https://ir.nutanix.com/node/16801/pdf",
+    "https://live.euronext.com/en/financial-news/bp-transfers-3000-finance-operations-staff-indian-ai-services-firm-wipro",
+    "https://www.dol.gov/index.php/newsroom/releases?agency=39&page=0&state=All&topic=All&year=all"
+  ]
 }
