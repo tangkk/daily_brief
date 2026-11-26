@@ -2,10 +2,10 @@
   "date": "2026-11-27",
   "edition": "daily_brief",
   "run_type": "daily_brief",
-  "status": "started",
+  "status": "research_complete",
   "timezone": "Asia/Shanghai",
   "started_at": "2026-11-27T07:01:33+08:00",
-  "updated_at": "2026-11-27T07:01:33+08:00",
+  "updated_at": "2026-11-27T07:03:41+08:00",
   "artifact_state": {
     "written_draft": false,
     "spoken_canonical": false,
@@ -15,5 +15,42 @@
   },
   "failure_stage": null,
   "failure_detail": null,
-  "research_cutoff": "2026-11-27T07:00:00+08:00"
+  "research_cutoff": "2026-11-27T07:00:00+08:00",
+  "research_completed_at": "2026-11-27T07:03:41+08:00",
+  "history_window_checked": "2026-10-28 through 2026-11-26; strong event/thesis window 2026-11-20 through 2026-11-26",
+  "prior_edition_checked": "2026-11-26",
+  "prior_market_session": "2026-11-25 US; 2026-11-26 Asia/Europe",
+  "market_stress_index": 83.2,
+  "stress_market_date": "2026-11-26",
+  "candidate_pool": [
+    "S&P Global Ratings placed Nvidia AA on CreditWatch Negative Nov 25; possible downgrade within 90 days, no cut yet",
+    "Bank of Korea raised base rate 3.00% to 3.25% Nov 26 and revised growth outlook",
+    "Eurostat Nov 26 Q3 extra-EU trade deficit EUR36B, China imports EUR163B and exports EUR49.1B",
+    "BharatGen launched Patram 1.5 7B open-weight document vision model Nov 26",
+    "ECB Nov 26 October euro-area M3 3.6% and nonfinancial corporate lending growth 4.5% from 4.3%",
+    "OpenAI Private Inference moved from preview to limited customer test Nov 25",
+    "Europe STOXX 600 Nov 26 rose 1.75%; Japan and Hong Kong rebounded, US cash market closed",
+    "US proposed tariffs Nov 25 and partner responses Nov 26; proposal already covered",
+    "US advanced-compute remote-use interim rule effective Nov 19, already covered"
+  ],
+  "deduplication_audit": {
+    "rejected": ["Nvidia CEO reinstatement and Nov 25 US stock close already covered; new ratings action assessed separately", "Nov 25 USTR tariff proposal already covered; trading-partner statements add no binding phase change", "US remote-compute rule and data-center bill remain at previously covered procedural stages"],
+    "admitted": ["Nvidia: independent AA rating placed on negative watch, a new formal credit-risk action", "Korea: actual 25-basis-point policy decision", "Eurostat: first Q3 bilateral trade figures and surplus-to-deficit change", "BharatGen: newly released open weights and document model", "ECB: newly published October bank-credit data", "OpenAI: limited customers began testing preview product", "Europe/Asia: new Nov 26 completed-session repricing outside closed US market"]
+  },
+  "quality_gates": {
+    "source_diversity": "Discovery used Korean central bank and Yonhap, ECB, Eurostat, BharatGen model and launch materials, OpenAI primary product page and CEO statement, Reuters syndicated full text, AP, regional Asian market reporting, US Federal Register and EU policy sources. No single publisher gatekeeper.",
+    "ai_policy_sweep": "US advanced-compute remote-use interim rule effective Nov 19 and Senate data-center grid-cost bill passed chamber Nov 19 were already covered; no new implementation or chamber action verified. USTR Nov 25 proposal remains in comment/hearing stage; Nov 26 partner responses did not enact tariffs. Australia online safety amendments remain pending. No qualifying new formal AI model regulation identified by cutoff.",
+    "major_news_omission_audit": "US cash equities closed Nov 26 for Thanksgiving; latest completed Nov 25 S&P/Nasdaq/Dow session already covered Nov 26. Checked Nvidia Nov 25 rating action, European/Asian Nov 26 equity closes, Korea rate decision, euro-area bank credit and EU trade. Tariff responses are continuation of prior proposed measure.",
+    "access_limitations": "Used full Reuters syndicated Nvidia ratings and European-market reports, Korean central-bank release, ECB and Eurostat releases, BharatGen and OpenAI primary materials, and accessible AP reporting; no exclusive paywalled snippet used."
+  },
+  "sources": [
+    "https://za.investing.com/news/stock-market-news/sp-global-places-nvidia-rating-on-creditwatch-negative-on-rising-management-and-governance-risks-4597377",
+    "https://www.bok.or.kr/eng/bbs/E0000627/view.do?depth=400022&menuNo=400022&nttId=11067085&oldMenuNo=400007&programType=newsDataEng&relate=Y",
+    "https://ec.europa.eu/eurostat/en/web/products-eurostat-news/w/ddn-20261126-1",
+    "https://bharatgen.com/models/",
+    "https://www.ecb.europa.eu/press/stats/md/html/ecb.md2610~4bad1d63b5.sv.html",
+    "https://openai.com/business/private-intelligence/",
+    "https://apnews.com/article/stocks-markets-ai-oil-bonds-320cd8c9c286a7773797bf2f478ef314",
+    "https://uk.marketscreener.com/news/european-stocks-rally-as-tech-and-banks-rebound-tariff-fears-ease-ce7851d8de89f026"
+  ]
 }
