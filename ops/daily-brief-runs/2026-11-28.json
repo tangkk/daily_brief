@@ -2,13 +2,13 @@
   "date": "2026-11-28",
   "edition": "daily_brief",
   "run_type": "daily_brief",
-  "status": "research_complete",
+  "status": "spoken_committed",
   "timezone": "Asia/Shanghai",
   "started_at": "2026-11-28T07:01:42+08:00",
-  "updated_at": "2026-11-28T07:04:05+08:00",
+  "updated_at": "2026-11-28T07:07:25+08:00",
   "artifact_state": {
-    "written_draft": false,
-    "spoken_canonical": false,
+    "written_draft": true,
+    "spoken_canonical": true,
     "podcast_verified": false,
     "written_published": false,
     "published_verified": false
@@ -53,7 +53,14 @@
     "source_diversity": "Discovery across AP, Reuters syndicated, Brazil national agency/Bradesco, INSEE, NBS China, Japan Statistics Bureau, European Commission, regional Chinese and Japanese reporting, specialist technology and science sources; no single publisher gatekeeper.",
     "ai_policy_sweep": "Checked US advanced-compute remote-use rule effective Nov 19, Senate data-center grid-cost bill passed Nov 19, EU AI rules and Australian online safety proposal: no verified new Nov 27 binding stage change. A report alleging Nvidia Southeast Asia shipment halt could not be independently verified and is excluded.",
     "major_news_omission_audit": "Checked completed Nov 27 S&P/Nasdaq/Dow, AI chip repricing, France GDP revision, China industrial profits, Tokyo CPI, euro-area sentiment, Brazil market move, AI policy, AI model and science releases.",
-    "access_limitations": "Material figures taken from readable AP, national statistical/official releases, and Brazilian official/primary reporting; no paywalled snippet used."
+    "access_limitations": "Material figures taken from readable AP, national statistical/official releases, and Brazilian official/primary reporting; no paywalled snippet used.",
+    "title_story_order": "Passed: US completed session leads title, summary and first headline; draft headline equals title handoff.",
+    "headline_structure": "Passed: six distinct substantive Top Headlines numbered consecutively 1-6.",
+    "sensitive_terms": "Written draft, title and spoken handoff passed Daily Brief checker; spoken passed Podcast checker.",
+    "spoken_length": "1444 Han characters; weekday hard floor 1200 and editorial target 1250-1450 passed.",
+    "date_naturalness": "Fixed Nov 28 opening; Nov 27 US session, Q3 France GDP, Tokyo November preliminary CPI and 2027 Brazil appointment distinguished.",
+    "compute_ledger": "China broad electronics manufacturing profit doubled; no new AI-specific price, capacity or capex series.",
+    "call_ledger": "No sufficiently evidenced threshold call; unchanged."
   },
   "sources": [
     "https://apnews.com/article/wall-street-stocks-dow-nasdaq-04dab6079cf7f3dfe7285a3cc1f240a2",
@@ -63,5 +70,11 @@
     "https://economy-finance.ec.europa.eu/document/download/00980c76-91e9-4843-85b2-51ef1e599368_en?filename=bcs_2026_11_en.pdf",
     "https://agenciabrasil.ebc.com.br/en/economia/noticia/2026-11/banker-luiz-carlos-trabuco-be-brazils-new-finance-minister",
     "https://apnews.com/article/brazil-markets-finance-minister-economy-5836b2ca098190540ff6669ebef01669"
-  ]
+  ],
+  "written_staged_at": "2026-11-28T07:07:25+08:00",
+  "spoken_committed_at": "2026-11-28T07:07:25+08:00",
+  "spoken_han_count": 1444,
+  "title_handoff_ready": true,
+  "stress_handoff_ready": true,
+  "number_of_day": "China Jan-Oct industrial profit growth 16.0%"
 }
