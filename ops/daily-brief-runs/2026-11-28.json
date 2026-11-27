@@ -2,10 +2,10 @@
   "date": "2026-11-28",
   "edition": "daily_brief",
   "run_type": "daily_brief",
-  "status": "started",
+  "status": "research_complete",
   "timezone": "Asia/Shanghai",
   "started_at": "2026-11-28T07:01:42+08:00",
-  "updated_at": "2026-11-28T07:01:42+08:00",
+  "updated_at": "2026-11-28T07:04:05+08:00",
   "artifact_state": {
     "written_draft": false,
     "spoken_canonical": false,
@@ -15,5 +15,53 @@
   },
   "failure_stage": null,
   "failure_detail": null,
-  "research_cutoff": "2026-11-28T07:00:00+08:00"
+  "research_cutoff": "2026-11-28T07:00:00+08:00",
+  "research_completed_at": "2026-11-28T07:04:05+08:00",
+  "history_window_checked": "2026-10-29 through 2026-11-27; strong event/thesis window 2026-11-21 through 2026-11-27",
+  "prior_edition_checked": "2026-11-27",
+  "prior_market_session": "2026-11-27 US, Asia and Europe",
+  "market_stress_index": 81.8,
+  "stress_market_date": "2026-11-27",
+  "candidate_pool": [
+    "US Nov 27 half-day equities rebound: S&P 500 +1.6%, Nasdaq +2.3%, Dow +1.2%, weekly gains",
+    "China Jan-Oct industrial profit +16%, Oct alone +20.1%, electronics manufacturing profit doubled",
+    "France Q3 GDP detailed estimate revised to -0.2% after Q2 0.0%, exports -1.6%",
+    "Tokyo November preliminary CPI 2.8%, excluding fresh food 2.9% from 2.6%",
+    "Euro-area November economic sentiment fell 0.7 to 95.8, employment expectations to 96.8",
+    "Brazil confirmed Bradesco chair for 2027 finance minister; real rose and equities rallied",
+    "US Nvidia Southeast Asia shipment halt allegation, unverified independent primary evidence",
+    "Black Friday US online spending forecast, not realized final data"
+  ],
+  "deduplication_audit": {
+    "rejected": [
+      "Nov 26 Nvidia credit watch already covered; no new formal rating action",
+      "Nov 25 US PCE/GDP and proposed tariff measures already covered; no phase change",
+      "Nov 23 GLM-5.4 release and prior AI server repricing already covered",
+      "Nvidia Southeast Asia shipment allegation: no company/agency confirmation or independently accessible evidence for specific halt at cutoff",
+      "Black Friday forecast: published earlier; realized full-day data not yet verified at cutoff"
+    ],
+    "admitted": [
+      "US Nov 27 completed session is a new broad market state after Thanksgiving closure",
+      "China newly published October industrial profit and electronics-sector figures",
+      "France detailed Q3 GDP revision from -0.1% initial estimate to -0.2%",
+      "Tokyo newly released November preliminary price data",
+      "European Commission newly published November sentiment survey",
+      "Brazil formal appointment confirmation and observed market repricing"
+    ]
+  },
+  "quality_gates": {
+    "source_diversity": "Discovery across AP, Reuters syndicated, Brazil national agency/Bradesco, INSEE, NBS China, Japan Statistics Bureau, European Commission, regional Chinese and Japanese reporting, specialist technology and science sources; no single publisher gatekeeper.",
+    "ai_policy_sweep": "Checked US advanced-compute remote-use rule effective Nov 19, Senate data-center grid-cost bill passed Nov 19, EU AI rules and Australian online safety proposal: no verified new Nov 27 binding stage change. A report alleging Nvidia Southeast Asia shipment halt could not be independently verified and is excluded.",
+    "major_news_omission_audit": "Checked completed Nov 27 S&P/Nasdaq/Dow, AI chip repricing, France GDP revision, China industrial profits, Tokyo CPI, euro-area sentiment, Brazil market move, AI policy, AI model and science releases.",
+    "access_limitations": "Material figures taken from readable AP, national statistical/official releases, and Brazilian official/primary reporting; no paywalled snippet used."
+  },
+  "sources": [
+    "https://apnews.com/article/wall-street-stocks-dow-nasdaq-04dab6079cf7f3dfe7285a3cc1f240a2",
+    "https://www.stats.gov.cn/xxgk/sjfb/zxfb2020/202611/t20261127_1965949.html",
+    "https://www.insee.fr/en/statistiques/9167414",
+    "https://www.stat.go.jp/data/cpi/sokuhou/tsuki/pdf/kubu.pdf",
+    "https://economy-finance.ec.europa.eu/document/download/00980c76-91e9-4843-85b2-51ef1e599368_en?filename=bcs_2026_11_en.pdf",
+    "https://agenciabrasil.ebc.com.br/en/economia/noticia/2026-11/banker-luiz-carlos-trabuco-be-brazils-new-finance-minister",
+    "https://apnews.com/article/brazil-markets-finance-minister-economy-5836b2ca098190540ff6669ebef01669"
+  ]
 }
